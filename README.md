@@ -1,4 +1,4 @@
-# Red Bootstrap Hubzilla Themes
+# CHG Bootstrap Hubzilla Themes
 **A collection of Hubzilla themes and templates.**
 
 We are in the process of creating some new themes for Hubzilla and are designing them with different types websites in mind.
