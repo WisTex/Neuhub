@@ -1,0 +1,33 @@
+.comment .wall-item-body {
+	padding-left: 42px;
+}
+
+.wall-item-content-wrapper.comment {
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.widget {
+	border: 1px solid rgba(0,0,0,.125);
+}
+
+#note-text {
+	border: 1px solid transparent;
+}
+
+.vcard-card {
+	border: 1px solid rgba(0,0,0,.125);
+	border-bottom: 0;
+}
+
+.vcard-card .card {
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+}
+
+.vcard-card .vcard {
+	border: 1px solid rgba(0,0,0,.125);
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+}
