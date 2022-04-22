@@ -32,3 +32,23 @@ Some of the things I want to work on are:
 ## Collaboration 
 
 If you have any suggestions or want to contribute code, that would be appreciated.
+
+## Credits
+
+Special thanks to all of the people before me that created awesome code and made it available. The themes in this repository would not be possible without their hard work, and the themes here use some of their code or are inspired by their code. Hopefully I did not miss anyone.
+
+### Hubzilla and Redbasic
+
+Website: https://hubzilla.org/
+Respository: https://framagit.org/hubzilla/core
+
+- Fabrixxm
+- Mike Macgirvin
+- Mario Vavti
+
+### DeadSuperHero Hubzilla Themes
+
+Repository: https://github.com/DeadSuperHero/hubzilla-themes
+
+- Sean Tilley
+- Andrew Manning
