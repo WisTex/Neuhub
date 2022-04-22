@@ -1,0 +1,14 @@
+[region=aside]
+[widget=usermenu][/widget]
+[widget=wiki_pages][/widget]
+[widget=notifications][/widget]
+[/region]
+
+[region=content]
+[widget=zcard][/widget]
+$content
+[/region]
+
+[region=right_aside]
+[widget=shortprofile][var=scale]2[/var][/widget]
+[/region]

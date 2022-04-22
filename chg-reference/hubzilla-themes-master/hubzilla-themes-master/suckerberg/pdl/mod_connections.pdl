@@ -1,0 +1,17 @@
+[region=nav]$nav[/region]
+
+[region=aside]
+[widget=usermenu][/widget]
+[widget=collections][/widget]
+[widget=notifications][/widget]
+[/region]
+
+[region=content]
+$content
+[/region]
+
+[region=right_aside]
+[widget=findpeople][/widget]
+[widget=follow][/widget]
+[widget=suggestions][/widget]
+[/region]
