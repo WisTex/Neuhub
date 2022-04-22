@@ -31,7 +31,7 @@ If you are just making minor changes, then editing the `tpl` and `css` files wou
 
 - **CSS**: Files in the `css` directory override files in `/view/css` and in the Redbasic theme.
 - **Javascript**: Files in the `js` directory override files in `/view/js` and in the Redbasic theme.
-- **Images**: Add your own images here.
+- **Images**: Add your own images to the `img` directory.
 
 ## Finishing Touches
 
