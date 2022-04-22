@@ -24,7 +24,7 @@ Testing is optional, but if you have never installed a derivative theme before, 
 
 Whatever you place in each folder overrides the default file. You can also add additional files.
 
-If you are just making minor changes, then editing the `tpl` and `css` files would probably work well. But if you are changing the basic structure and layout, then you will probably need to copy `/view/php/default.php` to `/view/theme/your-theme-name/php/default.php` and then make your changes there. You can also create new layouts by creating your own php files in `/view/theme/your-theme-name/php/` and then use the PDL Editor in Hubzilla to select it.
+If you are just making minor changes, then overriding specific `tpl` and `css` files would probably work well. But if you are changing the basic structure and layout, then you will probably need to copy `/view/php/default.php` to `/view/theme/your-theme-name/php/default.php` and then make your changes there. You can also create new layouts by creating your own php files in `/view/theme/your-theme-name/php/` and then use the PDL Editor in Hubzilla to select it.
 
 - **Layout**: Files in the `php` directory override files in `/view/php` and in the Redbasic theme.
 - **Templates**: Files in the `tpl` directory override files in `/view/tpl` and in the Redbasic theme.
