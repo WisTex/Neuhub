@@ -1,0 +1,5 @@
+.dropdown-header.text-white-50,
+.navbar-dark .navbar-toggler,
+.navbar-dark .nav-link.active {
+	color: rgba(0,0,0,0.7) !important;
+}
