@@ -1,5 +1,7 @@
 # Redbasic Derivative Starter Kit
 
+**Version 1.0**
+
 This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
 
 You can override various parts of the Redbasic theme simply by creating a new file with the name of the file you want to override.
