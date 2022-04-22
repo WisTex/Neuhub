@@ -14,9 +14,9 @@ I recommend copying the original file and modifying it, but you can start from s
 
 1. Make a copy of this theme and rename the `redbasic-starter-kit` directory to the name of your new theme.
 2. Change the details in `php/theme.php`.
-3. Test the new theme by uploading it to the `/view/theme` directory of your Hubzilla installation. Use Git or upload by FTP or use cPanel File Manager.
+3. Test the new theme by uploading it to the `/view/theme` directory of your Hubzilla installation. Use Git, upload by FTP, or use cPanel File Manager.
 
-Afetr uploading, your theme should be located at: `/view/theme/whatever-you-named-the-directory/`
+After uploading, your theme should be located at: `/view/theme/whatever-you-named-the-directory/`
 
 Testing is optional, but if you have never installed a derivative theme before, this will tell you if you installed it in the right place and gives you a good starting point to work from.
 
