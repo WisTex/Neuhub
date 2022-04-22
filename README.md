@@ -1,13 +1,15 @@
 # CHG Bootstrap Hubzilla Themes
 **A collection of Hubzilla themes and templates.**
 
-We are in the process of creating some new themes for Hubzilla and are designing them with different types websites in mind.
+We are in the process of creating some new themes for Hubzilla and are designing them with different types websites in mind. Everything in this repository is currently a work in progress. 
 
-Everything in this repository is currently a work in progress and probably won't work at this point. (We'll change this readme file when that changes.) So consider everything in here experimental. Your contributions are welcome.
+Items that have been tested and working are listed below. Everything else is experimental.
+
+Your contributions are welcome.
 
 ## Themes
 
-- **Redbasic Derivative Starter Kit** - A Starting point for creating your own theme.
+- **Redbasic Derivative Starter Kit** 1.0 - A Starting point for creating your own theme.
   - https://github.com/WisTex/CHG-Hubzilla-Themes/tree/main/view/theme/redbasic-starter-kit
 
 ## Use Cases
