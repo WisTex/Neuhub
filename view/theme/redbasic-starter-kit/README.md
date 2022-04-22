@@ -18,7 +18,7 @@ I recommend copying the original file and modifying it, but you can start from s
 
 After uploading, your theme should be located at: `/view/theme/whatever-you-named-the-directory/`
 
-Testing at this point is optional, but if you have never installed a derivative theme before, this will tell you if you installed it in the right place and gives you a good starting point to work from. Personally, I like making sure everything works in dfault mode before I start making changes.
+Testing at this point is optional, but if you have never installed a derivative theme before, this will tell you if you installed it in the right place and gives you a good starting point to work from. Personally, I like making sure everything works in default mode before I start making changes.
 
 ## Modifying the Theme
 
