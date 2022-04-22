@@ -3,9 +3,11 @@
 /**
  *   * Name: Sunbeam
  *   * Description: A fresh theme based on redbasic
- *   * MinVersion: 2.3.1
- *   * MaxVersion: 4.0
+  *   * Version: 1.0.1
+ *   * MinVersion: 7.2
+ *   * MaxVersion: 8.0
  *   * Author: Sean Tilley
+ *   * Maintainer: Scott M. Stolz
  *   * Compat: Hubzilla [*]
  *
  */
