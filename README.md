@@ -5,6 +5,11 @@ We are in the process of creating some new themes for Hubzilla and are designing
 
 Everything in this repository is currently a work in progress and probably won't work at this point. (We'll change this readme file when that changes.) So consider everything in here experimental. Your contributions are welcome.
 
+## Themes
+
+- **Redbasic Derivative Starter Kit** - A Starting point for creating your own theme.
+  - https://github.com/WisTex/CHG-Hubzilla-Themes/tree/main/view/theme/redbasic-starter-kit
+
 ## Use Cases
 
 I would like to make the new template as versatile as possible. We might eventually need to make multiple configurations because there are many distinct use cases, such as:
