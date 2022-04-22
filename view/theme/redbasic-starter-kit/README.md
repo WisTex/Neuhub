@@ -37,7 +37,7 @@ If you are just making minor changes, then editing the `tpl` and `css` files wou
 
 1. Update `img/screenshot.png` with a screenshot of your new theme.
 2. Update `php/theme.php` again if you want to give it a new version number.
-3. Change the `README.md` file if you plan on sharing this with others.
+3. Change the `README.md` file if you plan on sharing your new theme with others.
 4. Upload your changes to your website via Git, FTP, or cPanel File Manager.
 
 ## Notes
