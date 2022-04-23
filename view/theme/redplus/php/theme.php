@@ -1,9 +1,9 @@
 <?php
 
 /**
- *   * Name: Redbasic Derivative Starter Kit
- *   * Description: A derivative theme of Redbasic that you can use as a starting point for creating your own themes.
- *   * Version: 1.1
+ *   * Name: Red Plus
+ *   * Description: A derivative theme of Redbasic with slightly different navigation.
+ *   * Version: 1.0
  *   * MinVersion: 6.5.13
  *   * MaxVersion: 8.0
  *   * Author: Scott M. Stolz
@@ -13,7 +13,7 @@
  *
  */
 
-function chgstarterkit_init(&$App) {
+function chgredplus_init(&$App) {
 
     App::$theme_info['extends'] = 'redbasic';
 
