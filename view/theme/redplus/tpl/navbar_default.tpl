@@ -450,8 +450,19 @@
 </script>
 {{/if}}
 
-                    <ol class="breadcrumb text-white" style="font-family: Ubuntu, sans-serif;padding-right: 24px;padding-left: 24px;">
-					<li class="breadcrumb-item"><a href="/"><span>Home</span></a></li>
+                <div class="container-fluid" style="margin-top: 4.5rem">
+	  
+			<div class="container" style="margin-top: 15px;!max-width: 1400px;">
+
+	      {{if $name}}
+
+				<h1 class="text-dark mb-20" !style="font-family: 'Roboto Slab', serif; padding-bottom: 40px;"><img src="{{$thumb}}" class="!menu-img-2" style="max-height:42px;"> {{$name}}</h1>
+
+		{{/if}}		
+
+			
+                    <ol class="breadcrumb !text-white" style="font-family: Ubuntu, sans-serif;padding: 8px; background:#eeeeee;">
+					<li class="breadcrumb-item"><a href="/"><span>Home {{$sitename}} {{$channel_name}} {{$site_about}}</span></a></li>
 					<li class="breadcrumb-item"><a href="/directory"><span>Community</span></a></li>
 					{{if $sel.name}}
 					<li class="breadcrumb-item"><a href="{{$url}}"><span>{{$sel.name}}</span></a></li>
@@ -459,16 +470,7 @@
 					{{if $sitelocation}}
 						<li class="breadcrumb-item"><a href="{{$url}}"><span>{{$sitelocation}}</span></a></li>
 					{{/if}}
-					
-
                     </ol>
-	      {{if $name}}
-                <div class="container-fluid">
-	  
-			<div class="container" style="margin-top: 15px;max-width: 1400px;">
-  
-				<h1 class="text-dark mb-15" !style="font-family: 'Roboto Slab', serif;"><img src="{{$thumb}}" class="!menu-img-2" style="max-height:42px;"> {{$name}}</h1>	      
-				
+
 			</div>
-			</div>
-		{{/if}}
+			</div>	
