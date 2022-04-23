@@ -1,6 +1,6 @@
 # Redbasic Derivative Starter Kit
 
-**Version 1.0** - https://github.com/WisTex/CHG-Hubzilla-Themes/tree/main/view/theme/redbasic-starter-kit
+**Version 1.0.1** - https://github.com/WisTex/CHG-Hubzilla-Themes/tree/main/view/theme/redbasic-starter-kit
 
 This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
 
@@ -42,7 +42,7 @@ If you are just making minor changes, then overriding specific `tpl` and `css` f
 
 ## Notes
 
-Version 1.0 of this theme does not work with Schemes yet. 
+Schemes for deriviatives themes is not currently supported.
 
 ## Credits
 
