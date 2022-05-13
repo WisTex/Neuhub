@@ -1,0 +1,7 @@
+version: 4
+url: $baseurl/channel/$nick, $baseurl/settings/channel_home
+requires: local_channel
+name: Channel
+photo: icon:dot-circle-o
+categories: nav_featured_app, Personal
+desc: Your channel homepage featuring your personal posts.

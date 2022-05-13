@@ -1,0 +1,17 @@
+[region=nav]$nav[/region]
+
+[region=aside]
+
+[widget=messages][/widget]
+[widget=forums][/widget]
+[/region]
+
+[region=content]
+[widget=affinity][/widget]
+$content
+[/region]
+
+[region=right_aside]
+[widget=notifications][/widget]
+[widget=newmember][/widget]
+[/region]
