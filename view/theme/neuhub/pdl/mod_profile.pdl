@@ -1,0 +1,12 @@
+[region=aside]
+[widget=fullprofile][/widget]
+[/region]
+[region=content]
+[widget=zcard][/widget]
+[widget=vcard][/widget]
+$content
+[/region]
+[region=right_aside]
+[widget=notifications][/widget]
+[widget=newmember][/widget]
+[/region]

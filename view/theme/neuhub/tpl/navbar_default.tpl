@@ -622,6 +622,19 @@
                                             -->
 
 
+            
+            <!--
+            <li class="nav-item">
+                <a class="nav-link{{if $sel.name == "Channel"}} active{{/if}}" href="{{$url}}" title="Status Messages and Posts"><i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Posts</a>
+            </li>
+            -->
+            <!--
+            <li class="nav-item">
+                <a class="nav-link{{if $sel.name == "Profile"}} active{{/if}}" href="{{$url}}" title="Profile Details"><i class="fa fa-fw fa-vcard-o generic-icons-nav"></i>About</a>
+            </li>
+            -->
+
+
         {{if $channel_apps.0}}
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

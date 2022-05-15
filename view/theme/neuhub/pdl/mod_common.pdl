@@ -2,6 +2,7 @@
 [widget=fullprofile][/widget]
 [/region]
 [region=content]
+[widget=vcard][/widget]
 $content
 [/region]
 [region=right_aside]

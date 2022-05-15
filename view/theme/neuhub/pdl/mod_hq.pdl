@@ -8,6 +8,7 @@
 
 [region=content]
 [widget=affinity][/widget]
+[widget=vcard][/widget]
 $content
 [/region]
 
