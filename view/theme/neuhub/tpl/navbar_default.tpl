@@ -1,1016 +1,948 @@
-                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar !static-top">
-                    
-                    <div class="container-fluid">
-                    <!--
-                    <button class="btn btn-link rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-list"></i></button>
-                    -->
-                    
-                    <h2 class="d-none d-sm-none d-md-none d-lg-block"><a href="/" style="color:#000000;">{{$banner}}</a></h2>
-                    
-                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search" method="get" action"/search" role="search">
-                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" name="search" placeholder="{{$help}}"><button class="btn btn-primary py-0" type="submit"><i class="fas fa-search"></i></button></div>
-                        </form>
-                        <ul class="navbar-nav flex-nowrap ms-auto">
-                            
-<li class="nav-item">
-<a class="nav-link text-primary" href="/"><i class="generic-icons-nav fa fa-fw fa-home"></i></a>
-</li>                            
-                            
-                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link text-primary" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
-                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
-                                    <form class="me-auto navbar-search w-100" method="get" action"/search" role="search">
-                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" name="search" placeholder="{{$help}}">
-                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="submit"><i class="fas fa-search"></i></button></div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </li>
-                            <!--
-                            <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
-                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 12, 2019</span>
-                                                <p>A new monthly report is ready to download!</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 7, 2019</span>
-                                                <p>$290.29 has been deposited into your account!</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 2, 2019</span>
-                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
-                                            </div>
-                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
-                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="/view/theme/purplebasic/assets/img/avatars/avatar4.jpeg">
-                                                <div class="bg-success status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
-                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="/view/theme/purplebasic/assets/img/avatars/avatar2.jpeg">
-                                                <div class="status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
-                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="/view/theme/purplebasic/assets/img/avatars/avatar3.jpeg">
-                                                <div class="bg-warning status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
-                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="/view/theme/purplebasic/assets/img/avatars/avatar5.jpeg">
-                                                <div class="bg-success status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
-                                                <p class="small text-gray-500 mb-0">Chicken the Dog 路 2w</p>
-                                            </div>
-                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                                    </div>
-                                </div>
-                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
-                            </li>
-                            -->
+<!-- begin default navbar template -->
 
-<!--
+    {{if $localuser}}
+        <style>
+            #menu-toggle{
+                color:black;
+                position: absolute;
+                top: 150px;
+                right: -30px;
+                // right: -45.75px;
+                // right: -42px;
+                transform: rotate(90deg);
+                background: white;
+                overflow: hidden;
+            }    
+        </style>
+    
+    	<button id="menu-toggle" class="btn btn-secondary btn-sm" data-bs-toggle="offcanvas" href="#offcanvasLeft" aria-controls="offcanvasLeft"><i id="toggleIcon" class="fa fa-angle-double-down"></i> User Menu <!-- <i class="fa fa-filter"></i> --></button>
+    {{/if}}
+
+<!-- begin top navigation bar ---------------------------------------------- -->
+<nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar !static-top">
+
+    <div class="container-fluid">
+        <!--
+        <button class="btn btn-link rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-list"></i></button>
+        -->
+                    
+        <h2 class="d-none d-sm-none d-md-none d-lg-block"><a href="/" style="color:#000000;">{{$banner}}</a></h2>
+                    
+        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search" method="get" action"/search" role="search">
+            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" name="search" placeholder="{{$help}}"><button class="btn btn-primary py-0" type="submit"><i class="fas fa-search"></i></button></div>
+        </form>
+        <ul class="navbar-nav flex-nowrap ms-auto">
+                            
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="/"><i class="generic-icons-nav fa fa-fw fa-home"></i></a>
+            </li>                            
+                            
+            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link text-primary" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                    <form class="me-auto navbar-search w-100" method="get" action"/search" role="search">
+                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" name="search" placeholder="{{$help}}">
+                            <div class="input-group-append"><button class="btn btn-primary py-0" type="submit"><i class="fas fa-search"></i></button></div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+            <!--
+            <li class="nav-item dropdown no-arrow mx-1">
+                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="me-3">
+                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                            </div>
+                            <div><span class="small text-gray-500">December 12, 2019</span>
+                                <p>A new monthly report is ready to download!</p>
+                            </div>
+                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="me-3">
+                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                            </div>
+                            <div><span class="small text-gray-500">December 7, 2019</span>
+                                <p>$290.29 has been deposited into your account!</p>
+                            </div>
+                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="me-3">
+                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                            </div>
+                            <div><span class="small text-gray-500">December 2, 2019</span>
+                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                            </div>
+                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="/view/theme/purplebasic/assets/img/avatars/avatar4.jpeg">
+                                <div class="bg-success status-indicator"></div>
+                            </div>
+                            <div class="fw-bold">
+                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                            </div>
+                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="/view/theme/purplebasic/assets/img/avatars/avatar2.jpeg">
+                                <div class="status-indicator"></div>
+                            </div>
+                            <div class="fw-bold">
+                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                            </div>
+                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="/view/theme/purplebasic/assets/img/avatars/avatar3.jpeg">
+                                <div class="bg-warning status-indicator"></div>
+                            </div>
+                            <div class="fw-bold">
+                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                            </div>
+                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="/view/theme/purplebasic/assets/img/avatars/avatar5.jpeg">
+                                <div class="bg-success status-indicator"></div>
+                            </div>
+                            <div class="fw-bold">
+                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                <p class="small text-gray-500 mb-0">Chicken the Dog 路 2w</p>
+                            </div>
+                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                    </div>
+                </div>
+                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+            </li>
+            -->
+
+            <!--
 			{{if $localuser}}
-			<li class="nav-item text-primary">
-				<a id="nav-app-settings-link" href="/network" class="nav-link">
-					<i class="fa fa-fw fa-th"></i>
-				</a>
-			</li>
-			<li class="nav-item text-primary">
-				<a id="nav-app-settings-link" href="/notifications/system" class="nav-link">
-					<i class="fa fa-fw fa-exclamation"></i>
-				</a>
-			</li>
-			-->
-			<!--
-			<li class="nav-item">
-				<a id="nav-app-settings-link" href="/notifications/system" class="nav-link">
-					<i class="fa fa-fw fa-comments-o"></i>
-				</a>
-			</li>			
+    			<li class="nav-item text-primary">
+    				<a id="nav-app-settings-link" href="/network" class="nav-link">
+    					<i class="fa fa-fw fa-th"></i>
+    				</a>
+    			</li>
+    			<li class="nav-item text-primary">
+    				<a id="nav-app-settings-link" href="/notifications/system" class="nav-link">
+    					<i class="fa fa-fw fa-exclamation"></i>
+    				</a>
+    			</li>
+    			-->
+    			<!--
+    			<li class="nav-item">
+    				<a id="nav-app-settings-link" href="/notifications/system" class="nav-link">
+    					<i class="fa fa-fw fa-comments-o"></i>
+    				</a>
+    			</li>			
 			-->
 			<!--
 			{{/if}}
 			-->
 
 
-<style>
-    
-/* notifications */
-.notifications-btn {
-	// opacity: .5;
-	opacity: 1;
-	// color: #4e73df;
-	
-}
-.notifications-btn-icon {
+            <style>
+                
+            /* notifications */
+            .notifications-btn {
+            	// opacity: .5;
+            	opacity: 1;
+            	// color: #4e73df;
+            	
+            }
+            .notifications-btn-icon {
+            
+                
+                content: "\f024";
+            }
+            </style>
 
-    
-    content: "\f024";
-}
-</style>
-
-
-
-				{{if $localuser || $nav.pubs}}
-				<li id="notifications-btn" class="nav-item">
-					<a class="nav-link notifications-btn" href="/hq"><i id="notifications-btn-icon" class="fa fa-flag notifications-btn-icon"></i></a>
-				</li>
-				{{/if}}
+			{{if $localuser || $nav.pubs}}
+    			<li id="notifications-btn" class="nav-item">
+    				<a class="nav-link notifications-btn" href="/hq"><i id="notifications-btn-icon" class="fa fa-flag notifications-btn-icon"></i></a>
+    			</li>
+			{{/if}}
 
 
-                            <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow">
-                                    
-                                    
-                                    
-                                    <a class="dropdown-toggle nav-link text-primary" aria-expanded="false" data-bs-toggle="dropdown" href="#">
-                                        <span class="d-none d-sm-none d-md-block">Menu&nbsp; <!-- <i class="generic-icons-nav fa fa-fw fa-caret-down"></i> --></span>
-                                        <span class="d-xs-block d-sm-block d-md-none  d-lg-none d-xl-none"></span><i class="generic-icons-nav fa fa-fw fa-caret-square-down"></i>
-                                    </a>
-                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+            <li class="nav-item dropdown no-arrow">
+                <div class="nav-item dropdown no-arrow">
+                    
+                    <a class="dropdown-toggle nav-link text-primary" aria-expanded="false" data-bs-toggle="dropdown" href="#">
+                        <span class="d-none d-sm-none d-md-block">Menu&nbsp; <!-- <i class="generic-icons-nav fa fa-fw fa-caret-down"></i> --></span>
+                        <span class="d-xs-block d-sm-block d-md-none  d-lg-none d-xl-none"></span><i class="generic-icons-nav fa fa-fw fa-caret-square-down"></i>
+                    </a>
+                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
                                         
-<!--                                        
-<a class="dropdown-item" href="/"><i class="generic-icons-nav fa fa-fw fa-home"></i>Home</a>
-<div class="dropdown-divider"></div>
-		-->
+                        <!--                                        
+                        <a class="dropdown-item" href="/"><i class="generic-icons-nav fa fa-fw fa-home"></i>Home</a>
+                        <div class="dropdown-divider"></div>
+                        -->
 		
-		
-		
-		{{if $navbar_apps.0}}
-		<div class="dropdown-header text-uppercase text-muted">
-			{{$pinned_apps}}
-		</div>
-		<div id="nav-app-bin-container" class="">
-			{{foreach $navbar_apps as $navbar_app}}
-				{{$navbar_app|replace:'navbar-app nav-link':'dropdown-item nav-app-sortable'|replace:'fa':'generic-icons-nav fa'}}
-			{{/foreach}}
-		</div>
-		{{/if}}
-
-		{{if $is_owner}}
-		<div class="dropdown-header text-uppercase text-muted">
-			{{$featured_apps}}
-		</div>
-		<div id="app-bin-container" data-token="{{$form_security_token}}">
-			{{foreach $nav_apps as $nav_app}}
-				{{$nav_app}}
-			{{/foreach}}
-		</div>
-		<div class="dropdown-divider"></div>
-		<a class="dropdown-item" href="/apps"><i class="generic-icons-nav fa fa-fw fa-plus"></i>{{$addapps}}</a>
-		{{else}}
-		<div class="dropdown-header text-uppercase text-muted">
-			{{$sysapps}}
-		</div>
-		{{foreach $nav_apps as $nav_app}}
-			{{$nav_app}}
-		{{/foreach}}
-		{{/if}}    
-		</div>
-		
+                		{{if $navbar_apps.0}}
+                    		<div class="dropdown-header text-uppercase text-muted">
+                    			{{$pinned_apps}}
+                    		</div>
+                    		<div id="nav-app-bin-container" class="">
+                    			{{foreach $navbar_apps as $navbar_app}}
+                    				{{$navbar_app|replace:'navbar-app nav-link':'dropdown-item nav-app-sortable'|replace:'fa':'generic-icons-nav fa'}}
+                    			{{/foreach}}
+                    		</div>
+                		{{/if}}
+                
+                		{{if $is_owner}}
+                    		<div class="dropdown-header text-uppercase text-muted">
+                    			{{$featured_apps}}
+                    		</div>
+                    		<div id="app-bin-container" data-token="{{$form_security_token}}">
+                    			{{foreach $nav_apps as $nav_app}}
+                    				{{$nav_app}}
+                    			{{/foreach}}
+                    		</div>
+                    		<div class="dropdown-divider"></div>
+                    		<a class="dropdown-item" href="/apps"><i class="generic-icons-nav fa fa-fw fa-plus"></i>{{$addapps}}</a>
+                		{{else}}
+                    		<div class="dropdown-header text-uppercase text-muted">
+                    			{{$sysapps}}
+                    		</div>
+                    		{{foreach $nav_apps as $nav_app}}
+                    			{{$nav_app}}
+                    		{{/foreach}}
+                		{{/if}}    
+                	</div>
                                     
-                                </div>
-                            </li>
+                </div>
+            </li>
 
-<li class="nav-item">
-<a class="nav-link text-primary" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">Aside <i class="generic-icons-nav fa fa-fw fa-caret-left"></i></a>
-</li>
+            <li class="nav-item">
+            <a class="nav-link text-primary" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">Sidebar <i class="generic-icons-nav fa fa-fw fa-caret-left"></i></a>
+            </li>
 
-{{if $localuser || $nav.pubs}}
-<li class="nav-item">
-<a class="nav-link text-primary" data-bs-toggle="offcanvas" href="#offcanvasLeft" aria-controls="offcanvasLeft"><i class="generic-icons-nav fa fa-fw fa-paper-plane"></i></a>
-</li>
-{{/if}}
-
+<!--
+            {{if $localuser || $nav.pubs}}
+                <li class="nav-item">
+                    <a class="nav-link text-primary" data-bs-toggle="offcanvas" href="#offcanvasLeft" aria-controls="offcanvasLeft"><i class="generic-icons-nav fa fa-fw fa-paper-plane"></i></a>
+                </li>
+            {{/if}}
+-->
 
 			<ul class="navbar-nav">
 				{{if $nav.login && !$userinfo}}
-				<li class="nav-item d-lg-flex">
-					{{if $nav.loginmenu.1.4}}
-					<a class="nav-link text-danger" href="#" title="{{$nav.loginmenu.1.3}}" id="{{$nav.loginmenu.1.4}}" data-bs-toggle="modal" data-bs-target="#nav-login">
-					{{$nav.loginmenu.1.1}}
-					</a>
-					{{else}}
-					<a class="nav-link text-danger" href="login" title="{{$nav.loginmenu.1.3}}">
-						{{$nav.loginmenu.1.1}}
-					</a>
-					{{/if}}
-				</li>
+    				<li class="nav-item d-lg-flex">
+    					{{if $nav.loginmenu.1.4}}
+        					<a class="nav-link text-danger" href="#" title="{{$nav.loginmenu.1.3}}" id="{{$nav.loginmenu.1.4}}" data-bs-toggle="modal" data-bs-target="#nav-login">
+        					    {{$nav.loginmenu.1.1}}
+        					</a>
+    					{{else}}
+        					<a class="nav-link text-danger" href="login" title="{{$nav.loginmenu.1.3}}">
+        						{{$nav.loginmenu.1.1}}
+        					</a>
+    					{{/if}}
+    				</li>
 				{{/if}}
 				{{if $nav.register}}
-				<li class="nav-item {{$nav.register.2}} d-lg-flex">
-					<a class="nav-link" href="{{$nav.register.0}}" title="{{$nav.register.3}}" id="{{$nav.register.4}}">{{$nav.register.1}}</a>
-				</li>
+    				<li class="nav-item {{$nav.register.2}} d-lg-flex">
+    					<a class="nav-link" href="{{$nav.register.0}}" title="{{$nav.register.3}}" id="{{$nav.register.4}}">{{$nav.register.1}}</a>
+    				</li>
 				{{/if}}
 				{{if $nav.alogout}}
-				<li class="nav-item {{$nav.alogout.2}} d-lg-flex">
-					<a class="nav-link" href="{{$nav.alogout.0}}" title="{{$nav.alogout.3}}" id="{{$nav.alogout.4}}">{{$nav.alogout.1}}</a>
-				</li>
+    				<li class="nav-item {{$nav.alogout.2}} d-lg-flex">
+    					<a class="nav-link" href="{{$nav.alogout.0}}" title="{{$nav.alogout.3}}" id="{{$nav.alogout.4}}">{{$nav.alogout.1}}</a>
+    				</li>
 				{{/if}}
 			</ul>    
 
 
-                            <div class="d-none d-sm-block topbar-divider"></div>
+            <div class="d-none d-sm-block topbar-divider"></div>
 
-                            <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow">
-                                    <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
-                                        <span class="d-none d-lg-inline me-2 text-gray-600 !small">
-                                            
-                                            {{if $nav.login && !$userinfo}}
-                                                Guest
-                                            {{else}}
-                                                Welcome
-                                            {{/if}}
+            <li class="nav-item dropdown no-arrow">
+                <div class="nav-item dropdown no-arrow">
+                    <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
+                        <span class="d-none d-lg-inline me-2 text-gray-600 !small">
+                            
+                            {{if $nav.login && !$userinfo}}
+                                Guest
+                            {{else}}
+                                Welcome
+                            {{/if}}
                                             
                                
-                               <!--
-                               {{$chan|@var_dump}}
-                               {{$channel_id}}             
-                               {{$chan.0}}
-                               {{$chan.1}}
-                               {{$chan.0.attribute}}
-                               {{$chan.channel_id.attribute}}
-                               {{$chan.channel_id}}
-                               {{$chan[channel_id]}}
-                               {{$chan[0]}}
-                               {{$chan.channel_name}}
-                                            {{if $chan[channel_name]}}
-                                                {{$chan.channel_name}}
-                                                {{$chan.channel_name}}
-                                            {{/if}}
-                                -->
+                           <!--
+                           {{$chan|@var_dump}}
+                           {{$channel_id}}             
+                           {{$chan.0}}
+                           {{$chan.1}}
+                           {{$chan.0.attribute}}
+                           {{$chan.channel_id.attribute}}
+                           {{$chan.channel_id}}
+                           {{$chan[channel_id]}}
+                           {{$chan[0]}}
+                           {{$chan.channel_name}}
+                                        {{if $chan[channel_name]}}
+                                            {{$chan.channel_name}}
+                                            {{$chan.channel_name}}
+                                        {{/if}}
+                            -->
                                 
                                 
                             
-                                        </span>
-                                        <img class="border rounded-circle img-profile" onerror='this.src="/view/theme/purplebasic/img/blank-profile-picture-180x180.png"' 
-                                        disabledsrc="/view/theme/purplebasic/assets/img/avatars/avatar1.jpeg" src="{{$userinfo.icon}}" alt="{{$userinfo.name}}"></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
-                                        <!--
-                                        <a class="dropdown-item" href="/profile"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a>
-                                        <a class="dropdown-item" href="/manage"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Channels</a>
-                                        <a class="dropdown-item" href="/settings"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
-                                        <a class="dropdown-item" href="/admin"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Admin</a>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity log</a>
-                                    
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Language</a>
-                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
-                                        -->
+                        </span>
+                        
+                        <img class="border rounded-circle img-profile" onerror='this.src="/view/theme/purplebasic/img/blank-profile-picture-180x180.png"' 
+                        disabledsrc="/view/theme/purplebasic/assets/img/avatars/avatar1.jpeg" src="{{$userinfo.icon}}" alt="{{$userinfo.name}}">
+                    </a>
+                    
+                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+                        <!--
+                        <a class="dropdown-item" href="/profile"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a>
+                        <a class="dropdown-item" href="/manage"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Channels</a>
+                        <a class="dropdown-item" href="/settings"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
+                        <a class="dropdown-item" href="/admin"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Admin</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity log</a>
+                    
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Language</a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                        -->
 
-                {{if $is_owner}}
-                    <a class="dropdown-item" href="/channel"><!-- <i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp; -->View Channel</a>
-					{{foreach $nav.usermenu as $usermenu}}
-					<a class="dropdown-item{{if $usermenu.2}} active{{/if}}"  href="{{$usermenu.0}}" title="{{$usermenu.3}}" role="menuitem" id="{{$usermenu.4}}">{{$usermenu.1}}</a>
-					{{/foreach}}
-					{{if $nav.group}}
-					<a class="dropdown-item" href="{{$nav.group.0}}" title="{{$nav.group.3}}" role="menuitem" id="{{$nav.group.4}}">{{$nav.group.1}}</a>
-					{{/if}}
-					
-					<!--
-					<a class="dropdown-item" href="/connections"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp; Connections</a>
-					-->
-					<div class="dropdown-divider"></div>
-					
-					{{if $nav.manage}}
-					<a class="dropdown-item{{if $sel.name == Manage}} active{{/if}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}" role="menuitem" id="{{$nav.manage.4}}">{{$nav.manage.1}}</a>
-					{{/if}}
-					{{if $nav.channels}}
-					{{foreach $nav.channels as $chan}}
-					<a class="dropdown-item" href="manage/{{$chan.channel_id}}" title="{{$chan.channel_name}}" role="menuitem"><i class="fa fa-circle{{if $localuser == $chan.channel_id}} text-success{{else}} invisible{{/if}}"></i> {{$chan.channel_name}}</a>
-					{{/foreach}}
-					{{/if}}
-					{{if $nav.profiles}}
-					<a class="dropdown-item" href="{{$nav.profiles.0}}" title="{{$nav.profiles.3}}" role="menuitem" id="{{$nav.profiles.4}}">{{$nav.profiles.1}}</a>
-					{{/if}}
-					{{if $nav.settings}}
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item{{if $sel.name == Settings}} active{{/if}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}" role="menuitem" id="{{$nav.settings.4}}">{{$nav.settings.1}}</a>
-					{{/if}}
-					{{if $nav.admin}}
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item{{if $sel.name == Admin}} active{{/if}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" role="menuitem" id="{{$nav.admin.4}}">{{$nav.admin.1}}</a>
-					{{/if}}
-					{{if $nav.logout}}
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" role="menuitem" id="{{$nav.logout.4}}">{{$nav.logout.1}}</a>
-					{{/if}}
-				{{/if}}
-				
-				
-				{{if $localuser && !$is_owner}}
-				
-					{{if $nav.manage}}
-					<a class="dropdown-item{{if $sel.name == Manage}} active{{/if}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}" role="menuitem" id="{{$nav.manage.4}}">{{$nav.manage.1}}</a>
-					{{/if}}
-					{{if $nav.channels}}
-					{{foreach $nav.channels as $chan}}
-					<a class="dropdown-item" href="manage/{{$chan.channel_id}}" title="{{$chan.channel_name}}" role="menuitem"><i class="fa fa-circle{{if $localuser == $chan.channel_id}} text-success{{else}} invisible{{/if}}"></i> {{$chan.channel_name}}</a>
-					{{/foreach}}
-					{{/if}}
-				
-
-					{{if $nav.settings}}
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item{{if $sel.name == Settings}} active{{/if}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}" role="menuitem" id="{{$nav.settings.4}}">{{$nav.settings.1}}</a>
-					{{/if}}
-					{{if $nav.admin}}
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item{{if $sel.name == Admin}} active{{/if}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" role="menuitem" id="{{$nav.admin.4}}">{{$nav.admin.1}}</a>
-					{{/if}}
-				<!--
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/settings"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/admin"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Admin</a>
-                -->
-                <div class="dropdown-divider"></div>
-				{{/if}}
-				
-				
-				{{if ! $is_owner && $userinfo}}
-				
-					<a class="dropdown-item" href="{{$nav.rusermenu.0}}" role="menuitem">{{$nav.rusermenu.1}}</a>
-					<a class="dropdown-item" href="{{$nav.rusermenu.2}}" role="menuitem">{{$nav.rusermenu.3}}</a>
-				
-				{{/if}}		
-				
-				{{if $nav.login && !$userinfo}}
-
-					<a class="dropdown-item" href="login" title="{{$nav.loginmenu.1.3}}">
-						{{$nav.loginmenu.1.1}}
-					</a>
-				
-				{{/if}}
-					
-
-                                       <!-- 
-			<div class="dropdown">
-				<div class="fakelink usermenu" data-bs-toggle="dropdown">
-					<img id="avatar" src="{{$userinfo.icon}}" alt="{{$userinfo.name}}">
-					<i class="fa fa-caret-down"></i>
-				</div>
-				{{if $is_owner}}
-				<div class="dropdown-menu">
-					{{foreach $nav.usermenu as $usermenu}}
-					<a class="dropdown-item{{if $usermenu.2}} active{{/if}}"  href="{{$usermenu.0}}" title="{{$usermenu.3}}" role="menuitem" id="{{$usermenu.4}}">{{$usermenu.1}}</a>
-					{{/foreach}}
-					{{if $nav.group}}
-					<a class="dropdown-item" href="{{$nav.group.0}}" title="{{$nav.group.3}}" role="menuitem" id="{{$nav.group.4}}">{{$nav.group.1}}</a>
-					{{/if}}
-					{{if $nav.manage}}
-					<a class="dropdown-item{{if $sel.name == Manage}} active{{/if}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}" role="menuitem" id="{{$nav.manage.4}}">{{$nav.manage.1}}</a>
-					{{/if}}
-					{{if $nav.channels}}
-					{{foreach $nav.channels as $chan}}
-					<a class="dropdown-item" href="manage/{{$chan.channel_id}}" title="{{$chan.channel_name}}" role="menuitem"><i class="fa fa-circle{{if $localuser == $chan.channel_id}} text-success{{else}} invisible{{/if}}"></i> {{$chan.channel_name}}</a>
-					{{/foreach}}
-					{{/if}}
-					{{if $nav.profiles}}
-					<a class="dropdown-item" href="{{$nav.profiles.0}}" title="{{$nav.profiles.3}}" role="menuitem" id="{{$nav.profiles.4}}">{{$nav.profiles.1}}</a>
-					{{/if}}
-					{{if $nav.settings}}
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item{{if $sel.name == Settings}} active{{/if}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}" role="menuitem" id="{{$nav.settings.4}}">{{$nav.settings.1}}</a>
-					{{/if}}
-					{{if $nav.admin}}
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item{{if $sel.name == Admin}} active{{/if}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" role="menuitem" id="{{$nav.admin.4}}">{{$nav.admin.1}}</a>
-					{{/if}}
-					{{if $nav.logout}}
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" role="menuitem" id="{{$nav.logout.4}}">{{$nav.logout.1}}</a>
-					{{/if}}
-				</div>
-				{{/if}}
-				{{if ! $is_owner}}
-				<div class="dropdown-menu" role="menu" aria-labelledby="avatar">
-					<a class="dropdown-item" href="{{$nav.rusermenu.0}}" role="menuitem">{{$nav.rusermenu.1}}</a>
-					<a class="dropdown-item" href="{{$nav.rusermenu.2}}" role="menuitem">{{$nav.rusermenu.3}}</a>
-				</div>
-				{{/if}}
-			</div>                                        
-                          -->              
+                        {{if $is_owner}}
+                            <a class="dropdown-item" href="/channel"><!-- <i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp; -->View Channel</a>
+    
+        					{{foreach $nav.usermenu as $usermenu}}
+        					    <a class="dropdown-item{{if $usermenu.2}} active{{/if}}"  href="{{$usermenu.0}}" title="{{$usermenu.3}}" role="menuitem" id="{{$usermenu.4}}">{{$usermenu.1}}</a>
+        					{{/foreach}}
+        					{{if $nav.group}}
+        					    <a class="dropdown-item" href="{{$nav.group.0}}" title="{{$nav.group.3}}" role="menuitem" id="{{$nav.group.4}}">{{$nav.group.1}}</a>
+        					{{/if}}
+        					
+        					<!--
+        					<a class="dropdown-item" href="/connections"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp; Connections</a>
+        					-->
+        					<div class="dropdown-divider"></div>
+        					
+        					{{if $nav.manage}}
+        					    <a class="dropdown-item{{if $sel.name == Manage}} active{{/if}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}" role="menuitem" id="{{$nav.manage.4}}">{{$nav.manage.1}}</a>
+        					{{/if}}
+        					{{if $nav.channels}}
+            					{{foreach $nav.channels as $chan}}
+            					    <a class="dropdown-item" href="manage/{{$chan.channel_id}}" title="{{$chan.channel_name}}" role="menuitem"><i class="fa fa-circle{{if $localuser == $chan.channel_id}} text-success{{else}} invisible{{/if}}"></i> {{$chan.channel_name}}</a>
+            					{{/foreach}}
+        					{{/if}}
+        					{{if $nav.profiles}}
+        					    <a class="dropdown-item" href="{{$nav.profiles.0}}" title="{{$nav.profiles.3}}" role="menuitem" id="{{$nav.profiles.4}}">{{$nav.profiles.1}}</a>
+        					{{/if}}
+        					{{if $nav.settings}}
+        					    <div class="dropdown-divider"></div>
+        					    <a class="dropdown-item{{if $sel.name == Settings}} active{{/if}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}" role="menuitem" id="{{$nav.settings.4}}">{{$nav.settings.1}}</a>
+        					{{/if}}
+        					{{if $nav.admin}}
+        					    <div class="dropdown-divider"></div>
+        					    <a class="dropdown-item{{if $sel.name == Admin}} active{{/if}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" role="menuitem" id="{{$nav.admin.4}}">{{$nav.admin.1}}</a>
+        					{{/if}}
+        					{{if $nav.logout}}
+        					    <div class="dropdown-divider"></div>
+        					    <a class="dropdown-item" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" role="menuitem" id="{{$nav.logout.4}}">{{$nav.logout.1}}</a>
+        					{{/if}}
+        				{{/if}}
+    				
+    				
+        				{{if $localuser && !$is_owner}}
+        				
+        					{{if $nav.manage}}
+        					    <a class="dropdown-item{{if $sel.name == Manage}} active{{/if}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}" role="menuitem" id="{{$nav.manage.4}}">{{$nav.manage.1}}</a>
+        					{{/if}}
+        					{{if $nav.channels}}
+            					{{foreach $nav.channels as $chan}}
+            					    <a class="dropdown-item" href="manage/{{$chan.channel_id}}" title="{{$chan.channel_name}}" role="menuitem"><i class="fa fa-circle{{if $localuser == $chan.channel_id}} text-success{{else}} invisible{{/if}}"></i> {{$chan.channel_name}}</a>
+            					{{/foreach}}
+        					{{/if}}
+        				
+        
+        					{{if $nav.settings}}
+        					    <div class="dropdown-divider"></div>
+        					    <a class="dropdown-item{{if $sel.name == Settings}} active{{/if}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}" role="menuitem" id="{{$nav.settings.4}}">{{$nav.settings.1}}</a>
+        					{{/if}}
+        					{{if $nav.admin}}
+        					    <div class="dropdown-divider"></div>
+        					    <a class="dropdown-item{{if $sel.name == Admin}} active{{/if}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" role="menuitem" id="{{$nav.admin.4}}">{{$nav.admin.1}}</a>
+        					{{/if}}
+        				<!--
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/settings"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/admin"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Admin</a>
+                        -->
+                        <div class="dropdown-divider"></div>
+        				{{/if}}
+    				
+    				
+        				{{if ! $is_owner && $userinfo}}
+        				
+        					<a class="dropdown-item" href="{{$nav.rusermenu.0}}" role="menuitem">{{$nav.rusermenu.1}}</a>
+        					<a class="dropdown-item" href="{{$nav.rusermenu.2}}" role="menuitem">{{$nav.rusermenu.3}}</a>
+        				
+        				{{/if}}		
+        				
+        				{{if $nav.login && !$userinfo}}
+        
+        					<a class="dropdown-item" href="login" title="{{$nav.loginmenu.1.3}}">
+        						{{$nav.loginmenu.1.1}}
+        					</a>
+        				
+        				{{/if}}
+    					
+    
+                                           <!-- 
+            			<div class="dropdown">
+            				<div class="fakelink usermenu" data-bs-toggle="dropdown">
+            					<img id="avatar" src="{{$userinfo.icon}}" alt="{{$userinfo.name}}">
+            					<i class="fa fa-caret-down"></i>
+            				</div>
+            				{{if $is_owner}}
+            				<div class="dropdown-menu">
+            					{{foreach $nav.usermenu as $usermenu}}
+            					<a class="dropdown-item{{if $usermenu.2}} active{{/if}}"  href="{{$usermenu.0}}" title="{{$usermenu.3}}" role="menuitem" id="{{$usermenu.4}}">{{$usermenu.1}}</a>
+            					{{/foreach}}
+            					{{if $nav.group}}
+            					<a class="dropdown-item" href="{{$nav.group.0}}" title="{{$nav.group.3}}" role="menuitem" id="{{$nav.group.4}}">{{$nav.group.1}}</a>
+            					{{/if}}
+            					{{if $nav.manage}}
+            					<a class="dropdown-item{{if $sel.name == Manage}} active{{/if}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}" role="menuitem" id="{{$nav.manage.4}}">{{$nav.manage.1}}</a>
+            					{{/if}}
+            					{{if $nav.channels}}
+            					{{foreach $nav.channels as $chan}}
+            					<a class="dropdown-item" href="manage/{{$chan.channel_id}}" title="{{$chan.channel_name}}" role="menuitem"><i class="fa fa-circle{{if $localuser == $chan.channel_id}} text-success{{else}} invisible{{/if}}"></i> {{$chan.channel_name}}</a>
+            					{{/foreach}}
+            					{{/if}}
+            					{{if $nav.profiles}}
+            					<a class="dropdown-item" href="{{$nav.profiles.0}}" title="{{$nav.profiles.3}}" role="menuitem" id="{{$nav.profiles.4}}">{{$nav.profiles.1}}</a>
+            					{{/if}}
+            					{{if $nav.settings}}
+            					<div class="dropdown-divider"></div>
+            					<a class="dropdown-item{{if $sel.name == Settings}} active{{/if}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}" role="menuitem" id="{{$nav.settings.4}}">{{$nav.settings.1}}</a>
+            					{{/if}}
+            					{{if $nav.admin}}
+            					<div class="dropdown-divider"></div>
+            					<a class="dropdown-item{{if $sel.name == Admin}} active{{/if}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" role="menuitem" id="{{$nav.admin.4}}">{{$nav.admin.1}}</a>
+            					{{/if}}
+            					{{if $nav.logout}}
+            					<div class="dropdown-divider"></div>
+            					<a class="dropdown-item" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" role="menuitem" id="{{$nav.logout.4}}">{{$nav.logout.1}}</a>
+            					{{/if}}
+            				</div>
+            				{{/if}}
+            				{{if ! $is_owner}}
+            				<div class="dropdown-menu" role="menu" aria-labelledby="avatar">
+            					<a class="dropdown-item" href="{{$nav.rusermenu.0}}" role="menuitem">{{$nav.rusermenu.1}}</a>
+            					<a class="dropdown-item" href="{{$nav.rusermenu.2}}" role="menuitem">{{$nav.rusermenu.3}}</a>
+            				</div>
+            				{{/if}}
+            			</div>                                        
+                              -->              
                                         
-                                    </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- end top navigation bar ------------------------------------------------ -->        
+
+
+<!-- begin page layout ----------------------------------------------------- -->            
+<div class="container" style="padding-right: 0px;padding-left: 0px;max-width: 1400px;">
+    <div class="row" style="padding-bottom: 20px;">
+                    
+		<br>
+		<div class="col-md-12">
+		    
+		    <div class="container-fluid">         
+    			<!-- begin breadcrumb ------------------------------------------ --> 		    
+                <div class="d-none d-sm-none d-md-none d-lg-block">					    
+
+                    <!-- show channel id or user id -->
+    			   <span class="pull-right text-muted" style="text-align: right;font-size: 14px;"><!-- {{$sitelocation}} {{$chan.channel_id}} {{$chan.channel_name}} {{$sitename}} {{$channel_name}} {{$site_about}} -->
+    					{{if $sitelocation && $channel_thumb}}
+    					    {{$sitelocation}}
+    					{{else}}
+    					    {{$userinfo.name}}
+    					{{/if}}
+    					<!-- mockup@completehostingguide.com -->
+    				</span>
+                </div>					
+    
+                <!-- example code -->
+                {{* Set up URL we are looking for *}}
+                {{assign var="lookingfor" value="$z_baseurl/settings/directory"}}
+                {{* See if URL matches current URL *}}
+                {{if $url == $lookingfor}}
+                
+                {{/if}}
+                <!-- {{$url}} {{$lookingfor}} -->
+    
+                <!-- show breadcrumb -->
+
+                <div class="d-none d-sm-none d-md-none d-lg-block">
+                    <ol class="breadcrumb" style="font-size: 14px;">
+                        <li class="breadcrumb-item"><a href="{{$baseurl}}" class="text-decoration-none"><span>{{$banner}}</span></a></li>
+                        {{if $name}}
+                            <li class="breadcrumb-item"><a href="/directory" class="text-decoration-none"><span>Channels</span></a></li>
+                            <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span><!-- Mockup Theme -->{{$name}}</span></a></li>
+                        {{/if}}
+                        
+                        {{assign var="overrideselname" value='false'}}
+                        
+                        {{* Set up URL we are looking for *}}
+                        {{assign var="lookingfor" value="$z_baseurl/settings/directory"}}
+                        {{* If URL we are looking for matches the current URL then display *}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/directory" class="text-decoration-none"><span>Directory</span></a></li>
+                        {{/if}}                                
+    
+                        {{* Set up URL we are looking for *}}
+                        {{assign var="lookingfor" value="$z_baseurl/settings/channel_home"}}
+                        {{* If URL we are looking for matches the current URL then display *}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/channel" class="text-decoration-none"><span>Channel</span></a></li>
+                        {{/if}}                               
+                        
+                        
+                        {{* Set up URL we are looking for *}}
+                        {{assign var="lookingfor" value="$z_baseurl/settings/account"}}
+                        {{* If URL we are looking for matches the current URL then display *}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/settings" class="text-decoration-none"><span>Settings</span></a></li>
+                            <li class="breadcrumb-item"><a href="/settings/account" class="text-decoration-none"><span>Account</span></a></li>
+                            {{assign var="overrideselname" value="true"}}
+                        {{/if}}     
+                        
+                        {{* Set up URL we are looking for *}}
+                        {{assign var="lookingfor" value="$z_baseurl/settings/channel"}}
+                        {{* If URL we are looking for matches the current URL then display *}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/settings" class="text-decoration-none"><span>Settings</span></a></li>
+                            <li class="breadcrumb-item"><a href="/settings/channel" class="text-decoration-none"><span>Channel</span></a></li>
+                            {{assign var="overrideselname" value="true"}}
+                        {{/if}}                                     
+                        
+                        {{assign var="lookingfor" value="$z_baseurl/settings/privacy"}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/settings" class="text-decoration-none"><span>Settings</span></a></li>
+                            <li class="breadcrumb-item"><a href="/settings/privacy" class="text-decoration-none"><span>Privacy</span></a></li>
+                            {{assign var="overrideselname" value="true"}}
+                        {{/if}}                                                
+    
+                                 
+                        {{assign var="lookingfor" value="$z_baseurl/settings/photos"}}
+                        {{if $url == $lookingfor}}
+                        <!--
+                            <li class="breadcrumb-item"><a href="/photos" class="text-decoration-none"><span>Photos</span></a></li>
+                            <li class="breadcrumb-item"><a href="/settings/photos" class="text-decoration-none"><span>Settings</span></a></li>
+                            -->
+                        {{/if}}             
+    
+                        
+                        {{* Set up URL we are looking for *}}
+                        {{assign var="lookingfor" value="$z_baseurl/settings/display"}}
+                        {{* If URL we are looking for matches the current URL then display *}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/settings" class="text-decoration-none"><span>Settings</span></a></li>
+                            <li class="breadcrumb-item"><a href="/settings/privacy" class="text-decoration-none"><span>Display</span></a></li>
+                            {{assign var="overrideselname" value="true"}}
+                        {{/if}}                                            
+    
+    
+                        {{assign var="lookingfor" value="$z_baseurl/settings/calendar"}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/cdav/calendar" class="text-decoration-none"><span>Calendar</span></a></li>
+                            <li class="breadcrumb-item"><a href="/settings/calendar" class="text-decoration-none"><span>Settings</span></a></li>
+                            {{assign var="overrideselname" value="true"}}
+                        {{/if}}                   
+    
+                        {{assign var="lookingfor" value="$z_baseurl/profile_photo"}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/profiles" class="text-decoration-none"><span>Profiles</span></a></li>
+                            <li class="breadcrumb-item"><a href="/profile_photo" class="text-decoration-none"><span>Profile Photo</span></a></li>
+                        {{/if}}                   
+                        
+                        {{math assign="localuserresult" equation="x - 1" x=$localuser}}
+                        {{assign var="lookingfor" value="$z_baseurl/profile_photo/$localuserresult"}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/profiles" class="text-decoration-none"><span>Profiles</span></a></li>
+                            <li class="breadcrumb-item"><a href="/profile_photo" class="text-decoration-none"><span>Profile Photo</span></a></li>
+                        {{/if}}                   
+                        
+                        {{assign var="lookingfor" value="$z_baseurl/cover_photo"}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/profiles" class="text-decoration-none"><span>Profiles</span></a></li>
+                            <li class="breadcrumb-item"><a href="/cover_photo" class="text-decoration-none"><span>Cover Photo</span></a></li>
+                        {{/if}}                   
+                        
+                        {{assign var="lookingfor" value="$z_baseurl/thing"}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/profiles" class="text-decoration-none"><span>Profiles</span></a></li>
+                            <li class="breadcrumb-item"><a href="/things" class="text-decoration-none"><span>Things</span></a></li>
+                        {{/if}}   
+                        
+                        
+                        {{if !$name && ($sel.name == "Apps" || $sel.name == "HQ" || $sel.name == "Channel" || $sel.name == "Profile" || $sel.name == "Post" || $sel.name == "Stream" || $sel.name == "Notifications" || $sel.name == "Connections")}}
+                            <li class="breadcrumb-item"><a href="/channel" class="text-decoration-none"><span>My Channel</span></a></li>
+                        {{/if}}
+                        
+                        {{if !$name && ($sel.name == "Calendar" || $sel.name == "Contact Roles" || $sel.name == "Files" || $sel.name == "Photos" || $sel.name == "Wiki" || $sel.name == "Affinity Tool" || $sel.name == "Articles" || $sel.name == "Bookmarks" || $sel.name == "CardDAV" || $sel.name == "Cards")}}
+                            <li class="breadcrumb-item"><a href="/channel" class="text-decoration-none"><span>My Channel</span></a></li>
+                            <li class="breadcrumb-item"><a href="/apps" class="text-decoration-none"><span>Apps</span></a></li>
+                        {{/if}}
+                                    
+                        {{if $sel.name && $overrideselname == 'false'}}
+                            <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span>{{$sel.name}}</span></a></li>
+                        {{/if}}
+                                    
+    
+                                    
+                    </ol>
+                                
+                </div>                                                    
+            </div>
+
+
+            <!-- begin page navbar ----------------------------------------- -->
+            <div class="container-fluid">
+                <div class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom" style="z-index:100;">
+                    <a href="{{$url}}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                        <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="{{$url}}"/></svg> -->
+                        <img src="{{$channel_thumb}}" class="!menu-img-2" style="max-height:42px;">&nbsp;&nbsp;
+                        <span class="fs-4">
+                            {{if $name}}
+                                <b><!-- Mockup Theme -->{{$name}}</b>
+                            {{/if}}
+                            {{if $sel.name && !$name && $sel.name != "HQ"}}
+                                <b><!-- Mockup Theme -->{{$sel.name}}</b>
+                            {{/if}}                                    
+                            {{if $sel.name && !$name && $sel.name == "HQ"}}
+                                <span class="!text-primary notifications-btn"><i id="notifications-btn-icon" class="fa fa-flag notifications-btn-icon"></i></span> <b>Headquarters (HQ)</b>
+                            {{/if}}      
+            
+                            {{assign var="lookingfor" value="$z_baseurl/profile_photo"}}
+                            {{if $url == $lookingfor}}
+                                <b>Profile Photo</b>
+                            {{/if}}             
+                            
+                            {{math assign="localuserresult" equation="x - 1" x=$localuser}}
+                            {{assign var="lookingfor" value="$z_baseurl/profile_photo/$localuserresult"}}
+                            {{if $url == $lookingfor}}
+                                <b>Profile Photo</b>
+                            {{/if}}                   
+                            
+                            {{assign var="lookingfor" value="$z_baseurl/cover_photo"}}
+                            {{if $url == $lookingfor}}
+                                <b>Cover Photo</b>
+                            {{/if}}                   
+                            
+                            {{assign var="lookingfor" value="$z_baseurl/thing"}}
+                            {{if $url == $lookingfor}}
+                                <b>Things</b>
+                            {{/if}}                           
+            
+                        </span>
+                    </a>
+
+                    <ul class="nav nav-pills">
+          
+                        <!-- channel apps drop down-->
+                        {{if $channel_apps.0}}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    
+                        		    {{foreach $channel_apps as $channel_app}}
+                        		        {{$channel_app}}
+                        		    {{/foreach}}
+                    
+                                    <!--
+                                    <a class="dropdown-item" href="/channel">View Channel</a>
+                                    <a class="dropdown-item" href="/profile/{{$localuserresult}}/view">View Profile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/connections">Connections</a>
+                                    -->
                                 </div>
                             </li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="container" style="padding-right: 0px;padding-left: 0px;max-width: 1400px;">
-                    <div class="row" style="padding-bottom: 20px;">
-                    
-					<br>    <div class="col-md-12">
-					    
-					    
-<div class="d-none d-sm-none d-md-none d-lg-block">					    
-					   <span class="pull-right text-muted" style="text-align: right;font-size: 14px;"><!-- {{$sitelocation}} {{$chan.channel_id}} {{$chan.channel_name}} {{$sitename}} {{$channel_name}} {{$site_about}} -->
-					{{if $sitelocation && $channel_thumb}}
-					    {{$sitelocation}}
-					{{else}}
-					    {{$userinfo.name}}
-					{{/if}}
-					<!-- mockup@completehostingguide.com -->
-					</span>
-</div>					
-
-{{* Set up URL we are looking for *}}
-{{assign var="lookingfor" value="$z_baseurl/settings/directory"}}
-{{* See if URL matches current URL *}}
-{{if $url == $lookingfor}}
-
-{{/if}}
-<!-- {{$url}} {{$lookingfor}} -->
-
-<div class="d-none d-sm-none d-md-none d-lg-block">
-                            <ol class="breadcrumb" style="font-size: 14px;">
-                                <li class="breadcrumb-item"><a href="{{$baseurl}}" class="text-decoration-none"><span>{{$banner}}</span></a></li>
-                                {{if $name}}
-                                    <li class="breadcrumb-item"><a href="/directory" class="text-decoration-none"><span>Channels</span></a></li>
-                                    <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span><!-- Mockup Theme -->{{$name}}</span></a></li>
-                                {{/if}}
-                                
-                                {{assign var="overrideselname" value='false'}}
-                                
-                                {{* Set up URL we are looking for *}}
-                                {{assign var="lookingfor" value="$z_baseurl/settings/directory"}}
-                                {{* If URL we are looking for matches the current URL then display *}}
-                                {{if $url == $lookingfor}}
-                                    <li class="breadcrumb-item"><a href="/directory" class="text-decoration-none"><span>Directory</span></a></li>
-                                {{/if}}                                
-
-                                {{* Set up URL we are looking for *}}
-                                {{assign var="lookingfor" value="$z_baseurl/settings/channel_home"}}
-                                {{* If URL we are looking for matches the current URL then display *}}
-                                {{if $url == $lookingfor}}
-                                    <li class="breadcrumb-item"><a href="/channel" class="text-decoration-none"><span>Channel</span></a></li>
-                                {{/if}}                               
-                                
-                                
-                                {{* Set up URL we are looking for *}}
-                                {{assign var="lookingfor" value="$z_baseurl/settings/account"}}
-                                {{* If URL we are looking for matches the current URL then display *}}
-                                {{if $url == $lookingfor}}
-                                    <li class="breadcrumb-item"><a href="/settings" class="text-decoration-none"><span>Settings</span></a></li>
-                                    <li class="breadcrumb-item"><a href="/settings/account" class="text-decoration-none"><span>Account</span></a></li>
-                                    {{assign var="overrideselname" value="true"}}
-                                {{/if}}     
-                                
-                                {{* Set up URL we are looking for *}}
-                                {{assign var="lookingfor" value="$z_baseurl/settings/channel"}}
-                                {{* If URL we are looking for matches the current URL then display *}}
-                                {{if $url == $lookingfor}}
-                                    <li class="breadcrumb-item"><a href="/settings" class="text-decoration-none"><span>Settings</span></a></li>
-                                    <li class="breadcrumb-item"><a href="/settings/channel" class="text-decoration-none"><span>Channel</span></a></li>
-                                    {{assign var="overrideselname" value="true"}}
-                                {{/if}}                                     
-                                
-                                {{assign var="lookingfor" value="$z_baseurl/settings/privacy"}}
-                                {{if $url == $lookingfor}}
-                                    <li class="breadcrumb-item"><a href="/settings" class="text-decoration-none"><span>Settings</span></a></li>
-                                    <li class="breadcrumb-item"><a href="/settings/privacy" class="text-decoration-none"><span>Privacy</span></a></li>
-                                    {{assign var="overrideselname" value="true"}}
-                                {{/if}}                                                
-
-                                         
-                                {{assign var="lookingfor" value="$z_baseurl/settings/photos"}}
-                                {{if $url == $lookingfor}}
-                                <!--
-                                    <li class="breadcrumb-item"><a href="/photos" class="text-decoration-none"><span>Photos</span></a></li>
-                                    <li class="breadcrumb-item"><a href="/settings/photos" class="text-decoration-none"><span>Settings</span></a></li>
-                                    -->
-                                {{/if}}             
-
-                                
-                                {{* Set up URL we are looking for *}}
-                                {{assign var="lookingfor" value="$z_baseurl/settings/display"}}
-                                {{* If URL we are looking for matches the current URL then display *}}
-                                {{if $url == $lookingfor}}
-                                    <li class="breadcrumb-item"><a href="/settings" class="text-decoration-none"><span>Settings</span></a></li>
-                                    <li class="breadcrumb-item"><a href="/settings/privacy" class="text-decoration-none"><span>Display</span></a></li>
-                                    {{assign var="overrideselname" value="true"}}
-                                {{/if}}                                            
-
-
-{{assign var="lookingfor" value="$z_baseurl/settings/calendar"}}
-{{if $url == $lookingfor}}
-<li class="breadcrumb-item"><a href="/cdav/calendar" class="text-decoration-none"><span>Calendar</span></a></li>
-<li class="breadcrumb-item"><a href="/settings/calendar" class="text-decoration-none"><span>Settings</span></a></li>
-{{assign var="overrideselname" value="true"}}
-{{/if}}                   
-
-{{assign var="lookingfor" value="$z_baseurl/profile_photo"}}
-{{if $url == $lookingfor}}
-<li class="breadcrumb-item"><a href="/profiles" class="text-decoration-none"><span>Profiles</span></a></li>
-<li class="breadcrumb-item"><a href="/profile_photo" class="text-decoration-none"><span>Profile Photo</span></a></li>
-{{/if}}                   
-
-{{math assign="localuserresult" equation="x - 1" x=$localuser}}
-{{assign var="lookingfor" value="$z_baseurl/profile_photo/$localuserresult"}}
-{{if $url == $lookingfor}}
-<li class="breadcrumb-item"><a href="/profiles" class="text-decoration-none"><span>Profiles</span></a></li>
-<li class="breadcrumb-item"><a href="/profile_photo" class="text-decoration-none"><span>Profile Photo</span></a></li>
-{{/if}}                   
-
-{{assign var="lookingfor" value="$z_baseurl/cover_photo"}}
-{{if $url == $lookingfor}}
-<li class="breadcrumb-item"><a href="/profiles" class="text-decoration-none"><span>Profiles</span></a></li>
-<li class="breadcrumb-item"><a href="/cover_photo" class="text-decoration-none"><span>Cover Photo</span></a></li>
-{{/if}}                   
-
-{{assign var="lookingfor" value="$z_baseurl/thing"}}
-{{if $url == $lookingfor}}
-<li class="breadcrumb-item"><a href="/profiles" class="text-decoration-none"><span>Profiles</span></a></li>
-<li class="breadcrumb-item"><a href="/things" class="text-decoration-none"><span>Things</span></a></li>
-{{/if}}   
-
-
-{{if !$name && ($sel.name == "Apps" || $sel.name == "HQ" || $sel.name == "Channel" || $sel.name == "Profile" || $sel.name == "Post" || $sel.name == "Stream" || $sel.name == "Notifications" || $sel.name == "Connections")}}
-    <li class="breadcrumb-item"><a href="/channel" class="text-decoration-none"><span>My Channel</span></a></li>
-{{/if}}
-
-{{if !$name && ($sel.name == "Calendar" || $sel.name == "Contact Roles" || $sel.name == "Files" || $sel.name == "Photos" || $sel.name == "Wiki" || $sel.name == "Affinity Tool" || $sel.name == "Articles" || $sel.name == "Bookmarks" || $sel.name == "CardDAV" || $sel.name == "Cards")}}
-    <li class="breadcrumb-item"><a href="/channel" class="text-decoration-none"><span>My Channel</span></a></li>
-    <li class="breadcrumb-item"><a href="/apps" class="text-decoration-none"><span>Apps</span></a></li>
-{{/if}}
-                                
-                                {{if $sel.name && $overrideselname == 'false'}}
-                                    <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span>{{$sel.name}}</span></a></li>
-                                {{/if}}
-                                
-
-                                
-                            </ol>
-                            
-</div>                                                    
-                            
-                            <div class="navbar navbar-light navbar-expand-md bg-white" style="z-index:100;">
-                                <div class="container-fluid">
-                                    <a class="navbar-brand"  style="font-size: 24px;" href="{{$url}}"><img src="{{$channel_thumb}}" class="!menu-img-2" style="max-height:42px;">
-                                    {{if $name}}
-                                        <b><!-- Mockup Theme -->{{$name}}</b>
-                                    {{/if}}
-                                    {{if $sel.name && !$name && $sel.name != "HQ"}}
-                                        <b><!-- Mockup Theme -->{{$sel.name}}</b>
-                                    {{/if}}                                    
-                                    {{if $sel.name && !$name && $sel.name == "HQ"}}
-                                        <span class="!text-primary notifications-btn"><i id="notifications-btn-icon" class="fa fa-flag notifications-btn-icon"></i></span> <b>Headquarters (HQ)</b>
-                                    {{/if}}                                    
-
-
-{{assign var="lookingfor" value="$z_baseurl/profile_photo"}}
-{{if $url == $lookingfor}}
-<b>Profile Photo</b>
-{{/if}}             
-
-{{math assign="localuserresult" equation="x - 1" x=$localuser}}
-{{assign var="lookingfor" value="$z_baseurl/profile_photo/$localuserresult"}}
-{{if $url == $lookingfor}}
-<b>Profile Photo</b>
-{{/if}}                   
-
-{{assign var="lookingfor" value="$z_baseurl/cover_photo"}}
-{{if $url == $lookingfor}}
-<b>Cover Photo</b>
-{{/if}}                   
-
-{{assign var="lookingfor" value="$z_baseurl/thing"}}
-{{if $url == $lookingfor}}
-<b>Things</b>
-{{/if}}                   
-
-                                    
-                                    </a><button data-bs-toggle="collapse" class="navbar-toggler text-end" data-bs-target="#navcol-2" s!tyle="font-size: 14px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="font-size: 12px;"></span></button>
-                                    <div class="collapse navbar-collapse d-xl-flex justify-content-xl-end" id="navcol-2">
-                                        <ul class="navbar-nav">
-                                            <!--
-                                            <li class="nav-item"><a class="nav-link active" href="/channel/mockup">Channel</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="/profile/mockup">Profile</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="/cal/mockup">Calendar</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="/cloud/mockup">Files</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="/photos/mockup">Photos</a></li>
-                                            -->
-
-
-            
-            <!--
-            <li class="nav-item">
-                <a class="nav-link{{if $sel.name == "Channel"}} active{{/if}}" href="{{$url}}" title="Status Messages and Posts"><i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Posts</a>
-            </li>
-            -->
-            <!--
-            <li class="nav-item">
-                <a class="nav-link{{if $sel.name == "Profile"}} active{{/if}}" href="{{$url}}" title="Profile Details"><i class="fa fa-fw fa-vcard-o generic-icons-nav"></i>About</a>
-            </li>
-            -->
-
-
-        {{if $channel_apps.0}}
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-
-
-		    {{foreach $channel_apps as $channel_app}}
-		        {{$channel_app}}
-		    {{/foreach}}
-
-    
-    <!--
-                <a class="dropdown-item" href="/channel">View Channel</a>
-                <a class="dropdown-item" href="/profile/{{$localuserresult}}/view">View Profile</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/connections">Connections</a>
-    -->
-            </div>
-        </li>
-		{{/if}}
-
-
-
-<!--
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Channel Apps
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-            -->
-            <!--
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-          -->
-
-    <!--
-{{if $channel_apps.0}}
-		<div class="dropdown-header text-uppercase text-muted">
-			{{$channelapps}}
-		</div>
-		{{foreach $channel_apps as $channel_app}}
-		{{$channel_app}}
-		{{/foreach}}
-		{{/if}}
-		{{if $navbar_apps.0}}
-		<div class="d-lg-none dropdown-header text-uppercase text-muted">
-			{{$pinned_apps}}
-		</div>
-		<div id="nav-app-bin-container" class="d-lg-none">
-			{{foreach $navbar_apps as $navbar_app}}
-				{{$navbar_app|replace:'navbar-app nav-link':'dropdown-item nav-app-sortable'|replace:'fa':'generic-icons-nav fa'}}
-			{{/foreach}}
-		</div>
-		{{/if}}
-		{{if $is_owner}}
-		<div class="dropdown-header text-uppercase text-muted">
-			{{$featured_apps}}
-		</div>
-		<div id="app-bin-container" data-token="{{$form_security_token}}">
-			{{foreach $nav_apps as $nav_app}}
-				{{$nav_app}}
-			{{/foreach}}
-		</div>
-		<div class="dropdown-divider"></div>
-		<a class="dropdown-item" href="/apps"><i class="generic-icons-nav fa fa-fw fa-plus"></i>{{$addapps}}</a>
-		{{else}}
-		<div class="dropdown-header text-uppercase text-muted">
-			{{$sysapps}}
-		</div>
-		{{foreach $nav_apps as $nav_app}}
-			{{$nav_app}}
-		{{/foreach}}
-		{{/if}}    
-
-        </div>
-      </li>    
-    -->
-
-{{math assign="localuserresult" equation="x - 1" x=$localuser}}
-{{if !$name && ($sel.name == 'Channel'
- || $sel.name == "Calendar" 
- || $sel.name == "Contact Roles" 
- || $sel.name == "Post" 
- || $sel.name == "Profile" 
- || $sel.name == "Files" 
- || $sel.name == "Help" 
- || $sel.name == "Photos"
- || $sel.name == "Search" 
- || $sel.name == "Wiki")}}
-
-
-            <li class="nav-item">
-                <a class="nav-link{{if $sel.name == "Channel"}} active{{/if}}" href="/channel" title="Status Messages and Posts"><i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link{{if $sel.name == "Profile"}} active{{/if}}" href="/profile/{{$localuserresult}}/view" title="Profile Details"><i class="fa fa-fw fa-vcard-o generic-icons-nav"></i>About</a>
-            </li>
-
-<!--            
-            <li class="nav-item">
-                <a class="nav-link" href="/photos" title="Photo Albums"><i class="fa fa-fw fa-photo generic-icons-nav"></i>Photos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/cloud" title="Files and Storage"><i class="fa fa-fw fa-folder-open generic-icons-nav"></i>Files</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/cal" title="Calendar"><i class="fa fa-fw fa-calendar generic-icons-nav"></i>Calendar</a>
-            </li>            
--->
-
-
-
-
-
-			
-<!--
-<a class="dropdown-item" href="/photos" title="Photo Albums"><i class="fa fa-fw fa-photo generic-icons-nav"></i>Photos</a>
-<a class="dropdown-item" href="/cloud" title="Files and Storage"><i class="fa fa-fw fa-folder-open generic-icons-nav"></i>Files</a>
-<a class="dropdown-item" href="/cal" title="Calendar"><i class="fa fa-fw fa-calendar generic-icons-nav"></i>Calendar</a>
--->
-{{/if}}
-
-{{math assign="localuserresult" equation="x - 1" x=$localuser}}
-{{if !$name && $sel.name == 'Profile-disabled'}}
-<a class="dropdown-item" href="/channel" title="Status Messages and Posts"><i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel</a>
-<a class="dropdown-item active" href="/profile/{{$localuserresult}}/view" title="Profile Details"><i class="fa fa-fw fa-user generic-icons-nav"></i>About</a>
-<a class="dropdown-item" href="/apps" title="Photo Albums"><i class="fa fa-fw fa-photo generic-icons-nav"></i>Apps</a>
-<!--
-<a class="dropdown-item" href="/photos" title="Photo Albums"><i class="fa fa-fw fa-photo generic-icons-nav"></i>Photos</a>
-<a class="dropdown-item" href="/cloud" title="Files and Storage"><i class="fa fa-fw fa-folder-open generic-icons-nav"></i>Files</a>
-<a class="dropdown-item" href="/cal" title="Calendar"><i class="fa fa-fw fa-calendar generic-icons-nav"></i>Calendar</a>
--->
-{{/if}}
-
-{{if !$name && $sel.name == 'HQ' }}
-        <li class="nav-item">
-            <a class="nav-link active" href="/hq" title="HQ"><i class="fa fa-fw fa-flag generic-icons-nav"></i>HQ</a>            
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/network" title="Settings"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/notifications/system" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-    
-                <a class="dropdown-item" href="/channel">View Channel</a>
-                <a class="dropdown-item" href="/profile/{{$localuserresult}}/view">View Profile</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/connections">Connections</a>
-    
-            </div>
-        </li>
-{{/if}}
-
-{{if !$name && $sel.name == 'Stream' }}
-<li class="nav-item">
-<a class="nav-link" href="/hq" title="Settings"><i class="fa fa-fw fa-flag generic-icons-nav"></i>HQ</a>
-</li>
-<li class="nav-item">
-<a class="nav-link active" href="/network" title="Settings"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/notifications/system" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
-</li>
-{{/if}}
-
-{{if !$name && $sel.name == 'Notifications' }}
-<li class="nav-item">
-<a class="nav-link" href="/hq" title="Settings"><i class="fa fa-fw fa-flag generic-icons-nav"></i>HQ</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/network" title="Settings"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
-</li>
-<li class="nav-item">
-<a class="nav-link active" href="/notifications/system" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
-</li>
-
-{{/if}}
-
-{{if !$name && $sel.name == 'Settings'}}
-<li class="nav-item">
-    <a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
-</li>
-<li class="nav-item">
-<a class="nav-link active" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
-</li>
-{{/if}}
-
-{{if !$name && $sel.name == 'Profiles'}}
-<li class="nav-item">
-<a class="nav-link active" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
-</li>
-{{/if}}
-
-{{if !$name && $sel.name == 'Apps'}}
-<li class="nav-item">
-<a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
-</li>
-<li class="nav-item">
-<a class="nav-link active" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
-</li>
-{{/if}}
-
-{{if !$name && $sel.name == 'Directory'}}
-<li class="nav-item">
-<a class="nav-link" href="/directory?f=&pubforums=0&global=0" title="Settings"><i class="fa fa-fw fa-sitemap generic-icons-nav"></i>Channels</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/directory?f=&pubforums=1&global=0" title="Settings"><i class="fa fa-fw fa-comments-o generic-icons-nav"></i>Forums</a>
-</li>
-{{if $localuser}}
-<li class="nav-item">
-    <a class="nav-link" href="/connections" title="Settings"><i class="fa fa-fw fa-users generic-icons-nav"></i>Connections</a>
-</li>
-{{/if}}
-{{/if}}                    
-
-{{if !$name && $sel.name == 'Connections'}}
-<li class="nav-item">
-<a class="nav-link" href="/directory?f=&pubforums=0&global=0" title="Settings"><i class="fa fa-fw fa-sitemap generic-icons-nav"></i>Channels</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/directory?f=&pubforums=1&global=0" title="Settings"><i class="fa fa-fw fa-comments-o generic-icons-nav"></i>Forums</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/connections" title="Settings"><i class="fa fa-fw fa-users generic-icons-nav"></i>Connections</a>
-</li>
-{{/if}}
-
-{{assign var="lookingfor" value="$z_baseurl/profile_photo"}}
-{{if $url == $lookingfor}}
-<li class="nav-item">
-<a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
-</li>
-{{/if}}           
-
-
-{{math assign="localuserresult" equation="x - 1" x=$localuser}}
-{{assign var="lookingfor" value="$z_baseurl/profile_photo/$localuserresult"}}
-{{if $url == $lookingfor}}
-<li class="nav-item">
-<a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
-</li>
-{{/if}}                                                
-
-{{assign var="lookingfor" value="$z_baseurl/cover_photo"}}
-{{if $url == $lookingfor}}
-<li class="nav-item">
-<a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
-</li>
-{{/if}}                                  
-
-{{assign var="lookingfor" value="$z_baseurl/thing"}}
-{{if $url == $lookingfor}}
-<li class="nav-item">
-<a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
-</li>
-{{/if}}            
-
-
-<!--
-        <li class="nav-item">
-            <a class="nav-link" href="/network">Network Stream</a>
-        </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Channel Apps
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-
-        </div>
-    </li>
--->
-
-		{{if $navbar_apps.0}}
-		
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-fw fa-thumb-tack generic-icons-nav"></i>Pinned Apps
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-
-			{{foreach $navbar_apps as $navbar_app}}
-				{{$navbar_app|replace:'navbar-app nav-link':'dropdown-item'|replace:'fa':'generic-icons-nav fa'}}
-			{{/foreach}}
-			<div class="dropdown-divider"></div>
-			<a class="dropdown-item" href="/apps" title="Apps"><i class="fa fa-fw fa-cube generic-icons-nav"></i>More Apps</a>	
-			
-        </div>
-    </li>
-    
-		{{else}}
-            <div class="dropdown-divider"></div>
-            
-            <!-- <a class="dropdown-item" href="/apps" title="Apps"><i class="fa fa-fw fa-cube generic-icons-nav"></i>Pin More Apps</a>	 -->
-        {{if $localuser}}
-        <li class="nav-item">
-            <a class="nav-link" href="/apps" title="Apps"><i class="fa fa-fw fa-cube generic-icons-nav"></i>Apps</a>	
-            
-        </li>
-        {{/if}}
-
-
-        <!-- </div> -->
-    <!-- </li> -->
-    
-		{{/if}}
-
-			{{if $settings_url}}
-			<li class="nav-item">
-			    <!-- <div id="nav-app-settings-link-wrapper" class="navbar-nav"> -->
-				<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" !class="dropdown-item" class="nav-link">
-					<i class="fa fa-fw fa-cog generic-icons-nav"></i>
-				</a>
-			</li>
-			<!-- </div> -->
-			{{/if}}
-
-                                            
-                                        </ul>
-                                    </div>
+                		{{/if}}
+
+
+
+                        {{math assign="localuserresult" equation="x - 1" x=$localuser}}
+                        {{if !$name && ($sel.name == 'Channel'
+                         || $sel.name == "Calendar" 
+                         || $sel.name == "Contact Roles" 
+                         || $sel.name == "Post" 
+                         || $sel.name == "Profile" 
+                         || $sel.name == "Files" 
+                         || $sel.name == "Help" 
+                         || $sel.name == "Photos"
+                         || $sel.name == "Search" 
+                         || $sel.name == "Wiki")}}
+
+
+                            <li class="nav-item">
+                                <a class="nav-link{{if $sel.name == "Channel"}} active{{/if}}" href="/channel" title="Status Messages and Posts"><i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link{{if $sel.name == "Profile"}} active{{/if}}" href="/profile/{{$localuserresult}}/view" title="Profile Details"><i class="fa fa-fw fa-vcard-o generic-icons-nav"></i>About</a>
+                            </li>
+                
+                            <!--            
+                            <li class="nav-item">
+                                <a class="nav-link" href="/photos" title="Photo Albums"><i class="fa fa-fw fa-photo generic-icons-nav"></i>Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cloud" title="Files and Storage"><i class="fa fa-fw fa-folder-open generic-icons-nav"></i>Files</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cal" title="Calendar"><i class="fa fa-fw fa-calendar generic-icons-nav"></i>Calendar</a>
+                            </li>            
+                            -->
+
+                            <!--
+                            <a class="dropdown-item" href="/photos" title="Photo Albums"><i class="fa fa-fw fa-photo generic-icons-nav"></i>Photos</a>
+                            <a class="dropdown-item" href="/cloud" title="Files and Storage"><i class="fa fa-fw fa-folder-open generic-icons-nav"></i>Files</a>
+                            <a class="dropdown-item" href="/cal" title="Calendar"><i class="fa fa-fw fa-calendar generic-icons-nav"></i>Calendar</a>
+                            -->
+                        {{/if}}
+
+                        {{math assign="localuserresult" equation="x - 1" x=$localuser}}
+                        {{if !$name && $sel.name == 'Profile-disabled'}}
+                            <a class="dropdown-item" href="/channel" title="Status Messages and Posts"><i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel</a>
+                            <a class="dropdown-item active" href="/profile/{{$localuserresult}}/view" title="Profile Details"><i class="fa fa-fw fa-user generic-icons-nav"></i>About</a>
+                            <a class="dropdown-item" href="/apps" title="Photo Albums"><i class="fa fa-fw fa-photo generic-icons-nav"></i>Apps</a>
+                            <!--
+                            <a class="dropdown-item" href="/photos" title="Photo Albums"><i class="fa fa-fw fa-photo generic-icons-nav"></i>Photos</a>
+                            <a class="dropdown-item" href="/cloud" title="Files and Storage"><i class="fa fa-fw fa-folder-open generic-icons-nav"></i>Files</a>
+                            <a class="dropdown-item" href="/cal" title="Calendar"><i class="fa fa-fw fa-calendar generic-icons-nav"></i>Calendar</a>
+                            -->
+                        {{/if}}
+
+                        {{if !$name && $sel.name == 'HQ' }}
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/hq" title="HQ"><i class="fa fa-fw fa-flag generic-icons-nav"></i>HQ</a>            
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/network" title="Settings"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/notifications/system" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        
+                                    <a class="dropdown-item" href="/channel">View Channel</a>
+                                    <a class="dropdown-item" href="/profile/{{$localuserresult}}/view">View Profile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/connections">Connections</a>
+                        
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </li>
+                        {{/if}}
 
+                        {{if !$name && $sel.name == 'Stream' }}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hq" title="Settings"><i class="fa fa-fw fa-flag generic-icons-nav"></i>HQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/network" title="Settings"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/notifications/system" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
+                            </li>
+                        {{/if}}
+
+                        {{if !$name && $sel.name == 'Notifications' }}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hq" title="Settings"><i class="fa fa-fw fa-flag generic-icons-nav"></i>HQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/network" title="Settings"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/notifications/system" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
+                            </li>
+                            
+                        {{/if}}
+
+                        {{if !$name && $sel.name == 'Settings'}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
+                            </li>
+                        {{/if}}
+
+                        {{if !$name && $sel.name == 'Profiles'}}
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
+                            </li>
+                        {{/if}}
+
+                        {{if !$name && $sel.name == 'Apps'}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
+                            </li>
+                        {{/if}}
+
+                        {{if !$name && $sel.name == 'Directory'}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/directory?f=&pubforums=0&global=0" title="Settings"><i class="fa fa-fw fa-sitemap generic-icons-nav"></i>Channels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/directory?f=&pubforums=1&global=0" title="Settings"><i class="fa fa-fw fa-comments-o generic-icons-nav"></i>Forums</a>
+                            </li>
+                            
+                            {{if $localuser}}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/connections" title="Settings"><i class="fa fa-fw fa-users generic-icons-nav"></i>Connections</a>
+                                </li>
+                            {{/if}}
+                        {{/if}}                    
+
+                        {{if !$name && $sel.name == 'Connections'}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/directory?f=&pubforums=0&global=0" title="Settings"><i class="fa fa-fw fa-sitemap generic-icons-nav"></i>Channels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/directory?f=&pubforums=1&global=0" title="Settings"><i class="fa fa-fw fa-comments-o generic-icons-nav"></i>Forums</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/connections" title="Settings"><i class="fa fa-fw fa-users generic-icons-nav"></i>Connections</a>
+                            </li>
+                        {{/if}}
+
+                        {{assign var="lookingfor" value="$z_baseurl/profile_photo"}}
+                        {{if $url == $lookingfor}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
+                            </li>
+                        {{/if}}           
+
+
+                        {{math assign="localuserresult" equation="x - 1" x=$localuser}}
+                        {{assign var="lookingfor" value="$z_baseurl/profile_photo/$localuserresult"}}
+                        {{if $url == $lookingfor}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
+                            </li>
+                        {{/if}}                                                
+
+                        {{assign var="lookingfor" value="$z_baseurl/cover_photo"}}
+                        {{if $url == $lookingfor}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
+                            </li>
+                        {{/if}}                                  
+
+                        {{assign var="lookingfor" value="$z_baseurl/thing"}}
+                        {{if $url == $lookingfor}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
+                            </li>
+                        {{/if}}            
+
+                		{{if $navbar_apps.0}}
+                		
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-fw fa-thumb-tack generic-icons-nav"></i>Pinned Apps
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                
+                        			{{foreach $navbar_apps as $navbar_app}}
+                        				{{$navbar_app|replace:'navbar-app nav-link':'dropdown-item'|replace:'fa':'generic-icons-nav fa'}}
+                        			{{/foreach}}
+                        			<div class="dropdown-divider"></div>
+                        			<a class="dropdown-item" href="/apps" title="Apps"><i class="fa fa-fw fa-cube generic-icons-nav"></i>More Apps</a>	
+                                </div>
+                            </li>
+    
+                		{{else}}
+                            <div class="dropdown-divider"></div>
+                            
+                            <!-- <a class="dropdown-item" href="/apps" title="Apps"><i class="fa fa-fw fa-cube generic-icons-nav"></i>Pin More Apps</a>	 -->
+                            {{if $is_owner}}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/apps" title="Apps"><i class="fa fa-fw fa-cube generic-icons-nav"></i>Apps</a>	
+                                </li>
+                            {{/if}}
+                            
+                		{{/if}}
+
+            			{{if $settings_url}}
+                			<li class="nav-item">
+                			    
+                				<a id="nav-app-settings-link" href="{{$settings_url}}/?f=&rpath={{$url}}" !class="dropdown-item" class="nav-link">
+                					<i class="fa fa-fw fa-cog generic-icons-nav"></i>
+                				</a>
+                			</li>
+                			    
+            			{{/if}}          
+                        <!--
+                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        -->
+                    </ul>
+                </div>
+            </div> <!-- container -->
+
+        </div> <!-- column -->
+    </div> <!-- row -->
+
+<!-- page layout continues -->
 
 <!--
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
@@ -1539,3 +1471,5 @@
 		});
 	}
 </script>
+
+<!-- end default navbar template -->

@@ -1,6 +1,7 @@
 [region=nav]$nav[/region]
 
 [region=aside]
+[widget=notifications][/widget]
 [widget=savedsearch][/widget]
 [widget=collections][/widget]
 [widget=activity][/widget]
@@ -13,6 +14,5 @@ $content
 [/region]
 
 [region=right_aside]
-[widget=notifications][/widget]
 [widget=newmember][/widget]
 [/region]

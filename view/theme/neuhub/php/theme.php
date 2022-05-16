@@ -1,9 +1,9 @@
 <?php
 
 /**
- *   * Name: Purple Basic
- *   * Description: A proof of concept theme combining Redbasic with SB Admin
- *   * Version: 1.0
+ *   * Name: Purple Basic (Neuhub Wrapper)
+ *   * Description: A proof of concept theme combining Redbasic with SB Admin as the base.
+ *   * Version: 0.2
  *   * MinVersion: 6.5.13
  *   * MaxVersion: 8.0
  *   * Author: Scott M. Stolz

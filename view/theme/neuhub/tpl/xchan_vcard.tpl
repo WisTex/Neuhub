@@ -1,6 +1,6 @@
 {{if $connect}}
       <nav class="nav nav-pills p-4 mb-4  bg-white">
-          <p>Connect to the <b>{{$name}}</b> channel to receive updates and to interact on this channel.</p>
+          <p><b>{{$name}}</b> &mdash; Connect to receive updates and interact.</p>
           <!--
          <a class="nav-link active bg-secondary" 
             aria-current="true" 

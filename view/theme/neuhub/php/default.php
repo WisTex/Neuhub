@@ -69,6 +69,18 @@ body {
 .dropdown-menu {
     z-index: 100;
 }
+
+.wall-item-content-wrapper {
+    // background-color: rgb(238,238,238);
+    background-color: #FFF;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+}
+
+.wall-item-tools {
+    // background-color: rgb(238,238,238);
+}
+
     </style>
 
 </head>
@@ -110,6 +122,8 @@ body {
                 
                 <?php if(x($page,'nav')) echo $page['nav']; ?>
 
+
+
                 <div class="p-3">
                     <div class="row" style="font-size: 0.9rem;">
                         <div class="col-md-8 col-lg-9" id="!region_2">
@@ -126,6 +140,7 @@ body {
                     <div class="row">
                         <div class="col">
                             <?php if(x($page,'footer')) echo $page['footer']; ?>
+                            <?php if(x($page,'breadcrumb')) echo $page['breadcrumb'] ?>   
                             <!--
                             <hr>
                             <ol class="breadcrumb" style="font-size: 14px;">
@@ -182,7 +197,7 @@ body {
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
   <div class="offcanvas-header">
-    <h5 id="offcanvasLeftLabel"><i class="fas fa-paper-plane"></i> Network</h5>
+    <h5 id="offcanvasLeftLabel"><i class="fas fa-paper-plane"></i> User Menu</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body" id="!region_3">

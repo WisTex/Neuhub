@@ -2,6 +2,7 @@
 [widget=cover_photo][/widget]
 [/region]
 [region=aside]
+[widget=notifications][/widget]
 [widget=fullprofile][/widget]
 [widget=common_friends][/widget]
 [widget=archive][var=wall]1[/var][/widget]
@@ -13,6 +14,5 @@
 $content
 [/region]
 [region=right_aside]
-[widget=notifications][/widget]
 [widget=newmember][/widget]
 [/region]
