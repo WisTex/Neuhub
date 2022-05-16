@@ -169,8 +169,12 @@
                 <div class="nav-item dropdown no-arrow">
                     
                     <a class="dropdown-toggle nav-link text-primary" aria-expanded="false" data-bs-toggle="dropdown" href="#">
-                        <span class="d-none d-sm-none d-md-block">Menu&nbsp; <!-- <i class="generic-icons-nav fa fa-fw fa-caret-down"></i> --></span>
-                        <span class="d-xs-block d-sm-block d-md-none  d-lg-none d-xl-none"></span><i class="generic-icons-nav fa fa-fw fa-caret-square-down"></i>
+                        <span class="d-none d-sm-none d-md-block">Hub&nbsp; <!-- <i class="generic-icons-nav fa fa-fw fa-caret-down"></i> --></span>
+                        <span class="d-xs-block d-sm-block d-md-none  d-lg-none d-xl-none"></span>
+                        <!-- <i class="generic-icons-nav fa fa-fw fa-caret-square-down"></i> -->
+                        
+                         <!-- <span class="icon-hz-64"></span> -->
+                         <span class="icon-hz"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
                     </a>
                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
                                         

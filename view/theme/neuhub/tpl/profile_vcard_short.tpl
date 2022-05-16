@@ -34,5 +34,5 @@
 
 {{$chanmenu}}
 
-{{debug}}
+
 

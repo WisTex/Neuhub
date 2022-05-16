@@ -130,6 +130,28 @@ body {
                             <?php if(x($page,'content')) echo $page['content']; ?>
                         </div>
                         <div class="col-md-4 col-lg-3" id="!region_1">
+                            
+                            <!--
+                            <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
+                            
+                            <div class="alert alert-info d-none d-lg-block">Resize your browser to show the responsive offcanvas toggle.</div>
+                            
+                            <div class="offcanvas-md offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                              <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                  
+                                <p class="mb-0">This is content within an <code>.offcanvas-lg</code>.</p>
+                                
+                                
+                              </div>
+                            </div>                            
+                            -->
+                            
+                            
+                            
                             <div class="d-none d-sm-none d-md-none d-lg-block">
                             <?php if(x($page,'aside')) echo $page['aside']; ?>
                             
