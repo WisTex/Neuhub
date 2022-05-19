@@ -53,7 +53,7 @@ Special thanks to all of the people before me that created awesome code and made
 - Streams Repository: https://codeberg.org/streams/streams
 - Zot Repository: https://codeberg.org/zot
 
-Main Contributors
+Main Redbasic Contributors
 
 - Fabrixxm
 - Mike Macgirvin
