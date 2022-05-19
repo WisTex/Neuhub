@@ -49,7 +49,7 @@ Special thanks to all of the people before me that created awesome code and made
 ### Redbasic (and Zot, Hubzilla, Streams, <i>et. al.</i>)
 
 - Hubzilla Website: https://hubzilla.org/
-- Hubzilla Respository: https://framagit.org/hubzilla/core
+- Hubzilla Repository: https://framagit.org/hubzilla/core
 - Streams Repository: https://codeberg.org/streams/streams
 - Zot Repository: https://codeberg.org/zot
 
