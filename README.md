@@ -1,4 +1,4 @@
-# CHG Bootstrap Hubzilla Themes
+# Neuhub Bootstrap Hubzilla Themes
 **A collection of Hubzilla themes and templates.**
 
 We are in the process of creating some new themes for Hubzilla and are designing them with different types websites in mind. Everything in this repository is currently a work in progress. 
@@ -62,7 +62,7 @@ Repository: https://github.com/DeadSuperHero/hubzilla-themes
 - Sean Tilley
 - Andrew Manning
 
-Third Party Tools
+### Third Party Tools
 
 - IcoMoon - https://icomoon.io/ - For making it easy to create the Hubzilla font.
 - Convertio -  https://convertio.co/png-svg/ - For converting PNG to SVG so I can create the Hubzilla font.
