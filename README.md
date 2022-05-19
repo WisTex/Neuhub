@@ -46,10 +46,14 @@ If you have any suggestions or want to contribute code, that would be appreciate
 
 Special thanks to all of the people before me that created awesome code and made it available. The themes in this repository would not be possible without their hard work, and the themes here use some of their code or are inspired by their code. Hopefully I did not miss anyone.
 
-### Hubzilla and Redbasic
+### Redbasic (and Zot, Hubzilla, Streams, <i>et. al.</i>)
 
-Website: https://hubzilla.org/
-Respository: https://framagit.org/hubzilla/core
+- Hubzilla Website: https://hubzilla.org/
+- Hubzilla Respository: https://framagit.org/hubzilla/core
+- Streams Repository: https://codeberg.org/streams/streams
+- Zot Repository: https://codeberg.org/zot
+
+Main Contributors
 
 - Fabrixxm
 - Mike Macgirvin
