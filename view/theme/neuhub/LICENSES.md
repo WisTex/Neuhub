@@ -14,7 +14,7 @@ See the individual license files for the copyright notice and permissions notice
 * Copyright (c) 2019 Hubzilla Community
 * [LICENSE-HUBZILLA.txt](LICENSE-HUBZILLA.txt)
 
-## Boostrap
+## Bootstrap
 * The MIT License (Expat)
 * Copyright (c) 2011-2022 Twitter, Inc.
 * Copyright (c) 2011-2022 The Bootstrap Authors
