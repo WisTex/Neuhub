@@ -28,6 +28,13 @@ If this software was edited and distributed by others, other licenses may apply.
 * Website: https://hubzilla.org
 * Repository: https://framagit.org/hubzilla
 
+## DeadSuperHero Hubzilla Themes
+* The MIT License (Expat)
+* Copyright (c) 2014 Sean Tilley
+* License: [LICENSE-DEADSUPERHERO.txt](LICENSE-DEADSUPERHERO.txt)
+* Repository: https://github.com/DeadSuperHero/hubzilla-themes
+
+
 ## Bootstrap
 * The MIT License (Expat)
 * Copyright (c) 2011-2022 Twitter, Inc.
