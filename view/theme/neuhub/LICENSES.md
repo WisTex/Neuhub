@@ -69,4 +69,4 @@ Depending on how Neuhub is distributed or conveyed, it may be considered part of
 
 The aggregate provisions of these licenses do not apply if you intergrate our code with another software in such a way where it is no longer an independent addon or theme. If that is the case, the user can always go to the original MIT licensed repositories to get the MIT licensed version of the code. 
 
-You can sublicense MIT licensed code, but you cannot relicense it under a different license since you are not the copyright holder and license grantor.
+Note: You can sublicense MIT licensed code, but you cannot relicense it under a different license since you are not the copyright holder and license grantor.
