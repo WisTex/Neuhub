@@ -41,7 +41,6 @@ If this software was edited and distributed by others, other licenses may apply.
 * Fork Awesome CSS, LESS, and Sass files are licensed under the MIT License:
   - https://opensource.org/licenses/mit-license.html
 * Copyright (c) 2018 Dave Gandy & Fork Awesome
-* Copyright (c) 2018 Fork Awesome 
 * Website: https://forkawesome.github.io
 * Repository: https://github.com/ForkAwesome/Fork-Awesome
 
