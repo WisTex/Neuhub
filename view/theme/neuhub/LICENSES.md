@@ -11,8 +11,8 @@ If this software was edited and distributed by others, other licenses may apply.
 ## Neuhub
 * The MIT License (Expat)
 * Copyright (c) 2022 WisTex TechSero Ltd. Co.
-* License: [LICENSE-NEUHUB.txt](LICENSE-NEUHUB.txt)
 * License: https://license.neuhub.org
+* License: [LICENSE-NEUHUB.txt](LICENSE-NEUHUB.txt)
 * Website: https://neuhub.org
 * Repository: https://github.com/WisTex/Neuhub
 
