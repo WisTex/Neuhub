@@ -4,6 +4,8 @@ This software includes files, code, and documentation from a variety of open-sou
 
 See the individual license files for the copyright notice and permissions notice.
 
+---
+
 ## Neuhub
 * The MIT License (Expat)
 * Copyright (c) 2022 WisTex TechSero Ltd. Co.
@@ -23,6 +25,8 @@ See the individual license files for the copyright notice and permissions notice
 ## Mike Macgirvin
 * Public Domain
 * [LICENSE-STREAMS.txt](LICENSE-STREAMS.txt)
+
+---
 
 In some cases, additional licenses may be found in subdirectories for third-party addons, libraries, and components.
 
