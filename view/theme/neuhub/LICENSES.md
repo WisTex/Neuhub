@@ -58,6 +58,10 @@ If you modify this software, and the portions of the software that you modified 
 
 ---
 
+#Trademarks
+
+Neuhub is a trademark if WisTex TechSero Ltd. Co. and its use is not included in the MIT License. You are welcome to reference or mention Neuhub when referring to the Neuhub project, but you are not allowed to repurpose our trademark for your own projects.
+
 # Aggregate Works
 
 The MIT license allows you to use all or part of this software in other works, however, you must comply with the terms of the MIT License in all cases. 
