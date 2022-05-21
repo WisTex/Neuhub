@@ -31,7 +31,7 @@ If this software was edited and distributed by others, other licenses may apply.
 * Repository: https://github.com/twbs/bootstrap
 
 ## Streams
-* Public Domain & OSI-approved Open Source Licenses
+* Portions are Public Domain & portions are various OSI-approved Open Source Licenses
 * License: [LICENSE-STREAMS.txt](LICENSE-STREAMS.txt)
 * Repository: https://codeberg.org/streams/streams
 
