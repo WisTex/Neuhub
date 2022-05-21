@@ -13,12 +13,14 @@ If this software was edited and distributed by others, other licenses may apply.
 * Copyright (c) 2022 WisTex TechSero Ltd. Co.
 * License: [LICENSE-NEUHUB.txt](LICENSE-NEUHUB.txt)
 * Website: https://neuhub.org
+* Repository: https://github.com/WisTex/Neuhub
 
 ## Hubzilla
 * The MIT License (Expat)
 * Copyright (c) 2019 Hubzilla Community
 * License: [LICENSE-HUBZILLA.txt](LICENSE-HUBZILLA.txt)
 * Website: https://hubzilla.org
+* Repository: https://framagit.org/hubzilla
 
 ## Bootstrap
 * The MIT License (Expat)
@@ -26,6 +28,7 @@ If this software was edited and distributed by others, other licenses may apply.
 * Copyright (c) 2011-2022 The Bootstrap Authors
 * License: [LICENSE-BOOTSTRAP.txt](LICENSE-BOOTSTRAP.txt)
 * Website: https://getbootstrap.com/
+* Repository: https://github.com/twbs/bootstrap
 
 ## Mike Macgirvin
 * Public Domain
