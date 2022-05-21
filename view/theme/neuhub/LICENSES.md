@@ -34,4 +34,4 @@ If this software was edited and distributed by others, other licenses may apply.
 
 ---
 
-If you modify this software, and the portions of the software that you modified fall under a difference license, it is recommended that you add it here, for easy reference, especially if you intend on distributing it.
+If you modify this software, and the portions of the software that you modified fall under a difference license, it is recommended that you add it here, especially if you intend on distributing it.
