@@ -30,7 +30,7 @@ If this software was edited and distributed by others, other licenses may apply.
 * Website: https://getbootstrap.com/
 * Repository: https://github.com/twbs/bootstrap
 
-## Mike Macgirvin
+## Mike Macgirvin via Streams
 * Public Domain
 * License: [LICENSE-STREAMS.txt](LICENSE-STREAMS.txt)
 * Repository: https://codeberg.org/streams/streams
