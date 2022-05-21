@@ -15,5 +15,5 @@ This work is dedicated and released to the public domain with no strings attache
 Be advised that many others have contributed code to this repository 
 under a number of different OSI-approved software licenses during its existence. 
 
-For example, many of the libraries includes in the repository have their own
-licenses. Look for text files called LICENSE for details.
+For example, many of the libraries included in the repository have their own
+licenses. Look for text files called LICENSE (or something similar) for details.
