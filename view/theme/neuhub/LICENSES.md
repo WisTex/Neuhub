@@ -4,7 +4,9 @@ This software includes files, code, and documentation from a variety of open-sou
 
 See the individual license files for the copyright notice and permissions notice.
 
----
+In some cases, additional licenses may be found in subdirectories for third-party addons, libraries, and components.
+
+If this software was edited and distributed by others, other licenses may apply.
 
 ## Neuhub
 * The MIT License (Expat)
@@ -25,9 +27,3 @@ See the individual license files for the copyright notice and permissions notice
 ## Mike Macgirvin
 * Public Domain
 * [LICENSE-STREAMS.txt](LICENSE-STREAMS.txt)
-
----
-
-In some cases, additional licenses may be found in subdirectories for third-party addons, libraries, and components.
-
-If this software was edited and distributed by others, other licenses may apply.
