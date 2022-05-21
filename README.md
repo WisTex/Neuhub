@@ -46,7 +46,7 @@ If you have any suggestions or want to contribute code, that would be appreciate
 
 Special thanks to all of the people before me that created awesome code and made it available. The themes in this repository would not be possible without their hard work, and the themes here use some of their code or are inspired by their code. Hopefully I did not miss anyone.
 
-### Redbasic Theme (Used in Hubzilla, Streams, <i>et. al.</i>)
+### Redbasic Theme (used in Hubzilla, Streams, Zap, <i>et. al.</i>)
 
 - Hubzilla Website: https://hubzilla.org/
 - Hubzilla Repository: https://framagit.org/hubzilla/core
