@@ -67,4 +67,4 @@ Depending on how Neuhub is distributed or conveyed, it may be considered part of
 - AGPL: Inclusion of a AGPL covered work in an aggregate does not cause the AFPL License to apply to the other parts of the aggregate.
 - GPL: Inclusion of a GPL covered work in an aggregate does not cause this GPL License to apply to the other parts of the aggregate.
 
-The aggregate permissions do not apply if you intergrate our code with another software in such a way where it is no longer an independent addon or theme. If that is the case, the user can always go to the original MIT licensed repositories to get the MIT license version of the code.
+The aggregate permissions do not apply if you intergrate our code with another software in such a way where it is no longer an independent addon or theme. If that is the case, the user can always go to the original MIT licensed repositories to get the MIT licensed version of the code.
