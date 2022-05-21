@@ -15,6 +15,11 @@ If this software was edited and distributed by others, other licenses may apply.
 * Website: https://neuhub.org
 * Repository: https://github.com/WisTex/Neuhub
 
+## Streams
+* Portions are Public Domain & portions are various OSI-approved Open Source Licenses
+* License: [LICENSE-STREAMS.txt](LICENSE-STREAMS.txt)
+* Repository: https://codeberg.org/streams/streams
+
 ## Hubzilla
 * The MIT License (Expat)
 * Copyright (c) 2019 Hubzilla Community
@@ -29,11 +34,6 @@ If this software was edited and distributed by others, other licenses may apply.
 * License: [LICENSE-BOOTSTRAP.txt](LICENSE-BOOTSTRAP.txt)
 * Website: https://getbootstrap.com/
 * Repository: https://github.com/twbs/bootstrap
-
-## Streams
-* Portions are Public Domain & portions are various OSI-approved Open Source Licenses
-* License: [LICENSE-STREAMS.txt](LICENSE-STREAMS.txt)
-* Repository: https://codeberg.org/streams/streams
 
 ## Fork Awesome
 * The Fork Awesome font is licensed under the SIL OFL 1.1:
