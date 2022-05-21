@@ -27,3 +27,7 @@ If this software was edited and distributed by others, other licenses may apply.
 ## Mike Macgirvin
 * Public Domain
 * [LICENSE-STREAMS.txt](LICENSE-STREAMS.txt)
+
+---
+
+If you modify this software, and the portions of the software that you modified fall under a difference license, it is recommended that you add it here, for easy reference.
