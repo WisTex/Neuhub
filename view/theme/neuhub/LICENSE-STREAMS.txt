@@ -2,14 +2,18 @@ This software contains files, code, and documentation from Mike Macgirvin
 whose repository is located at: https://codeberg.org/streams/streams
 
 As per the readme file, anyone can modify and reuse the software from that 
-respository because it is released to the public domain. If you received this 
+respository because it is released to the public domain or other
+OSI-approved software licenses. If you received this 
 software from somewhere other than the Streams repository, it may contain files, 
 code, and documentation from other sources that are subject to other licenses.
 
-The portion of the software originating from the Streams repository 
+The portion of the software originating from Mike Macgirvin 
 is subject to the following:
 
 This work is dedicated and released to the public domain with no strings attached. 
 
 Be advised that many others have contributed code to this repository 
 under a number of different OSI-approved software licenses during its existence. 
+
+For example, many of the libraries includes in the repository have their own
+licenses. Look for text files called LICENSE for details.
