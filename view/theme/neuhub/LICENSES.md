@@ -11,22 +11,26 @@ If this software was edited and distributed by others, other licenses may apply.
 ## Neuhub
 * The MIT License (Expat)
 * Copyright (c) 2022 WisTex TechSero Ltd. Co.
-* [LICENSE-NEUHUB.txt](LICENSE-NEUHUB.txt)
+* License: [LICENSE-NEUHUB.txt](LICENSE-NEUHUB.txt)
+* Website: https://neuhub.org
 
 ## Hubzilla
 * The MIT License (Expat)
 * Copyright (c) 2019 Hubzilla Community
-* [LICENSE-HUBZILLA.txt](LICENSE-HUBZILLA.txt)
+* License: [LICENSE-HUBZILLA.txt](LICENSE-HUBZILLA.txt)
+* Website: https://hubzilla.org
 
 ## Bootstrap
 * The MIT License (Expat)
 * Copyright (c) 2011-2022 Twitter, Inc.
 * Copyright (c) 2011-2022 The Bootstrap Authors
-* [LICENSE-BOOTSTRAP.txt](LICENSE-BOOTSTRAP.txt)
+* License: [LICENSE-BOOTSTRAP.txt](LICENSE-BOOTSTRAP.txt)
+* Website: https://getbootstrap.com/
 
 ## Mike Macgirvin
 * Public Domain
-* [LICENSE-STREAMS.txt](LICENSE-STREAMS.txt)
+* License: [LICENSE-STREAMS.txt](LICENSE-STREAMS.txt)
+* Repository: https://codeberg.org/streams/streams
 
 ---
 
