@@ -32,6 +32,16 @@ If this software was edited and distributed by others, other licenses may apply.
 * License: [LICENSE-STREAMS.txt](LICENSE-STREAMS.txt)
 * Repository: https://codeberg.org/streams/streams
 
+## Fork Awesome
+* The Fork Awesome font is licensed under the SIL OFL 1.1:
+  - http://scripts.sil.org/OFL
+* Fork Awesome CSS, LESS, and Sass files are licensed under the MIT License:
+  - https://opensource.org/licenses/mit-license.html
+* Copyright (c) 2018 Dave Gandy & Fork Awesome
+* Copyright (c) 2018, Fork Awesome 
+* Website: https://forkawesome.github.io
+* Repository: https://github.com/ForkAwesome/Fork-Awesome
+
 ---
 
 If you modify this software, and the portions of the software that you modified fall under a difference license, it is recommended that you add it here, especially if you intend on distributing it.
