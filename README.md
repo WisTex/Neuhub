@@ -9,10 +9,29 @@ Your contributions are welcome.
 
 ## Themes
 
+## Live
+
 These have been tested and are working:
 
 - **Redbasic Derivative Starter Kit** 1.0 - A Starting point for creating your own theme.
   - https://github.com/WisTex/CHG-Hubzilla-Themes/tree/main/view/theme/redbasic-starter-kit
+
+## Unfinished
+
+These are currently under development and are not fully functional.
+
+- **Purplebasic** 0.2 - Where I am experimenting with features.
+  - https://github.com/WisTex/Neuhub/tree/main/view/theme/purplebasic
+  - DEVELOPMENT VERSION - NOT FOR PRODUCTION
+  - Known Issues
+    - Notifications not working 
+    - Navigation broken in Firefox
+    - PDL Editor navigation broken
+    - Some Javascript resources not loading properly.
+
+- **Other Versions**
+  - Not working at all. Still setting up initial configuration.
+  - Theme and directory names may be renamed as well.
 
 ## Use Cases
 
