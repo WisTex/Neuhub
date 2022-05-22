@@ -28,6 +28,7 @@ These are currently under development and are not fully functional.
     - Navigation broken in Firefox
     - PDL Editor navigation broken
     - Some Javascript resources not loading properly.
+    - Contains experimental code that will be removed in the release.
 
 - **Other Versions**
   - Not working at all. Still setting up initial configuration.
