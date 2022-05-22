@@ -9,14 +9,14 @@ Your contributions are welcome.
 
 ## Themes
 
-## Live
+### Live
 
 These have been tested and are working:
 
 - **Redbasic Derivative Starter Kit** 1.0 - A Starting point for creating your own theme.
   - https://github.com/WisTex/CHG-Hubzilla-Themes/tree/main/view/theme/redbasic-starter-kit
 
-## Unfinished
+### Unfinished
 
 These are currently under development and are not fully functional.
 
