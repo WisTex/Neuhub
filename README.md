@@ -23,6 +23,9 @@ These are currently under development and are not fully functional.
 - **Purplebasic** 0.2 - Where I am experimenting with features.
   - https://github.com/WisTex/Neuhub/tree/main/view/theme/purplebasic
   - DEVELOPMENT VERSION - NOT FOR PRODUCTION
+  - Important Notes
+    - Most features for remotely authenticated users work.
+    - Some features for local users do not work yet.
   - Known Issues
     - Notifications not working on mobile
     - Navigation broken in Firefox
