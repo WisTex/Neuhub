@@ -2,6 +2,8 @@
 
 DEVELOPMENT VERSION - NOT MEANT FOR PRODUCTION
 
+This theme will probably be renamed.
+
 **Version 0.2** - https://github.com/WisTex/Neuhub/tree/main/view/theme/purplebasic
 
 This is a derivative theme for Redbasic that is currently under development.
