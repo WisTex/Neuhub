@@ -1,3 +1,5 @@
+Neuhub
+
 This software contains files, code, and documentation from the Neuhub project
 whose official website is located at: https://neuhub.org
 
