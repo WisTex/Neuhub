@@ -55,22 +55,3 @@ If this software was edited and distributed by others, other licenses may apply.
 ---
 
 If you modify this software, and the portions of the software that you modified fall under a difference license, it is recommended that you add it here, especially if you intend on distributing it.
-
----
-
-# Trademarks
-
-Neuhub is a trademark if WisTex TechSero Ltd. Co. and its use is not included in the MIT License. You are welcome to reference or mention Neuhub when referring to the Neuhub project, but you are not allowed to repurpose our trademark for your own projects.
-
-# Aggregate Works
-
-The MIT license allows you to use all or part of this software in other works, however, you must comply with the terms of the MIT License in all cases. 
-
-Depending on how Neuhub is distributed or conveyed, it may be considered part of an aggregate, since it is an independent addon and theme that works with multiple scripts.
-
-- AGPL: Inclusion of an AGPL covered work in an aggregate does not cause the AFPL License to apply to the other parts of the aggregate.
-- GPL: Inclusion of a GPL covered work in an aggregate does not cause this GPL License to apply to the other parts of the aggregate.
-
-The aggregate provisions of these licenses do not apply if you intergrate our code with another software in such a way where it is no longer an independent addon or theme. If that is the case, the user can always go to the original MIT licensed repositories to get the MIT licensed version of the code. 
-
-Note: You can sublicense MIT licensed code, but you cannot relicense it under a different license since you are not the copyright holder and license grantor.
