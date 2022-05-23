@@ -15,7 +15,7 @@ is subject to the following license:
 
 https://license.neuhub.org
 
-The MIT License (Expat)
+The MIT License (Expat Version)
 
 Copyright (c) 2022 WisTex TechSero Ltd. Co. 
 
