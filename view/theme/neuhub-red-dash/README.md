@@ -1,9 +1,8 @@
-# Neuhub Wrapper Theme
+# Neuhub Red Dash Theme
 
-**Version 0.2** - DEVELOPMENT VERSION - NOT READY FOR PRODUCTION
+**Version 0.3** - Beta Version
 
-I am currently porting the code from Purplebasic to this new version. I am not done yet, so it does not work.
+This is a derivative theme for Redbasic, and uses elements from Boostrap's SB Admin theme.
 
-I will update this README once I fix the paths so it works with the new name and directory.
-
-This is a derivative theme for Redbasic.
+* Website: https://neuhub.org
+* Repository: https://github.com/WisTex/Neuhub

@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="/view/theme/purplebasic/assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="/view/theme/purplebasic/assets/fonts/fontawesome5-overrides.min.css">
     */ ?>
-    
+  
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">  
+	
   <script>var baseurl="<?php echo z_root() ?>";</script>
   <?php if(x($page,'htmlhead')) echo $page['htmlhead'] ?>    
 
@@ -182,7 +184,7 @@ body {
             <div class="bg-white sticky-footer">
                 <div class="container my-auto">
                     <nav class="navbar navbar-light navbar-expand-md">
-                        <div class="container-fluid"><a class="navbar-brand" href="#">Complete Hosting Guide</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-size: 12px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="container-fluid"><a class="navbar-brand" href="#">Neuhub</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-size: 12px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                             <div class="collapse navbar-collapse" id="navcol-1">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item"><a class="nav-link !active" href="/">Home</a></li>
@@ -196,9 +198,9 @@ body {
                     </nav>
                     <div class="text-center my-auto copyright mb-20">
                         <!-- <span style="margin: 5px;">Copyright © 2022 <a href="https://wistex.com" class="text-decoration-none">WisTex TechSero Ltd. Co.</a></span> -->
-                        <span style="margin: 5px;">An independent hub on the <a href="https://hubzilla.org" class="text-decoration-none">Hubzilla</a> Grid.</span>
-                        <span style="margin: 5px;"><a href="/" class="text-decoration-none">Terms of Service</a></span>
-                        <span style="margin: 5px;"><a href="/" class="text-decoration-none">Privacy Policy</a></span><br>&nbsp;
+                        <span style="margin: 5px;">An independent <a href="https://federatedhub.org" class="text-decoration-none" target="_blank">federated hub</a>.</span>
+                        <span style="margin: 5px;"><a href="/help/TermsOfService" class="text-decoration-none">Terms of Service</a></span>
+                        <span style="margin: 5px;"><a href="/help/TermsOfService" class="text-decoration-none">Privacy Policy</a></span><br>&nbsp;
                     </div>
                 </div>
             </div>
