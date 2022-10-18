@@ -1,6 +1,6 @@
 <!-- begin default navbar template -->
 
-{{debug}}
+
 
     {{if $localuser}}
         <style>
@@ -479,7 +479,7 @@
     					{{if $sitelocation && $channel_thumb}}
     					    {{$sitelocation}}
     					{{else}}
-    					    {{$userinfo.name}}
+    					    {{$userinfo.addr}}
     					{{/if}}
     					<!-- mockup@completehostingguide.com -->
     				</span>
