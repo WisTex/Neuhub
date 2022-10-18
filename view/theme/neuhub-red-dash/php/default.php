@@ -199,7 +199,7 @@ body {
                     <div class="text-center my-auto copyright mb-20">
                         <!-- <span style="margin: 5px;">Copyright © 2022 <a href="https://wistex.com" class="text-decoration-none">WisTex TechSero Ltd. Co.</a></span> -->
                         <span style="margin: 5px;">An independent <a href="https://federatedhub.org" class="text-decoration-none" target="_blank">federated hub</a>.</span>
-					<span style="margin: 5px;">Powered by <a href="https://hubzilla.org" class="text-decoration-none" target="_blank">Hubzilla</a> and the <a href="https://neuhub.org" class="text-decoration-none" target="_blank">Neuhub</a> theme.</span>
+					<span style="margin: 5px;">Powered by <a href="https://hubzilla.org" class="text-decoration-none" target="_blank">Hubzilla</a> and <a href="https://neuhub.org" class="text-decoration-none" target="_blank">Neuhub</a>.</span>
                         <span style="margin: 5px;"><a href="/help/TermsOfService" class="text-decoration-none">Terms of Service</a></span>
                         <span style="margin: 5px;"><a href="/help/TermsOfService" class="text-decoration-none">Privacy Policy</a></span><br>&nbsp;
                     </div>
