@@ -1,5 +1,7 @@
 <!-- begin default navbar template -->
 
+{{debug}}
+
     {{if $localuser}}
         <style>
             #menu-toggle{
@@ -195,20 +197,27 @@
                 		{{/if}}
                 
                 		{{if $is_owner}}
+					<!-- featured apps -->
                     		<div class="dropdown-header text-uppercase text-muted">
-						{{$featured_apps|replace:'nav-link':'dropdown-item'}}
+						{{$featured_apps|replace:'featured-apps nav-link':'dropdown-item'}}
                     			<!-- {{$featured_apps}} -->
+				
+
+				
+				
                     		</div>
+					<!-- nav apps -->
                     		<div id="app-bin-container" data-token="{{$form_security_token}}">
                     			{{foreach $nav_apps as $nav_app}}
-                    				{{$nav_app}}
+                    				{{$nav_app|replace:'nav-link':'dropdown-item'}}
                     			{{/foreach}}
                     		</div>
                     		<div class="dropdown-divider"></div>
                     		<a class="dropdown-item" href="/apps"><i class="generic-icons-nav fa fa-fw fa-plus"></i>{{$addapps}}</a>
                 		{{else}}
+					<!-- system apps -->
                     		<div class="dropdown-header text-uppercase text-muted">
-                    			{{$sysapps}}
+                    			{{$sysapps|replace:'nav-link':'dropdown-item'}}
                     		</div>
                     		{{foreach $nav_apps as $nav_app}}
                     			{{$nav_app}}
@@ -219,7 +228,7 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item d-block d-md-none">
             <a class="nav-link text-primary" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">Sidebar <i class="generic-icons-nav fa fa-fw fa-caret-left"></i></a>
             </li>
 
@@ -268,7 +277,7 @@
                             {{if $nav.login && !$userinfo}}
                                 Guest
                             {{else}}
-                                Welcome
+                                {{$userinfo.name}}
                             {{/if}}
                                             
                                
