@@ -1,1 +1,0 @@
-This is just a placeholder so that GIt creates the directory for you if you are using Git.

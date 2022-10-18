@@ -1,1 +1,0 @@
-This folder contains documentation and is not intended for upload. Although if you upload it, it won't hurt anything.
