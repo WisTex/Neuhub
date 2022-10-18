@@ -1,42 +1,37 @@
-# Neuhub Bootstrap Hubzilla Themes
-**A collection of Hubzilla themes and templates.**
+# Neuhub
+**A collection of themes, widgets, and addons for Hubzilla, Streams, and compatible distributions.**
 
-We are in the process of creating some new themes for Hubzilla and are designing them with different types websites in mind. Everything in this repository is currently a work in progress. 
+We are starting with a two-column theme that is intended for "content & community" websites. Later, we will add additional widgets and addons that will provide additional functionality.
 
-Items that have been tested and working are listed below. Everything else is experimental.
-
-Your contributions are welcome.
+Your contributions and feedback are welcome.
 
 ## Themes
 
-### Live
+### Beta Versions
 
-These have been tested and are working:
+We are looking for beta testers for the following themes:
 
-- **Redbasic Derivative Starter Kit** 1.0 - A Starting point for creating your own theme.
-  - https://github.com/WisTex/CHG-Hubzilla-Themes/tree/main/view/theme/redbasic-starter-kit
+- **Neuhub Red Dash** 0.3 - A theme based on Redbasic and SB Admin.
+  - https://github.com/WisTex/Neuhub/tree/main/view/theme/neuhub-red-dash
 
-### Unfinished
+## Release Notes
 
-These are currently under development and are not fully functional.
+Important Notes
+* Most features for remotely authenticated users work.
+* Some features for local users do not work yet.
 
-- **Purplebasic** 0.2 - Where I am experimenting with features.
-  - https://github.com/WisTex/Neuhub/tree/main/view/theme/purplebasic
-  - DEVELOPMENT VERSION - NOT FOR PRODUCTION
-  - Important Notes
-    - Most features for remotely authenticated users work.
-    - Some features for local users do not work yet.
-  - Known Issues
-    - Notifications not working on mobile
-    - Navigation broken in Firefox
-    - PDL Editor navigation broken
-    - Some Javascript resources not loading properly.
-    - Contains experimental code that will be removed in the release.
-    - Documentation not complete, incorrect documentation as placeholders.
+Known Issues
+* Notifications not working on mobile
+* Navigation broken in Firefox
+* PDL Editor navigation broken
+* Some Javascript resources not loading properly.
+* Contains experimental code that will be removed in the release.
+* Documentation not complete, incorrect documentation as placeholders.
 
-- **Other Versions**
-  - Not working at all. Still setting up initial configuration.
-  - Theme and directory names may be renamed as well.
+## Installation
+
+1. Upload the `neuhub-red-dash` folder to the `/view/theme/` folder.
+2. Enable the theme in your admin.
 
 ## Use Cases
 
