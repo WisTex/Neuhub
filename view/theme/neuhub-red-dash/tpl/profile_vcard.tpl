@@ -80,7 +80,7 @@
                 <!-- <img src="https://i.imgur.com/Qtrsrk5.jpg" class="img-fluid"> -->
                 <!-- <img src="/view/theme/purplebasic/img/Neuhub-cover-image.png" class="img-fluid"> -->
                 <!-- <img src="/view/theme/purplebasic/img/chg-cover-1.png" class="img-fluid"> -->
-                <img src="/view/theme/purplebasic/img/background-cover-3-cropped.png" class="img-fluid">
+                <img src="/view/theme/neuhub-red-dash/img/background-cover-3-cropped.png" class="img-fluid">
                 <!-- <img src="/view/theme/purplebasic/img/Neuhub-cover-image.png" class="img-fluid"> -->
                 
                 <!-- <img src="{{$profile.photo}}" class="img-fluid"> -->

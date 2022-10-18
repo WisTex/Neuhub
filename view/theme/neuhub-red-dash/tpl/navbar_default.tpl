@@ -196,7 +196,8 @@
                 
                 		{{if $is_owner}}
                     		<div class="dropdown-header text-uppercase text-muted">
-                    			{{$featured_apps}}
+						{{$featured_apps|replace:'nav-link':'dropdown-item'}}
+                    			<!-- {{$featured_apps}} -->
                     		</div>
                     		<div id="app-bin-container" data-token="{{$form_security_token}}">
                     			{{foreach $nav_apps as $nav_app}}
