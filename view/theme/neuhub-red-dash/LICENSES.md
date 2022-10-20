@@ -12,26 +12,26 @@ If this software was edited and distributed by others, other licenses may apply.
 * The MIT License (Expat)
 * Copyright (c) 2022 WisTex TechSero Ltd. Co.
 * License: https://license.neuhub.org
-* License: [LICENSE-NEUHUB.txt](LICENSE-NEUHUB.txt)
+* License: [licenses/LICENSE-NEUHUB.txt](licenses/LICENSE-NEUHUB.txt)
 * Website: https://neuhub.org
 * Repository: https://github.com/WisTex/Neuhub
 
 ## Streams
 * Portions are Public Domain & portions are various OSI-approved Open Source Licenses
-* License: [LICENSE-STREAMS.txt](LICENSE-STREAMS.txt)
+* License: [licenses/LICENSE-STREAMS.txt](licenses/LICENSE-STREAMS.txt)
 * Repository: https://codeberg.org/streams/streams
 
 ## Hubzilla
 * The MIT License (Expat)
 * Copyright (c) 2019 Hubzilla Community
-* License: [LICENSE-HUBZILLA.txt](LICENSE-HUBZILLA.txt)
+* License: [licenses/LICENSE-HUBZILLA.txt](licenses/LICENSE-HUBZILLA.txt)
 * Website: https://hubzilla.org
 * Repository: https://framagit.org/hubzilla
 
 ## DeadSuperHero Hubzilla Themes
 * The MIT License (Expat)
 * Copyright (c) 2014 Sean Tilley
-* License: [LICENSE-DEADSUPERHERO.txt](LICENSE-DEADSUPERHERO.txt)
+* License: [licenses/LICENSE-DEADSUPERHERO.txt](licenses/LICENSE-DEADSUPERHERO.txt)
 * Repository: https://github.com/DeadSuperHero/hubzilla-themes
 
 
@@ -39,7 +39,7 @@ If this software was edited and distributed by others, other licenses may apply.
 * The MIT License (Expat)
 * Copyright (c) 2011-2022 Twitter, Inc.
 * Copyright (c) 2011-2022 The Bootstrap Authors
-* License: [LICENSE-BOOTSTRAP.txt](LICENSE-BOOTSTRAP.txt)
+* License: [licenses/LICENSE-BOOTSTRAP.txt](licenses/LICENSE-BOOTSTRAP.txt)
 * Website: https://getbootstrap.com/
 * Repository: https://github.com/twbs/bootstrap
 
