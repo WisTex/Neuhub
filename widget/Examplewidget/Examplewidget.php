@@ -92,12 +92,13 @@ class Examplewidget {
 		// and the object ends and is returned by the function.
 		return ob_get_clean();
 		
-		// if you wanted to go the variable route, you could simply return the variable.
+		// if you wanted to go the variable route, you could simply return the variable instead.
 		// Whatever you assigned $o gets outputted.
 		// return $o;
 		
 		// Can't make up your mind? How about both. :D
 		// return ob_get_clean() . $o;    
+		// Note: Only one return statement allowed.
 	}
 
 }
