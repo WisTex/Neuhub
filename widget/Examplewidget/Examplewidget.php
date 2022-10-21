@@ -66,7 +66,7 @@ class Examplewidget {
 			// var_dump($r);
 
 			// You can also output raw HTML. It all gets shoved into the object.
-			// Both Redbasic and Neuhub themes use Boostrap, so you can include Bootstrap-specific classes in your HTML.
+			// Both Redbasic and Neuhub themes use Bootstrap, so you can include Bootstrap-specific classes in your HTML.
 			?>
 
 				<div class="alert alert-danger" role="alert">
