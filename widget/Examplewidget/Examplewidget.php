@@ -93,7 +93,7 @@ class Examplewidget {
 		return ob_get_clean();
 		
 		// if you wanted to go the variable route, you could simply return the variable.
-		// Whatever you assigned $0 gets outputted.
+		// Whatever you assigned $o gets outputted.
 		// return $o;
 		
 		// Can't make up your mind? How about both. :D
