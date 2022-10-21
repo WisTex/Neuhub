@@ -3,7 +3,7 @@
 /**
  * Author: Scott M. Stolz
  * License: MIT (Expat version) - https://license.neuhub.org
- *  Copyright (c ) 2022 WisTex TechSero Ltd. Co.
+ * Copyright (c) 2022 WisTex TechSero Ltd. Co.
  * args:
  * no arguments here.
  */
