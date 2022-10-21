@@ -19,7 +19,7 @@
 // return $o;
 // If you are writing from scratch, this might be a good way to go.
 
-// Note: custom widgets should be put in the widgets folder and each widget gets its own folder.
+// Note: custom widgets should be put in the widget folder and each widget gets its own folder.
 // For example, this widget is located at /widget/Examplewidget/Examplewidget.php
 // Notice the capital letters.
 // The directory and the filename should match the class name below.
