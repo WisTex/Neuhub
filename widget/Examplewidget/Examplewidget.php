@@ -69,23 +69,23 @@ class Examplewidget {
 			// Both Redbasic and Neuhub themes use Boostrap, so you can include Boostrap-specific classes in your HTML.
 			?>
 
-			<div class="alert alert-danger" role="alert">
-				<span><strong>Alert Box!</strong>&nbsp;If this were an actual alert, something important would be here.</span>
-			</div>
+				<div class="alert alert-danger" role="alert">
+					<span><strong>Alert Box!</strong>&nbsp;If this were an actual alert, something important would be here.</span>
+				</div>
 
-			<div class="card" style="margin-bottom: 16px;">
-				<div class="card-header text-dark">
-					<h5 class="mb-0">A Bootstrap Card</h5>
+				<div class="card" style="margin-bottom: 16px;">
+					<div class="card-header text-dark">
+						<h5 class="mb-0">A Bootstrap Card</h5>
+					</div>
+					<div class="card-body">
+						<ol style="margin-bottom: 0px;">
+							<li>Install Hubzilla</li>
+							<li>Add Neuhub</li>
+							<li>???</li>
+							<li>Profit!</li>
+						</ol>
+					</div>
 				</div>
-				<div class="card-body">
-					<ol style="margin-bottom: 0px;">
-						<li>Install Hubzilla</li>
-						<li>Add Neuhub</li>
-						<li>???</li>
-						<li>Profit!</li>
-					</ol>
-				</div>
-			</div>
     
 			<?php
     
