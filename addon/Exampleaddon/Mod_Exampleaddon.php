@@ -1,4 +1,13 @@
 <?php
+
+/*
+ * Neuhub Example Addon
+ * Author: Scott M. Stolz
+ * License: MIT (Expat version) - https://license.neuhub.org
+ * Copyright (c) 2022 WisTex TechSero Ltd. Co.
+ * Source: https://neuhub.org/
+ */
+
 namespace Zotlabs\Module;
 use App;
 use Zotlabs\Web\Controller;

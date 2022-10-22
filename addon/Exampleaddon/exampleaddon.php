@@ -7,6 +7,8 @@
  * MinVersion: 1.4.2
  * Author: Scott M. Stolz
  * Maintainer: Scott M. Stolz
+ * License: MIT (Expat version) - https://license.neuhub.org
+ * Copyright (c) 2022 WisTex TechSero Ltd. Co.
  */
 
 use Zotlabs\Lib\Apps;
