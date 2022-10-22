@@ -5,6 +5,12 @@ We are starting with a two-column theme that is intended for "content & communit
 
 Your contributions and feedback are welcome.
 
+## Components
+
+- Neuhub Red Dash Theme
+- Example Addon
+- Example Widget
+
 ## Themes
 
 ### Beta Versions
@@ -12,9 +18,8 @@ Your contributions and feedback are welcome.
 We are looking for beta testers for the following themes:
 
 - **Neuhub Red Dash** 0.3 - A theme based on Redbasic and SB Admin.
-  - https://github.com/WisTex/Neuhub/tree/main/view/theme/neuhub-red-dash
 
-## Release Notes
+## Neuhub Red Dash Release Notes
 
 Important Notes
 * Most features for remotely authenticated users work.
