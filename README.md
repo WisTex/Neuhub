@@ -1,5 +1,5 @@
 # Neuhub
-**A collection of themes, widgets, and addons for Hubzilla, Streams, and compatible distributions.**
+**A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.**
 
 We are starting with a two-column theme that is intended for "content & community" websites. Later, we will add additional widgets and addons that will provide additional functionality.
 
