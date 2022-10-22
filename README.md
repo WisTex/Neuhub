@@ -9,6 +9,7 @@ Your contributions and feedback are welcome.
 
 - Neuhub Red Dash Theme
 - Example Addon
+- Example Module
 - Example Widget
 
 ## Themes
