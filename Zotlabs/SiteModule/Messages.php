@@ -55,7 +55,13 @@ extends Controller {
             
             // info("A different notification." . EOL);
 
-
+        if (local_channel()) {
+            $channel = App::get_channel();
+            // echo print_r($channel,true);
+            // goaway('https://example.com/user/' . $channel['channel_address']);
+        
+            // echo "<p>Channel Address: " . $channel['channel_address'];
+        }
 
 // Get the page number
 
@@ -82,7 +88,7 @@ $initial_page = ($page_number-1) * $limit;
 			// Select something from the database. Hubzilla has its own functions for that.
 			// The results are put into an array.
 			// $r = q("SELECT * FROM %s WHERE uid = %d", 'notify', 2);
-			$r = q("SELECT * FROM %s INNER JOIN item ON link = llink WHERE notify.uid = %d ORDER BY notify.created DESC LIMIT 40", 'notify', 2);
+			$r = q("SELECT * FROM %s INNER JOIN item ON link = llink WHERE notify.uid = %d ORDER BY notify.created DESC LIMIT 40", 'notify', $channel['channel_id']);
 			
 			// Output a specific variable from the query.
 			$message = "<p>Notification: " . $r[0]['msg'] . "<hr>";
