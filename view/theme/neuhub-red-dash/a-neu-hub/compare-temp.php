@@ -37,7 +37,8 @@
 <link rel="stylesheet" href="https://dev.neuhub.org/view/css/colorbox.css?v=7.8" type="text/css" media="screen">
 <link rel="stylesheet" href="https://dev.neuhub.org/library/justifiedGallery/justifiedGallery.min.css?v=7.8" type="text/css" media="screen">
 <link rel="stylesheet" href="https://dev.neuhub.org/view/css/default.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/theme/neuhub-red-dash/php/style.pcss?v=7.8" type="text/css" media="screen">
+<link rel="stylesheet" href="https://dev.neuhub.org/view/css/mod_settings.css?v=7.8" type="text/css" media="screen">
+<link rel="stylesheet" href="https://dev.neuhub.org/view/theme/neuhub-red-dash/php/style.pcss?f=&puid=2&v=7.8" type="text/css" media="screen">
 
 <script>
 
@@ -145,9 +146,10 @@
 <script src="https://dev.neuhub.org/library/bootstrap-tagsinput/bootstrap-tagsinput.js?v=7.8" ></script>
 <script src="https://dev.neuhub.org/library/datetimepicker/jquery.datetimepicker.js?v=7.8" ></script>
 <script src="https://dev.neuhub.org/library/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js?v=7.8" ></script>
+<script src="https://dev.neuhub.org/view/js/mod_settings.js?v=7.8" ></script>
 
 <link rel="manifest" href="/manifest.json" />
-<link rel="shortcut icon" href="https://dev.neuhub.org/images/hz-32.png" />
+<link rel="shortcut icon" href="https://dev.neuhub.org/photo/profile/s/2" />
 <link rel="apple-touch-icon" href="/images/app/hz-192.png" />
 
 
@@ -159,7 +161,7 @@
 	var justifiedGalleryActive = false;
 		var channelId = false;	var preloadImages = 0;
 	var auto_save_draft = false;
-	var module = 'messages';</script>
+	var module = 'settings';</script>
 
 
 
@@ -471,7 +473,7 @@ body {
 				
                     		</div>
 					<!-- nav apps -->
-                    		<div id="app-bin-container" data-token="1666825125.3647377dcba67cae5cbaf4339be00d46efe5d46517a0db48abb00c64d1d0ea9a9e95e9684c401f05cebc739b13c9a362c13b07449f626a4c84bfe98650c259b3">
+                    		<div id="app-bin-container" data-token="1666825431.a76bb551e4026df3cb300ccf4c38c608ed52e08734365d93b68c2dc018d0d143d846674fb76c413ba8301893254fb568b692d3ca2a6df5781c3c9ca159069f42">
                     			                    				<a class="dropdown-item" href="https://dev.neuhub.org/cdav/calendar" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMDY3YjcwZTkyZTM1Y2MxYjcyOWM4YzM4NmJm
 ODI4OWNiZWMyNjE4OTExYTg3YzQ2MGE5YjQ3MDVmMmMxNTFmODUzNTQwMmQ0NjhkNDY5ZWVi
 NjMwZmFkMmM5Y2RkOWFjZWQ4MGZiMmI3Y2IyOWU0N2FlOGY5YzIyYzgzZWU3ZjIiLCJhdXRo
@@ -647,7 +649,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
         					
         					        					    <a class="dropdown-item" href="manage" title="Manage your channels" role="menuitem" id="manage_nav_btn">Channels</a>
         					        					        					        					        					    <div class="dropdown-divider"></div>
-        					    <a class="dropdown-item" href="settings" title="Account/Channel Settings" role="menuitem" id="settings_nav_btn">Settings</a>
+        					    <a class="dropdown-item active" href="settings" title="Account/Channel Settings" role="menuitem" id="settings_nav_btn">Settings</a>
         					        					        					    <div class="dropdown-divider"></div>
         					    <a class="dropdown-item" href="admin/" title="Site Setup and Configuration" role="menuitem" id="admin_nav_btn">Admin</a>
         					        					        					    <div class="dropdown-divider"></div>
@@ -671,7 +673,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
             					            					<a class="dropdown-item"  href="profiles/2" title="Edit your profile" role="menuitem" id="profiles_nav_btn">Edit Profile</a>
             					            					            					            					<a class="dropdown-item" href="manage" title="Manage your channels" role="menuitem" id="manage_nav_btn">Channels</a>
             					            					            					            					            					<div class="dropdown-divider"></div>
-            					<a class="dropdown-item" href="settings" title="Account/Channel Settings" role="menuitem" id="settings_nav_btn">Settings</a>
+            					<a class="dropdown-item active" href="settings" title="Account/Channel Settings" role="menuitem" id="settings_nav_btn">Settings</a>
             					            					            					<div class="dropdown-divider"></div>
             					<a class="dropdown-item" href="admin/" title="Site Setup and Configuration" role="menuitem" id="admin_nav_btn">Admin</a>
             					            					            					<div class="dropdown-divider"></div>
@@ -708,7 +710,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                 </div>					
     
                 <!-- example code -->
-                                                                                <!-- https://dev.neuhub.org/messages https://dev.neuhub.org/settings/directory -->
+                                                                                <!-- https://dev.neuhub.org/settings/account https://dev.neuhub.org/settings/directory -->
     
                 <!-- show breadcrumb -->
 
@@ -722,16 +724,16 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                                                                                                                                
                         
                         
-                                                                                                     
+                                                                                                                            <li class="breadcrumb-item"><a href="/settings" class="text-decoration-none"><span>Settings</span></a></li>
+                            <li class="breadcrumb-item"><a href="/settings/account" class="text-decoration-none"><span>Account</span></a></li>
+                                                         
                         
                                                                                                                                      
                         
                                                                                                 
 
 
-                                                                            <li class="breadcrumb-item"><a href="/hq" class="text-decoration-none"><span>HQ</span></a></li>
-                            <li class="breadcrumb-item"><a href="/messages" class="text-decoration-none"><span>Notifications</span></a></li>
-                                                           
+                                                       
                                  
                                                              
     
@@ -765,11 +767,12 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
             <!-- begin page navbar ----------------------------------------- -->
             <div class="container-fluid">
                 <div class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom" style="z-index:100;">
-                    <a href="https://dev.neuhub.org/messages" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                        <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="https://dev.neuhub.org/messages"/></svg> -->
+                    <a href="https://dev.neuhub.org/settings/account" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                        <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="https://dev.neuhub.org/settings/account"/></svg> -->
                         <img src="" class="!menu-img-2" style="max-height:42px;">&nbsp;&nbsp;
                         <span class="fs-4">
-                                                                                            
+                                                                                        <b><!-- Mockup Theme -->Settings</b>
+                                                                
                                   
             
                                                                      
@@ -781,8 +784,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                             
                                                                                    
 
-                                                                                        <b>Notifications</b>
-                                      
+                                                                  
             
                         </span>
                     </a>
@@ -800,6 +802,15 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                         
                         
                         
+                                                    <li class="nav-item">
+                                <a class="nav-link" href="/profiles" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Edit Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/settings" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/apps" title="Settings"><i class="fa fa-fw fa-home generic-icons-nav"></i>Apps</a>
+                            </li>
                         
                         
                         
@@ -1335,346 +1346,43 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                 <div class="p-3">
                     <div class="row" style="font-size: 0.9rem;">
                         <div class="col-md-8 col-lg-9" id="!region_2">
-                            <!--
-    <div>
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" href="/messages">All Notifications  <span class="badge bg-danger">5</span></a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" href="/messages">New <span class="badge bg-danger">5</span></a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" href="/messages">Posts <span class="badge bg-primary">5</span></a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" href="/messages">Forums <span class="badge bg-primary">5</span></a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" href="/messages">Messages <span class="badge bg-success">5</span></a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" href="/messages">Connections <span class="badge bg-info">0</span></a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" href="/messages">Likes <span class="badge bg-secondary">0</span></a></li>
-            
-        </ul>
-    </div>  
--->
+                            
+<div class="generic-content-wrapper">
+	<div class="section-title-wrapper">
+		<a title="Remove this account including all its channels" class="btn btn-danger btn-sm float-end" href="removeaccount"><i class="fa fa-trash-o"></i>&nbsp;Remove Account</a>
+		<h2>Account Settings</h2>
+		<div class="clear"></div>
+	</div>
+	<form action="settings/account" id="settings-account-form" method="post" autocomplete="off" >
+		<input type='hidden' name='form_security_token' value='1666825431.4c7cf5cd98a0ab97de79ca465a5d2cc8e10168054d3ab1f934190159df33a6e836e5e591ede5dc68e8ca210637627d1553b23e87d626ddd559dc95366fbfc0dd'>
+		<div class="section-content-tools-wrapper">
+				<div id="id_email_wrapper" class="mb-3">
+		<label for="id_email" id="label_email">DId2 or Email Address:</label>
+		<input class="form-control" name="email" id="id_email" type="text" value="sysadmin@wistex.com">
+		<small id="help_email" class="form-text text-muted"></small>
+	</div>
+				<div class="mb-3">
+		<label for="id_origpass">Current Password</label>
+		<input class="form-control" type="password" name="origpass" id="id_origpass" value=" ">		<small id="help_origpass" class="form-text text-muted"></small>
+	</div>
+				<div class="mb-3">
+		<label for="id_npassword">Enter New Password</label>
+		<input class="form-control" type="password" name="npassword" id="id_npassword" value="">		<small id="help_npassword" class="form-text text-muted"></small>
+	</div>
+				<div class="mb-3">
+		<label for="id_confirm">Confirm New Password</label>
+		<input class="form-control" type="password" name="confirm" id="id_confirm" value="">		<small id="help_confirm" class="form-text text-muted">Leave password fields blank unless changing</small>
+	</div>
 
-    <div class="table-responsive" style="background: #ffffff;">
-        <table class="table text-black">
-        <!--
-            <thead>
-                <tr>
-                    <th style="width: 3rem;"><i class="fa fa-envelope-o"></i></th>
-                    <th>Message</th>
-                </tr>
-            </thead>
-            -->
-            <tbody>
-			<style type="text/css">
-<!--
-    a.main-notif-item:link {
-      color: black !important; 
-    }
-    a.main-notif-item:visited {
-      color: black !important; 
-      background: #eeeeee !important;
-    }
-    a.main-notif-item:hover {
-      color: #43488A !important; 
-    }
-    a.main-notif-item:focus {
-      color: green !important; 
-    }
-    a.main-notif-item:active {
-      color: green !important; 
-    }
-    -->
-</style>    
+			<div class="settings-submit-wrapper" >
+				<button type="submit" name="submit" class="btn btn-primary">Submit</button>
+			</div>
+			
+		</div>
+	</form>
+</div>
 
-			<tr>
-                    <td rowspan="2">
-					<img src="https://dev.neuhub.org/photo/7f9b2057-6df6-4f62-9de4-a5f85bd3934c-6" style="width: 2.7rem;height: 2.7rem;">
 
-				</td>
-                    <td class="table-primary" style="padding-top: 2px;padding-bottom: 2px;"><span class="pull-right text-muted small" style="text-align: right;">19 hours ago<br></span><small style="text-align: left;"><a class="zrl" href="https://wistex.biz/channel/scott"  target="_blank"  rel="nofollow noopener" >Scott M. Stolz</a> <a class="zrl" href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly93aXN0ZXguYml6L2l0ZW0vMDQ2ZDdmN2UtZWU5NC00MzFlLThlZjQtNWNlNzhkZGZlMjQx"  target="_blank"  rel="nofollow noopener" >tagged you</a>.</small></td>
-                </tr>
-                <tr>
-				
-                    <td>
-				<a href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly93aXN0ZXguYml6L2l0ZW0vMDQ2ZDdmN2UtZWU5NC00MzFlLThlZjQtNWNlNzhkZGZlMjQx" class="main-notif-item">
-				<span class="pull-right text-muted" style="text-align: right;">
-	      				
-					<button type="button" class="btn btn-primary btn-sm">View</button>
-					</span>
-					<i class="fa fa-comments-o"></i><strong>&nbsp;Scott M. Stolz</strong>
-											<br>Test Private Message 
-									
-					<br>@!WisTex This is a test private message.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...
-				</a>	
-				</td>
-				
-                </tr><style type="text/css">
-<!--
-    a.main-notif-item:link {
-      color: black !important; 
-    }
-    a.main-notif-item:visited {
-      color: black !important; 
-      background: #eeeeee !important;
-    }
-    a.main-notif-item:hover {
-      color: #43488A !important; 
-    }
-    a.main-notif-item:focus {
-      color: green !important; 
-    }
-    a.main-notif-item:active {
-      color: green !important; 
-    }
-    -->
-</style>    
-
-			<tr>
-                    <td rowspan="2">
-					<img src="https://dev.neuhub.org/photo/7f9b2057-6df6-4f62-9de4-a5f85bd3934c-6" style="width: 2.7rem;height: 2.7rem;">
-
-				</td>
-                    <td class="table-primary" style="padding-top: 2px;padding-bottom: 2px;"><span class="pull-right text-muted small" style="text-align: right;">19 hours ago<br></span><small style="text-align: left;"><a class="zrl" href="https://wistex.biz/channel/scott"  target="_blank"  rel="nofollow noopener" >Scott M. Stolz</a> commented on <a class="zrl" href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtLzBkMjIzMWZiLTc1MTQtNGE3Ni05MmU2LWQwYTY1NDFiMWJhMw"  target="_blank"  rel="nofollow noopener" >your post</a></small></td>
-                </tr>
-                <tr>
-				
-                    <td>
-				<a href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtLzBkMjIzMWZiLTc1MTQtNGE3Ni05MmU2LWQwYTY1NDFiMWJhMw" class="main-notif-item">
-				<span class="pull-right text-muted" style="text-align: right;">
-	      				
-					<button type="button" class="btn btn-primary btn-sm">View</button>
-					</span>
-					<i class="fa fa-comments-o"></i><strong>&nbsp;Scott M. Stolz</strong>
-									
-					<br>Here is some code:&lt;i class=&quot;fa fa-comments-o&quot;&gt;&lt;/i&gt;&lt;strong&gt;&nbsp;{{$xname}}&lt;/strong&gt;How will this...
-				</a>	
-				</td>
-				
-                </tr><style type="text/css">
-<!--
-    a.main-notif-item:link {
-      color: black !important; 
-    }
-    a.main-notif-item:visited {
-      color: black !important; 
-      background: #eeeeee !important;
-    }
-    a.main-notif-item:hover {
-      color: #43488A !important; 
-    }
-    a.main-notif-item:focus {
-      color: green !important; 
-    }
-    a.main-notif-item:active {
-      color: green !important; 
-    }
-    -->
-</style>    
-
-			<tr>
-                    <td rowspan="2">
-					<img src="https://dev.neuhub.org/photo/7f9b2057-6df6-4f62-9de4-a5f85bd3934c-6" style="width: 2.7rem;height: 2.7rem;">
-
-				</td>
-                    <td class="table-primary" style="padding-top: 2px;padding-bottom: 2px;"><span class="pull-right text-muted small" style="text-align: right;">19 hours ago<br></span><small style="text-align: left;"><a class="zrl" href="https://wistex.biz/channel/scott"  target="_blank"  rel="nofollow noopener" >Scott M. Stolz</a> commented on <a class="zrl" href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtLzY2MmE3ZmQwLWM5ZWItNDllYi05YTFkLWFmZTA2OWNlOWQyYQ"  target="_blank"  rel="nofollow noopener" >your post</a></small></td>
-                </tr>
-                <tr>
-				
-                    <td>
-				<a href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtLzY2MmE3ZmQwLWM5ZWItNDllYi05YTFkLWFmZTA2OWNlOWQyYQ" class="main-notif-item">
-				<span class="pull-right text-muted" style="text-align: right;">
-	      				
-					<button type="button" class="btn btn-primary btn-sm">View</button>
-					</span>
-					<i class="fa fa-comments-o"></i><strong>&nbsp;Scott M. Stolz</strong>
-									
-					<br>Yet another test reply. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol...
-				</a>	
-				</td>
-				
-                </tr><style type="text/css">
-<!--
-    a.main-notif-item:link {
-      color: black !important; 
-    }
-    a.main-notif-item:visited {
-      color: black !important; 
-      background: #eeeeee !important;
-    }
-    a.main-notif-item:hover {
-      color: #43488A !important; 
-    }
-    a.main-notif-item:focus {
-      color: green !important; 
-    }
-    a.main-notif-item:active {
-      color: green !important; 
-    }
-    -->
-</style>    
-
-			<tr>
-                    <td rowspan="2">
-					<img src="https://dev.neuhub.org/photo/7f9b2057-6df6-4f62-9de4-a5f85bd3934c-6" style="width: 2.7rem;height: 2.7rem;">
-
-				</td>
-                    <td class="table-primary" style="padding-top: 2px;padding-bottom: 2px;"><span class="pull-right text-muted small" style="text-align: right;">20 hours ago<br></span><small style="text-align: left;"><a class="zrl" href="https://wistex.biz/channel/scott"  target="_blank"  rel="nofollow noopener" >Scott M. Stolz</a> commented on <a class="zrl" href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtL2NjMDM0NjhmLWI3M2MtNDI1Ny1hNzY0LTAzNWQ5ZTUzMzZkOA"  target="_blank"  rel="nofollow noopener" >your post</a></small></td>
-                </tr>
-                <tr>
-				
-                    <td>
-				<a href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtL2NjMDM0NjhmLWI3M2MtNDI1Ny1hNzY0LTAzNWQ5ZTUzMzZkOA" class="main-notif-item">
-				<span class="pull-right text-muted" style="text-align: right;">
-	      				
-					<button type="button" class="btn btn-primary btn-sm">View</button>
-					</span>
-					<i class="fa fa-comments-o"></i><strong>&nbsp;Scott M. Stolz</strong>
-									
-					<br>A test reply to your reply....
-				</a>	
-				</td>
-				
-                </tr><style type="text/css">
-<!--
-    a.main-notif-item:link {
-      color: black !important; 
-    }
-    a.main-notif-item:visited {
-      color: black !important; 
-      background: #eeeeee !important;
-    }
-    a.main-notif-item:hover {
-      color: #43488A !important; 
-    }
-    a.main-notif-item:focus {
-      color: green !important; 
-    }
-    a.main-notif-item:active {
-      color: green !important; 
-    }
-    -->
-</style>    
-
-			<tr>
-                    <td rowspan="2">
-					<img src="https://dev.neuhub.org/photo/7f9b2057-6df6-4f62-9de4-a5f85bd3934c-6" style="width: 2.7rem;height: 2.7rem;">
-
-				</td>
-                    <td class="table-primary" style="padding-top: 2px;padding-bottom: 2px;"><span class="pull-right text-muted small" style="text-align: right;">1 day ago<br></span><small style="text-align: left;"><a class="zrl" href="https://wistex.biz/channel/scott"  target="_blank"  rel="nofollow noopener" >Scott M. Stolz</a> commented on <a class="zrl" href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtL2NhYTczMmE5LTI0YTUtNGFiZi05MjA1LTQ2MjU1ODkxY2M4Mw"  target="_blank"  rel="nofollow noopener" >your post</a></small></td>
-                </tr>
-                <tr>
-				
-                    <td>
-				<a href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtL2NhYTczMmE5LTI0YTUtNGFiZi05MjA1LTQ2MjU1ODkxY2M4Mw" class="main-notif-item">
-				<span class="pull-right text-muted" style="text-align: right;">
-	      				
-					<button type="button" class="btn btn-primary btn-sm">View</button>
-					</span>
-					<i class="fa fa-comments-o"></i><strong>&nbsp;Scott M. Stolz</strong>
-									
-					<br>This is another test message....
-				</a>	
-				</td>
-				
-                </tr><style type="text/css">
-<!--
-    a.main-notif-item:link {
-      color: black !important; 
-    }
-    a.main-notif-item:visited {
-      color: black !important; 
-      background: #eeeeee !important;
-    }
-    a.main-notif-item:hover {
-      color: #43488A !important; 
-    }
-    a.main-notif-item:focus {
-      color: green !important; 
-    }
-    a.main-notif-item:active {
-      color: green !important; 
-    }
-    -->
-</style>    
-
-			<tr>
-                    <td rowspan="2">
-					<img src="https://dev.neuhub.org/photo/7f9b2057-6df6-4f62-9de4-a5f85bd3934c-6" style="width: 2.7rem;height: 2.7rem;">
-
-				</td>
-                    <td class="table-primary" style="padding-top: 2px;padding-bottom: 2px;"><span class="pull-right text-muted small" style="text-align: right;">1 day ago<br></span><small style="text-align: left;"><a class="zrl" href="https://wistex.biz/channel/scott"  target="_blank"  rel="nofollow noopener" >Scott M. Stolz</a> commented on <a class="zrl" href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtL2E0Nzc5NWJlLTczMDMtNDc2NS04NDBiLWUyYjE2ZmQyNDU5ZA"  target="_blank"  rel="nofollow noopener" >your post</a></small></td>
-                </tr>
-                <tr>
-				
-                    <td>
-				<a href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtL2E0Nzc5NWJlLTczMDMtNDc2NS04NDBiLWUyYjE2ZmQyNDU5ZA" class="main-notif-item">
-				<span class="pull-right text-muted" style="text-align: right;">
-	      				
-					<button type="button" class="btn btn-primary btn-sm">View</button>
-					</span>
-					<i class="fa fa-comments-o"></i><strong>&nbsp;Scott M. Stolz</strong>
-									
-					<br>This is a really long test reply. If this were an actual message, something important would be here.This starts on a new line. And...
-				</a>	
-				</td>
-				
-                </tr><style type="text/css">
-<!--
-    a.main-notif-item:link {
-      color: black !important; 
-    }
-    a.main-notif-item:visited {
-      color: black !important; 
-      background: #eeeeee !important;
-    }
-    a.main-notif-item:hover {
-      color: #43488A !important; 
-    }
-    a.main-notif-item:focus {
-      color: green !important; 
-    }
-    a.main-notif-item:active {
-      color: green !important; 
-    }
-    -->
-</style>    
-
-			<tr>
-                    <td rowspan="2">
-					<img src="https://dev.neuhub.org/photo/7f9b2057-6df6-4f62-9de4-a5f85bd3934c-6" style="width: 2.7rem;height: 2.7rem;">
-
-				</td>
-                    <td class="table-primary" style="padding-top: 2px;padding-bottom: 2px;"><span class="pull-right text-muted small" style="text-align: right;">2 days ago<br></span><small style="text-align: left;"><a class="zrl" href="https://wistex.biz/channel/scott"  target="_blank"  rel="nofollow noopener" >Scott M. Stolz</a> commented on <a class="zrl" href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtLzkxNGVkN2E0LTMwODctNDliOS04MmQ4LTI0Y2E3NTQ1MGFhYQ"  target="_blank"  rel="nofollow noopener" >your post</a></small></td>
-                </tr>
-                <tr>
-				
-                    <td>
-				<a href="https://dev.neuhub.org/display/b64.aHR0cHM6Ly9kZXYubmV1aHViLm9yZy9pdGVtLzkxNGVkN2E0LTMwODctNDliOS04MmQ4LTI0Y2E3NTQ1MGFhYQ" class="main-notif-item">
-				<span class="pull-right text-muted" style="text-align: right;">
-	      				
-					<button type="button" class="btn btn-primary btn-sm">View</button>
-					</span>
-					<i class="fa fa-comments-o"></i><strong>&nbsp;Scott M. Stolz</strong>
-									
-					<br>Test Reply...
-				</a>	
-				</td>
-				
-                </tr>
-            </tbody>
-        </table>
-
-<!--
-    <nav>
-        <ul class="pagination justify-content-center">
-            <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-        </ul>
-    </nav>    
--->
-    </div>
-    
                         </div>
                         <div class="col-md-4 col-lg-3" id="!region_1">
                             
@@ -1700,7 +1408,19 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                             
                             
                             <div class="d-none d-sm-none d-md-none d-lg-block">
-                                                        
+                            
+<div class="widget settings-widget">
+	<h3>Settings</h3>		
+	<ul class="nav nav-pills flex-column">
+				<li class="nav-item"><a href="https://dev.neuhub.org/settings/account" class="nav-link active">Account settings</a></li>
+				<li class="nav-item"><a href="https://dev.neuhub.org/settings/channel" class="nav-link">Channel settings</a></li>
+				<li class="nav-item"><a href="https://dev.neuhub.org/settings/privacy" class="nav-link">Privacy settings</a></li>
+				<li class="nav-item"><a href="https://dev.neuhub.org/settings/display" class="nav-link">Display settings</a></li>
+			</ul>
+	
+</div>
+
+                            
                             </div>
                             
                         </div>
@@ -1758,7 +1478,19 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body" id="!region_1">
-      </div>
+    
+<div class="widget settings-widget">
+	<h3>Settings</h3>		
+	<ul class="nav nav-pills flex-column">
+				<li class="nav-item"><a href="https://dev.neuhub.org/settings/account" class="nav-link active">Account settings</a></li>
+				<li class="nav-item"><a href="https://dev.neuhub.org/settings/channel" class="nav-link">Channel settings</a></li>
+				<li class="nav-item"><a href="https://dev.neuhub.org/settings/privacy" class="nav-link">Privacy settings</a></li>
+				<li class="nav-item"><a href="https://dev.neuhub.org/settings/display" class="nav-link">Display settings</a></li>
+			</ul>
+	
+</div>
+
+  </div>
 </div>
 
 
@@ -1788,7 +1520,227 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
     </ul>
     </div>
       
-      </div>
+    
+
+<div id="notifications_wrapper" class="mb-4">
+	<div id="no_notifications" class="d-xl-none">
+		Sorry, you have got no notifications at the moment<span class="jumping-dots"><span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span></span>
+	</div>
+	<div id="nav-notifications-template" rel="template">
+		<a class="list-group-item text-decoration-none text-dark clearfix notification {6}" href="{0}" title="{13}" data-b64mid="{7}" data-notify_id="{8}" data-thread_top="{9}" data-contact_name="{2}" data-contact_addr="{3}" data-when="{5}">
+			<img class="menu-img-3" data-src="{1}" loading="lazy">
+			<div class="contactname"><span class="text-dark fw-bold">{2}</span> <span class="text-muted">{3}</span></div>
+			<span class="text-muted">{4}</span><br>
+			<span class="text-muted notifications-autotime" title="{5}">{5}</span>
+		</a>
+	</div>
+	<div id="nav-notifications-forums-template" rel="template">
+		<a class="list-group-item text-decoration-none clearfix notification notification-forum" href="{0}" title="{4} - {3}" data-b64mid="{7}" data-notify_id="{8}" data-thread_top="{9}" data-contact_name="{2}" data-contact_addr="{3}" data-b64mids='{12}'>
+			<span class="float-end badge bg-secondary">{10}</span>
+			<img class="menu-img-1" data-src="{1}" loading="lazy">
+			<span class="">{2}</span>
+			<i class="fa fa-{11} text-muted"></i>
+		</a>
+	</div>
+	<div id="notifications" class="border border-top-0 rounded navbar-nav collapse">
+				<div class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse network-button">
+			<a id="notification-link-network" class="collapsed list-group-item fakelink notification-link" href="#" title="New network activity notifications" data-bs-target="#nav-network-sub" data-bs-toggle="collapse" data-sse_type="network">
+				<i class="fa fa-fw fa-th"></i> Network
+				<span class="float-end badge bg-secondary network-update"></span>
+			</a>
+		</div>
+		<div id="nav-network-sub" class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse notification-content" data-bs-parent="#notifications" data-sse_type="network">
+						<a class="list-group-item text-decoration-none text-dark" id="nav-network-see-all" href="network">
+				<i class="fa fa-fw fa-external-link"></i> Network stream
+			</a>
+									<div class="list-group-item cursor-pointer" id="nav-network-mark-all" onclick="markRead('network'); return false;">
+				<i class="fa fa-fw fa-check"></i> Mark all notifications read
+			</div>
+												<div class="list-group-item cursor-pointer" id="tt-network-only">
+				<i class="fa fa-fw fa-filter"></i> Show new posts only
+			</div>
+									<div class="list-group-item clearfix notifications-textinput" id="cn-network-only">
+				<div class="text-muted notifications-textinput-filter"><i class="fa fa-fw fa-filter"></i></div>
+				<input id="cn-network-input" type="text" class="notification-filter form-control form-control-sm" placeholder="Filter by name or address">
+				<div id="cn-network-input-clear" class="text-muted notifications-textinput-clear d-none"><i class="fa fa-times"></i></div>
+			</div>
+									<div id="nav-network-menu" class="list-group list-group-flush"></div>
+			<div id="nav-network-loading" class="list-group-item" style="display: none;">
+				Loading<span class="jumping-dots"><span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span></span>
+			</div>
+		</div>
+				<div class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse home-button">
+			<a id="notification-link-home" class="collapsed list-group-item fakelink notification-link" href="#" title="New home activity notifications" data-bs-target="#nav-home-sub" data-bs-toggle="collapse" data-sse_type="home">
+				<i class="fa fa-fw fa-home"></i> Home
+				<span class="float-end badge bg-danger home-update"></span>
+			</a>
+		</div>
+		<div id="nav-home-sub" class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse notification-content" data-bs-parent="#notifications" data-sse_type="home">
+						<a class="list-group-item text-decoration-none text-dark" id="nav-home-see-all" href="channel/wistex">
+				<i class="fa fa-fw fa-external-link"></i> Home stream
+			</a>
+									<div class="list-group-item cursor-pointer" id="nav-home-mark-all" onclick="markRead('home'); return false;">
+				<i class="fa fa-fw fa-check"></i> Mark all notifications seen
+			</div>
+												<div class="list-group-item cursor-pointer" id="tt-home-only">
+				<i class="fa fa-fw fa-filter"></i> Show new posts only
+			</div>
+									<div class="list-group-item clearfix notifications-textinput" id="cn-home-only">
+				<div class="text-muted notifications-textinput-filter"><i class="fa fa-fw fa-filter"></i></div>
+				<input id="cn-home-input" type="text" class="notification-filter form-control form-control-sm" placeholder="Filter by name or address">
+				<div id="cn-home-input-clear" class="text-muted notifications-textinput-clear d-none"><i class="fa fa-times"></i></div>
+			</div>
+									<div id="nav-home-menu" class="list-group list-group-flush"></div>
+			<div id="nav-home-loading" class="list-group-item" style="display: none;">
+				Loading<span class="jumping-dots"><span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span></span>
+			</div>
+		</div>
+				<div class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse dm-button">
+			<a id="notification-link-dm" class="collapsed list-group-item fakelink notification-link" href="#" title="New direct messages notifications" data-bs-target="#nav-dm-sub" data-bs-toggle="collapse" data-sse_type="dm">
+				<i class="fa fa-fw fa-envelope"></i> Direct Messages
+				<span class="float-end badge bg-danger dm-update"></span>
+			</a>
+		</div>
+		<div id="nav-dm-sub" class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse notification-content" data-bs-parent="#notifications" data-sse_type="dm">
+						<a class="list-group-item text-decoration-none text-dark" id="nav-dm-see-all" href="network/?dm=1">
+				<i class="fa fa-fw fa-external-link"></i> Direct messages stream
+			</a>
+									<div class="list-group-item cursor-pointer" id="nav-dm-mark-all" onclick="markRead('dm'); return false;">
+				<i class="fa fa-fw fa-check"></i> Mark all notifications read
+			</div>
+												<div class="list-group-item cursor-pointer" id="tt-dm-only">
+				<i class="fa fa-fw fa-filter"></i> Show new posts only
+			</div>
+									<div class="list-group-item clearfix notifications-textinput" id="cn-dm-only">
+				<div class="text-muted notifications-textinput-filter"><i class="fa fa-fw fa-filter"></i></div>
+				<input id="cn-dm-input" type="text" class="notification-filter form-control form-control-sm" placeholder="Filter by name or address">
+				<div id="cn-dm-input-clear" class="text-muted notifications-textinput-clear d-none"><i class="fa fa-times"></i></div>
+			</div>
+									<div id="nav-dm-menu" class="list-group list-group-flush"></div>
+			<div id="nav-dm-loading" class="list-group-item" style="display: none;">
+				Loading<span class="jumping-dots"><span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span></span>
+			</div>
+		</div>
+				<div class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse all_events-button">
+			<a id="notification-link-all_events" class="collapsed list-group-item fakelink notification-link" href="#" title="New events notifications" data-bs-target="#nav-all_events-sub" data-bs-toggle="collapse" data-sse_type="all_events">
+				<i class="fa fa-fw fa-calendar"></i> Events
+				<span class="float-end badge bg-secondary all_events-update"></span>
+			</a>
+		</div>
+		<div id="nav-all_events-sub" class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse notification-content" data-bs-parent="#notifications" data-sse_type="all_events">
+						<a class="list-group-item text-decoration-none text-dark" id="nav-all_events-see-all" href="cdav/calendar">
+				<i class="fa fa-fw fa-external-link"></i> View events
+			</a>
+									<div class="list-group-item cursor-pointer" id="nav-all_events-mark-all" onclick="markRead('all_events'); return false;">
+				<i class="fa fa-fw fa-check"></i> Mark all events seen
+			</div>
+									<div id="nav-all_events-menu" class="list-group list-group-flush"></div>
+			<div id="nav-all_events-loading" class="list-group-item" style="display: none;">
+				Loading<span class="jumping-dots"><span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span></span>
+			</div>
+		</div>
+				<div class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse intros-button">
+			<a id="notification-link-intros" class="collapsed list-group-item fakelink notification-link" href="#" title="New connections notifications" data-bs-target="#nav-intros-sub" data-bs-toggle="collapse" data-sse_type="intros">
+				<i class="fa fa-fw fa-users"></i> New Connections
+				<span class="float-end badge bg-danger intros-update"></span>
+			</a>
+		</div>
+		<div id="nav-intros-sub" class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse notification-content" data-bs-parent="#notifications" data-sse_type="intros">
+						<a class="list-group-item text-decoration-none text-dark" id="nav-intros-see-all" href="connections">
+				<i class="fa fa-fw fa-external-link"></i> View all connections
+			</a>
+												<div id="nav-intros-menu" class="list-group list-group-flush"></div>
+			<div id="nav-intros-loading" class="list-group-item" style="display: none;">
+				Loading<span class="jumping-dots"><span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span></span>
+			</div>
+		</div>
+				<div class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse files-button">
+			<a id="notification-link-files" class="collapsed list-group-item fakelink notification-link" href="#" title="New files notifications" data-bs-target="#nav-files-sub" data-bs-toggle="collapse" data-sse_type="files">
+				<i class="fa fa-fw fa-folder"></i> Files
+				<span class="float-end badge bg-danger files-update"></span>
+			</a>
+		</div>
+		<div id="nav-files-sub" class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse notification-content" data-bs-parent="#notifications" data-sse_type="files">
+												<div id="nav-files-menu" class="list-group list-group-flush"></div>
+			<div id="nav-files-loading" class="list-group-item" style="display: none;">
+				Loading<span class="jumping-dots"><span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span></span>
+			</div>
+		</div>
+				<div class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse notify-button">
+			<a id="notification-link-notify" class="collapsed list-group-item fakelink notification-link" href="#" title="Notices" data-bs-target="#nav-notify-sub" data-bs-toggle="collapse" data-sse_type="notify">
+				<i class="fa fa-fw fa-exclamation"></i> Notices
+				<span class="float-end badge bg-danger notify-update"></span>
+			</a>
+		</div>
+		<div id="nav-notify-sub" class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse notification-content" data-bs-parent="#notifications" data-sse_type="notify">
+						<a class="list-group-item text-decoration-none text-dark" id="nav-notify-see-all" href="notifications/system">
+				<i class="fa fa-fw fa-external-link"></i> View all notices
+			</a>
+									<div class="list-group-item cursor-pointer" id="nav-notify-mark-all" onclick="markRead('notify'); return false;">
+				<i class="fa fa-fw fa-check"></i> Mark all notices seen
+			</div>
+									<div id="nav-notify-menu" class="list-group list-group-flush"></div>
+			<div id="nav-notify-loading" class="list-group-item" style="display: none;">
+				Loading<span class="jumping-dots"><span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span></span>
+			</div>
+		</div>
+				<div class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse forums-button">
+			<a id="notification-link-forums" class="collapsed list-group-item fakelink notification-link" href="#" title="Forums" data-bs-target="#nav-forums-sub" data-bs-toggle="collapse" data-sse_type="forums">
+				<i class="fa fa-fw fa-comments-o"></i> Forums
+				<span class="float-end badge bg-secondary forums-update"></span>
+			</a>
+		</div>
+		<div id="nav-forums-sub" class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse notification-content" data-bs-parent="#notifications" data-sse_type="forums">
+																		<div class="list-group-item clearfix notifications-textinput" id="cn-forums-only">
+				<div class="text-muted notifications-textinput-filter"><i class="fa fa-fw fa-filter"></i></div>
+				<input id="cn-forums-input" type="text" class="notification-filter form-control form-control-sm" placeholder="Filter by name or address">
+				<div id="cn-forums-input-clear" class="text-muted notifications-textinput-clear d-none"><i class="fa fa-times"></i></div>
+			</div>
+									<div id="nav-forums-menu" class="list-group list-group-flush"></div>
+			<div id="nav-forums-loading" class="list-group-item" style="display: none;">
+				Loading<span class="jumping-dots"><span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span></span>
+			</div>
+		</div>
+				<div class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse register-button">
+			<a id="notification-link-register" class="collapsed list-group-item fakelink notification-link" href="#" title="New registrations notifications" data-bs-target="#nav-register-sub" data-bs-toggle="collapse" data-sse_type="register">
+				<i class="fa fa-fw fa-user-o"></i> Registrations
+				<span class="float-end badge bg-danger register-update"></span>
+			</a>
+		</div>
+		<div id="nav-register-sub" class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse notification-content" data-bs-parent="#notifications" data-sse_type="register">
+												<div id="nav-register-menu" class="list-group list-group-flush"></div>
+			<div id="nav-register-loading" class="list-group-item" style="display: none;">
+				Loading<span class="jumping-dots"><span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span></span>
+			</div>
+		</div>
+			</div>
+</div>
+
+<div class="widget">
+<h3>New Member Links</h3>
+<ul class="nav nav-pills flex-column">
+			<div><strong>Profile Creation</strong></div>
+						<li class="nav-item"><a href="profile_photo" class="nav-link">Upload profile photo</a></li>
+				<li class="nav-item"><a href="cover_photo" class="nav-link">Upload cover photo</a></li>
+				<li class="nav-item"><a href="profiles" class="nav-link">Edit your profile</a></li>
+						<div><strong>Find and Connect with others</strong></div>
+						<li class="nav-item"><a href="directory" class="nav-link">View the directory</a></li>
+				<li class="nav-item"><a href="directory?f=&suggest=1" class="nav-link">View friend suggestions</a></li>
+				<li class="nav-item"><a href="connections" class="nav-link">Manage your connections</a></li>
+						<div><strong>Communicate</strong></div>
+						<li class="nav-item"><a href="channel/wistex" class="nav-link">View your channel homepage</a></li>
+				<li class="nav-item"><a href="network" class="nav-link">View your network stream</a></li>
+						<div><strong>Miscellaneous</strong></div>
+						<li class="nav-item"><a href="settings" class="nav-link">Settings</a></li>
+				<li class="nav-item"><a href="help" class="nav-link">Documentation</a></li>
+						<div><strong>Missing Features?</strong></div>
+						<li class="nav-item"><a href="apps" class="nav-link">Pin apps to navigation bar</a></li>
+				<li class="nav-item"><a href="apps/available" class="nav-link">Install more apps</a></li>
+			</ul>
+</div>
+
+
+  </div>
 </div>
 
     <!--
