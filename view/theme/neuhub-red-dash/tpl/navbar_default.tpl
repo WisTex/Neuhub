@@ -545,7 +545,14 @@
                             <li class="breadcrumb-item"><a href="/settings/privacy" class="text-decoration-none"><span>Privacy</span></a></li>
                             {{assign var="overrideselname" value="true"}}
                         {{/if}}                                                
-    
+
+
+                        {{assign var="lookingfor" value="$z_baseurl/messages"}}
+                        {{if $url == $lookingfor}}
+                            <li class="breadcrumb-item"><a href="/hq" class="text-decoration-none"><span>HQ</span></a></li>
+                            <li class="breadcrumb-item"><a href="/messages" class="text-decoration-none"><span>Notifications</span></a></li>
+                            {{assign var="overrideselname" value="true"}}
+                        {{/if}}       
                                  
                         {{assign var="lookingfor" value="$z_baseurl/settings/photos"}}
                         {{if $url == $lookingfor}}
@@ -657,6 +664,11 @@
                             {{if $url == $lookingfor}}
                                 <b>Things</b>
                             {{/if}}                           
+
+                            {{assign var="lookingfor" value="$z_baseurl/messages"}}
+                            {{if $url == $lookingfor}}
+                                <b>Notifications</b>
+                            {{/if}}          
             
                         </span>
                     </a>
