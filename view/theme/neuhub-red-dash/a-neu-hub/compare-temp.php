@@ -5,47 +5,43 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Neuhub Development</title>
-      
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">  
-	
-  <script>var baseurl="https://dev.neuhub.org";</script>
+    <title>WisTex Network</title>
+        
+  <script>var baseurl="https://wistex.biz";</script>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<base href="https://dev.neuhub.org/" />
+<base href="https://wistex.biz/" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=0" />
 
 <meta name="application-name" content="hubzilla" />
 <meta name="generator" content="hubzilla" />
-<meta name="theme-color" content="" />
+<meta name="theme-color" content="rgba(49,57,213,1)" />
 
-<link rel="stylesheet" href="https://dev.neuhub.org/vendor/twbs/bootstrap/dist/css/bootstrap.min.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/theme/neuhub-red-dash/assets/bootstrap/css/bootstrap.min.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.orghttps://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/theme/neuhub-red-dash/assets/fonts/fontawesome-all.min.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/theme/neuhub-red-dash/assets/fonts/font-awesome.min.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/theme/neuhub-red-dash/assets/fonts/fontawesome5-overrides.min.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/theme/neuhub-red-dash/assets/fonts/hubzilla/style.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/library/bootstrap-tagsinput/bootstrap-tagsinput.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/css/bootstrap-red.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/library/datetimepicker/jquery.datetimepicker.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/library/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/library/tiptip/tipTip.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/library/jgrowl/jquery.jgrowl.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/library/jRange/jquery.range.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/css/conversation.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/css/widgets.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/css/colorbox.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/library/justifiedGallery/justifiedGallery.min.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/css/default.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/css/mod_settings.css?v=7.8" type="text/css" media="screen">
-<link rel="stylesheet" href="https://dev.neuhub.org/view/theme/neuhub-red-dash/php/style.pcss?f=&puid=2&v=7.8" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.bizhttps://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/theme/purplebasic/assets/fonts/fontawesome-all.min.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/theme/purplebasic/assets/fonts/font-awesome.min.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/theme/purplebasic/assets/fonts/fontawesome5-overrides.min.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/theme/purplebasic/assets/fonts/hubzilla/style.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/library/bootstrap-tagsinput/bootstrap-tagsinput.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/css/bootstrap-red.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/library/datetimepicker/jquery.datetimepicker.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/library/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/library/tiptip/tipTip.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/library/jgrowl/jquery.jgrowl.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/library/jRange/jquery.range.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/css/conversation.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/css/widgets.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/css/colorbox.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/library/justifiedGallery/justifiedGallery.min.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/theme/purplebasic/assets/bootstrap/css/bootstrap.min.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/css/default.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/css/mod_settings.css?v=7.2" type="text/css" media="screen">
+<link rel="stylesheet" href="https://wistex.biz/view/theme/purplebasic/php/style.pcss?f=&puid=4&v=7.2" type="text/css" media="screen">
 
 <script>
 
 	var aStr = {
 
 		'delitem'     : "Delete this item?",
-		'itemdel'     : "Item deleted",
 		'comment'     : "Comment",
 		'showmore'    : "<i class='fa fa-chevron-down'></i> show all",
 		'showfewer'   : "<i class='fa fa-chevron-up'></i> show less",
@@ -123,41 +119,41 @@
 </script>
 
 
-<script src="https://dev.neuhub.org/view/js/jquery.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/justifiedGallery/jquery.justifiedGallery.min.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/sprintf.js/dist/sprintf.min.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/textcomplete/textcomplete.min.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/view/js/autocomplete.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/jquery.timeago.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/readmore.js/readmore.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/jgrowl/jquery.jgrowl.min.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/sjcl/sjcl.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/view/js/acl.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/view/js/webtoolkit.base64.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/view/js/crypto.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/jRange/jquery.range.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/colorbox/jquery.colorbox-min.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/jquery.AreYouSure/jquery.are-you-sure.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/tableofcontents/jquery.toc.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/Sortable/Sortable.min.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/vendor/desandro/imagesloaded/imagesloaded.pkgd.min.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/bootbox/bootbox.min.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/bootstrap-tagsinput/bootstrap-tagsinput.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/datetimepicker/jquery.datetimepicker.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/library/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js?v=7.8" ></script>
-<script src="https://dev.neuhub.org/view/js/mod_settings.js?v=7.8" ></script>
+<script src="https://wistex.biz/view/js/jquery.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/justifiedGallery/jquery.justifiedGallery.min.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/sprintf.js/dist/sprintf.min.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/textcomplete/textcomplete.min.js?v=7.2" ></script>
+<script src="https://wistex.biz/view/js/autocomplete.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/jquery.timeago.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/readmore.js/readmore.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/jgrowl/jquery.jgrowl.min.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/sjcl/sjcl.js?v=7.2" ></script>
+<script src="https://wistex.biz/view/js/acl.js?v=7.2" ></script>
+<script src="https://wistex.biz/view/js/webtoolkit.base64.js?v=7.2" ></script>
+<script src="https://wistex.biz/view/js/crypto.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/jRange/jquery.range.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/colorbox/jquery.colorbox-min.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/jquery.AreYouSure/jquery.are-you-sure.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/tableofcontents/jquery.toc.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/Sortable/Sortable.min.js?v=7.2" ></script>
+<script src="https://wistex.biz/vendor/desandro/imagesloaded/imagesloaded.pkgd.min.js?v=7.2" ></script>
+<script src="https://wistex.biz/view/theme/purplebasic/assets/bootstrap/js/bootstrap.min.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/bootbox/bootbox.min.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/bootstrap-tagsinput/bootstrap-tagsinput.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/datetimepicker/jquery.datetimepicker.js?v=7.2" ></script>
+<script src="https://wistex.biz/library/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js?v=7.2" ></script>
+<script src="https://wistex.biz/view/js/mod_settings.js?v=7.2" ></script>
 
 <link rel="manifest" href="/manifest.json" />
-<link rel="shortcut icon" href="https://dev.neuhub.org/photo/profile/s/2" />
+<link rel="shortcut icon" href="https://wistex.biz/photo/profile/s/4" />
 <link rel="apple-touch-icon" href="/images/app/hz-192.png" />
 
 
 <script>
 	var updateInterval = 80000;
 	var sse_enabled = 0;
-	var localUser = 2;
-	var zid = 'wistex@dev.neuhub.org';
+	var localUser = 4;
+	var zid = 'scott@wistex.biz';
 	var justifiedGalleryActive = false;
 		var channelId = false;	var preloadImages = 0;
 	var auto_save_draft = false;
@@ -165,7 +161,7 @@
 
 
 
-<script>$(document).ready(function() { $("#nav-search-text").search_autocomplete('https://dev.neuhub.org/acl');});</script><script src="https://dev.neuhub.org/view/js/main.js?v=7.8" ></script>
+<script>$(document).ready(function() { $("#nav-search-text").search_autocomplete('https://wistex.biz/acl');});</script><script src="https://wistex.biz/view/js/main.js?v=7.2" ></script>
     
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
@@ -233,6 +229,28 @@ body {
     // background-color: rgb(238,238,238);
 }
 
+.wall-item-head {
+    // background-color: rgb(238,238,238);
+    background-color: rgb(248,249,252)
+}
+
+.shared_header {
+    // background-color: rgb(238,238,238);
+    // background-color: rgb(248,249,252)
+    // border-bottom: 4px dotted blue;
+}
+
+.section-title-wrapper {
+    // background-color: rgb(238,238,238);
+    background-color: rgb(248,249,252)
+}
+
+.section-subtitle-wrapper {
+    // background-color: rgb(238,238,238);
+    background-color: rgb(245,245,255)
+}
+
+
     </style>
 
 </head>
@@ -274,8 +292,6 @@ body {
                 
                 <!-- begin default navbar template -->
 
-
-
             <style>
             #menu-toggle{
                 color:black;
@@ -300,7 +316,7 @@ body {
         <button class="btn btn-link rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-list"></i></button>
         -->
                     
-        <h2 class="d-none d-sm-none d-md-none d-lg-block"><a href="/" style="color:#000000;">Neuhub Development</a></h2>
+        <h2 class="d-none d-sm-none d-md-none d-lg-block"><a href="/" style="color:#000000;">WisTex Network</a></h2>
                     
         <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search" method="get" action"/search" role="search">
             <div class="input-group"><input class="bg-light form-control border-0 small" type="text" name="search" placeholder="@name, #tag, ?doc, content"><button class="btn btn-primary py-0" type="submit"><i class="fas fa-search"></i></button></div>
@@ -453,121 +469,173 @@ body {
                         <div class="dropdown-divider"></div>
                         -->
 		
+		                <!--
                 		                    		<div class="dropdown-header text-uppercase text-muted">
                     			Pinned Apps
                     		</div>
                     		<div id="nav-app-bin-container" class="">
-                    			                    				<a class="dropdown-item nav-app-sortable" href="https://dev.neuhub.org/hq" title="HQ">
+                    			                    				<a class="dropdown-item nav-app-sortable" href="https://wistex.biz/channel/scott" title="Channel">
+		<i class="generic-icons-nav fa generic-icons-nav fa-fw generic-icons-nav fa-home"></i>
+	<span class="">Channel</span>
+	</a>
+                    			                    				<a class="dropdown-item nav-app-sortable" href="https://wistex.biz/cloud/scott" title="Files">
+		<i class="generic-icons-nav fa generic-icons-nav fa-fw generic-icons-nav fa-folder-open"></i>
+	<span class="">Files</span>
+	</a>
+                    			                    				<a class="dropdown-item nav-app-sortable" href="https://wistex.biz/hq" title="HQ">
 		<i class="generic-icons-nav fa generic-icons-nav fa-fw generic-icons-nav fa-user-circle-o"></i>
 	<span class="">HQ</span>
 	</a>
+                    			                    				<a class="dropdown-item nav-app-sortable" href="https://wistex.biz/network" title="Stream">
+		<i class="generic-icons-nav fa generic-icons-nav fa-fw generic-icons-nav fa-th"></i>
+	<span class="">Stream</span>
+	</a>
                     			                    		</div>
-                		                
-                							<!-- featured apps -->
-                    		<div class="dropdown-header text-uppercase text-muted">
-						Featured Apps
-                    			<!-- Featured Apps -->
-				
-
-				
-				
+                		                		-->
+                
+                		                    		<div class="dropdown-header text-uppercase text-muted">
+                    			Featured Apps
                     		</div>
-					<!-- nav apps -->
-                    		<div id="app-bin-container" data-token="1666825431.a76bb551e4026df3cb300ccf4c38c608ed52e08734365d93b68c2dc018d0d143d846674fb76c413ba8301893254fb568b692d3ca2a6df5781c3c9ca159069f42">
-                    			                    				<a class="dropdown-item" href="https://dev.neuhub.org/cdav/calendar" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMDY3YjcwZTkyZTM1Y2MxYjcyOWM4YzM4NmJm
+                    		<div id="app-bin-container" data-token="1666825469.414a63ba13d616d46fa6e718430f21992acd866e293316b40bcae4ffeac0e4c0153f51d5c3a9c7f666dd6d4cc7be539c1a92c2fee7c74610c23eb2e1753b9e66">
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/articles/scott" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMzNiZGQ1NGEwNTVjOTNmMGY2YTEzNTQ1NzUz
+NmZkOWIwOTQ1YmU1MzhhY2U4NmI2MzhmZWEzNmY1Y2E0MzAyNDc2ODRkZWVhZDZiYTkwZjcz
+NjFiM2Q4NjNiMzU4N2QzY2Y3M2YzM2I0YzhlYmQ1MWQyYTgxMGZhYWQ5ZDg0YjMiLCJhdXRo
+b3IiOiJqZ1BRcllQMWRxazBBck5XYnRITnlKUk9HWkZNN2FQTHBJLS1LeURFUkdCQkxlZkN2
+SXYzLW96WXQzaTZ3WDRzYUpuUkZMUXd6YzdicW5weXROS0lvZyIsIm5hbWUiOiJBcnRpY2xl
+cyIsImRlc2MiOiJDcmVhdGUgaW50ZXJhY3RpdmUgYXJ0aWNsZXMiLCJ1cmwiOiJodHRwczpc
+L1wvd2lzdGV4LmJpelwvYXJ0aWNsZXNcL3Njb3R0IiwicGhvdG8iOiJpY29uOmZpbGUtdGV4
+dC1vIiwidmVyc2lvbiI6IjMiLCJyZXF1aXJlcyI6ImxvY2FsX2NoYW5uZWwiLCJzeXN0ZW0i
+OiIxIiwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsUHJvZHVjdGl2aXR5In0=
+" data-icon="file-text-o" data-url="https://wistex.biz/articles/scott" data-name="Articles"><i class="generic-icons-nav fa fa-fw fa-file-text-o"></i>Articles</a>
+
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/cdav/calendar" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMDY3YjcwZTkyZTM1Y2MxYjcyOWM4YzM4NmJm
 ODI4OWNiZWMyNjE4OTExYTg3YzQ2MGE5YjQ3MDVmMmMxNTFmODUzNTQwMmQ0NjhkNDY5ZWVi
 NjMwZmFkMmM5Y2RkOWFjZWQ4MGZiMmI3Y2IyOWU0N2FlOGY5YzIyYzgzZWU3ZjIiLCJhdXRo
-b3IiOiIzZHZCM2U2NW9jdDJfclUzTjd5UGNOazkxTUk3RUF2ZnJxcFdpSEpZNGo2bU9xRlNo
-OE1OY2RXMjVxQzZyOE9VTjMwR1dwRFZKNnVySHRaVTNidnY2USIsIm5hbWUiOiJDYWxlbmRh
-ciIsImRlc2MiOiJEQVYgY2FwYWJsZSBjYWxlbmRhciIsInVybCI6Imh0dHBzOlwvXC9kZXYu
-bmV1aHViLm9yZ1wvY2RhdlwvY2FsZW5kYXIsIGh0dHBzOlwvXC9kZXYubmV1aHViLm9yZ1wv
-c2V0dGluZ3NcL2NhbGVuZGFyIiwicGhvdG8iOiJpY29uOmNhbGVuZGFyIiwidmVyc2lvbiI6
-IjIiLCJyZXF1aXJlcyI6ImxvY2FsX2NoYW5uZWwiLCJzeXN0ZW0iOjEsImNhdGVnb3JpZXMi
-OiJQcm9kdWN0aXZpdHksbmF2X2ZlYXR1cmVkX2FwcCJ9
-" data-icon="calendar" data-url="https://dev.neuhub.org/cdav/calendar" data-name="Calendar"><i class="generic-icons-nav fa fa-fw fa-calendar"></i>Calendar</a>
+b3IiOiJjZHROSlFhSUI0Skt4MUNtQlU1dGRVSHJKbElQRXViQl9xVmpTM2VxVjlqVkFJNlhk
+NzI4Yi1ZWDF2Ml9mYlRqYjB4Y0VveEtXYzNkRVpjbEFkbTNyZyIsIm5hbWUiOiJDYWxlbmRh
+ciIsImRlc2MiOiJEQVYgY2FwYWJsZSBjYWxlbmRhciIsInVybCI6Imh0dHBzOlwvXC93aXN0
+ZXguYml6XC9jZGF2XC9jYWxlbmRhciwgaHR0cHM6XC9cL3dpc3RleC5iaXpcL3NldHRpbmdz
+XC9jYWxlbmRhciIsInBob3RvIjoiaWNvbjpjYWxlbmRhciIsInZlcnNpb24iOiIyIiwicmVx
+dWlyZXMiOiJsb2NhbF9jaGFubmVsIiwic3lzdGVtIjoiMSIsImNhdGVnb3JpZXMiOiJQcm9k
+dWN0aXZpdHksbmF2X2ZlYXR1cmVkX2FwcCJ9
+" data-icon="calendar" data-url="https://wistex.biz/cdav/calendar" data-name="Calendar"><i class="generic-icons-nav fa fa-fw fa-calendar"></i>Calendar</a>
 
-                    			                    				<a class="dropdown-item" href="https://dev.neuhub.org/channel/wistex" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiNGVhODUzYTExODcwMzUyNWIyOTk5MzA0NTE1
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/cards/scott" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiYjQ5MzU4NmU5NDhjMGM1YzAwZGZhYmZjNmQz
+NmNkOGRjMmY1NGU3MmM5ZTcxMWY4M2I0MTcyZWRjMjI1NjQ1NjBiZTcyYTAyN2VmY2U4YTIx
+ZWU2ODhlZDI3YTY4ODUxNTRlZTIxN2U4ZjEyZTY1Njg2NmU3ZTM5YmY2YmY1ZGIiLCJhdXRo
+b3IiOiJqZ1BRcllQMWRxazBBck5XYnRITnlKUk9HWkZNN2FQTHBJLS1LeURFUkdCQkxlZkN2
+SXYzLW96WXQzaTZ3WDRzYUpuUkZMUXd6YzdicW5weXROS0lvZyIsIm5hbWUiOiJDYXJkcyIs
+ImRlc2MiOiJDcmVhdGUgaW50ZXJhY3RpdmUgcGVyc29uYWwgcGxhbm5pbmcgY2FyZHMuIiwi
+dXJsIjoiaHR0cHM6XC9cL3dpc3RleC5iaXpcL2NhcmRzXC9zY290dCIsInBob3RvIjoiaWNv
+bjpsaXN0IiwidmVyc2lvbiI6IjMiLCJyZXF1aXJlcyI6ImxvY2FsX2NoYW5uZWwiLCJzeXN0
+ZW0iOiIxIiwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsUHJvZHVjdGl2aXR5In0=
+" data-icon="list" data-url="https://wistex.biz/cards/scott" data-name="Cards"><i class="generic-icons-nav fa fa-fw fa-list"></i>Cards</a>
+
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/channel/scott" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiNGVhODUzYTExODcwMzUyNWIyOTk5MzA0NTE1
 MGJjYTdlOTU1ZTQwZDczMWM3ZGNkZTQ2MmIwMjY1NDA4OTZkYmUzY2YzNGRlNGUxZWVlMDQw
 Mzc5ZmQ0ZWExNGYzMzc1MzEzZWU3YjE3MDJjNGMwN2E1YmUzMzk0ODllYzhhYTciLCJhdXRo
-b3IiOiIzZHZCM2U2NW9jdDJfclUzTjd5UGNOazkxTUk3RUF2ZnJxcFdpSEpZNGo2bU9xRlNo
-OE1OY2RXMjVxQzZyOE9VTjMwR1dwRFZKNnVySHRaVTNidnY2USIsIm5hbWUiOiJDaGFubmVs
+b3IiOiJjZHROSlFhSUI0Skt4MUNtQlU1dGRVSHJKbElQRXViQl9xVmpTM2VxVjlqVkFJNlhk
+NzI4Yi1ZWDF2Ml9mYlRqYjB4Y0VveEtXYzNkRVpjbEFkbTNyZyIsIm5hbWUiOiJDaGFubmVs
 IiwiZGVzYyI6IllvdXIgY2hhbm5lbCBob21lcGFnZSBmZWF0dXJpbmcgeW91ciBwZXJzb25h
-bCBwb3N0cy4iLCJ1cmwiOiJodHRwczpcL1wvZGV2Lm5ldWh1Yi5vcmdcL2NoYW5uZWxcL3dp
-c3RleCwgaHR0cHM6XC9cL2Rldi5uZXVodWIub3JnXC9zZXR0aW5nc1wvY2hhbm5lbF9ob21l
-IiwicGhvdG8iOiJpY29uOmhvbWUiLCJ2ZXJzaW9uIjoiNCIsInJlcXVpcmVzIjoibG9jYWxf
-Y2hhbm5lbCIsInN5c3RlbSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsUGVy
-c29uYWwifQ==
-" data-icon="home" data-url="https://dev.neuhub.org/channel/wistex" data-name="Channel"><i class="generic-icons-nav fa fa-fw fa-home"></i>Channel</a>
+bCBwb3N0cy4iLCJ1cmwiOiJodHRwczpcL1wvd2lzdGV4LmJpelwvY2hhbm5lbFwvc2NvdHQs
+IGh0dHBzOlwvXC93aXN0ZXguYml6XC9zZXR0aW5nc1wvY2hhbm5lbF9ob21lIiwicGhvdG8i
+OiJpY29uOmhvbWUiLCJ2ZXJzaW9uIjoiNCIsInJlcXVpcmVzIjoibG9jYWxfY2hhbm5lbCIs
+InN5c3RlbSI6IjEiLCJjYXRlZ29yaWVzIjoibmF2X2ZlYXR1cmVkX2FwcCxQZXJzb25hbCxu
+YXZfcGlubmVkX2FwcCJ9
+" data-icon="home" data-url="https://wistex.biz/channel/scott" data-name="Channel"><i class="generic-icons-nav fa fa-fw fa-home"></i>Channel</a>
 
-                    			                    				<a class="dropdown-item" href="https://dev.neuhub.org/connections" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMzRlNDNjZGQwMzMwYjZkZTYxOWJmZGMzZjA0
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/connections" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMzRlNDNjZGQwMzMwYjZkZTYxOWJmZGMzZjA0
 ZjhlNmFlYTc3OTM4NTBkMmE0ZTY5Y2ZhOGVmNWVjYTAwMDdiMDM3MDU4ZWM5ZmRjZjdhNjBm
 MjYxN2U4ZjVkNmIxZTQ3MTZlYmQ5MGUzODlkMDIxMzExYTJlMTdkNTBiYWZhMDciLCJhdXRo
-b3IiOiIzZHZCM2U2NW9jdDJfclUzTjd5UGNOazkxTUk3RUF2ZnJxcFdpSEpZNGo2bU9xRlNo
-OE1OY2RXMjVxQzZyOE9VTjMwR1dwRFZKNnVySHRaVTNidnY2USIsIm5hbWUiOiJDb25uZWN0
+b3IiOiJjZHROSlFhSUI0Skt4MUNtQlU1dGRVSHJKbElQRXViQl9xVmpTM2VxVjlqVkFJNlhk
+NzI4Yi1ZWDF2Ml9mYlRqYjB4Y0VveEtXYzNkRVpjbEFkbTNyZyIsIm5hbWUiOiJDb25uZWN0
 aW9ucyIsImRlc2MiOiJNYW5hZ2UgeW91ciBjb25uZWN0aW9ucy4iLCJ1cmwiOiJodHRwczpc
-L1wvZGV2Lm5ldWh1Yi5vcmdcL2Nvbm5lY3Rpb25zLCBodHRwczpcL1wvZGV2Lm5ldWh1Yi5v
-cmdcL3NldHRpbmdzXC9jb25uZWN0aW9ucyIsInBob3RvIjoiaWNvbjp1c2VycyIsInZlcnNp
-b24iOiIzIiwicmVxdWlyZXMiOiJsb2NhbF9jaGFubmVsIiwic3lzdGVtIjoxLCJjYXRlZ29y
-aWVzIjoibmF2X2ZlYXR1cmVkX2FwcCxOZXR3b3JraW5nIn0=
-" data-icon="users" data-url="https://dev.neuhub.org/connections" data-name="Connections"><i class="generic-icons-nav fa fa-fw fa-users"></i>Connections</a>
+L1wvd2lzdGV4LmJpelwvY29ubmVjdGlvbnMsIGh0dHBzOlwvXC93aXN0ZXguYml6XC9zZXR0
+aW5nc1wvY29ubmVjdGlvbnMiLCJwaG90byI6Imljb246dXNlcnMiLCJ2ZXJzaW9uIjoiMyIs
+InJlcXVpcmVzIjoibG9jYWxfY2hhbm5lbCIsInN5c3RlbSI6IjEiLCJjYXRlZ29yaWVzIjoi
+bmF2X2ZlYXR1cmVkX2FwcCxOZXR3b3JraW5nIn0=
+" data-icon="users" data-url="https://wistex.biz/connections" data-name="Connections"><i class="generic-icons-nav fa fa-fw fa-users"></i>Connections</a>
 
-                    			                    				<a class="dropdown-item" href="https://dev.neuhub.org/directory" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMDA5NTE1NDE0ZjMyZjA5NDM5ODNjNGY0NTEy
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/directory" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMDA5NTE1NDE0ZjMyZjA5NDM5ODNjNGY0NTEy
 NGRlODY1ZmUyNzRlN2FhODQwOTI2NDkzOTFiYTEyOTNhYTU5M2FjMGRlM2M5YjcyMzI4YmM4
 ZmY1MTFhMmEyY2VlZTlhYzhhZGU1ZmI2NzliNGU3MzAxMjU1YjU0YTI1MGMyZjQiLCJhdXRo
-b3IiOiIzZHZCM2U2NW9jdDJfclUzTjd5UGNOazkxTUk3RUF2ZnJxcFdpSEpZNGo2bU9xRlNo
-OE1OY2RXMjVxQzZyOE9VTjMwR1dwRFZKNnVySHRaVTNidnY2USIsIm5hbWUiOiJEaXJlY3Rv
+b3IiOiJjZHROSlFhSUI0Skt4MUNtQlU1dGRVSHJKbElQRXViQl9xVmpTM2VxVjlqVkFJNlhk
+NzI4Yi1ZWDF2Ml9mYlRqYjB4Y0VveEtXYzNkRVpjbEFkbTNyZyIsIm5hbWUiOiJEaXJlY3Rv
 cnkiLCJkZXNjIjoiTWVtYmVycyBkaXJlY3Rvcnkgb2YgdGhlIFpvdCBuZXR3b3JrLiIsInVy
-bCI6Imh0dHBzOlwvXC9kZXYubmV1aHViLm9yZ1wvZGlyZWN0b3J5LCBodHRwczpcL1wvZGV2
-Lm5ldWh1Yi5vcmdcL3NldHRpbmdzXC9kaXJlY3RvcnkiLCJwaG90byI6Imljb246c2l0ZW1h
-cCIsInZlcnNpb24iOiIzIiwic3lzdGVtIjoxLCJjYXRlZ29yaWVzIjoibmF2X2ZlYXR1cmVk
-X2FwcCxOZXR3b3JraW5nIn0=
-" data-icon="sitemap" data-url="https://dev.neuhub.org/directory" data-name="Directory"><i class="generic-icons-nav fa fa-fw fa-sitemap"></i>Directory</a>
+bCI6Imh0dHBzOlwvXC93aXN0ZXguYml6XC9kaXJlY3RvcnksIGh0dHBzOlwvXC93aXN0ZXgu
+Yml6XC9zZXR0aW5nc1wvZGlyZWN0b3J5IiwicGhvdG8iOiJpY29uOnNpdGVtYXAiLCJ2ZXJz
+aW9uIjoiMyIsInN5c3RlbSI6IjEiLCJjYXRlZ29yaWVzIjoibmF2X2ZlYXR1cmVkX2FwcCxO
+ZXR3b3JraW5nIn0=
+" data-icon="sitemap" data-url="https://wistex.biz/directory" data-name="Directory"><i class="generic-icons-nav fa fa-fw fa-sitemap"></i>Directory</a>
 
-                    			                    				<a class="dropdown-item" href="https://dev.neuhub.org/cloud/wistex" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiZDYzYmVlYmExN2VlYTU3NWFlYjI1N2U1NGI0
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/cloud/scott" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiZDYzYmVlYmExN2VlYTU3NWFlYjI1N2U1NGI0
 NDcwM2JjNzBhM2VmOWZmMTcyZmU1NzgwMDE2YjRlMGU1MTc1ZGJjODhiNjZiOGMzM2I0ZDU2
 M2ExMWU5MTU2NDQ0OTMwN2UyZGI3Mzc2MDRlMjlmNGRmZjdmYjgyYjc1ZDdkYjQiLCJhdXRo
-b3IiOiIzZHZCM2U2NW9jdDJfclUzTjd5UGNOazkxTUk3RUF2ZnJxcFdpSEpZNGo2bU9xRlNo
-OE1OY2RXMjVxQzZyOE9VTjMwR1dwRFZKNnVySHRaVTNidnY2USIsIm5hbWUiOiJGaWxlcyIs
+b3IiOiJjZHROSlFhSUI0Skt4MUNtQlU1dGRVSHJKbElQRXViQl9xVmpTM2VxVjlqVkFJNlhk
+NzI4Yi1ZWDF2Ml9mYlRqYjB4Y0VveEtXYzNkRVpjbEFkbTNyZyIsIm5hbWUiOiJGaWxlcyIs
 ImRlc2MiOiJBIG1pZ2h0eSB0b29sIHRvIG1hbmFnZSB5b3VyIGZpbGVzIGFuZCBmb2xkZXJz
-LiIsInVybCI6Imh0dHBzOlwvXC9kZXYubmV1aHViLm9yZ1wvY2xvdWRcL3dpc3RleCIsInBo
-b3RvIjoiaWNvbjpmb2xkZXItb3BlbiIsInZlcnNpb24iOiIzIiwicmVxdWlyZXMiOiJsb2Nh
-bF9jaGFubmVsIiwic3lzdGVtIjoxLCJjYXRlZ29yaWVzIjoibmF2X2ZlYXR1cmVkX2FwcCxQ
-cm9kdWN0aXZpdHkifQ==
-" data-icon="folder-open" data-url="https://dev.neuhub.org/cloud/wistex" data-name="Files"><i class="generic-icons-nav fa fa-fw fa-folder-open"></i>Files</a>
+LiIsInVybCI6Imh0dHBzOlwvXC93aXN0ZXguYml6XC9jbG91ZFwvc2NvdHQiLCJwaG90byI6
+Imljb246Zm9sZGVyLW9wZW4iLCJ2ZXJzaW9uIjoiMyIsInJlcXVpcmVzIjoibG9jYWxfY2hh
+bm5lbCIsInN5c3RlbSI6IjEiLCJjYXRlZ29yaWVzIjoibmF2X2ZlYXR1cmVkX2FwcCxQcm9k
+dWN0aXZpdHksbmF2X3Bpbm5lZF9hcHAifQ==
+" data-icon="folder-open" data-url="https://wistex.biz/cloud/scott" data-name="Files"><i class="generic-icons-nav fa fa-fw fa-folder-open"></i>Files</a>
 
-                    			                    				<a class="dropdown-item" href="https://dev.neuhub.org/help" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiNGFiZTg2NWQ5Y2VmN2E2NjAyMTA1YTZlYmY3
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/help" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiNGFiZTg2NWQ5Y2VmN2E2NjAyMTA1YTZlYmY3
 NmYxZDhiYzllOTQ5MjA4MWFlZmY2Yzk5YTBhN2Y1ZmVhNTJkOTY4Yjk2YTNiZDcyZmMxYzc2
 ZjQ1YTk0NDNkOTI1MTM4NjhhZDRhMmU0YTkyOGUwMGM2MjkwYWE2MzA4YWExNzYiLCJhdXRo
-b3IiOiIzZHZCM2U2NW9jdDJfclUzTjd5UGNOazkxTUk3RUF2ZnJxcFdpSEpZNGo2bU9xRlNo
-OE1OY2RXMjVxQzZyOE9VTjMwR1dwRFZKNnVySHRaVTNidnY2USIsIm5hbWUiOiJIZWxwIiwi
-ZGVzYyI6IlRoZSBIdWJ6aWxsYSBoZWxwIHBhZ2VzLiIsInVybCI6Imh0dHBzOlwvXC9kZXYu
-bmV1aHViLm9yZ1wvaGVscCIsInBob3RvIjoiaWNvbjpxdWVzdGlvbiIsInZlcnNpb24iOiIz
-Iiwic3lzdGVtIjoxLCJjYXRlZ29yaWVzIjoibmF2X2ZlYXR1cmVkX2FwcCxTeXN0ZW0ifQ==
-" data-icon="question" data-url="https://dev.neuhub.org/help" data-name="Help"><i class="generic-icons-nav fa fa-fw fa-question"></i>Help</a>
+b3IiOiJjZHROSlFhSUI0Skt4MUNtQlU1dGRVSHJKbElQRXViQl9xVmpTM2VxVjlqVkFJNlhk
+NzI4Yi1ZWDF2Ml9mYlRqYjB4Y0VveEtXYzNkRVpjbEFkbTNyZyIsIm5hbWUiOiJIZWxwIiwi
+ZGVzYyI6IlRoZSBIdWJ6aWxsYSBoZWxwIHBhZ2VzLiIsInVybCI6Imh0dHBzOlwvXC93aXN0
+ZXguYml6XC9oZWxwIiwicGhvdG8iOiJpY29uOnF1ZXN0aW9uIiwidmVyc2lvbiI6IjMiLCJz
+eXN0ZW0iOiIxIiwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsU3lzdGVtIn0=
+" data-icon="question" data-url="https://wistex.biz/help" data-name="Help"><i class="generic-icons-nav fa fa-fw fa-question"></i>Help</a>
 
-                    			                    				<a class="dropdown-item" href="https://dev.neuhub.org/photos/wistex" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMGU2YTAwZjM4YjhjMTE0NjY5OTQ4NzBlMzU0
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/photos/scott" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMGU2YTAwZjM4YjhjMTE0NjY5OTQ4NzBlMzU0
 YWMwNzI5Mzc2Y2IzYWI0N2I5MmVkMWQ0M2E4YzAzZDZjNzlhMGY3YWNmNzZiN2QwOTcwMjQ0
 YWZmMjVlYjk4YTQ0MWQ4ZjFjNGM5YTI1NmI4OTRjMDRlNGYyMDg4NDk3ZWEwMWEiLCJhdXRo
-b3IiOiIzZHZCM2U2NW9jdDJfclUzTjd5UGNOazkxTUk3RUF2ZnJxcFdpSEpZNGo2bU9xRlNo
-OE1OY2RXMjVxQzZyOE9VTjMwR1dwRFZKNnVySHRaVTNidnY2USIsIm5hbWUiOiJQaG90b3Mi
+b3IiOiJjZHROSlFhSUI0Skt4MUNtQlU1dGRVSHJKbElQRXViQl9xVmpTM2VxVjlqVkFJNlhk
+NzI4Yi1ZWDF2Ml9mYlRqYjB4Y0VveEtXYzNkRVpjbEFkbTNyZyIsIm5hbWUiOiJQaG90b3Mi
 LCJkZXNjIjoiQSBzaW1wbGUgdG9vbCB0byB2aWV3IGFuZCBtYW5hZ2UgeW91ciBwaG90b3Mu
-IiwidXJsIjoiaHR0cHM6XC9cL2Rldi5uZXVodWIub3JnXC9waG90b3NcL3dpc3RleCwgaHR0
-cHM6XC9cL2Rldi5uZXVodWIub3JnXC9zZXR0aW5nc1wvcGhvdG9zIiwicGhvdG8iOiJpY29u
-OnBob3RvIiwidmVyc2lvbiI6IjMiLCJyZXF1aXJlcyI6ImxvY2FsX2NoYW5uZWwiLCJzeXN0
-ZW0iOjEsImNhdGVnb3JpZXMiOiJuYXZfZmVhdHVyZWRfYXBwLE11bHRpbWVkaWEifQ==
-" data-icon="photo" data-url="https://dev.neuhub.org/photos/wistex" data-name="Photos"><i class="generic-icons-nav fa fa-fw fa-photo"></i>Photos</a>
+IiwidXJsIjoiaHR0cHM6XC9cL3dpc3RleC5iaXpcL3Bob3Rvc1wvc2NvdHQsIGh0dHBzOlwv
+XC93aXN0ZXguYml6XC9zZXR0aW5nc1wvcGhvdG9zIiwicGhvdG8iOiJpY29uOnBob3RvIiwi
+dmVyc2lvbiI6IjMiLCJyZXF1aXJlcyI6ImxvY2FsX2NoYW5uZWwiLCJzeXN0ZW0iOiIxIiwi
+Y2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTXVsdGltZWRpYSJ9
+" data-icon="photo" data-url="https://wistex.biz/photos/scott" data-name="Photos"><i class="generic-icons-nav fa fa-fw fa-photo"></i>Photos</a>
 
-                    			                    				<a class="dropdown-item" href="https://dev.neuhub.org/network" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiYmVlNDAwYTkzZTNiOTUyMjUzNzRmMDJkY2M3
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/network" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiYmVlNDAwYTkzZTNiOTUyMjUzNzRmMDJkY2M3
 NGJmYTM3NDQ1ZjYyOGJiMTBkMDVlMzkwNGFhOGUzZGQxMmMzYjMzN2EwY2FlZDI0NTVhMzJl
 YTg1ZDhhYWViYzMxMGY1Yjg1NzFlNzQ3MWYxMGExOWJjZmQ3N2E3YTk5NzY4MWYiLCJhdXRo
-b3IiOiIzZHZCM2U2NW9jdDJfclUzTjd5UGNOazkxTUk3RUF2ZnJxcFdpSEpZNGo2bU9xRlNo
-OE1OY2RXMjVxQzZyOE9VTjMwR1dwRFZKNnVySHRaVTNidnY2USIsIm5hbWUiOiJTdHJlYW0i
+b3IiOiJjZHROSlFhSUI0Skt4MUNtQlU1dGRVSHJKbElQRXViQl9xVmpTM2VxVjlqVkFJNlhk
+NzI4Yi1ZWDF2Ml9mYlRqYjB4Y0VveEtXYzNkRVpjbEFkbTNyZyIsIm5hbWUiOiJTdHJlYW0i
 LCJkZXNjIjoiWW91ciBuZXR3b3JrIGFjdGl2aXR5IGluIGEgdHJhZGl0aW9uYWwgdGltZWxp
-bmUgdmlldy4iLCJ1cmwiOiJodHRwczpcL1wvZGV2Lm5ldWh1Yi5vcmdcL25ldHdvcmssIGh0
-dHBzOlwvXC9kZXYubmV1aHViLm9yZ1wvc2V0dGluZ3NcL25ldHdvcmsiLCJwaG90byI6Imlj
-b246dGgiLCJ2ZXJzaW9uIjoiMyIsInJlcXVpcmVzIjoibG9jYWxfY2hhbm5lbCIsInN5c3Rl
-bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
-" data-icon="th" data-url="https://dev.neuhub.org/network" data-name="Stream"><i class="generic-icons-nav fa fa-fw fa-th"></i>Stream</a>
+bmUgdmlldy4iLCJ1cmwiOiJodHRwczpcL1wvd2lzdGV4LmJpelwvbmV0d29yaywgaHR0cHM6
+XC9cL3dpc3RleC5iaXpcL3NldHRpbmdzXC9uZXR3b3JrIiwicGhvdG8iOiJpY29uOnRoIiwi
+dmVyc2lvbiI6IjMiLCJyZXF1aXJlcyI6ImxvY2FsX2NoYW5uZWwiLCJzeXN0ZW0iOiIxIiwi
+Y2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyxuYXZfcGlubmVkX2Fw
+cCJ9
+" data-icon="th" data-url="https://wistex.biz/network" data-name="Stream"><i class="generic-icons-nav fa fa-fw fa-th"></i>Stream</a>
+
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/webpages/scott" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMGI5Zjg5OWIzZmQwMGFhMDk0ZGRjNjUwZWUz
+YzhjMGE4NDAxMDU5NGM1MGRjMTMzYzgwNDQ5Yzg5NzgyOWFhNWE1ZjU4MGFhMDk3ZWI1NTc1
+NTlhYTQ2YmFhODgwYzhmMjM1M2MyNGZmMmMzMDUzMDZjMzc0ZTkyMWUwMDczOWQiLCJhdXRo
+b3IiOiJqZ1BRcllQMWRxazBBck5XYnRITnlKUk9HWkZNN2FQTHBJLS1LeURFUkdCQkxlZkN2
+SXYzLW96WXQzaTZ3WDRzYUpuUkZMUXd6YzdicW5weXROS0lvZyIsIm5hbWUiOiJXZWJwYWdl
+cyIsImRlc2MiOiJDcmVhdGUgYW5kIG1hbmFnZSB3ZWIgcGFnZXMgZm9yIHlvdXIgY2hhbm5l
+bC4iLCJ1cmwiOiJodHRwczpcL1wvd2lzdGV4LmJpelwvd2VicGFnZXNcL3Njb3R0IiwicGhv
+dG8iOiJpY29uOm5ld3NwYXBlci1vIiwidmVyc2lvbiI6IjMiLCJyZXF1aXJlcyI6ImxvY2Fs
+X2NoYW5uZWwiLCJzeXN0ZW0iOiIxIiwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAs
+UHJvZHVjdGl2aXR5In0=
+" data-icon="newspaper-o" data-url="https://wistex.biz/webpages/scott" data-name="Webpages"><i class="generic-icons-nav fa fa-fw fa-newspaper-o"></i>Webpages</a>
+
+                    			                    				<a class="dropdown-item" href="https://wistex.biz/wiki/scott" data-papp="eyJ0eXBlIjoicGVyc29uYWwiLCJndWlkIjoiMTlmZGYwODkxNmI0YTQxZmM2ZTg5ZGEyMTVh
+MjIwYTQ2ZGY2ZjVlMTZlOTIzYTgwYTJlZjUzZDQ3MzM2NDA2YzIyZWZhOGNiZWZkMjVjMDhm
+MWQ4NTJlZWRkMDQyOTNiZmE3YzJlN2UzOTBhY2ZlNzIzMThjY2MwYzUxOTg1ODMiLCJuYW1l
+IjoiV2lraSIsImRlc2MiOiJBIHNpbXBsZSB5ZXQgcG93ZXJmdWwgd2lraSBmb3IgeW91ciBj
+aGFubmVsLiIsInVybCI6Imh0dHBzOlwvXC93aXN0ZXguYml6XC93aWtpXC9zY290dCIsInBo
+b3RvIjoiaWNvbjpwZW5jaWwtc3F1YXJlLW8iLCJ2ZXJzaW9uIjoiMyIsInJlcXVpcmVzIjoi
+bG9jYWxfY2hhbm5lbCIsInN5c3RlbSI6IjEiLCJjYXRlZ29yaWVzIjoibmF2X2ZlYXR1cmVk
+X2FwcCxQcm9kdWN0aXZpdHkifQ==
+" data-icon="pencil-square-o" data-url="https://wistex.biz/wiki/scott" data-name="Wiki"><i class="generic-icons-nav fa fa-fw fa-pencil-square-o"></i>Wiki</a>
 
                     			                    		</div>
                     		<div class="dropdown-divider"></div>
@@ -578,7 +646,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                 </div>
             </li>
 
-            <li class="nav-item d-block d-md-none">
+            <li class="nav-item d-lg-none d-xl-none">
             <a class="nav-link text-primary" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">Sidebar <i class="generic-icons-nav fa fa-fw fa-caret-left"></i></a>
             </li>
 
@@ -599,7 +667,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                     <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
                         <span class="d-none d-lg-inline me-2 text-gray-600 !small">
                             
-                                                            WisTex
+                                                            Welcome
                                                                         
                                
                            <!--
@@ -621,7 +689,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                         </span>
                         
                         <img class="border rounded-circle img-profile" onerror='this.src="/view/theme/purplebasic/img/blank-profile-picture-180x180.png"' 
-                        disabledsrc="/view/theme/purplebasic/assets/img/avatars/avatar1.jpeg" src="https://dev.neuhub.org/photo/profile/m/2?rev=1666101042" alt="WisTex">
+                        disabledsrc="/view/theme/purplebasic/assets/img/avatars/avatar1.jpeg" src="https://wistex.biz/photo/profile/m/4?rev=1666600561" alt="scott@wistex.biz">
                     </a>
                     
                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
@@ -639,8 +707,8 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
 
                                                     <a class="dropdown-item" href="/channel"><!-- <i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp; -->View Channel</a>
     
-        					        					    <a class="dropdown-item"  href="profile/wistex" title="Your profile page" role="menuitem" id="profile_nav_btn">View Profile</a>
-        					        					    <a class="dropdown-item"  href="profiles/2" title="Edit your profile" role="menuitem" id="profiles_nav_btn">Edit Profile</a>
+        					        					    <a class="dropdown-item"  href="profile/scott" title="Your profile page" role="menuitem" id="profile_nav_btn">View Profile</a>
+        					        					    <a class="dropdown-item"  href="profiles" title="Manage/Edit profiles" role="menuitem" id="profiles_nav_btn">Edit Profiles</a>
         					        					        					
         					<!--
         					<a class="dropdown-item" href="/connections"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp; Connections</a>
@@ -648,7 +716,12 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
         					<div class="dropdown-divider"></div>
         					
         					        					    <a class="dropdown-item" href="manage" title="Manage your channels" role="menuitem" id="manage_nav_btn">Channels</a>
-        					        					        					        					        					    <div class="dropdown-divider"></div>
+        					        					            					            					    <a class="dropdown-item" href="manage/2" title="admin" role="menuitem"><i class="fa fa-circle invisible"></i> admin</a>
+            					            					    <a class="dropdown-item" href="manage/4" title="Scott M. Stolz" role="menuitem"><i class="fa fa-circle text-success"></i> Scott M. Stolz</a>
+            					            					    <a class="dropdown-item" href="manage/7" title="Test Account" role="menuitem"><i class="fa fa-circle invisible"></i> Test Account</a>
+            					            					    <a class="dropdown-item" href="manage/6" title="Test Forum" role="menuitem"><i class="fa fa-circle invisible"></i> Test Forum</a>
+            					            					    <a class="dropdown-item" href="manage/5" title="WisTex TechSero Ltd. Co." role="menuitem"><i class="fa fa-circle invisible"></i> WisTex TechSero Ltd. Co.</a>
+            					        					        					        					        					    <div class="dropdown-divider"></div>
         					    <a class="dropdown-item active" href="settings" title="Account/Channel Settings" role="menuitem" id="settings_nav_btn">Settings</a>
         					        					        					    <div class="dropdown-divider"></div>
         					    <a class="dropdown-item" href="admin/" title="Site Setup and Configuration" role="menuitem" id="admin_nav_btn">Admin</a>
@@ -665,13 +738,18 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                                            <!-- 
             			<div class="dropdown">
             				<div class="fakelink usermenu" data-bs-toggle="dropdown">
-            					<img id="avatar" src="https://dev.neuhub.org/photo/profile/m/2?rev=1666101042" alt="WisTex">
+            					<img id="avatar" src="https://wistex.biz/photo/profile/m/4?rev=1666600561" alt="scott@wistex.biz">
             					<i class="fa fa-caret-down"></i>
             				</div>
             				            				<div class="dropdown-menu">
-            					            					<a class="dropdown-item"  href="profile/wistex" title="Your profile page" role="menuitem" id="profile_nav_btn">View Profile</a>
-            					            					<a class="dropdown-item"  href="profiles/2" title="Edit your profile" role="menuitem" id="profiles_nav_btn">Edit Profile</a>
+            					            					<a class="dropdown-item"  href="profile/scott" title="Your profile page" role="menuitem" id="profile_nav_btn">View Profile</a>
+            					            					<a class="dropdown-item"  href="profiles" title="Manage/Edit profiles" role="menuitem" id="profiles_nav_btn">Edit Profiles</a>
             					            					            					            					<a class="dropdown-item" href="manage" title="Manage your channels" role="menuitem" id="manage_nav_btn">Channels</a>
+            					            					            					            					<a class="dropdown-item" href="manage/2" title="admin" role="menuitem"><i class="fa fa-circle invisible"></i> admin</a>
+            					            					<a class="dropdown-item" href="manage/4" title="Scott M. Stolz" role="menuitem"><i class="fa fa-circle text-success"></i> Scott M. Stolz</a>
+            					            					<a class="dropdown-item" href="manage/7" title="Test Account" role="menuitem"><i class="fa fa-circle invisible"></i> Test Account</a>
+            					            					<a class="dropdown-item" href="manage/6" title="Test Forum" role="menuitem"><i class="fa fa-circle invisible"></i> Test Forum</a>
+            					            					<a class="dropdown-item" href="manage/5" title="WisTex TechSero Ltd. Co." role="menuitem"><i class="fa fa-circle invisible"></i> WisTex TechSero Ltd. Co.</a>
             					            					            					            					            					<div class="dropdown-divider"></div>
             					<a class="dropdown-item active" href="settings" title="Account/Channel Settings" role="menuitem" id="settings_nav_btn">Settings</a>
             					            					            					<div class="dropdown-divider"></div>
@@ -703,20 +781,20 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                 <div class="d-none d-sm-none d-md-none d-lg-block">					    
 
                     <!-- show channel id or user id -->
-    			   <span class="pull-right text-muted" style="text-align: right;font-size: 14px;"><!--       -->
-    					    					    wistex@dev.neuhub.org
+    			   <span class="pull-right text-muted" style="text-align: right;font-size: 14px;"><!--  5 WisTex TechSero Ltd. Co.    -->
+    					    					    scott@wistex.biz
     					    					<!-- mockup@completehostingguide.com -->
     				</span>
                 </div>					
     
                 <!-- example code -->
-                                                                                <!-- https://dev.neuhub.org/settings/account https://dev.neuhub.org/settings/directory -->
+                                                                                <!-- https://wistex.biz/settings/account https://wistex.biz/settings/directory -->
     
                 <!-- show breadcrumb -->
 
                 <div class="d-none d-sm-none d-md-none d-lg-block">
                     <ol class="breadcrumb" style="font-size: 14px;">
-                        <li class="breadcrumb-item"><a href="https://dev.neuhub.org" class="text-decoration-none"><span>Neuhub Development</span></a></li>
+                        <li class="breadcrumb-item"><a href="https://wistex.biz" class="text-decoration-none"><span>WisTex Network</span></a></li>
                                                 
                                                 
                                                                                                                                 
@@ -731,9 +809,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                                                                                                                                      
                         
                                                                                                 
-
-
-                                                       
+    
                                  
                                                              
     
@@ -767,8 +843,8 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
             <!-- begin page navbar ----------------------------------------- -->
             <div class="container-fluid">
                 <div class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom" style="z-index:100;">
-                    <a href="https://dev.neuhub.org/settings/account" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                        <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="https://dev.neuhub.org/settings/account"/></svg> -->
+                    <a href="https://wistex.biz/settings/account" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                        <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="https://wistex.biz/settings/account"/></svg> -->
                         <img src="" class="!menu-img-2" style="max-height:42px;">&nbsp;&nbsp;
                         <span class="fs-4">
                                                                                         <b><!-- Mockup Theme -->Settings</b>
@@ -783,8 +859,6 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                                                                            
                             
                                                                                    
-
-                                                                  
             
                         </span>
                     </a>
@@ -834,9 +908,21 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                 
-                        			                        				<a class="dropdown-item" href="https://dev.neuhub.org/hq" title="HQ">
+                        			                        				<a class="dropdown-item" href="https://wistex.biz/channel/scott" title="Channel">
+		<i class="generic-icons-nav fa generic-icons-nav fa-fw generic-icons-nav fa-home"></i>
+	<span class="">Channel</span>
+	</a>
+                        			                        				<a class="dropdown-item" href="https://wistex.biz/cloud/scott" title="Files">
+		<i class="generic-icons-nav fa generic-icons-nav fa-fw generic-icons-nav fa-folder-open"></i>
+	<span class="">Files</span>
+	</a>
+                        			                        				<a class="dropdown-item" href="https://wistex.biz/hq" title="HQ">
 		<i class="generic-icons-nav fa generic-icons-nav fa-fw generic-icons-nav fa-user-circle-o"></i>
 	<span class="">HQ</span>
+	</a>
+                        			                        				<a class="dropdown-item" href="https://wistex.biz/network" title="Stream">
+		<i class="generic-icons-nav fa generic-icons-nav fa-fw generic-icons-nav fa-th"></i>
+	<span class="">Stream</span>
 	</a>
                         			                        			<div class="dropdown-divider"></div>
                         			<a class="dropdown-item" href="/apps" title="Apps"><i class="fa fa-fw fa-cube generic-icons-nav"></i>More Apps</a>	
@@ -1354,7 +1440,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
 		<div class="clear"></div>
 	</div>
 	<form action="settings/account" id="settings-account-form" method="post" autocomplete="off" >
-		<input type='hidden' name='form_security_token' value='1666825431.4c7cf5cd98a0ab97de79ca465a5d2cc8e10168054d3ab1f934190159df33a6e836e5e591ede5dc68e8ca210637627d1553b23e87d626ddd559dc95366fbfc0dd'>
+		<input type='hidden' name='form_security_token' value='1666825469.fba19cb127a486ab0651bc84e0d9b684a47f81fc3ae502c6ca70ded6b5f7d194234b8f4c17c17587f109993ff188c3a0aacdbaa0743e39d68e0e10c0f60b3d04'>
 		<div class="section-content-tools-wrapper">
 				<div id="id_email_wrapper" class="mb-3">
 		<label for="id_email" id="label_email">DId2 or Email Address:</label>
@@ -1412,10 +1498,11 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
 <div class="widget settings-widget">
 	<h3>Settings</h3>		
 	<ul class="nav nav-pills flex-column">
-				<li class="nav-item"><a href="https://dev.neuhub.org/settings/account" class="nav-link active">Account settings</a></li>
-				<li class="nav-item"><a href="https://dev.neuhub.org/settings/channel" class="nav-link">Channel settings</a></li>
-				<li class="nav-item"><a href="https://dev.neuhub.org/settings/privacy" class="nav-link">Privacy settings</a></li>
-				<li class="nav-item"><a href="https://dev.neuhub.org/settings/display" class="nav-link">Display settings</a></li>
+				<li class="nav-item"><a href="https://wistex.biz/settings/account" class="nav-link active">Account settings</a></li>
+				<li class="nav-item"><a href="https://wistex.biz/settings/channel" class="nav-link">Channel settings</a></li>
+				<li class="nav-item"><a href="https://wistex.biz/settings/privacy" class="nav-link">Privacy settings</a></li>
+				<li class="nav-item"><a href="https://wistex.biz/settings/display" class="nav-link">Display settings</a></li>
+				<li class="nav-item"><a href="https://wistex.biz/locs" class="nav-link">Manage locations</a></li>
 			</ul>
 	
 </div>
@@ -1461,10 +1548,10 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
                     </nav>
                     <div class="text-center my-auto copyright mb-20">
                         <!-- <span style="margin: 5px;">Copyright © 2022 <a href="https://wistex.com" class="text-decoration-none">WisTex TechSero Ltd. Co.</a></span> -->
-                        <span style="margin: 5px;">An independent <a href="https://federatedhub.org" class="text-decoration-none" target="_blank">federated hub</a>.</span>
-					<span style="margin: 5px;">Powered by <a href="https://hubzilla.org" class="text-decoration-none" target="_blank">Hubzilla</a> and <a href="https://neuhub.org" class="text-decoration-none" target="_blank">Neuhub</a>.</span>
-                        <span style="margin: 5px;"><a href="/help/TermsOfService" class="text-decoration-none">Terms of Service</a></span>
-                        <span style="margin: 5px;"><a href="/help/TermsOfService" class="text-decoration-none">Privacy Policy</a></span><br>&nbsp;
+                        <span style="margin: 5px;">An independent hub on the <a href="https://zotlabs.com/" class="text-decoration-none">Zot</a> Grid.</span>
+                        <span style="margin: 5px;">Powered by <a href="https://hubzilla.org" class="text-decoration-none">Hubzilla</a> and the <a href="https://neuhub.org" class="text-decoration-none">Neuhub</a> theme.</span>
+                        <span style="margin: 5px;"><a href="/" class="text-decoration-none">Terms of Service</a></span>
+                        <span style="margin: 5px;"><a href="/" class="text-decoration-none">Privacy Policy</a></span><br>&nbsp;
                     </div>
                 </div>
             </div>
@@ -1478,19 +1565,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body" id="!region_1">
-    
-<div class="widget settings-widget">
-	<h3>Settings</h3>		
-	<ul class="nav nav-pills flex-column">
-				<li class="nav-item"><a href="https://dev.neuhub.org/settings/account" class="nav-link active">Account settings</a></li>
-				<li class="nav-item"><a href="https://dev.neuhub.org/settings/channel" class="nav-link">Channel settings</a></li>
-				<li class="nav-item"><a href="https://dev.neuhub.org/settings/privacy" class="nav-link">Privacy settings</a></li>
-				<li class="nav-item"><a href="https://dev.neuhub.org/settings/display" class="nav-link">Display settings</a></li>
-			</ul>
-	
-</div>
-
-  </div>
+      </div>
 </div>
 
 
@@ -1576,7 +1651,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
 			</a>
 		</div>
 		<div id="nav-home-sub" class="border border-start-0 border-end-0 border-bottom-0 list-group list-group-flush collapse notification-content" data-bs-parent="#notifications" data-sse_type="home">
-						<a class="list-group-item text-decoration-none text-dark" id="nav-home-see-all" href="channel/wistex">
+						<a class="list-group-item text-decoration-none text-dark" id="nav-home-see-all" href="channel/scott">
 				<i class="fa fa-fw fa-external-link"></i> Home stream
 			</a>
 									<div class="list-group-item cursor-pointer" id="nav-home-mark-all" onclick="markRead('home'); return false;">
@@ -1728,7 +1803,7 @@ bSI6MSwiY2F0ZWdvcmllcyI6Im5hdl9mZWF0dXJlZF9hcHAsTmV0d29ya2luZyJ9
 				<li class="nav-item"><a href="directory?f=&suggest=1" class="nav-link">View friend suggestions</a></li>
 				<li class="nav-item"><a href="connections" class="nav-link">Manage your connections</a></li>
 						<div><strong>Communicate</strong></div>
-						<li class="nav-item"><a href="channel/wistex" class="nav-link">View your channel homepage</a></li>
+						<li class="nav-item"><a href="channel/scott" class="nav-link">View your channel homepage</a></li>
 				<li class="nav-item"><a href="network" class="nav-link">View your network stream</a></li>
 						<div><strong>Miscellaneous</strong></div>
 						<li class="nav-item"><a href="settings" class="nav-link">Settings</a></li>
