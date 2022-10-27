@@ -31,7 +31,9 @@ Known Issues
 
 ## Installation
 
-Summary: Copy all of the files except the README.md and LICENSE files to the web root of your Hubzilla or Streams installation.
+Summary: 
+
+- Copy all of the files except the README.md and LICENSE files to the web root of your Hubzilla or Streams installation.
 
 Steps:
 1. Upload the `neuhub-red-dash` folder to the `/view/theme/` folder.
