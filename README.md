@@ -26,7 +26,7 @@ We are looking for beta testers for the following themes:
 Known Issues
 * PDL Editor navigation broken.
 * Some remote resources, such as extra fonts, not loading properly.
-* Contains experimental code that will be removed in the release.
+* Contains experimental code that will be removed in the future.
 
 ## Installation
 
