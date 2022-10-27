@@ -8,6 +8,7 @@ Your contributions and feedback are welcome.
 ## Components
 
 - Neuhub Red Dash Theme
+- Messages Module (substitute for Notifications)
 - Example Addon
 - Example Module
 - Example Widget
@@ -18,26 +19,29 @@ Your contributions and feedback are welcome.
 
 We are looking for beta testers for the following themes:
 
-- **Neuhub Red Dash** 0.3 - A theme based on Redbasic and SB Admin.
+- **Neuhub Red Dash** 0.4 - A theme based on Redbasic and SB Admin.
 
 ## Neuhub Red Dash Release Notes
 
-Important Notes
-* Most features for remotely authenticated users work.
-* Some features for local users do not work yet.
-
 Known Issues
-* Notifications not working on mobile
-* Navigation broken in Firefox
-* PDL Editor navigation broken
-* Some Javascript resources not loading properly.
+* Navigation broken in Firefox.
+* PDL Editor navigation broken.
+* Some remote resources not loading properly.
 * Contains experimental code that will be removed in the release.
-* Documentation not complete, incorrect documentation as placeholders.
 
 ## Installation
 
+Summary: 
+
+- Copy all of the files except the README.md and LICENSE files to the web root of your Hubzilla or Streams installation.
+
+Steps:
 1. Upload the `neuhub-red-dash` folder to the `/view/theme/` folder.
-2. Enable the theme in your admin.
+2. Upload contents of the `/Zotlabs/SiteModule` folder to the `/Zotlabs/SiteModule` folder.
+3. Upload contents of the `/addon` folder to the `/addon` folder.
+4. Upload contents of the `/widget` folder to the `/widget` folder.
+5. Enable the theme in your admin.
+6. Assign as the default theme and/or as an individual channel's theme.
 
 ## Use Cases
 
