@@ -24,7 +24,6 @@ We are looking for beta testers for the following themes:
 ## Neuhub Red Dash Release Notes
 
 Known Issues
-* Navigation broken in Firefox.
 * PDL Editor navigation broken.
 * Some remote resources not loading properly.
 * Contains experimental code that will be removed in the release.
