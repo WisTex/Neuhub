@@ -11,6 +11,7 @@ Your contributions and feedback are welcome.
 - Example Addon
 - Example Module
 - Example Widget
+- Messages Module (substitute for Notifications)
 
 ## Themes
 
@@ -22,17 +23,11 @@ We are looking for beta testers for the following themes:
 
 ## Neuhub Red Dash Release Notes
 
-Important Notes
-* Most features for remotely authenticated users work.
-* Some features for local users do not work yet.
-
 Known Issues
-* Notifications not working on mobile
-* Navigation broken in Firefox
-* PDL Editor navigation broken
-* Some Javascript resources not loading properly.
+* Navigation broken in Firefox.
+* PDL Editor navigation broken.
+* Some remote resources not loading properly.
 * Contains experimental code that will be removed in the release.
-* Documentation not complete, incorrect documentation as placeholders.
 
 ## Installation
 
