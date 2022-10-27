@@ -127,7 +127,7 @@
     				</a>
     			</li>
     			<li class="nav-item text-primary">
-    				<a id="nav-app-settings-link" href="/notifications/system" class="nav-link">
+    				<a id="nav-app-settings-link" href="/messages" class="nav-link">
     					<i class="fa fa-fw fa-exclamation"></i>
     				</a>
     			</li>
@@ -758,7 +758,7 @@
                                 <a class="nav-link" href="/network" title="Settings"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/notifications/system" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
+                                <a class="nav-link" href="/messages" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -783,8 +783,21 @@
                                 <a class="nav-link active" href="/network" title="Settings"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/notifications/system" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
+                                <a class="nav-link" href="/messages" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        
+                                    <a class="dropdown-item" href="/channel">View Channel</a>
+                                    <a class="dropdown-item" href="/profile/{{$localuserresult}}/view">View Profile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/connections">Connections</a>
+                        
+                                </div>
+                            </li>		
                         {{/if}}
 
                         {{if !$name && $sel.name == 'Notifications' }}
@@ -795,10 +808,49 @@
                                 <a class="nav-link" href="/network" title="Settings"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="/notifications/system" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
+                                <a class="nav-link active" href="/messages" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
                             </li>
-                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        
+                                    <a class="dropdown-item" href="/channel">View Channel</a>
+                                    <a class="dropdown-item" href="/profile/{{$localuserresult}}/view">View Profile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/connections">Connections</a>
+                        
+                                </div>
+                            </li>                            
                         {{/if}}
+
+                     {{assign var="lookingfor" value="$z_baseurl/messages"}}
+                        {{if $url == $lookingfor}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="/hq" title="Settings"><i class="fa fa-fw fa-flag generic-icons-nav"></i>HQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/network" title="Settings"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/messages" title="Settings"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        
+                                    <a class="dropdown-item" href="/channel">View Channel</a>
+                                    <a class="dropdown-item" href="/profile/{{$localuserresult}}/view">View Profile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/connections">Connections</a>
+                        
+                                </div>
+                            </li>		
+                        {{/if}}   
+
 
                         {{if !$name && $sel.name == 'Settings'}}
                             <li class="nav-item">

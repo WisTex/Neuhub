@@ -34,7 +34,7 @@
 	      			{{if $unseen == 1}}
 						<span class="badge bg-danger">{{$new}}</span>
 					{{/if}}	
-					<button type="button" class="btn btn-primary btn-sm">View</button>
+					<button type="button" class="btn btn-white btn-sm">View</button>
 					</span>
 					<i class="fa fa-comments-o"></i><strong>&nbsp;{{$xname}}</strong>
 					{{if $title != '' }}
