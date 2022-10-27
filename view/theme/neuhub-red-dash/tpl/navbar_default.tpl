@@ -302,7 +302,7 @@
                             
                         </span>
                         
-                        <img class="border rounded-circle img-profile" onerror='this.src="/view/theme/purplebasic/img/blank-profile-picture-180x180.png"' 
+                        <img class="border rounded-circle img-profile" onerror='this.src="/view/theme/neuhub-red-dash/img/blank-profile-picture-180x180.png"' 
                         disabledsrc="/view/theme/purplebasic/assets/img/avatars/avatar1.jpeg" src="{{$userinfo.icon}}" alt="{{$userinfo.name}}">
                     </a>
                     
@@ -329,9 +329,9 @@
         					    <a class="dropdown-item" href="{{$nav.group.0}}" title="{{$nav.group.3}}" role="menuitem" id="{{$nav.group.4}}">{{$nav.group.1}}</a>
         					{{/if}}
         					
-        					<!--
-        					<a class="dropdown-item" href="/connections"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp; Connections</a>
-        					-->
+        					
+        					<a class="dropdown-item" href="/connections"><!-- <i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp; -->Connections</a>
+        					
         					<div class="dropdown-divider"></div>
         					
         					{{if $nav.manage}}
