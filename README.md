@@ -19,7 +19,7 @@ Your contributions and feedback are welcome.
 
 We are looking for beta testers for the following themes:
 
-- **Neuhub Red Dash** 0.3 - A theme based on Redbasic and SB Admin.
+- **Neuhub Red Dash** 0.4 - A theme based on Redbasic and SB Admin.
 
 ## Neuhub Red Dash Release Notes
 
