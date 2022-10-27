@@ -35,9 +35,9 @@ Summary: Copy all of the files except the README.md and LICENSE files to the web
 
 Steps:
 1. Upload the `neuhub-red-dash` folder to the `/view/theme/` folder.
-2. Upload contents of `/Zotlabs/SiteModule` folder to the `/Zotlabs/SiteModule` folder.
-3. Upload contents of `/addon` folder to the `/addon` folder.
-4. Upload contents of `/widget` folder to the `/widget` folder.
+2. Upload contents of the `/Zotlabs/SiteModule` folder to the `/Zotlabs/SiteModule` folder.
+3. Upload contents of the `/addon` folder to the `/addon` folder.
+4. Upload contents of the `/widget` folder to the `/widget` folder.
 5. Enable the theme in your admin.
 
 ## Use Cases
