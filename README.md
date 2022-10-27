@@ -41,6 +41,7 @@ Steps:
 3. Upload contents of the `/addon` folder to the `/addon` folder.
 4. Upload contents of the `/widget` folder to the `/widget` folder.
 5. Enable the theme in your admin.
+6. Assign as the default theme and/or as an individual channel's theme.
 
 ## Use Cases
 
