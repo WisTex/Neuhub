@@ -8,10 +8,10 @@ Your contributions and feedback are welcome.
 ## Components
 
 - Neuhub Red Dash Theme
+- Messages Module (substitute for Notifications)
 - Example Addon
 - Example Module
 - Example Widget
-- Messages Module (substitute for Notifications)
 
 ## Themes
 
@@ -31,8 +31,14 @@ Known Issues
 
 ## Installation
 
+Summary: Copy all of the files except the README.md and LICENSE files to the web root of your Hubzilla or Streams installation.
+
+Steps:
 1. Upload the `neuhub-red-dash` folder to the `/view/theme/` folder.
-2. Enable the theme in your admin.
+2. Upload contents of `/Zotlabs/SiteModule` folder to the `/Zotlabs/SiteModule` folder.
+3. Upload contents of `/addon` folder to the `/addon` folder.
+4. Upload contents of `/widget` folder to the `/widget` folder.
+5. Enable the theme in your admin.
 
 ## Use Cases
 
