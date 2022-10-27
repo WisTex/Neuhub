@@ -32,5 +32,6 @@ head_add_js('/library/bootbox/bootbox.min.js');
 head_add_js('/library/bootstrap-tagsinput/bootstrap-tagsinput.js');
 head_add_js('/library/datetimepicker/jquery.datetimepicker.js');
 head_add_js('/library/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js');
-// head_add_js('/view/theme/redbasic/js/redbasic.js?v=7.2');
+// head_add_js('/view/theme/neuhub-red-dash/js/popper.min.js');
+// head_add_js('/view/theme/redbasic/js/redbasic.js');
 

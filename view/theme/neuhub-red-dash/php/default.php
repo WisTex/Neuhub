@@ -116,7 +116,8 @@ body {
                     <li class="nav-item"><a class="nav-link" href="/hq"><i class="fas fa-user-circle"></i><span>Back to HQ</span></a></li>
                     -->
                 </ul>
-                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+                <!-- <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div> -->
+			<?php // TODO Fix toggle button ?>
             </div>
         </div>
         <div class="d-flex flex-column" id="content-wrapper">
