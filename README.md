@@ -28,6 +28,10 @@ Known Issues
 * Some remote resources, such as extra fonts, not loading properly.
 * Contains experimental code that will be removed in the future.
 
+Compatibility
+* Tested with Hubzilla
+* Not tested with Streams yet.
+
 ## Installation
 
 Summary: 
