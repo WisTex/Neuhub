@@ -92,7 +92,7 @@ body {
         <div class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 toggled" style="background: #43488A;">
             <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
                     <div class="sidebar-brand-icon rotate-n-15"><i class="icon-hz-64"></i></div>
-                    <div class="sidebar-brand-text mx-3"><span>Channel</span></div>
+                    <div class="sidebar-brand-text mx-3"><span>Neuhub</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
 			<!--
@@ -105,8 +105,9 @@ body {
                     <!--
                     <li class="nav-item"><a class="nav-link" href="/channel/mockup"><i class="fas fa-tachometer-alt"></i><span>Channel</span></a></li>
                     -->
-                    <li class="nav-item"><a class="nav-link" href="/directory?f=&pubforums=0&global=0"><i class="fas fa-user"></i><span>Channels</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/directory?f=&pubforums=1&global=0"><i class="fas fa-user"></i><span>Forums</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="/directory?f=&pubforums=0&global=0"><i class="fas fa-dot-circle"></i><span>Channel</span></a></li>         
+	     <li class="nav-item"><a class="nav-link" href="/directory?f=&pubforums=0&global=0"><i class="fas fa-sitemap"></i><span>Directory</span></a></li>
+		<li class="nav-item"><a class="nav-link" href="/directory?f=&pubforums=1&global=0"><i class="fas fa-comments"></i><span>Forums</span></a></li>
                     <!--
                     <li class="nav-item"><a class="nav-link" href="/profile/mockup"><i class="fas fa-user"></i><span>Profile</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="/cal/mockup"><i class="fas fa-calendar"></i><span>Calendar</span></a></li>
@@ -129,10 +130,10 @@ body {
 
                 <div class="p-3">
                     <div class="row" style="font-size: 0.9rem;">
-                        <div class="col-md-8 col-lg-9" id="!region_2">
+                        <div class="col-md-8 col-lg-9" id="!region_1"> <!-- region 2 -->
                             <?php if(x($page,'content')) echo $page['content']; ?>
                         </div>
-                        <div class="col-md-4 col-lg-3" id="!region_1">
+                        <div class="col-md-4 col-lg-3" id="!region_1 !region_3"> <!-- region 1 -->
                             
                             <!--
                             <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
@@ -185,7 +186,7 @@ body {
             <div class="bg-white sticky-footer">
                 <div class="container my-auto">
                     <nav class="navbar navbar-light navbar-expand-md">
-                        <div class="container-fluid"><a class="navbar-brand" href="#">Neuhub</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-size: 12px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="container-fluid"><a class="navbar-brand" href="/">Complete Hosting Guide</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-size: 12px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                             <div class="collapse navbar-collapse" id="navcol-1">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item"><a class="nav-link !active" href="/">Home</a></li>
@@ -193,16 +194,22 @@ body {
                                     <li class="nav-item"><a class="nav-link" href="/directory">Directory</a></li>
                                     <li class="nav-item"><a class="nav-link" href="/search">Search</a></li>
                                     <li class="nav-item"><a class="nav-link" href="/help">Help</a></li>
+							<span class="d-block d-md-none">
+							<li class="nav-item"><a class="nav-link" href="/help/TermsOfService">Terms of Use &amp; Privacy</a></li>
+							</span>
                                 </ul>
                             </div>
                         </div>
                     </nav>
-                    <div class="text-center my-auto copyright mb-20">
-                        <!-- <span style="margin: 5px;">Copyright © 2022 <a href="https://wistex.com" class="text-decoration-none">WisTex TechSero Ltd. Co.</a></span> -->
+                    <div class="text-center my-auto copyright mb-20 d-none d-sm-block">
+                        <span style="margin: 5px;">Copyright &copy; 2022 <a href="https://wistex.com" class="text-decoration-none">WisTex TechSero Ltd. Co.</a> All rights reserved.</span><br>
                         <span style="margin: 5px;">An independent <a href="https://federatedhub.org" class="text-decoration-none" target="_blank">federated hub</a>.</span>
 					<span style="margin: 5px;">Powered by <a href="https://hubzilla.org" class="text-decoration-none" target="_blank">Hubzilla</a> and <a href="https://neuhub.org" class="text-decoration-none" target="_blank">Neuhub</a>.</span>
-                        <span style="margin: 5px;"><a href="/help/TermsOfService" class="text-decoration-none">Terms of Service</a></span>
+                        <!--
+					<span style="margin: 5px;"><a href="/help/TermsOfService" class="text-decoration-none">Terms of Service</a></span>
                         <span style="margin: 5px;"><a href="/help/TermsOfService" class="text-decoration-none">Privacy Policy</a></span><br>&nbsp;
+	          -->
+	          <span style="margin: 5px;"><a href="/help/TermsOfService" class="text-decoration-none">Terms of Use &amp; Privacy</a></span><br>&nbsp;
                     </div>
                 </div>
             </div>
@@ -212,11 +219,11 @@ body {
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
-    <h5 id="offcanvasRightLabel"><i class="fas fa-caret-right"></i> Aside</h5>
+    <h5 id="offcanvasRightLabel"><i class="fas fa-columns"></i> Aside</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body" id="!region_1">
-    <?php if(x($page,'aside')) echo $page['aside']; ?>
+    <!-- <?php if(x($page,'aside')) echo $page['aside']; ?> -->
   </div>
 </div>
 
@@ -254,8 +261,8 @@ body {
     <!--
     <script src="/view/theme/purplebasic/assets/bootstrap/js/bootstrap.min.js"></script>
     -->
-    <script src="/view/theme/purplebasic/assets/js/bs-init.js"></script>
-    <script src="/view/theme/purplebasic/assets/js/theme.js"></script>
+    <script src="/view/theme/neuhub-red-dash/assets/js/bs-init.js"></script>
+    <script src="/view/theme/neuhub-red-dash/assets/js/theme.js"></script>
     
 </body>
 

@@ -36,8 +36,14 @@
         <ul class="navbar-nav flex-nowrap ms-auto">
                             
             <li class="nav-item">
-                <a class="nav-link text-primary" href="/"><i class="generic-icons-nav fa fa-fw fa-home"></i></a>
+                <a class="nav-link text-primary" href="/"><i class="!generic-icons-nav fa fa-fw fa-home"></i></a>
             </li>                            
+
+			{{if $localuser}}
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="/channel"><i class="!generic-icons-nav fa fa-fw fa-dot-circle-o" alt="channel"></i></a>
+            </li>                
+			{{/if}}
                             
             <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link text-primary" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
                 <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
@@ -228,8 +234,44 @@
                 </div>
             </li>
 
+
+		<li class="nav-item dropdown no-arrow">
+                <div class="nav-item dropdown no-arrow">
+                    
+                    <a class="dropdown-toggle nav-link text-primary" aria-expanded="false" data-bs-toggle="dropdown" href="#">
+					<!-- 
+					<span class="d-none d-sm-none d-md-block">
+						{{if $name}}{{$name}}{{/if}}   &nbsp; <i class="generic-icons-nav fa fa-fw fa-caret-down"></i> 
+					</span>
+					-->
+                        <span class="d-xs-block d-sm-block d-md-none  d-lg-none d-xl-none"></span>
+                        <!-- <i class="generic-icons-nav fa fa-fw fa-caret-square-down"></i> -->
+                        
+                         <!-- <span class="icon-hz-64"></span> -->
+                         <span class="generic-icons-nav fa fa-bars"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
+                    </a>
+                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+	      
+                	</div>
+                                    
+                </div>
+            </li>	      
+
+<!--
+		<li class="nav-item">
+            <a class="nav-link text-primary" >
+            <span class="d-none d-sm-none d-md-block">
+
+                
+            
+            &nbsp; <i class="generic-icons-nav fa fa-fw fa-caret-down"></i></span>
+            <i class="generic-icons-nav fa fa-bars"></i>Sidebar <i class="generic-icons-nav fa fa-fw fa-caret-left"></i> fa fa-th-list</a>
+            </li>
+
+-->
+
             <li class="nav-item d-block d-md-none">
-            <a class="nav-link text-primary" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">Sidebar <i class="generic-icons-nav fa fa-fw fa-caret-left"></i></a>
+            <a class="nav-link text-primary" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight"><i class="!generic-icons-nav fa fa-columns"></i><!-- Sidebar <i class="generic-icons-nav fa fa-fw fa-caret-left"></i> --></a>
             </li>
 
 <!--
