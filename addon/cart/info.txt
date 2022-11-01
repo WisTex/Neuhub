@@ -1,0 +1,74 @@
+		$itemtypehook='cart_order_before_additem_'.$itemtype;
+		call_hooks($itemtypehook,$calldata);
+--
+	
+	call_hooks('cart_order_before_additem',$calldata);
+--
+		$itemtypehook='cart_order_additem_'.$itemtype;
+		call_hooks($itemtypehook,$calldata);
+--
+
+	call_hooks('cart_order_additem',$calldata);
+--
+		$itemtypehook='cart_order_after_additem_'.$itemtype;
+		call_hooks($itemtypehook,$calldata);
+--
+	}		
+	call_hooks('cart_order_after_additem',$calldata);
+--
+		$itemtypehook='cart_order_before_updateitem_'.$itemtype;
+		call_hooks($itemtypehook,$calldata);
+--
+	
+	call_hooks('cart_order_before_updateitem',$calldata);
+--
+		$itemtypehook='cart_order_updateitem_'.$itemtype;
+		call_hooks($itemtypehook,$calldata);
+--
+
+	call_hooks('cart_order_updateitem',$calldata);
+--
+		$itemtypehook='cart_order_after_updateitem_'.$itemtype;
+		call_hooks($itemtypehook,$calldata);
+--
+	}		
+	call_hooks('cart_order_after_updateitem',$calldata);
+--
+	$calldata = Array("order"=>$order,"content"=null);
+	call_hooks('cart_display_before',$calldata);
+--
+			$itemtypehook='cart_display_before_'.$itemtype;
+			call_hooks($itemtypehook,$calldata);
+--
+		
+		call_hooks("cart_display_item",$calldata);
+--
+		unset($calldata["content"]);
+		call_hooks("cart_display_item_after",$calldata);
+--
+			$calldata["content"]=null;
+			call_hooks($itemtypehook,$calldata);
+--
+	$calldata = Array("orderhash"=>$orderhash,"content"=null);
+	call_hooks('cart_display_after',$calldata)
+--
+			$itemtypehook='cart_before_checkout_'.$itemtype;
+			call_hooks($itemtypehook,$calldata);
+--
+		$calldata=Array('order'=>$order,"error"=>null,"content"=>null)
+		call_hooks('cart_before_checkout',$calldata);
+--
+	$calldata=Array('order'=>$order,"error"=>null,"content"=>null)
+	call_hooks('cart_checkout',$calldata);
+--
+			$itemtypehook='cart_after_checkout_'.$itemtype;
+			call_hooks($itemtypehook,$calldata);
+--
+	$calldata=Array('order'=>$order,"content"=>null)
+	call_hooks('cart_after_checkout',$calldata);
+--
+			$itemtypehook='cart_orderpaid_'.$itemtype;
+			call_hooks($itemtypehook,$calldata);
+--
+	$calldata=Array('order'=>$order,"error"=>null,"content"=>null)
+	call_hooks('cart_orderpaid',$calldata);

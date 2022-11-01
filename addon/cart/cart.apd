@@ -1,0 +1,7 @@
+version: 3
+url: $baseurl/cart/$nick, $baseurl/settings/cart
+requires: local_channel
+name: Cart
+photo: icon:shopping-cart
+categories: E-Commerce
+desc: A webshop with cart utilities for orders and payments.

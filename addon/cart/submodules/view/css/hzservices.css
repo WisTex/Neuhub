@@ -1,0 +1,46 @@
+#cart-hzservices-itemactivatecommands-wrapper {
+  margin-bottom:1em;
+  padding-left:2em;
+  padding-right:2em;
+  border-width:1px;
+  border-style:solid;
+  border-color:#cfffcf;
+  background-color:#cfffcf;
+}
+
+#cart-hzservices-itemdeactivatecommands-wrapper {
+  margin-bottom:1em;
+  padding-left:2em;
+  padding-right:2em;
+  border-width:1px;
+  border-style:solid;
+  border-color:#ffcfcf;
+  background-color:#ffcfcf;
+}
+
+#cart-activate-commands {
+  margin-top:1em;
+  margin-bottom:1em;
+  padding-bottom:1em;
+  padding-top:1em;
+  padding-left:.5em;
+  padding-right:.5em;
+  border-width:1px;
+  border-style:solid;
+  border-color:#a0ffa0;
+  background-color:#a0ffa0;
+}
+
+#cart-deactivate-commands {
+  margin-top:1em;
+  margin-bottom:1em;
+  padding-bottom:1em;
+  padding-top:1em;
+  padding-left:.5em;
+  padding-right:.5em;
+  border-width:1px;
+  border-style:solid;
+  border-color:#ffa0a0;
+  background-color:#ffa0a0;
+
+}

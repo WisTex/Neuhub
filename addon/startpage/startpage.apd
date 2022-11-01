@@ -1,0 +1,7 @@
+version: 2
+url: $baseurl/startpage
+requires: local_channel
+name: Startpage
+photo: icon:play-circle-o
+categories: System
+desc: Configure your personal startpage after login.

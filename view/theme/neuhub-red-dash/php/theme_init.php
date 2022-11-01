@@ -11,6 +11,8 @@ head_add_css('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,4
 head_add_css('/view/theme/neuhub-red-dash/assets/fonts/fontawesome-all.min.css');
 head_add_css('/view/theme/neuhub-red-dash/assets/fonts/font-awesome.min.css');
 head_add_css('/view/theme/neuhub-red-dash/assets/fonts/fontawesome5-overrides.min.css');
+head_add_css('/view/theme/neuhub-red-dash/assets/fonts/fa5/css/all.css');
+
 
 // A font that includes Hubzilla logos and icons.
 head_add_css('/view/theme/neuhub-red-dash/assets/fonts/hubzilla/style.css');

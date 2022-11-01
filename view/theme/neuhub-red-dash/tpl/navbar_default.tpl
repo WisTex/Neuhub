@@ -2,7 +2,7 @@
 
 
 
-    {{if $localuser}}
+    {{if $localuserdisabled}}
         <style>
             #menu-toggle{
                 color:black;
@@ -191,16 +191,7 @@
                         <div class="dropdown-divider"></div>
                         -->
 		
-                		{{if $navbar_apps.0}}
-                    		<div class="dropdown-header text-uppercase text-muted">
-                    			{{$pinned_apps}}
-                    		</div>
-                    		<div id="nav-app-bin-container" class="">
-                    			{{foreach $navbar_apps as $navbar_app}}
-                    				{{$navbar_app|replace:'navbar-app nav-link':'dropdown-item nav-app-sortable'|replace:'fa':'generic-icons-nav fa'}}
-                    			{{/foreach}}
-                    		</div>
-                		{{/if}}
+
                 
                 		{{if $is_owner}}
 					<!-- featured apps -->
@@ -226,7 +217,7 @@
                     			{{$sysapps|replace:'nav-link':'dropdown-item'}}
                     		</div>
                     		{{foreach $nav_apps as $nav_app}}
-                    			{{$nav_app}}
+                    			{{$nav_app|replace:'nav-link':'dropdown-item'}}
                     		{{/foreach}}
                 		{{/if}}    
                 	</div>
@@ -251,6 +242,19 @@
                          <span class="generic-icons-nav fa fa-bars"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
                     </a>
                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+
+                		{{if $navbar_apps.0}}
+                    		<div class="dropdown-header text-uppercase text-muted">
+                    			{{$pinned_apps}}
+                    		</div>
+                    		<div id="nav-app-bin-container" class="">
+                    			{{foreach $navbar_apps as $navbar_app}}
+                    				{{$navbar_app|replace:'navbar-app nav-link':'dropdown-item nav-app-sortable'|replace:'fa':'generic-icons-nav fa'}}
+                    			{{/foreach}}
+                    		</div>
+                		{{/if}}
+
+
 	      
                 	</div>
                                     
@@ -670,6 +674,7 @@
 
 
             <!-- begin page navbar ----------------------------------------- -->
+{{if $name == 'sdhflksadhfsadkhgsfdkjgfsdhkls'}}
             <div class="container-fluid">
                 <div class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom" style="z-index:100;">
                     <a href="{{$url}}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -1058,6 +1063,11 @@
                     </ul>
                 </div>
             </div> <!-- container -->
+
+
+{{/if}} <!-- // showextranav  -->
+
+
 
         </div> <!-- column -->
     </div> <!-- row -->
