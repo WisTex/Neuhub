@@ -243,6 +243,45 @@
                     </a>
                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
 
+
+					<!-- show additional links based on page. -->
+	          
+
+
+                        <!-- channel apps drop down (when viewing someone else's channel) -->
+                        {{if $channel_apps.0}}
+
+                    		<div class="dropdown-header text-uppercase text-muted">
+                    			Channel Apps
+                    		</div>	          
+	          
+                        		    {{foreach $channel_apps as $channel_app}}
+                        		        {{$channel_app}}
+                        		    {{/foreach}}	          
+	          
+                            
+                                <a class="dropdown-item" href="#" >
+                                    <i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel
+                                </a>
+
+                            
+                		{{/if}}
+
+
+					
+                        {{if !$name && $sel.name == 'HQ' }}
+                    		<div class="dropdown-header text-uppercase text-muted">
+                    			Headquarters (HQ)
+                    		</div>	          
+                                <a class="dropdown-item active" href="/hq" title="HQ"><i class="fa fa-fw fa-flag generic-icons-nav"></i>HQ</a>            
+                                <a class="dropdown-item" href="/network" title="Network"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
+                                <a class="dropdown-item" href="/messages" title="Notifications"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
+						<div class="dropdown-divider"></div>
+                        {{/if}}					
+
+
+
+					<!-- show pinned apps, if any -->
                 		{{if $navbar_apps.0}}
                     		<div class="dropdown-header text-uppercase text-muted">
                     			{{$pinned_apps}}

@@ -72,6 +72,7 @@
     
 </style>
 
+
              
              <div class="neuhub-card">
 
@@ -174,8 +175,16 @@
 		</dl>
 		{{/if}}
 
+		<dl class="mb-0 pb-1">
+			<dt class="homepage-label">Channel</dt>
+			<dd class="homepage-url u-url text-truncate"><a href="/channel/{{$profile.channel_address}}">Posts</a> ~ <a href="/profile/{{$profile.channel_address}}">Profile</a></dd>
+		</dl>
+		
         <div class="hcard-addon"></div>
 	{{/if}}
+
+
+
                 <!-- <div class="d-flex justify-content-between align-items-center mt-4 px-4">
 
                   <div class="neuhub-stats">
