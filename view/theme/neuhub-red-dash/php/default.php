@@ -265,7 +265,7 @@ body {
             <div class="bg-white sticky-footer">
                 <div class="container my-auto">
                     <nav class="navbar navbar-light navbar-expand-md">
-                        <div class="container-fluid"><a class="navbar-brand" href="/">Complete Hosting Guide</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-size: 12px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="container-fluid"><a class="navbar-brand" href="/">Neuhub</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-size: 12px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                             <div class="collapse navbar-collapse" id="navcol-1">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item"><a class="nav-link !active" href="/">Home</a></li>

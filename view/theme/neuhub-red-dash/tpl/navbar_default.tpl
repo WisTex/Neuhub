@@ -583,10 +583,10 @@
 
                 <div class="d-none d-sm-none d-md-none d-lg-block">
                     <ol class="breadcrumb" style="font-size: 14px;">
-                        <li class="breadcrumb-item"><a href="{{$baseurl}}" class="text-decoration-none"><span>{{$banner}}</span></a></li>
+                        <li class="breadcrumb-item"><a href="{{$baseurl}}" class="text-decoration-none"><span><i class="fa fa-home"></i> {{$banner}}</span></a></li>
                         {{if $name}}
                             <li class="breadcrumb-item"><a href="/directory" class="text-decoration-none"><span>Channels</span></a></li>
-                            <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span><!-- Mockup Theme -->{{$name}}</span></a></li>
+                            <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span><!-- <i class="fa5 fa5-house-user"></i> --><!-- Mockup Theme -->{{$name}}</span></a></li>
                         {{/if}}
                         
                         {{assign var="overrideselname" value='false'}}
@@ -691,13 +691,18 @@
                         {{/if}}   
                         
                         
-                        {{if !$name && ($sel.name == "Apps" || $sel.name == "HQ" || $sel.name == "Channel" || $sel.name == "Profile" || $sel.name == "Post" || $sel.name == "Stream" || $sel.name == "Notifications" || $sel.name == "Connections")}}
+                        {{if !$name && ($sel.name == "Apps" || $sel.name == "HQ" || $sel.name == "Channel-disabled" || $sel.name == "Profile" || $sel.name == "Post" || $sel.name == "Stream" || $sel.name == "Notifications" || $sel.name == "Connections")}}
                             <li class="breadcrumb-item"><a href="/channel" class="text-decoration-none"><span>My Channel</span></a></li>
                         {{/if}}
                         
                         {{if !$name && ($sel.name == "Calendar" || $sel.name == "Contact Roles" || $sel.name == "Files" || $sel.name == "Photos" || $sel.name == "Wiki" || $sel.name == "Affinity Tool" || $sel.name == "Articles" || $sel.name == "Bookmarks" || $sel.name == "CardDAV" || $sel.name == "Cards")}}
                             <li class="breadcrumb-item"><a href="/channel" class="text-decoration-none"><span>My Channel</span></a></li>
                             <li class="breadcrumb-item"><a href="/apps" class="text-decoration-none"><span>Apps</span></a></li>
+                        {{/if}}
+
+                        {{if $sel.name && $name && $sel.name == 'Channel'}}
+                            <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span>Posts</span></a></li>
+						{{assign var="overrideselname" value="true"}}
                         {{/if}}
                                     
                         {{if $sel.name && $overrideselname == 'false'}}
