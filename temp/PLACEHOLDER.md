@@ -1,0 +1,1 @@
+This is just a placeholder so that GIt creates the directory for you if you are using Git. It also preserves the folder if you are creating a zip file. Neither like empty directories.

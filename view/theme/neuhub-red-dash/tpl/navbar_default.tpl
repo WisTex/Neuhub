@@ -2,7 +2,7 @@
 
 
 
-    {{if $localuser}}
+    {{if $localuserdisabled}}
         <style>
             #menu-toggle{
                 color:black;
@@ -191,16 +191,7 @@
                         <div class="dropdown-divider"></div>
                         -->
 		
-                		{{if $navbar_apps.0}}
-                    		<div class="dropdown-header text-uppercase text-muted">
-                    			{{$pinned_apps}}
-                    		</div>
-                    		<div id="nav-app-bin-container" class="">
-                    			{{foreach $navbar_apps as $navbar_app}}
-                    				{{$navbar_app|replace:'navbar-app nav-link':'dropdown-item nav-app-sortable'|replace:'fa':'generic-icons-nav fa'}}
-                    			{{/foreach}}
-                    		</div>
-                		{{/if}}
+
                 
                 		{{if $is_owner}}
 					<!-- featured apps -->
@@ -226,7 +217,7 @@
                     			{{$sysapps|replace:'nav-link':'dropdown-item'}}
                     		</div>
                     		{{foreach $nav_apps as $nav_app}}
-                    			{{$nav_app}}
+                    			{{$nav_app|replace:'nav-link':'dropdown-item'}}
                     		{{/foreach}}
                 		{{/if}}    
                 	</div>
@@ -251,6 +242,58 @@
                          <span class="generic-icons-nav fa fa-bars"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
                     </a>
                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+
+
+					<!-- show additional links based on page. -->
+	          
+
+
+                        <!-- channel apps drop down (when viewing someone else's channel) -->
+                        {{if $channel_apps.0}}
+
+                    		<div class="dropdown-header text-uppercase text-muted">
+                    			Channel Apps
+                    		</div>	          
+	          
+                        		    {{foreach $channel_apps as $channel_app}}
+                        		        {{$channel_app}}
+                        		    {{/foreach}}	          
+	          
+                            
+                                <a class="dropdown-item" href="#" >
+                                    <i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel
+                                </a>
+
+                            
+                		{{/if}}
+
+
+					
+                        {{if !$name && $sel.name == 'HQ' }}
+                    		<div class="dropdown-header text-uppercase text-muted">
+                    			Headquarters (HQ)
+                    		</div>	          
+                                <a class="dropdown-item active" href="/hq" title="HQ"><i class="fa fa-fw fa-flag generic-icons-nav"></i>HQ</a>            
+                                <a class="dropdown-item" href="/network" title="Network"><i class="fa fa-fw fa-bullhorn generic-icons-nav"></i>Stream</a>
+                                <a class="dropdown-item" href="/messages" title="Notifications"><i class="fa fa-fw fa-bell generic-icons-nav"></i>Notifications</a>
+						<div class="dropdown-divider"></div>
+                        {{/if}}					
+
+
+
+					<!-- show pinned apps, if any -->
+                		{{if $navbar_apps.0}}
+                    		<div class="dropdown-header text-uppercase text-muted">
+                    			{{$pinned_apps}}
+                    		</div>
+                    		<div id="nav-app-bin-container" class="">
+                    			{{foreach $navbar_apps as $navbar_app}}
+                    				{{$navbar_app|replace:'navbar-app nav-link':'dropdown-item nav-app-sortable'|replace:'fa':'generic-icons-nav fa'}}
+                    			{{/foreach}}
+                    		</div>
+                		{{/if}}
+
+
 	      
                 	</div>
                                     
@@ -540,10 +583,10 @@
 
                 <div class="d-none d-sm-none d-md-none d-lg-block">
                     <ol class="breadcrumb" style="font-size: 14px;">
-                        <li class="breadcrumb-item"><a href="{{$baseurl}}" class="text-decoration-none"><span>{{$banner}}</span></a></li>
+                        <li class="breadcrumb-item"><a href="{{$baseurl}}" class="text-decoration-none"><span><i class="fa fa-home"></i> {{$banner}}</span></a></li>
                         {{if $name}}
                             <li class="breadcrumb-item"><a href="/directory" class="text-decoration-none"><span>Channels</span></a></li>
-                            <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span><!-- Mockup Theme -->{{$name}}</span></a></li>
+                            <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span><!-- <i class="fa5 fa5-house-user"></i> --><!-- Mockup Theme -->{{$name}}</span></a></li>
                         {{/if}}
                         
                         {{assign var="overrideselname" value='false'}}
@@ -648,13 +691,18 @@
                         {{/if}}   
                         
                         
-                        {{if !$name && ($sel.name == "Apps" || $sel.name == "HQ" || $sel.name == "Channel" || $sel.name == "Profile" || $sel.name == "Post" || $sel.name == "Stream" || $sel.name == "Notifications" || $sel.name == "Connections")}}
+                        {{if !$name && ($sel.name == "Apps" || $sel.name == "HQ" || $sel.name == "Channel-disabled" || $sel.name == "Profile" || $sel.name == "Post" || $sel.name == "Stream" || $sel.name == "Notifications" || $sel.name == "Connections")}}
                             <li class="breadcrumb-item"><a href="/channel" class="text-decoration-none"><span>My Channel</span></a></li>
                         {{/if}}
                         
                         {{if !$name && ($sel.name == "Calendar" || $sel.name == "Contact Roles" || $sel.name == "Files" || $sel.name == "Photos" || $sel.name == "Wiki" || $sel.name == "Affinity Tool" || $sel.name == "Articles" || $sel.name == "Bookmarks" || $sel.name == "CardDAV" || $sel.name == "Cards")}}
                             <li class="breadcrumb-item"><a href="/channel" class="text-decoration-none"><span>My Channel</span></a></li>
                             <li class="breadcrumb-item"><a href="/apps" class="text-decoration-none"><span>Apps</span></a></li>
+                        {{/if}}
+
+                        {{if $sel.name && $name && $sel.name == 'Channel'}}
+                            <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span>Posts</span></a></li>
+						{{assign var="overrideselname" value="true"}}
                         {{/if}}
                                     
                         {{if $sel.name && $overrideselname == 'false'}}
@@ -670,6 +718,7 @@
 
 
             <!-- begin page navbar ----------------------------------------- -->
+{{if $name == 'sdhflksadhfsadkhgsfdkjgfsdhkls'}}
             <div class="container-fluid">
                 <div class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom" style="z-index:100;">
                     <a href="{{$url}}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -1058,6 +1107,11 @@
                     </ul>
                 </div>
             </div> <!-- container -->
+
+
+{{/if}} <!-- // showextranav  -->
+
+
 
         </div> <!-- column -->
     </div> <!-- row -->

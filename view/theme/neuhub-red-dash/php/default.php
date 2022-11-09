@@ -14,6 +14,15 @@
     */ ?>
   
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">  
+
+	<link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/css/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/css/Highlight-Phone.css">
+    <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/css/Projects-Clean.css">
+    <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/css/styles.css">  
+
 	
   <script>var baseurl="<?php echo z_root() ?>";</script>
   <?php if(x($page,'htmlhead')) echo $page['htmlhead'] ?>    
@@ -101,12 +110,13 @@ body {
                 </div>
 	  -->
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link" href="/"><i class="fas fa-home"></i><span>Home</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/"><i class="fa5 fa5-home"></i><span>Home</span></a></li>
                     <!--
                     <li class="nav-item"><a class="nav-link" href="/channel/mockup"><i class="fas fa-tachometer-alt"></i><span>Channel</span></a></li>
                     -->
-          <li class="nav-item"><a class="nav-link" href="/directory?f=&pubforums=0&global=0"><i class="fas fa-dot-circle"></i><span>Channel</span></a></li>         
-	     <li class="nav-item"><a class="nav-link" href="/directory?f=&pubforums=0&global=0"><i class="fas fa-sitemap"></i><span>Directory</span></a></li>
+		<li class="nav-item"><a class="nav-link" href="/hq"><i class="fa5 fa5-house-user"></i><span>HQ</span></a></li>         	      
+		<li class="nav-item"><a class="nav-link" href="/channel"><i class="fas fa-dot-circle"></i><span>Channel</span></a></li>         
+		<li class="nav-item"><a class="nav-link" href="/directory?f=&pubforums=0&global=0"><i class="fas fa-sitemap"></i><span>Directory</span></a></li>
 		<li class="nav-item"><a class="nav-link" href="/directory?f=&pubforums=1&global=0"><i class="fas fa-comments"></i><span>Forums</span></a></li>
                     <!--
                     <li class="nav-item"><a class="nav-link" href="/profile/mockup"><i class="fas fa-user"></i><span>Profile</span></a></li>
@@ -121,7 +131,7 @@ body {
 			<?php // TODO Fix toggle button ?>
             </div>
         </div>
-        <div class="d-flex flex-column" id="content-wrapper">
+        <div class="d-flex flex-column min-vh-100" id="content-wrapper" style="margin-bottom: 56px;">
             <div id="content">
                 
                 <?php if(x($page,'nav')) echo $page['nav']; ?>
@@ -130,7 +140,7 @@ body {
 
                 <div class="p-3">
                     <div class="row" style="font-size: 0.9rem;">
-                        <div class="col-md-8 col-lg-9" id="!region_1"> <!-- region 2 -->
+                        <div class="col-md-8 col-lg-9 flex-grow-1" id="!region_1"> <!-- region 2 -->
                             <?php if(x($page,'content')) echo $page['content']; ?>
                         </div>
                         <div class="col-md-4 col-lg-3" id="!region_1 !region_3"> <!-- region 1 -->
@@ -163,8 +173,21 @@ body {
                             
                         </div>
                     </div>
+	      
+
+
+
+	      
+	      
                     <div class="row">
                         <div class="col">
+	          
+	          
+	          
+	          
+	          
+	          
+	          
                             <?php if(x($page,'footer')) echo $page['footer']; ?>
                             <?php if(x($page,'breadcrumb')) echo $page['breadcrumb'] ?>   
                             <!--
@@ -180,13 +203,69 @@ body {
                     </div>
                 </div>
             </div>
+
+
+
+<!-- 
+                <div class="footer-clean d-none d-md-block bg-dark text-bg-dark" style="background: var(--bs-white);width: 100%;!margin-bottom: 56px;">
+                    <div class="container" style="width: 100%;">
+                        <div class="row justify-content-center" style="width: 100%;">
+                            <div class="col-sm-4 col-md-3 item">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="#">Web design</a></li>
+                                    <li><a href="#">Development</a></li>
+                                    <li><a href="#">Hosting</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-md-3 item">
+                                <h3>About</h3>
+                                <ul>
+                                    <li><a href="#">Company</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Legacy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-md-3 item">
+                                <h3>Careers</h3>
+                                <ul>
+                                    <li><a href="#">Job openings</a></li>
+                                    <li><a href="#">Employee success</a></li>
+                                    <li><a href="#">Benefits</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 item social">
+						<a href="#"><i class="icon-hz-64"></i></a>
+						<?php /*
+						<a href="#"><i class="icon ion-social-facebook"></i></a>
+						<a href="#"><i class="icon ion-social-twitter"></i></a>
+						<a href="#"><i class="icon ion-social-snapchat"></i></a>
+						<a href="#"><i class="icon ion-social-instagram"></i></a>
+						*/ ?>
+                                <p class="copyright">WisTex TechSero Ltd. Co. © 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>	
+-->
+
+
+
                 
         </div>
+        
+
+
+
+        
+        
+        
+            <div class="footer fixed-bottom">
             
             <div class="bg-white sticky-footer">
                 <div class="container my-auto">
                     <nav class="navbar navbar-light navbar-expand-md">
-                        <div class="container-fluid"><a class="navbar-brand" href="/">Complete Hosting Guide</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-size: 12px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="container-fluid"><a class="navbar-brand" href="/">Neuhub</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-size: 12px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                             <div class="collapse navbar-collapse" id="navcol-1">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item"><a class="nav-link !active" href="/">Home</a></li>
@@ -201,7 +280,7 @@ body {
                             </div>
                         </div>
                     </nav>
-                    <div class="text-center my-auto copyright mb-20 d-none d-sm-block">
+                    <div class="text-center my-auto copyright mb-20 d-none d-sm-none">
                         <span style="margin: 5px;">Copyright &copy; 2022 <a href="https://wistex.com" class="text-decoration-none">WisTex TechSero Ltd. Co.</a> All rights reserved.</span><br>
                         <span style="margin: 5px;">An independent <a href="https://federatedhub.org" class="text-decoration-none" target="_blank">federated hub</a>.</span>
 					<span style="margin: 5px;">Powered by <a href="https://hubzilla.org" class="text-decoration-none" target="_blank">Hubzilla</a> and <a href="https://neuhub.org" class="text-decoration-none" target="_blank">Neuhub</a>.</span>
@@ -213,6 +292,7 @@ body {
                     </div>
                 </div>
             </div>
+            </div> <!-- fixed botton -->
         </div><!-- <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a> -->
     </div>
 
