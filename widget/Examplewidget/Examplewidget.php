@@ -20,13 +20,21 @@
 // If you are writing from scratch, this might be a good way to go.
 
 // Note: custom widgets should be put in the widget folder and each widget gets its own folder.
-// For example, this widget is located at /widget/Examplewidget/Examplewidget.php
+// For example, in Hubzilla, this widget is located at /widget/Examplewidget/Examplewidget.php
+// For example, in Streams, this widget is located at /Code/SiteWidget/Examplewidget/Examplewidget.php
 // Notice the capital letters.
 // The directory and the filename should match the class name below.
+// Make sure that you do not use a widget name that conflicts with other widgets installed via other methods such as git.
 
+// Hubzilla uses "Zotlabs\Widget" and Streamns uses "Code\Widget" for the namespace. Uncomment the correct one.
 namespace Zotlabs\Widget;
+// namespace Code\Widget;
 
+// "class Examplewidget" is ued for Hubzilla
+// "class Examplewidget implements WidgetInterface" is ued for Streams
+// Uncomment the correct line below depending on if you use Streams or Hubzilla
 class Examplewidget {
+// class Examplewidget implements WidgetInterface {
 
 	function widget($arr) {
 

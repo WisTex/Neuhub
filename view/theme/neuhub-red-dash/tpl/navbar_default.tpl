@@ -560,7 +560,7 @@
                 <div class="d-none d-sm-none d-md-none d-lg-block">					    
 
                     <!-- show channel id or user id -->
-    			   <span class="pull-right text-muted" style="text-align: right;font-size: 14px;"><!-- {{$sitelocation}} {{$chan.channel_id}} {{$chan.channel_name}} {{$sitename}} {{$channel_name}} {{$site_about}} -->
+    			   <span class="pull-right text-muted" style="text-align: right;font-size: 14px;"><!-- {{$banner}} {{$sitelocation}} {{$chan.channel_id}} {{$chan.channel_name}} {{$sitename}} {{$channel_name}} {{$site_about}} -->
     					{{if $sitelocation && $channel_thumb}}
     					    {{$sitelocation}}
     					{{else}}
@@ -583,7 +583,7 @@
 
                 <div class="d-none d-sm-none d-md-none d-lg-block">
                     <ol class="breadcrumb" style="font-size: 14px;">
-                        <li class="breadcrumb-item"><a href="{{$baseurl}}" class="text-decoration-none"><span><i class="fa fa-home"></i> {{$banner}}</span></a></li>
+                        <li class="breadcrumb-item"><a href="{{$baseurl}}" class="text-decoration-none"><span><i class="fa fa-home"></i> {{$sitename}}</span></a></li>
                         {{if $name}}
                             <li class="breadcrumb-item"><a href="/directory" class="text-decoration-none"><span>Channels</span></a></li>
                             <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span><!-- <i class="fa5 fa5-house-user"></i> --><!-- Mockup Theme -->{{$name}}</span></a></li>

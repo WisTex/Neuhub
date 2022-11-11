@@ -3,7 +3,7 @@
 /**
  *   * Name: Neuhub Red Dash
  *   * Description: A proof of concept theme combining Redbasic with SB Admin as the base.
- *   * Version: 0.3
+ *   * Version: 0.4.2.2
  *   * MinVersion: 6.5.13
  *   * MaxVersion: 10.0
  *   * Author: Scott M. Stolz
