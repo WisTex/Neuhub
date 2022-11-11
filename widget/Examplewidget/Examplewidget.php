@@ -30,8 +30,8 @@
 namespace Zotlabs\Widget;
 // namespace Code\Widget;
 
-// "class Examplewidget" is ued for Hubzilla
-// "class Examplewidget implements WidgetInterface" is ued for Streams
+// "class Examplewidget" is used for Hubzilla
+// "class Examplewidget implements WidgetInterface" is used for Streams
 // Uncomment the correct line below depending on if you use Streams or Hubzilla
 class Examplewidget {
 // class Examplewidget implements WidgetInterface {
