@@ -31,10 +31,12 @@
 namespace Zotlabs\Widget;
 // namespace Code\Widget;
 
-// "class Examplewidget implements WidgetInterface" is used for Streams
+
+
 // "class Examplewidget" is used for Hubzilla
-// Neuhub for Hubzilla can use either, as long as the /Zotlabs/Widget/WidgetInterface.php is uploaded.
-// Uncomment the correct line below depending on if you use Neuhub, Streams or Hubzilla
+// "class Examplewidget implements WidgetInterface" is used for Streams
+// Uncomment the correct line below depending on if you use Streams or Hubzilla
+
 class Examplewidget {
 // class Examplewidget implements WidgetInterface {
 
