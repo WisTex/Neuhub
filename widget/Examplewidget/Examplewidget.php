@@ -26,13 +26,14 @@
 // The directory and the filename should match the class name below.
 // Make sure that you do not use a widget name that conflicts with other widgets installed via other methods such as git.
 
-// Hubzilla uses "Zotlabs\Widget" and Streamns uses "Code\Widget" for the namespace. Uncomment the correct one.
+// Hubzilla uses "Zotlabs\Widget"
+// Streamns uses "Code\Widget"
 namespace Zotlabs\Widget;
 // namespace Code\Widget;
 
-// "class Examplewidget" is ued for Hubzilla
-// "class Examplewidget implements WidgetInterface" is ued for Streams
-// Uncomment the correct line below depending on if you use Streams or Hubzilla
+// "class Examplewidget implements WidgetInterface" is used for Streams and Neuhub
+// "class Examplewidget" is used for Hubzilla
+// Uncomment the correct line below depending on if you use Neuhub, Streams or Hubzilla
 class Examplewidget {
 // class Examplewidget implements WidgetInterface {
 
