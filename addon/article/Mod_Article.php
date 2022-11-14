@@ -1,7 +1,7 @@
 <?php
 
-/**
- * * Neuhub Article Addon for WisTex KIMS *
+/*
+ * Neuhub Article Addon for WisTex KIMS
  * Author: Scott M. Stolz
  * License: MIT (Expat version) - https://license.neuhub.org
  * Copyright (c) 2022 WisTex TechSero Ltd. Co.
@@ -12,7 +12,7 @@ namespace Zotlabs\Module;
 use App;
 use Zotlabs\Web\Controller;
 
-
+// ? Do web need all of these?
 require_once('include/channel.php');
 require_once('include/contact_widgets.php');
 require_once('include/items.php');
@@ -95,6 +95,9 @@ extends Controller {
 
                 /* *************************************************************************************************************************** */
                 // * Get the article from the WisTex KIMS database.
+                // TODO: Get author information using inner join.
+                // TODO: Get contributors.
+                // TODO: Get related articles.
 
                 //// $sql = 'SELECT * FROM kimsArticles WHERE ArticleSlug = ' . $sanislug;
                 $sql = "SELECT * FROM kimsArticles WHERE ArticleSlug = '" . $sanislug . "'";
