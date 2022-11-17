@@ -3,7 +3,7 @@
 // WisTex KIMS™ uses a separate database than Hubzilla or Streams
 // Modules and widgets that access this database need to include this file.
 
-// INSTALL INSTRUCTIONS
+// * INSTALL INSTRUCTIONS
 // 1. Update the variables below with your connection information.
 // 2. Rename this file to: connection.php
 
@@ -12,7 +12,7 @@ $username = "";
 $password = "";
 $dbname = "";
 $connopen = true;
-// connection is closed (if this is true) in footer-html.php 
+// connection will be closed (if this is true) in footer-html.php 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

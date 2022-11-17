@@ -69,9 +69,10 @@
 
     <div class="card border-white">
         <div class="card-body">
-            <h4 class="card-title"><a href="/article/{{$ArticleSlug}}">{{$ArticleTitle}}</a></h4>
+            <h4 class="card-title">{{$ArticleTitle}}</h4>
             <h6 class="text-muted card-subtitle mb-2">{{$ArticleSubTitle}}</h6>
-            <!--
+            <a class="card-link" href="/article/{{$ArticleSlug}}">Permalink</a>
+            <!-- 
             <a class="card-link" href="#">Add to Bookmarks</a><a class="card-link" href="#">My Notes</a><a class="card-link" href="#">Changelog</a>
             -->
         </div>

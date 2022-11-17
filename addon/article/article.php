@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  * Name: Neuhub Article Addon for WisTex KIMS
  * Description: Neuhub's version of the article addon. Supports WisTex KIMS.
  * Version: 1.0
