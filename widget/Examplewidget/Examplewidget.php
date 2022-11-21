@@ -35,12 +35,14 @@ namespace Zotlabs\Widget;
 
 // "class Examplewidget" is used for Hubzilla
 // "class Examplewidget implements WidgetInterface" is used for Streams
+// "class Examplewidget implements WidgetInterface" is used for Neuhub if you uploaded \Zotlabs\Widget\WidgetInterface.php
 // Uncomment the correct line below depending on if you use Streams or Hubzilla
 
-class Examplewidget {
-// class Examplewidget implements WidgetInterface {
+// class Examplewidget {
+class Examplewidget implements WidgetInterface {
 
-	function widget($arr) {
+	public function widget(array $arguments): string {
+	// function widget($arr): string {
 
 		/*
 		The function returns a string which is the HTML content of the widget. 
@@ -65,8 +67,15 @@ class Examplewidget {
 			}
 			if ($page != "") {			
 				echo "<p>Page: " . htmlspecialchars($page, ENT_QUOTES);   
-			}
-	    
+			}	
+
+			// If you are using friendly URLs, which you probably are, you can get the parameters this way:
+			// This gets the URL.
+			$url = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+			echo "<p>URL: " . $url;
+			echo "<br>Last Part of URL: " . basename(parse_url($url, PHP_URL_PATH));
+			echo "<br>Everything after the domain: " . trim(parse_url($url, PHP_URL_PATH), '/');
+
 			// Select something from the database. Hubzilla has its own functions for that.
 			// The results are put into an array.
 			$r = q("SELECT * FROM %s WHERE channel_account_id = %d", 'channel', 1);
@@ -101,8 +110,19 @@ class Examplewidget {
     
 			<?php
     
+		$object = ob_get_clean();
+		$output = (string)$object;
+		// $output = (string)$object . " ";
+		// echo gettype($output);
+
+
+
 		// and the object ends and is returned by the function.
-		return ob_get_clean();
+		// return ob_get_clean();
+		// return ob_get_clean() ?? '';
+		// return (string) ob_get_clean();
+		return $output;
+		
 		
 		// if you wanted to go the variable route, you could simply return the variable instead.
 		// Whatever you assigned $o gets outputted.

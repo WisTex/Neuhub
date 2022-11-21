@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html>
 
+<?php
+// Include default configuration file, if it exists.
+// ! Do not put your configuration settings in this file. It will be overwritten when you update Neuhub.
+$filename = 'view/theme/neuhub-red-dash/config/neuhub-config-default.php';
+if (file_exists($filename)) {
+    include_once('view/theme/neuhub-red-dash/config/neuhub-config-default.php');
+} else {
+    //// echo "The file $filename does not exist";
+}
+?>
+
+<?php
+// Include your configuration file, if it exists.
+// ! Overrides values in default configuration file.
+$filename = 'view/theme/neuhub-red-dash/config/neuhub-config.php';
+if (file_exists($filename)) {
+    include_once('view/theme/neuhub-red-dash/config/neuhub-config.php');
+} else {
+    //// echo "The file $filename does not exist";
+}
+
+// $channellocal = get_channel();
+
+?>
+    
+
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -13,6 +40,7 @@
     <link rel="stylesheet" href="/view/theme/purplebasic/assets/fonts/fontawesome5-overrides.min.css">
     */ ?>
   
+    <!-- // TODO: Get local copy of font. -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">  
 
 	<link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/css/fonts/ionicons.min.css">
@@ -27,6 +55,7 @@
   <script>var baseurl="<?php echo z_root() ?>";</script>
   <?php if(x($page,'htmlhead')) echo $page['htmlhead'] ?>    
 
+    <!-- // TODO: Get local copy of popper. -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     
     <style>
@@ -96,7 +125,7 @@ body {
 
 </head>
 
-<body id="page-top" style="color: rgb(0,0,0);" class="!sidebar-toggled">
+<body id="page-top" style="color: rgb(0,0,0);" class="sidebar-toggled">
     <div id="wrapper">
         <div class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 toggled" style="background: #43488A;">
             <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
@@ -128,15 +157,21 @@ body {
                     -->
                 </ul>
                 <!-- <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div> -->
-			<?php // TODO Fix toggle button ?>
+			<?php // TODO Fix toggle button 
+            ?>
             </div>
         </div>
         <div class="d-flex flex-column min-vh-100" id="content-wrapper" style="margin-bottom: 56px;">
             <div id="content">
                 
+                <!-- Main frame and Site Navigation -->
                 <?php if(x($page,'nav')) echo $page['nav']; ?>
 
+                <!-- Site Breadcrumbs -->
+                <?php if(x($page,'breadcrumb')) echo $page['breadcrumb'] ?>   
 
+                <!-- Widgets Above Content -->
+                <?php if(x($page,'top_area')) echo $page['top_area']; ?>
 
                 <div class="p-3">
                     <div class="row" style="font-size: 0.9rem;">
@@ -185,11 +220,11 @@ body {
 	          
 	          
 	          
+                            <?php if(x($page,'below_content')) echo $page['below_content']; ?>
 	          
 	          
-	          
-                            <?php if(x($page,'footer')) echo $page['footer']; ?>
-                            <?php if(x($page,'breadcrumb')) echo $page['breadcrumb'] ?>   
+                            
+                            
                             <!--
                             <hr>
                             <ol class="breadcrumb" style="font-size: 14px;">
@@ -205,49 +240,97 @@ body {
             </div>
 
 
+<?php
+// Enhanced Footer
+// TODO: Allow admins to easily customize this.
+?>
 
-<!-- 
+<?php if(x($page,'footer')) echo $page['footer']; ?>
+
+            <!-- Begin Enhanced Footer -->
                 <div class="footer-clean d-none d-md-block bg-dark text-bg-dark" style="background: var(--bs-white);width: 100%;!margin-bottom: 56px;">
                     <div class="container" style="width: 100%;">
                         <div class="row justify-content-center" style="width: 100%;">
                             <div class="col-sm-4 col-md-3 item">
-                                <h3>Services</h3>
+                                <h3>Website</h3>
                                 <ul>
-                                    <li><a href="#">Web design</a></li>
-                                    <li><a href="#">Development</a></li>
-                                    <li><a href="#">Hosting</a></li>
+                                    <li><a href="<?php echo $HomeURL; ?>">Home</a></li>
+                                    <li><a href="/search">Search</a></li>
+                                    <li><a href="<?php echo $PrivacyURL; ?>">Privacy</a></li>
+                                    <li><a href="/help">Help</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-4 col-md-3 item">
-                                <h3>About</h3>
+                                <h3>Network</h3>
                                 <ul>
-                                    <li><a href="#">Company</a></li>
-                                    <li><a href="#">Team</a></li>
-                                    <li><a href="#">Legacy</a></li>
+                                    <!--
+                                    <li><a href="/stream">Stream</a></li>
+                                    <li><a href="/connections">Connections</a></li>
+                                    -->
+                                    <li><a href="/directory?f=&pubforums=0&global=0">Directory</a></li>
+                                    <li><a href="/directory?f=&pubforums=1&global=0">Forums</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-4 col-md-3 item">
-                                <h3>Careers</h3>
+                            <!--
+                                <h3>Account</h3>
                                 <ul>
-                                    <li><a href="#">Job openings</a></li>
-                                    <li><a href="#">Employee success</a></li>
-                                    <li><a href="#">Benefits</a></li>
+                                    <li><a href="/hq">Headquarters</a></li>
+                                    <li><a href="/channel">Channel</a></li>
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="/settings">Settings</a></li>
                                 </ul>
+                                -->
                             </div>
                             <div class="col-lg-3 item social">
-						<a href="#"><i class="icon-hz-64"></i></a>
+                            <?php if ($WebsiteChannel != "") { ?>
+						        <a href="<?php echo $WebsiteChannel; ?>"><i class="icon icon-hz-64"></i></a>
+                            <?php } ?>
+                            <?php if ($SocialMastodon != "") { ?>
+						        <a href="<?php echo $SocialMastodon; ?>" target="_blank"><i class="icon fab fa5-mastodon"></i></a>
+                            <?php } ?>
+                            <?php if ($SocialFacebook != "") { ?>
+						        <a href="<?php echo $SocialFacebook; ?>" target="_blank"><i class="icon fa fa-facebook"></i></a>
+                            <?php } ?>
+                            <?php if ($SocialTwitter != "") { ?>
+						        <a href="<?php echo $SocialTwitter; ?>" target="_blank"><i class="icon fa fa-twitter"></i></a>
+                            <?php } ?>
+                            <?php if ($SocialLinkedIn != "") { ?>
+						        <a href="<?php echo $SocialLinkedIn; ?>" target="_blank"><i class="icon fa fa-linkedin"></i></a>
+                            <?php } ?>                            
+                            <?php if ($SocialYouTube != "") { ?>
+						        <a href="<?php echo $SocialYouTube; ?>" target="_blank"><i class="icon fa fa-youtube"></i></a>
+                            <?php } ?>
+                            <?php if ($SocialDigitalAuthorship != "") { ?>
+						        <a href="<?php echo $SocialDigitalAuthorship; ?>" target="_blank"><i class="icon icon-hz-64"></i></a>
+                            <?php } ?>
+                            <?php if ($SocialInstagram != "") { ?>
+						        <a href="<?php echo $SocialInstagram; ?>" target="_blank"><i class="icon fa fa-instagram"></i></a>
+                            <?php } ?>
+                            <?php if ($SocialGithub != "") { ?>
+						        <a href="<?php echo $SocialGithub; ?>" target="_blank"><i class="icon fa fa-github"></i></a>
+                            <?php } ?>
+                            <?php if ($SocialGitlab != "") { ?>
+						        <a href="<?php echo $SocialGitlab; ?>" target="_blank"><i class="icon fa fa-gitlab"></i></a>
+                            <?php } ?>
+                            <?php if ($SocialGit != "") { ?>
+						        <a href="<?php echo $SocialGit; ?>" target="_blank"><i class="icon fa fa-git"></i></a>
+                            <?php } ?>                                                        
+                            <?php if ($SocialPatreon != "") { ?>
+						        <a href="<?php echo $SocialPatreon; ?>" target="_blank"><i class="icon fab fa5-patreon"></i></a>
+                            <?php } ?>                                         
 						<?php /*
 						<a href="#"><i class="icon ion-social-facebook"></i></a>
 						<a href="#"><i class="icon ion-social-twitter"></i></a>
 						<a href="#"><i class="icon ion-social-snapchat"></i></a>
 						<a href="#"><i class="icon ion-social-instagram"></i></a>
 						*/ ?>
-                                <p class="copyright">WisTex TechSero Ltd. Co. © 2022</p>
+                                <p class="copyright"><?php echo $Copyright; ?></p>
                             </div>
                         </div>
                     </div>
                 </div>	
--->
+            <!-- End Enhanced Footer -->
 
 
 
@@ -257,15 +340,15 @@ body {
 
 
 
-        
+            <?php if(x($page,'footer-sticky')) echo $page['footer-sticky']; ?>
         
         
             <div class="footer fixed-bottom">
             
-            <div class="bg-white sticky-footer">
+            <div class="bg-white sticky-footer border-top">
                 <div class="container my-auto">
                     <nav class="navbar navbar-light navbar-expand-md">
-                        <div class="container-fluid"><a class="navbar-brand" href="/"><?php if(x($page,'title')) echo $page['title'] ?></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-size: 12px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="container-fluid"><a class="navbar-brand" href="/"><?php echo $SiteNameinFooterText; ?></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-size: 12px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                             <div class="collapse navbar-collapse" id="navcol-1">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item"><a class="nav-link !active" href="/">Home</a></li>

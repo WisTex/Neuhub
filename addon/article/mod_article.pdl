@@ -1,0 +1,12 @@
+[region=aside]
+[widget=testwidget][/widget]
+[widget=examplewidget][/widget]
+[widget=notifications][/widget]
+[widget=fullprofile][/widget]
+[/region]
+[region=content]
+$content
+[/region]
+[region=right_aside]
+[widget=newmember][/widget]
+[/region]

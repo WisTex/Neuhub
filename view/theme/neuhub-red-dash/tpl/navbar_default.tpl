@@ -550,7 +550,7 @@
 
 <!-- begin page layout ----------------------------------------------------- -->            
 <div class="container" style="padding-right: 0px;padding-left: 0px;max-width: 1400px;">
-    <div class="row" style="padding-bottom: 20px;">
+    <div class="row" style="padding-bottom: 0px;">
                     
 		<br>
 		<div class="col-md-12">
@@ -580,6 +580,8 @@
                 <!-- {{$url}} {{$lookingfor}} -->
     
                 <!-- show breadcrumb -->
+
+				
 
                 <div class="d-none d-sm-none d-md-none d-lg-block">
                     <ol class="breadcrumb" style="font-size: 14px;">
@@ -709,7 +711,12 @@
                             <li class="breadcrumb-item"><a href="{{$url}}" class="text-decoration-none"><span>{{$sel.name}}</span></a></li>
                         {{/if}}
                                     
-    
+						{{if strstr($smarty.server.REQUEST_URI, 'article') !== false}} 
+							<li class="breadcrumb-item"><a href="/articles" class="text-decoration-none"><span>Knowledge Base</span></a></li>
+                            <li class="breadcrumb-item"><span>Article</span></li>
+						{{else}}
+						
+						{{/if}}
                                     
                     </ol>
                                 
