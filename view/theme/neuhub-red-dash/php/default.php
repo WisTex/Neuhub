@@ -164,9 +164,14 @@ body {
         <div class="d-flex flex-column min-vh-100" id="content-wrapper" style="margin-bottom: 56px;">
             <div id="content">
                 
+                <!-- Main frame and Site Navigation -->
                 <?php if(x($page,'nav')) echo $page['nav']; ?>
 
+                <!-- Site Breadcrumbs -->
+                <?php if(x($page,'breadcrumb')) echo $page['breadcrumb'] ?>   
 
+                <!-- Widgets Above Content -->
+                <?php if(x($page,'top_area')) echo $page['top_area']; ?>
 
                 <div class="p-3">
                     <div class="row" style="font-size: 0.9rem;">
@@ -215,11 +220,11 @@ body {
 	          
 	          
 	          
+                            <?php if(x($page,'below_content')) echo $page['below_content']; ?>
 	          
 	          
-	          
-                            <?php if(x($page,'footer')) echo $page['footer']; ?>
-                            <?php if(x($page,'breadcrumb')) echo $page['breadcrumb'] ?>   
+                            
+                            
                             <!--
                             <hr>
                             <ol class="breadcrumb" style="font-size: 14px;">
@@ -239,6 +244,8 @@ body {
 // Enhanced Footer
 // TODO: Allow admins to easily customize this.
 ?>
+
+<?php if(x($page,'footer')) echo $page['footer']; ?>
 
             <!-- Begin Enhanced Footer -->
                 <div class="footer-clean d-none d-md-block bg-dark text-bg-dark" style="background: var(--bs-white);width: 100%;!margin-bottom: 56px;">
@@ -333,7 +340,7 @@ body {
 
 
 
-        
+            <?php if(x($page,'footer-sticky')) echo $page['footer-sticky']; ?>
         
         
             <div class="footer fixed-bottom">
