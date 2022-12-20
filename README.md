@@ -9,22 +9,22 @@ Your contributions and feedback are welcome.
 
 ## Themes
 
-- **Redbasic Child Theme** 1.2 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
+- [X] **Redbasic Child Theme** 1.2 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
 
 ## Components
 
-- Redbasic Child Theme
-- Neuhub Red Dash Theme
-- Messages Module (alternative for Notifications)
-- Example Addon
-- Example Module
-- Example Widget
+- [X] Redbasic Child Theme
+- [ ] Neuhub Red Dash Theme
+- [X] Messages Module (alternative for Notifications)
+- [X] Example Addon
+- [X] Example Module
+- [X] Example Widget
 
 ### Beta Versions
 
 We are looking for beta testers for the following themes:
 
-- **Neuhub Red Dash** 0.4 - A theme based on Redbasic and SB Admin.
+- [ ] **Neuhub Red Dash** 0.4 - A theme based on Redbasic and SB Admin.
 
 ## Neuhub Red Dash 0.4 - Release Notes
 
