@@ -1,5 +1,5 @@
 # Neuhub
-**A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.**
+### **A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.**
 
 Our first theme is the **Redbasic Child Theme**, which can be used as a starting point to make your own themes.
 
