@@ -15,6 +15,8 @@ Your contributions and feedback are welcome.
 
 ## Themes
 
+- **Redbasic Child There** 1.2 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
+
 ### Beta Versions
 
 We are looking for beta testers for the following themes:
