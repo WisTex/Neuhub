@@ -1,9 +1,15 @@
 # Neuhub
 **A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.**
 
-We are starting with a two-column theme that is intended for "content & community" websites. Later, we will add additional widgets and addons that will provide additional functionality.
+Our first theme is the **Redbasic Child Theme**, which can be used as a starting point to make your own themes.
+
+Several themes are in the works.
 
 Your contributions and feedback are welcome.
+
+## Themes
+
+- **Redbasic Child Theme** 1.2 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
 
 ## Components
 
@@ -12,10 +18,6 @@ Your contributions and feedback are welcome.
 - Example Addon
 - Example Module
 - Example Widget
-
-## Themes
-
-- **Redbasic Child There** 1.2 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
 
 ### Beta Versions
 
