@@ -13,8 +13,9 @@ Your contributions and feedback are welcome.
 
 ## Components
 
+- Redbasic Child Theme
 - Neuhub Red Dash Theme
-- Messages Module (substitute for Notifications)
+- Messages Module (alternative for Notifications)
 - Example Addon
 - Example Module
 - Example Widget
