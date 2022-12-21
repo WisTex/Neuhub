@@ -7,11 +7,11 @@ Several more themes are in the works.
 
 Your contributions and feedback are welcome.
 
-## Themes
+## Released Themes
 
 - [X] **Redbasic Child Theme** 1.2.1 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
 
-## Components & Versions
+## Components
 
 - [X] Redbasic Child Theme 1.2.1
 - [ ] Neuhub Red Dash Theme 0.4
@@ -25,7 +25,7 @@ Your contributions and feedback are welcome.
 - [X] Example Module
 - [X] Example Widget
 
-### Beta Versions
+## Beta Versions
 
 We are looking for beta testers for the following themes:
 
