@@ -26,6 +26,8 @@ We are looking for beta testers for the following themes:
 
 - [ ] **Neuhub Red Dash** 0.4 - A theme based on Redbasic and SB Admin.
 
+## Installation
+
 Summary: 
 
 - Copy all of the files except the README.md and LICENSE files to the web root of your Hubzilla or Streams installation.
