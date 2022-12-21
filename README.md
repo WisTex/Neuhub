@@ -3,7 +3,7 @@
 
 Our first theme is the **Redbasic Child Theme**, which can be used as a starting point to make your own themes.
 
-Several themes are in the works.
+Several more themes are in the works.
 
 Your contributions and feedback are welcome.
 
