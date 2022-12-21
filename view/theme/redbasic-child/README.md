@@ -1,9 +1,9 @@
 # Redbasic Child Theme
 
-**Version 1.2**
+### **Version 1.2**
 
-Website: https://neuhub.org
-Repository: https://github.com/WisTex/Neuhub/tree/main/view/theme/redbasic-child
+- Website: https://neuhub.org
+- Repository: https://github.com/WisTex/Neuhub/tree/main/view/theme/redbasic-child
 
 This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
 
