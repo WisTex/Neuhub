@@ -18,4 +18,3 @@ Compatibility
 * Tested with Hubzilla
 * Not tested with Streams yet.
 
-## Installation
