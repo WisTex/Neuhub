@@ -1,4 +1,4 @@
-version: 1
+version: 1.0
 url: $baseurl/article/$nick
 name: Neuhub Article Addon for WisTex KIMS
 requires: local_channel

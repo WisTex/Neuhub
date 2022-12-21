@@ -2,6 +2,7 @@
 
 /*
  * Neuhub Messages Module
+ * Version: 1.0
  * Author: Scott M. Stolz
  * License: MIT (Expat version) - https://license.neuhub.org
  * Copyright (c) 2022 WisTex TechSero Ltd. Co.
