@@ -26,19 +26,6 @@ We are looking for beta testers for the following themes:
 
 - [ ] **Neuhub Red Dash** 0.4 - A theme based on Redbasic and SB Admin.
 
-## Neuhub Red Dash 0.4 - Release Notes
-
-Known Issues
-* PDL Editor navigation broken.
-* Some remote resources, such as extra fonts, not loading properly.
-* Contains experimental code that will be removed in the future.
-
-Compatibility
-* Tested with Hubzilla
-* Not tested with Streams yet.
-
-## Installation
-
 Summary: 
 
 - Copy all of the files except the README.md and LICENSE files to the web root of your Hubzilla or Streams installation.
