@@ -1,7 +1,8 @@
 # Redbasic Child Theme
 
-**Version 1.2** - https://neuhub.org
+**Version 1.2**
 
+Website: https://neuhub.org
 Repository: https://github.com/WisTex/Neuhub/tree/main/view/theme/redbasic-child
 
 This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
@@ -44,7 +45,7 @@ If you are just making minor changes, then overriding specific `tpl` and `css` f
 
 ## Notes
 
-This deriviative themes does not currently support schemes. However, this theme will inherit any settings you have made in the Redbasic theme, including the Advanced Theme Settings.
+This deriviative theme does not currently support schemes. However, this theme will inherit any settings you have made in the Redbasic theme, including the Advanced Theme Settings.
 
 ## Credits
 
