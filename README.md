@@ -16,6 +16,7 @@ Your contributions and feedback are welcome.
 - [X] Redbasic Child Theme 1.2
 - [ ] Neuhub Red Dash Theme 0.4
 - [X] Messages Module (alternative for Notifications)
+- [ ] WisTex KIMS Article Widget
 - [X] Example Addon
 - [X] Example Module
 - [X] Example Widget
