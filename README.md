@@ -48,9 +48,8 @@ Steps:
 
 It is possible to install individual themes. Be sure to read the theme's readme concerning dependencies. 
 
-Some themes, like the Redbasic Child Theme, don't have any dependencies. Everything is contained in the theme folder. 
-
-However, some themes use common elements, such a widgets from the `/widgets` folder and modules from the `/ZotLabs/SiteModules` folder.
+- Some themes, like the Redbasic Child Theme, don't have any dependencies. Everything is contained in the theme folder. 
+- However, some themes use common elements, such a widgets from the `/widgets` folder and modules from the `/ZotLabs/SiteModules` folder.
 
 ## Objectives
 
