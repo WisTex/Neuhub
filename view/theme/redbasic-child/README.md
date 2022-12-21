@@ -1,6 +1,6 @@
 # Redbasic Child Theme
 
-### **Version 1.2.1**
+### **Version 1.2.2**
 
 - Website: https://neuhub.org
 - Repository: https://github.com/WisTex/Neuhub/tree/main/view/theme/redbasic-child
