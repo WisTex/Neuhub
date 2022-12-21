@@ -38,19 +38,9 @@ Steps:
 2. Upload contents of the `/Zotlabs/SiteModule` folder to the `/Zotlabs/SiteModule` folder.
 3. Upload contents of the `/addon` folder to the `/addon` folder.
 4. Upload contents of the `/widget` folder to the `/widget` folder.
+4. Upload contents of the `/custom` folder to the `/custom` folder.
 5. Enable the theme in your admin.
 6. Assign as the default theme and/or as an individual channel's theme.
-
-## Use Cases
-
-I would like to make the new template as versatile as possible. We might eventually need to make multiple configurations because there are many distinct use cases, such as:
-
-* **Solo Hubs** - The focus is on the channel, and every channel can have its own unique theme (like how you can customize the colors on redbasic). Similar to how redbasic works now.
-* **Forum Websites** - Navigation is similar to a traditional forum, with multiple forum areas. You can easily view and switch between all of the forum channels on the same website. The focus is on the website and the fact that it has multiple forum channels.
-* **Public Hubs** - Similar to solo hubs, but some additional navigation to the hub home page and other pages the hub operator wants to highlight. The public hub operator has more control over common navigation sitewide.
-* **Multi-Author Blog** - Additional navigation for finding and navigating public content. Add pages and navigation that turn the site into a multi-author website, listing content from multiple channels on the main website.
-
-I know a lot of this can be accomplished via the PDL Editor, but having pre-configured themes for each use case would make things easier for site owners. Ideally, we will just make one theme that adapts based on certain configuration settings.
 
 ## Objectives
 
@@ -64,6 +54,17 @@ Some of the things I want to work on are:
 * Navigation according to each use case above.
 * Design it so that the PDL Editor and Apps still work as intended.
 * It is compatible with Bootstrap code examples (containers, grids, panels, cards, etc.).
+
+## Use Cases
+
+I would like to make the new template as versatile as possible. We might eventually need to make multiple configurations because there are many distinct use cases, such as:
+
+* **Solo Hubs** - The focus is on the channel, and every channel can have its own unique theme (like how you can customize the colors on redbasic). Similar to how redbasic works now.
+* **Forum Websites** - Navigation is similar to a traditional forum, with multiple forum areas. You can easily view and switch between all of the forum channels on the same website. The focus is on the website and the fact that it has multiple forum channels.
+* **Public Hubs** - Similar to solo hubs, but some additional navigation to the hub home page and other pages the hub operator wants to highlight. The public hub operator has more control over common navigation sitewide.
+* **Multi-Author Blog** - Additional navigation for finding and navigating public content. Add pages and navigation that turn the site into a multi-author website, listing content from multiple channels on the main website.
+
+I know a lot of this can be accomplished via the PDL Editor, but having pre-configured themes for each use case would make things easier for site owners. Ideally, we will just make one theme that adapts based on certain configuration settings.
 
 ## Collaboration 
 
