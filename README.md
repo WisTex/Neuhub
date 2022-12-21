@@ -34,8 +34,8 @@ Summary:
 - Copy all of the files except the README.md and LICENSE files to the web root of your Hubzilla or Streams installation.
 
 Steps:
-1. Upload the `neuhub-red-dash` folder to the `/view/theme/` folder.
-2. Upload contents of the `/Zotlabs/SiteModule` folder to the `/Zotlabs/SiteModule` folder.
+1. Upload contents of the `/view/theme` folder to the `/view/theme` folder.
+2. Upload contents of the `/Zotlabs` folder to the `/Zotlabs` folder.
 3. Upload contents of the `/addon` folder to the `/addon` folder.
 4. Upload contents of the `/widget` folder to the `/widget` folder.
 4. Upload contents of the `/custom` folder to the `/custom` folder.
