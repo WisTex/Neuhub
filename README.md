@@ -94,6 +94,10 @@ Repository: https://github.com/DeadSuperHero/hubzilla-themes
 - Sean Tilley
 - Andrew Manning
 
+### Third Party Components
+
+- Prism JS - https://prismjs.com - A lightweight, extensible syntax highlighter.
+
 ### Third Party Tools
 
 - IcoMoon - https://icomoon.io/ - For making it easy to create the Hubzilla font.
