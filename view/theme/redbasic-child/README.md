@@ -1,6 +1,6 @@
 # Redbasic Child Theme
 
-### **Version 1.2**
+### **Version 1.2.1**
 
 - Website: https://neuhub.org
 - Repository: https://github.com/WisTex/Neuhub/tree/main/view/theme/redbasic-child
@@ -17,7 +17,8 @@ I recommend copying the original file and modifying it, but you can start from s
 
 1. Make a copy of this theme and rename the `redbasic-child` directory to the name of your new theme.
 2. Change the details in `php/theme.php`.
-3. Test the new theme by uploading it to the `/view/theme` directory of your Hubzilla installation. Use Git, WebDisk, FTP, or cPanel File Manager to upload.
+3. Change the path to this theme's stylesheet in `php/style.php`.
+4. Test the new theme by uploading it to the `/view/theme` directory of your Hubzilla installation. Use Git, WebDisk, FTP, or cPanel File Manager to upload.
 
 After uploading, your theme should be located at: `/view/theme/whatever-you-named-the-directory/`
 

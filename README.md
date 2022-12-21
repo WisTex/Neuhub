@@ -9,11 +9,11 @@ Your contributions and feedback are welcome.
 
 ## Themes
 
-- [X] **Redbasic Child Theme** 1.2 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
+- [X] **Redbasic Child Theme** 1.2.1 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
 
 ## Components
 
-- [X] Redbasic Child Theme 1.2
+- [X] Redbasic Child Theme 1.2.1
 - [ ] Neuhub Red Dash Theme 0.4
 - [X] Messages Module (alternative for Notifications)
 - [ ] WisTex KIMS Article Widget

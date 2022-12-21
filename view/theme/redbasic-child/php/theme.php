@@ -3,7 +3,7 @@
 /**
  *   * Name: Redbasic Child Theme
  *   * Description: A derivative theme of Redbasic that you can use as a starting point for creating your own themes.
- *   * Version: 1.2
+ *   * Version: 1.2.1
  *   * MinVersion: 7.2
  *   * MaxVersion: 10.0
  *   * Author: Scott M. Stolz
@@ -14,6 +14,9 @@
  *   * Compat: Hubzilla [*]
  *
  */
+
+// If you change the name of the theme to `yournewname` change `redbasicchild_init` to `yournewname_init` so it has a unique name.
+// You will also need to edit the style.php file if you change the directory name.
 
 function redbasicchild_init(&$App) {
 
