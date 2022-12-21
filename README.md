@@ -29,6 +29,8 @@ We are looking for beta testers for the following themes:
 
 ## Installation
 
+### Install Whole Suite
+
 Summary: 
 
 - Copy all of the files except the README.md and LICENSE files to the web root of your Hubzilla or Streams installation.
@@ -41,6 +43,14 @@ Steps:
 4. Upload contents of the `/custom` folder to the `/custom` folder.
 5. Enable the theme in your admin.
 6. Assign as the default theme and/or as an individual channel's theme.
+
+### Install Individual Themes
+
+It is possible to install individual themes. Be sure to read the theme's readme concerning dependencies. 
+
+Some themes, like the Redbasic Child Theme, don't have any dependencies. Everything is contained in the theme folder. 
+
+However, some themes use common elements, such a widgets from the `/widgets` folder and modules from the `/ZotLabs/SiteModules` folder.
 
 ## Objectives
 
