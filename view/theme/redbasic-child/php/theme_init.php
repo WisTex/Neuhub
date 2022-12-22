@@ -7,6 +7,8 @@ head_add_css('/library/bootstrap-tagsinput/bootstrap-tagsinput.css');
 head_add_css('/view/css/bootstrap-red.css');
 head_add_css('/library/datetimepicker/jquery.datetimepicker.css');
 head_add_css('/library/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css');
+head_add_css('/view/css/default.css');
+
 require_once('view/php/theme_init.php');
 
 // Add your custom JS files here.
