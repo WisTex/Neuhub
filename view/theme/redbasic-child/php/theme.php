@@ -3,7 +3,7 @@
 /**
  *   * Name: Redbasic Child Theme
  *   * Description: A derivative theme of Redbasic that you can use as a starting point for creating your own themes.
- *   * Version: 1.2.2
+ *   * Version: 1.2.3
  *   * MinVersion: 7.2
  *   * MaxVersion: 10.0
  *   * Author: Scott M. Stolz
