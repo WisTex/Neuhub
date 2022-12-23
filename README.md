@@ -10,11 +10,12 @@ Your contributions and feedback are welcome.
 ## Released Themes
 
 - [X] **Redbasic Child Theme** 2.2.4 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
+- [ ] **Neuhub Red Dash** 0.5 - A theme based on Redbasic and SB Admin.
 
 ## Components
 
 - [X] Redbasic Child Theme 2.2.4
-- [ ] Neuhub Red Dash Theme 0.4
+- [ ] Neuhub Red Dash Theme 0.5
 - [X] Messages Module 1.0
 - [X] WisTex KIMS Article Addon 1.0
 - [X] Widget Interface 1.0
@@ -29,7 +30,7 @@ Your contributions and feedback are welcome.
 
 We are looking for beta testers for the following themes:
 
-- [ ] **Neuhub Red Dash** 0.4 - A theme based on Redbasic and SB Admin.
+- [ ] **Neuhub Red Dash** 0.5 - A theme based on Redbasic and SB Admin.
 
 ## Installation
 

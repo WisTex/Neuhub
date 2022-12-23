@@ -29,19 +29,29 @@
         -->
                     
         <h2 class="d-none d-sm-none d-md-none d-lg-block"><a href="/" style="color:#000000;">{{$banner}}</a></h2>
-                    
-        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search" method="get" action"/search" role="search">
-            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" name="search" placeholder="{{$help}}"><button class="btn btn-primary py-0" type="submit"><i class="fas fa-search"></i></button></div>
-        </form>
+
+		{{* You can replace the search form with a menu or something else. *}}
+		{{* Create a template file called neuhub_red_dash_menu_custom.tpl in the tpl directory of this theme.) *}}
+		{{assign var="file" value="`$smarty.current_dir`/neuhub_red_dash_menu_custom.tpl"}}
+		{{if $file|file_exists}}
+			{{include file=$file}}
+		{{else}}
+		
+            <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search" method="get" action"/search" role="search">
+                <div class="input-group"><input class="bg-light form-control border-0 small" type="text" name="search" placeholder="{{$help}}"><button class="btn btn-primary py-0" type="submit"><i class="fas fa-search"></i></button></div>
+            </form>		
+			
+		{{/if}}		
+
         <ul class="navbar-nav flex-nowrap ms-auto">
                             
             <li class="nav-item">
-                <a class="nav-link text-primary" href="/"><i class="!generic-icons-nav fa fa-fw fa-home"></i></a>
+                <a class="nav-link text-primary" href="/"><i class="!generic-icons-nav fa5 fa-fw fa5-home"></i></a>
             </li>                            
 
 			{{if $localuser}}
             <li class="nav-item">
-                <a class="nav-link text-primary" href="/channel"><i class="!generic-icons-nav fa fa-fw fa-dot-circle-o" alt="channel"></i></a>
+                <a class="nav-link text-primary" href="/channel"><i class="!generic-icons-nav fa5 fa-fw fa-house-user" alt="channel"></i></a>
             </li>                
 			{{/if}}
                             
@@ -246,7 +256,19 @@
 
 					<!-- show additional links based on page. -->
 	          
-
+					{{* You can replace the links in the dropdown menu or something else. *}}
+					{{* Create a template file called neuhub_red_dash_dropdown_custom.tpl in the tpl directory of this theme.) *}}
+					{{assign var="file" value="`$smarty.current_dir`/neuhub_red_dash_dropdown_custom.tpl"}}
+					{{if $file|file_exists}}
+						{{include file=$file}}
+					{{else}}
+						<div class="dropdown-header text-uppercase text-muted">
+							Website
+						</div>	
+					
+						<a class="dropdown-item" href="/" title="Home"><i class="fa fa-fw fa-home generic-icons-nav"></i>Home</a>
+						
+					{{/if}}
 
                         <!-- channel apps drop down (when viewing someone else's channel) -->
                         {{if $channel_apps.0}}
@@ -256,14 +278,14 @@
                     		</div>	          
 	          
                         		    {{foreach $channel_apps as $channel_app}}
-                        		        {{$channel_app}}
+                        		        {{$channel_app|replace:'nav-link':'dropdown-item'|replace:'fa':'generic-icons-nav fa'}}
                         		    {{/foreach}}	          
 	          
-                            
-                                <a class="dropdown-item" href="#" >
-                                    <i class="fa fa-fw fa-dot-circle-o generic-icons-nav"></i>Channel
+                            <!--
+                                <a class="dropdown-item" href="/channel" >
+                                    <i class="fa5 fa-fw fa5-house-user generic-icons-nav"></i>Channel
                                 </a>
-
+							-->
                             
                 		{{/if}}
 
