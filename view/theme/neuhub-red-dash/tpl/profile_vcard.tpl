@@ -109,11 +109,11 @@
                 <span class="text-muted d-block mb-2">Los Angles</span>
 -->
 				<div class="!text-truncate">
-					<strong class="fn p-name">{{$profile.fullname}}{{if $profile.online}}<i class="fa fa-fw fa-asterisk text-danger ps-2" title="{{$profile.online}}"></i>{{/if}}</strong>
+					<strong class="fn p-name fs-5">{{$profile.fullname}}{{if $profile.online}}<i class="fa fa-fw fa-asterisk text-danger ps-2" title="{{$profile.online}}"></i>{{/if}}</strong>
 				</div>
                 
 				<div class="text-truncate mb-3">
-					<small class="text-muted p-adr">{{$profile.reddress}}</small>
+					<span class="text-muted p-adr">{{$profile.reddress}}</span>
 				</div>                
 
 				{{if $connect}}

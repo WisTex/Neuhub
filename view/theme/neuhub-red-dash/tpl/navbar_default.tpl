@@ -37,7 +37,7 @@
 			{{include file=$file}}
 		{{else}}
 		
-            <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search" method="get" action"/search" role="search">
+            <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search" method="get" action"{{$nav.search.4}}" role="search">
                 <div class="input-group"><input class="bg-light form-control border-0 small" type="text" name="search" placeholder="{{$help}}"><button class="btn btn-primary py-0" type="submit"><i class="fas fa-search"></i></button></div>
             </form>		
 			
@@ -57,7 +57,7 @@
                             
             <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link text-primary" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
                 <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
-                    <form class="me-auto navbar-search w-100" method="get" action"/search" role="search">
+                    <form class="me-auto navbar-search w-100" method="get" action"{{$nav.search.4}}" role="search">
                         <div class="input-group"><input class="bg-light form-control border-0 small" type="text" name="search" placeholder="{{$help}}">
                             <div class="input-group-append"><button class="btn btn-primary py-0" type="submit"><i class="fas fa-search"></i></button></div>
                         </div>
