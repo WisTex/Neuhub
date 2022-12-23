@@ -346,7 +346,7 @@
                 </li>
             {{/if}}
 -->
-
+<!--
 			<ul class="navbar-nav">
 				{{if $nav.login && !$userinfo}}
     				<li class="nav-item d-lg-flex">
@@ -372,7 +372,7 @@
     				</li>
 				{{/if}}
 			</ul>    
-
+-->
 
             <div class="d-none d-sm-block topbar-divider"></div>
 

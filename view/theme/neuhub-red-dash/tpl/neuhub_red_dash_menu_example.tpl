@@ -1,5 +1,4 @@
 <!-- menu -->
-<!--
 
 <div class="d-none d-md-block">
     <ul class="navbar-nav ml-auto">
@@ -9,5 +8,3 @@
         <li class="nav-item"><a class="nav-link text-primary" href="#">Blog</a></li>
     </ul>
 </div>
-
--->
