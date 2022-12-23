@@ -1,21 +1,17 @@
 # Neuhub
 ### **A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.**
 
-Our first theme is the **Redbasic Child Theme**, which can be used as a starting point to make your own themes.
-
-Several more themes are in the works.
-
 Your contributions and feedback are welcome.
 
 ## Released Themes
 
 - [X] **Redbasic Child Theme** 2.2.4 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
-- [ ] **Neuhub Red Dash** 0.5 - A theme based on Redbasic and SB Admin.
+- [ ] **Neuhub Red Dash** 0.5.1 - A theme based on Redbasic and SB Admin.
 
 ## Components
 
 - [X] Redbasic Child Theme 2.2.4
-- [ ] Neuhub Red Dash Theme 0.5
+- [ ] Neuhub Red Dash Theme 0.5.1
 - [X] Messages Module 1.0
 - [X] WisTex KIMS Article Addon 1.0
 - [X] Widget Interface 1.0

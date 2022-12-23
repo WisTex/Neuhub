@@ -165,8 +165,10 @@ if ($outputsidebar != "<h3>ERROR: there was an error creating the output.</h3>")
                     <!--
                     <li class="nav-item"><a class="nav-link" href="/channel/mockup"><i class="fas fa-tachometer-alt"></i><span>Channel</span></a></li>
                     -->
-		            <li class="nav-item"><a class="nav-link" href="/hq"><i class="fa5 fa5-house-user"></i><span>HQ</span></a></li>         	      
-		            <li class="nav-item"><a class="nav-link" href="/channel"><i class="fas fa-dot-circle"></i><span>Channel</span></a></li>         
+                    <!--
+		            <li class="nav-item"><a class="nav-link" href="/hq"><i class="fa5 fa5-circle-user"></i><span>HQ</span></a></li>         	      
+		            <li class="nav-item"><a class="nav-link" href="/channel"><i class="fa5 fa5-house-user"></i><span>Channel</span></a></li>         
+                    -->
 		            <li class="nav-item"><a class="nav-link" href="/directory?f=&pubforums=0&global=0"><i class="fas fa-sitemap"></i><span>Directory</span></a></li>
 		            <li class="nav-item"><a class="nav-link" href="/directory?f=&pubforums=1&global=0"><i class="fas fa-comments"></i><span>Forums</span></a></li>
                     <!--

@@ -51,7 +51,7 @@
 
 			{{if $localuser}}
             <li class="nav-item">
-                <a class="nav-link text-primary" href="/channel"><i class="!generic-icons-nav fa5 fa-fw fa-house-user" alt="channel"></i></a>
+                <a class="nav-link text-primary" href="/channel"><i class="!generic-icons-nav fa5 fa-fw fa5-house-user" alt="channel"></i></a>
             </li>                
 			{{/if}}
                             
