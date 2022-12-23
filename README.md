@@ -1,6 +1,8 @@
 # Neuhub
 ### **A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.**
 
+**Neuhub Suite** - Version 1.0
+
 Your contributions and feedback are welcome.
 
 ## Released Themes
@@ -10,7 +12,7 @@ Your contributions and feedback are welcome.
 
 ## Components
 
-- [ ] Neuhub Red Dash 0.5.3
+- [ ] Neuhub Red Dash Theme 0.5.3
 - [X] Redbasic Child Theme 2.2.4
 - [X] Messages Module 1.0
 - [X] WisTex KIMS Article Addon 1.0
