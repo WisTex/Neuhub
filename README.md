@@ -10,6 +10,8 @@ Your contributions and feedback are welcome.
 
 ## Components
 
+- [ ] Neuhub Red Dash 0.5.3
+- [X] Redbasic Child Theme 2.2.4
 - [X] Messages Module 1.0
 - [X] WisTex KIMS Article Addon 1.0
 - [X] Widget Interface 1.0
