@@ -25,8 +25,9 @@
             <h3 style="text-align: center;">Federated Hub Social Identity</h3>
             <p class="card-text" style="text-align: center;margin-top: 16px;">This website is part of a decentralized social network, with remote authentication powered by <a href="https://federatedhub.org" target="_blank">OpenWebAuth&nbsp;<i class="fa fa-external-link"></i></a>.</p>
             <p style="text-align: center;">If you already have an account on a website that supports OpenWebAuth, you do not need to create a local account here. You can remotely authenticate with your existing social identity.</p>
-    <div class="card-footer">
     </div>
+    <div class="card-footer">
+
             <h3 style="text-align: center;">How to Remotely Authenticate</h3>
             <p style="text-align: center;">To remotely authenticate with your existing social identity, you must be logged into your home hub or instance, and then enter your channel address on this website (channel@example.com). This website will check and see if you are logged into your home hub or instance, and if you are, it will remotely authenticate you.</p>
         </div>
