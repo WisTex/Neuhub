@@ -51,6 +51,7 @@ if (file_exists($filename)) {
     <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/css/Projects-Clean.css">
     <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/css/styles.css">  
 
+    <link rel="stylesheet" href="/view/theme/neuhub-red-dash/css/prism-coy-full.css">
 	
   <script>var baseurl="<?php echo z_root() ?>";</script>
   <?php if(x($page,'htmlhead')) echo $page['htmlhead'] ?>    
@@ -476,6 +477,8 @@ if ($outputfooter != "<h3>ERROR: there was an error creating the output.</h3>") 
     -->
     <script src="/view/theme/neuhub-red-dash/assets/js/bs-init.js"></script>
     <script src="/view/theme/neuhub-red-dash/assets/js/theme.js"></script>
+    
+    <script src="/view/theme/neuhub-red-dash/js/prism-coy-full.js"></script>
     
 </body>
 
