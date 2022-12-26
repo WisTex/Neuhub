@@ -6,6 +6,8 @@
 
 A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.
 
+https://neuhub.org
+
 Your contributions and feedback are welcome.
 
 ## Released Themes
