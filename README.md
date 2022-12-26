@@ -1,5 +1,8 @@
 # Neuhub
-### **A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.**
+
+### Build your own website, community, and audience without giving up control.
+
+**A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.**
 
 **Neuhub Suite** - Version 2.2.2
 
