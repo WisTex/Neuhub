@@ -1,6 +1,5 @@
 [region=aside]
-[widget=testwidget][/widget]
-[widget=examplewidget][/widget]
+[widget=kimssidebar][/widget]
 [widget=notifications][/widget]
 [widget=fullprofile][/widget]
 [/region]
