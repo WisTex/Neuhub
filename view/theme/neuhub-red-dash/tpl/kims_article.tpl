@@ -1,4 +1,20 @@
-<article>
+<style>
+.kims-article {
+    font-size: 1rem;
+}
+
+article code {
+    display: inline;
+    background: #eee;
+}
+
+article pre code {
+    border: none;
+    padding: 0px;
+}
+</style>
+
+<article class="kims-article">
 <div class="" style="background: #ffffff;padding-right: 25px;padding-left: 25px;padding-top: 25px;padding-bottom: 25px;border-radius: 1px;border: 1px solid var(--bs-gray-300);border-top-style: solid;border-bottom-width: 1px;border-bottom-style: solid;margin-bottom: 24px;">
 
     <div>

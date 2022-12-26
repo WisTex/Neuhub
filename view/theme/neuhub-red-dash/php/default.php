@@ -438,7 +438,7 @@ if ($outputfooter != "<h3>ERROR: there was an error creating the output.</h3>") 
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body" id="!region_1">
-    <!-- <?php if(x($page,'aside')) echo $page['aside']; ?> -->
+    <?php if(x($page,'aside')) echo $page['aside']; ?>
   </div>
 </div>
 
