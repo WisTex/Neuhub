@@ -176,10 +176,12 @@
             }
             </style>
 
-			{{if $localuser || $nav.pubs}}
-    			<li id="notifications-btn" class="nav-item">
-    				<a class="nav-link notifications-btn" href="/hq"><i id="notifications-btn-icon" class="fa fa-flag notifications-btn-icon"></i></a>
-    			</li>
+			{{if $localuser}}
+				{{if $localuser || $nav.pubs}}
+    				<li id="notifications-btn" class="nav-item">
+    					<a class="nav-link notifications-btn" href="/hq"><i id="notifications-btn-icon" class="fa fa-flag notifications-btn-icon"></i></a>
+    				</li>
+				{{/if}}
 			{{/if}}
 
 
