@@ -109,6 +109,6 @@ article pre code {
 </div>
 </div>
 <p class="text-center"><small>This Article:&nbsp;&nbsp;
-<i class="far fa-arrow-alt-circle-up" style="color: var(--bs-danger);"></i> Last Major Update: {{$ArticleMajorUpdateDate}}&nbsp;&nbsp;
 <i class="far fa-dot-circle" style="color: var(--bs-orange);"></i> Last Minor Update: {{$ArticleMinorUpdateDate}}&nbsp;&nbsp;
+<i class="far fa-arrow-alt-circle-up" style="color: var(--bs-danger);"></i> Last Major Update: {{$ArticleMajorUpdateDate}}&nbsp;&nbsp;
 <i class="far fa-check-circle" style="color: var(--bs-green);"></i> Last Verified: {{$ArticleVerifiedDate}}<br></small></p>
