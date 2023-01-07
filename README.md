@@ -99,7 +99,7 @@ Special thanks to all of the people before me that created awesome code and made
 - Hubzilla Website: https://hubzilla.org/
 - Hubzilla Repository: https://framagit.org/hubzilla/core
 - Streams Repository: https://codeberg.org/streams/streams
-- Zot Repository: https://codeberg.org/zot
+- Zot Repository: https://codeberg.org/zot-archive (for historical reference)
 
 Main Redbasic Contributors
 
