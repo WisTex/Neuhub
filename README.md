@@ -6,7 +6,10 @@
 
 A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.
 
-https://neuhub.org
+- Website: https://neuhub.org
+- Repository: https://github.com/WisTex/Neuhub
+- Announcements: https://neuhub.org/channel/blog
+- Support Forum: https://neuhub.org/channel/support
 
 Your contributions and feedback are welcome.
 
