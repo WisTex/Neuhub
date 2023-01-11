@@ -1,8 +1,13 @@
 <?php
 
 /**
- *   * Name: Settings menu
- *   * Description: Display the channel settings menu
+ *   * Name: Stream HQ Menu Widget
+ *   * Description: Display links to HQ, Stream, DMs, and Connections.
+ *   * Version: 1.0
+ *   * Author: Scott M. Stolz
+ *   * Maintainer: Scott M. Stolz
+ *   * Copyright: WisTex TechSero Ltd. Co.
+ *   * License: MIT License (Expat Verion) - https://license.neuhub.org
  */
 
 namespace Zotlabs\Widget;

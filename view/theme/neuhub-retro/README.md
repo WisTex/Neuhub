@@ -1,15 +1,15 @@
 # Neuhub Retro
 
-**Version 2.3.2**
+**Version 2.3.3**
 
 An updated version of the Redbasic theme.
 
 * Website: https://neuhub.org
 * Repository: https://github.com/WisTex/Neuhub
 
-## Neuhub Red Dash 2.3.2 - Release Notes
+## Neuhub Red Dash 2.3.3 - Release Notes
 
-This release is a copy of Redbasic Child Theme 2.2.4 without any modifications. Additional modifications are coming.
+This release includes enhanced navigation for settings, connections, and edit profile pages.
 
 Known Issues
 * None

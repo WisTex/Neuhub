@@ -1,8 +1,13 @@
 <?php
 
 /**
- *   * Name: Settings menu
- *   * Description: Display the channel settings menu
+ *   * Name: More Settings Menu Widget
+ *   * Description: Display additional settings menu.
+ *   * Version: 1.0
+ *   * Author: Scott M. Stolz
+ *   * Maintainer: Scott M. Stolz
+ *   * Copyright: WisTex TechSero Ltd. Co.
+ *   * License: MIT License (Expat Verion) - https://license.neuhub.org
  */
 
 namespace Zotlabs\Widget;
