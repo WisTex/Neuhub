@@ -7,6 +7,17 @@ This is a derivative theme for Redbasic, and uses elements from Boostrap's SB Ad
 * Website: https://neuhub.org
 * Repository: https://github.com/WisTex/Neuhub
 
+## Recommended Widgets
+
+This theme attempts to use the following widgets. To get the full experience, it is recommended that you have these installed. If they are not installed, it will "gracefully fail" and simply not display the widgets.
+
+#### Widgets
+
+- [X] Connections Menu Widget
+- [X] More Settings Widget
+- [X] Profile Menu Widget
+- [X] Stream HQ Menu Widget
+
 ## Neuhub Red Dash 0.6.5 - Release Notes
 
 This release includes enhanced navigation for settings, connections, and edit profile pages.
