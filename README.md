@@ -12,8 +12,8 @@ Your contributions and feedback are welcome.
 
 ## Released Themes
 
-- [X] **Neuhub Retro** 2.3.3 - An updated version of the Redbasic theme.
-- [ ] **Neuhub Red Dash** 0.6.5 - A theme based on Redbasic and SB Admin.
+- [X] **Neuhub Retro** 2.4 - An updated version of the Redbasic theme.
+- [ ] **Neuhub Red Dash** 0.7 - A theme based on Redbasic and SB Admin.
 - [X] **Redbasic Child** 2.2.5 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
 
 
@@ -21,9 +21,9 @@ Your contributions and feedback are welcome.
 
 #### Themes
 
-- [X] Neuhub Retro Theme 2.3.3
+- [X] Neuhub Retro Theme 2.4
 - [X] Redbasic Child Theme 2.2.5
-- [ ] Neuhub Red Dash Theme 0.6.5
+- [ ] Neuhub Red Dash Theme 0.7
 
 #### Modules & Addons
 

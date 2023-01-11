@@ -1,6 +1,6 @@
 # Neuhub Red Dash Theme
 
-**Version 0.6.5** - Beta Version
+**Version 0.7** - Beta Version
 
 This is a derivative theme for Redbasic, and uses elements from Boostrap's SB Admin theme.
 
@@ -18,7 +18,7 @@ This theme attempts to use the following widgets. To get the full experience, it
 - [X] Profile Menu Widget
 - [X] Stream HQ Menu Widget
 
-## Neuhub Red Dash 0.6.5 - Release Notes
+## Neuhub Red Dash 0.7 - Release Notes
 
 This release includes enhanced navigation for settings, connections, and edit profile pages.
 
