@@ -19,12 +19,23 @@ Your contributions and feedback are welcome.
 
 ## Components
 
+#### Themes
+
 - [X] Neuhub Retro Theme 2.3.3
 - [X] Redbasic Child Theme 2.2.5
 - [ ] Neuhub Red Dash Theme 0.6.5
+
+#### Modules & Addons
+
 - [X] Messages Module 1.0
 - [X] WisTex KIMS Article Addon 1.0
+
+#### Hubzilla Core
+
 - [X] Widget Interface 1.0
+
+#### Widgets
+
 - [X] Connections Menu Widget 1.0
 - [X] More Settings Widget 1.0
 - [X] Profile Menu Widget 1.0
