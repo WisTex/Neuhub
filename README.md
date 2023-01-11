@@ -2,7 +2,7 @@
 
 ### Build your own website, community, and audience without giving up control.
 
-#### **Neuhub Suite** - Version 2.2.6
+#### **Neuhub Suite** - Version 2.3
 
 A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.
 
