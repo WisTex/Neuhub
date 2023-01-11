@@ -14,7 +14,7 @@ This theme attempts to use the following widgets. To get the full experience, it
 #### Widgets
 
 - [X] Connections Menu Widget
-- [X] More Settings Widget
+- [X] More Settings Menu Widget
 - [X] Profile Menu Widget
 - [X] Stream HQ Menu Widget
 

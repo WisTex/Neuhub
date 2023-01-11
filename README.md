@@ -37,7 +37,7 @@ Your contributions and feedback are welcome.
 #### Widgets
 
 - [X] Connections Menu Widget 1.0
-- [X] More Settings Widget 1.0
+- [X] More Settings Menu Widget 1.0
 - [X] Profile Menu Widget 1.0
 - [X] Stream HQ Menu Widget 1.0
 
