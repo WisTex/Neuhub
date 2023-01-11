@@ -1,0 +1,27 @@
+[template]default[/template]
+[region=aside]
+[widget=messages][/widget]
+[widget=hq_controls]
+	[var=wrapper_class]d-none d-lg-block[/var]
+	[var=entry_class]btn-outline-primary[/var]
+[/widget]
+
+[/region]
+[region=content]
+[widget=notes]
+	[var=hidden]1[/var]
+	[var=app]1[/var]
+[/widget]
+$content
+[widget=hq_controls]
+	[var=wrapper_class]hq_controls_fixed_bottom_center d-lg-none[/var]
+	[var=entry_class]btn-lg btn-primary shadow[/var]
+[/widget]
+
+[/region]
+[region=right_aside]
+[widget=menu_stream_hq][/widget]
+[widget=notifications][/widget]
+[widget=newmember][/widget]
+
+[/region]
