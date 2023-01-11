@@ -1,15 +1,26 @@
 # Neuhub Retro
 
-**Version 2.3.2**
+**Version 2.3.3**
 
 An updated version of the Redbasic theme.
 
 * Website: https://neuhub.org
 * Repository: https://github.com/WisTex/Neuhub
 
-## Neuhub Red Dash 2.3.2 - Release Notes
+## Recommended Widgets
 
-This release is a copy of Redbasic Child Theme 2.2.4 without any modifications. Additional modifications are coming.
+This theme attempts to use the following widgets. To get the full experience, it is recommended that you have these installed. If they are not installed, it will "gracefully fail" and simply not display the widgets.
+
+#### Widgets
+
+- [X] Connections Menu Widget
+- [X] More Settings Menu Widget
+- [X] Profile Menu Widget
+- [X] Stream HQ Menu Widget
+
+## Neuhub Red Dash 2.3.3 - Release Notes
+
+This release includes enhanced navigation for settings, connections, and edit profile pages.
 
 Known Issues
 * None

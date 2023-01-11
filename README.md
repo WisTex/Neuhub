@@ -2,7 +2,7 @@
 
 ### Build your own website, community, and audience without giving up control.
 
-#### **Neuhub Suite** - Version 2.2.5.1
+#### **Neuhub Suite** - Version 2.2.6
 
 A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.
 
@@ -12,19 +12,34 @@ Your contributions and feedback are welcome.
 
 ## Released Themes
 
-- [X] **Neuhub Retro** 2.3.2 - An updated version of the Redbasic theme.
-- [ ] **Neuhub Red Dash** 0.6.4 - A theme based on Redbasic and SB Admin.
+- [X] **Neuhub Retro** 2.3.3 - An updated version of the Redbasic theme.
+- [ ] **Neuhub Red Dash** 0.6.5 - A theme based on Redbasic and SB Admin.
 - [X] **Redbasic Child** 2.2.5 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
 
 
 ## Components
 
-- [X] Neuhub Retro Theme 2.3.2
+#### Themes
+
+- [X] Neuhub Retro Theme 2.3.3
 - [X] Redbasic Child Theme 2.2.5
-- [ ] Neuhub Red Dash Theme 0.6.4
+- [ ] Neuhub Red Dash Theme 0.6.5
+
+#### Modules & Addons
+
 - [X] Messages Module 1.0
 - [X] WisTex KIMS Article Addon 1.0
+
+#### Hubzilla Core
+
 - [X] Widget Interface 1.0
+
+#### Widgets
+
+- [X] Connections Menu Widget 1.0
+- [X] More Settings Menu Widget 1.0
+- [X] Profile Menu Widget 1.0
+- [X] Stream HQ Menu Widget 1.0
 
 ## Example Code
 
