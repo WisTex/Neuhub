@@ -1,6 +1,6 @@
 # Neuhub Retro
 
-**Version 2.4**
+**Version 2.5**
 
 An updated version of the Redbasic theme.
 
@@ -18,7 +18,7 @@ This theme attempts to use the following widgets. To get the full experience, it
 - [X] Profile Menu Widget
 - [X] Stream HQ Menu Widget
 
-## Neuhub Red Dash 2.4 - Release Notes
+## Neuhub Red Dash 2.5 - Release Notes
 
 This release includes enhanced navigation for settings, connections, and edit profile pages.
 

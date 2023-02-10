@@ -18,8 +18,8 @@ article pre code {
 <div class="" style="background: #ffffff;padding-right: 25px;padding-left: 25px;padding-top: 25px;padding-bottom: 25px;border-radius: 1px;border: 1px solid var(--bs-gray-300);border-top-style: solid;border-bottom-width: 1px;border-bottom-style: solid;margin-bottom: 24px;">
 
     <div>
-        <h1 class="text-dark mb-1" style="font-family: 'Roboto Slab', Verdana, Georgia, serif;">{{$ArticleTitle}}</h1>
-        <h2 style="font-family: 'Roboto Slab', Verdana, Georgia, serif;">{{$ArticleSubTitle}}</h2>
+        <h1 class="text-dark mb-1 article-title" style="font-family: 'Roboto Slab', Verdana, Georgia, serif;">{{$ArticleTitle}}</h1>
+        <h2 class="text-muted article-subtitle" style="font-family: 'Roboto Slab', Verdana, Georgia, serif;">{{$ArticleSubTitle}}</h2>
     </div>
     <p>By <a href="/profile/scott">Scott M. Stolz</a>{{if $ArticleEtAl eq 1}}, <em>et al.</em>{{/if}}</p>
 
@@ -111,4 +111,7 @@ article pre code {
 <p class="text-center"><small>This Article:&nbsp;&nbsp;
 <i class="far fa-dot-circle" style="color: var(--bs-orange);"></i> Last Minor Update: {{$ArticleMinorUpdateDate}}&nbsp;&nbsp;
 <i class="far fa-arrow-alt-circle-up" style="color: var(--bs-danger);"></i> Last Major Update: {{$ArticleMajorUpdateDate}}&nbsp;&nbsp;
-<i class="far fa-check-circle" style="color: var(--bs-green);"></i> Last Verified: {{$ArticleVerifiedDate}}<br></small></p>
+{{if $ArticleVerifiedDate}}
+<i class="far fa-check-circle" style="color: var(--bs-green);"></i> Last Verified: {{$ArticleVerifiedDate}}
+{{/if}}
+<br></small></p>

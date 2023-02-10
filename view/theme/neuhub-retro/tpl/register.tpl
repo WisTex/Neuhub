@@ -2,7 +2,7 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item"><a class="nav-link" href="/rmagic">Remote Authentication</a></li>
-                <li class="nav-item"><a class="nav-link" href="/login">Local Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
                 <li class="nav-item"><a class="nav-link active" href="/register">Register</a></li>
             </ul>
         </div>

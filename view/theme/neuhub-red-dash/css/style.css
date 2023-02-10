@@ -57,7 +57,7 @@ main {
 }
 
 h1, .h1 {
-	font-size: 2rem;
+	font-size: 2.2rem;
 }
 
 h2, .h2 {
@@ -65,19 +65,19 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 
 h4, .h4 {
-	font-size: 1.05rem;
+	font-size: 1.2rem;
 }
 
 h5, .h5 {
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 
 h6, .h6 {
-	font-size: 0.75rem;
+	font-size: 0.9rem;
 }
 
 #banner {
@@ -151,11 +151,13 @@ pre code {
 }
 
 code {
-	background: #ccc;
+	font-family: 'FuraMono Nerd Font',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+	background: #e0e5eb;
 	color: #000;
 }
 
 pre {
+	font-family: 'FuraMono Nerd Font',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
 	background: #F5F5F5;
 	color: #333;
 	border:1px solid #ccc;
@@ -495,6 +497,16 @@ footer {
 	background-color: $item_colour;
 }
 
+.pmenu {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.pmenu-title {
+    font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.2rem;
+}
+
 .pmenu.horizontal {
 	padding: 0 0 0 0;
 	border-bottom: none;
@@ -503,6 +515,7 @@ footer {
 .pmenu.horizontal .pmenu-title {
 	display: none;
 }
+
 .pmenu.horizontal ul {
 	-moz-padding-start: 0;
 }
@@ -1138,6 +1151,102 @@ img.mail-conv-sender-photo {
 	font-size: 1rem;
 }
 
+.website-title {
+	margin-right: 20px;
+	color: #000000;
+}
+
+.lead {
+    font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.page {
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	margin-bottom: 1rem;
+    padding: 1rem;
+    background: #FFFFFF;
+    font-size: 1rem;
+}
+
+.page h1 {
+    /* color: maroon; */
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.page h2 {
+    color: maroon;
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.page h3 {
+    /* color: maroon; */
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.page h4 {
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1.2rem;
+	color: maroon;
+}
+
+.page h5 {
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1.05rem;
+}
+
+.page h6 {
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 0.9rem;
+	color: maroon;
+}
+
+article h1 {
+    /* color: maroon; */
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+article h2 {
+    color: maroon;
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+article h3 {
+    /* color: maroon; */
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+article h4 {
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1.2rem;
+	color: maroon;
+}
+
+article h5 {
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1.05rem;
+}
+
+article h6 {
+	font-family: "Roboto Slab", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 0.9rem;
+	color: maroon;
+}
 
 .comment-edit-text {
 	border: 1px solid #ccc;

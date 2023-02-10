@@ -4,16 +4,14 @@
 head_add_css('/vendor/twbs/bootstrap/dist/css/bootstrap.min.css');
 head_add_css('/view/theme/neuhub-red-dash/assets/bootstrap/css/bootstrap.min.css');
 
-// TODO: Get local copy of font.
-head_add_css('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
-
 // Neuhub uses Font Awesome instead of Fork Awesome.
 //// head_add_css('/library/fork-awesome/css/fork-awesome.min.css');
 head_add_css('/view/theme/neuhub-red-dash/assets/fonts/fontawesome-all.min.css');
 head_add_css('/view/theme/neuhub-red-dash/assets/fonts/font-awesome.min.css');
 head_add_css('/view/theme/neuhub-red-dash/assets/fonts/fontawesome5-overrides.min.css');
 head_add_css('/view/theme/neuhub-red-dash/assets/fonts/fa5/css/all.css');
-
+head_add_css('/view/theme/neuhub-red-dash/assets/css/nerd-fonts-generated.css');
+head_add_css('/view/theme/neuhub-red-dash/assets/css/theme-fonts.css');
 
 // A font that includes Hubzilla logos and icons.
 head_add_css('/view/theme/neuhub-red-dash/assets/fonts/hubzilla/style.css');

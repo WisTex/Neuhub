@@ -2,7 +2,7 @@
 
 ### Build your own website, community, and audience without giving up control.
 
-#### **Neuhub Suite** - Version 2.3
+#### **Neuhub Suite** - Version 2.4
 
 A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.
 
@@ -15,8 +15,8 @@ Your contributions and feedback are welcome.
 
 ## Released Themes
 
-- [X] **Neuhub Retro** 2.4 - An updated version of the Redbasic theme.
-- [ ] **Neuhub Red Dash** 0.7 - A theme based on Redbasic and SB Admin.
+- [X] **Neuhub Retro** 2.5 - An updated version of the Redbasic theme.
+- [ ] **Neuhub Red Dash** 0.8 - A theme based on Redbasic and SB Admin.
 - [X] **Redbasic Child** 2.2.5 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
 
 
@@ -24,9 +24,9 @@ Your contributions and feedback are welcome.
 
 #### Themes
 
-- [X] Neuhub Retro Theme 2.4
+- [X] Neuhub Retro Theme 2.5
 - [X] Redbasic Child Theme 2.2.5
-- [ ] Neuhub Red Dash Theme 0.7
+- [ ] Neuhub Red Dash Theme 0.8
 
 #### Modules & Addons
 
@@ -135,6 +135,7 @@ Repository: https://github.com/DeadSuperHero/hubzilla-themes
 ### Third Party Components
 
 - Prism JS - https://prismjs.com - A lightweight, extensible syntax highlighter.
+- Nerd Fonts - https://www.nerdfonts.com - Iconic font aggregator, collection, and patcher.
 
 ### Third Party Tools
 

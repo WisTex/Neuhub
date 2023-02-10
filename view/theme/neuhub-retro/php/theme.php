@@ -3,7 +3,7 @@
 /**
  *   * Name: Neuhub Retro
  *   * Description: An updated version of the Redbasic theme.
- *   * Version: 2.4
+ *   * Version: 2.5
  *   * MinVersion: 8.0
  *   * MaxVersion: 10.0
  *   * Author: Scott M. Stolz

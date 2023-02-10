@@ -28,7 +28,7 @@
         <button class="btn btn-link rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-list"></i></button>
         -->
                     
-        <h2 class="d-none d-sm-none d-md-none d-lg-block"><a href="/" style="color:#000000;">{{$banner}}</a></h2>
+        <h2 class="d-none d-sm-none d-md-none d-lg-block website-title"><a href="/" style="color:#000000;">{{$banner}}</a></h2>
 
 		{{* You can replace the search form with a menu or something else. *}}
 		{{* Create a template file called neuhub_red_dash_menu_custom.tpl in the tpl directory of this theme.) *}}
@@ -511,7 +511,12 @@
         					<a class="dropdown-item" href="login" title="{{$nav.loginmenu.1.3}}">
         						{{$nav.loginmenu.1.1}}
         					</a>
-        				
+							<a class="dropdown-item" href="rmagic" title="{{$nav.loginmenu.1.3}}">
+								Magic Sign-On
+							</a>							
+							<a class="dropdown-item" href="rmagic" title="{{$nav.loginmenu.1.3}}">
+								Remote Authentication
+							</a>        				
         				{{/if}}
     					
     
@@ -736,7 +741,7 @@
                         {{/if}}
                                     
 						{{if strstr($smarty.server.REQUEST_URI, 'article') !== false}} 
-							<li class="breadcrumb-item"><a href="/articles" class="text-decoration-none"><span>Knowledge Base</span></a></li>
+							<li class="breadcrumb-item"><a href="/article/main" class="text-decoration-none"><span>Knowledge Base</span></a></li>
                             <li class="breadcrumb-item"><span>Article</span></li>
 						{{else}}
 						
