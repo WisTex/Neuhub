@@ -1,6 +1,6 @@
 # Neuhub Red Dash Theme
 
-**Version 0.8** - Beta Version
+**Version 0.8.1** - Beta Version
 
 This is a derivative theme for Redbasic, and uses elements from Boostrap's SB Admin theme.
 
@@ -18,12 +18,12 @@ This theme attempts to use the following widgets. To get the full experience, it
 - [X] Profile Menu Widget
 - [X] Stream HQ Menu Widget
 
-## Neuhub Red Dash 0.8 - Release Notes
+## Neuhub Red Dash 0.8.1 - Release Notes
 
 This release includes some additional fonts and styling.
 
 Fixed Issues
-* FIXED: Some remote resources, such as extra fonts, not loading properly.
+* CHANGED: Some changes were made to the conversation templates in the core. Temporarily reverting to the default files since they have new features that we don't have yet. May come back to merge our changes with their changes.
 
 Known Issues
 * PDL Editor not supported.
