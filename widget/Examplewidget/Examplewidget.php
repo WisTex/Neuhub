@@ -28,13 +28,15 @@
 
 // Hubzilla uses "Zotlabs\Widget"
 // Streams uses "Code\Widget"
+// Catalyst uses "Code\Widget"
+// Raconteur uses "Code\Widget"
 namespace Zotlabs\Widget;
 // namespace Code\Widget;
 
 
 
 // "class Examplewidget" is used for Hubzilla
-// "class Examplewidget implements WidgetInterface" is used for Streams
+// "class Examplewidget implements WidgetInterface" is used for Streams, Raconteur, and Catalyst.
 // "class Examplewidget implements WidgetInterface" is used for Neuhub if you uploaded \Zotlabs\Widget\WidgetInterface.php
 // Uncomment the correct line below depending on if you use Streams or Hubzilla
 
