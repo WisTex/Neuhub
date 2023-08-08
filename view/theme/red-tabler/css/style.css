@@ -11,3 +11,34 @@
 	/* example */
 	color:maroon;
 }
+
+footer {
+	position:relative;
+}
+
+#region_1 {
+    position: relative;
+    order: 1;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+}
+
+#region_2 {
+    position: relative;
+    order: 1;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+}
+
+#region_3 {
+    position: relative;
+    order: 1;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+}
