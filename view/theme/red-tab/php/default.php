@@ -83,12 +83,13 @@ if (file_exists($filename)) {
     <!-- <link rel="stylesheet" href="https://neuhub.org/view/theme/neuhub-red-dash/assets/assets/fonts/hubzilla/style.css?v=7.8.7" type="text/css" media="screen"> -->
     <!-- <link rel="stylesheet" href="/mockups/mockup-neuhub-tabley/assets/fonts/hubzilla/style.css?v=7.8.7" type="text/css" media="screen"> -->
 
+    <!-- Moved to /theme_init.php
     <link href="/view/theme/red-tabler/dist/css/tabler.min.css?1685973381" rel="stylesheet"/>
     <link href="/view/theme/red-tabler/dist/css/tabler-flags.min.css?1685973381" rel="stylesheet"/>
     <link href="/view/theme/red-tabler/dist/css/tabler-payments.min.css?1685973381" rel="stylesheet"/>
     <link href="/view/theme/red-tabler/dist/css/tabler-vendors.min.css?1685973381" rel="stylesheet"/>
     <link href="/view/theme/red-tabler/dist/css/demo.min.css?1685973381" rel="stylesheet"/>
-
+-->
     
 
     <style>
@@ -128,7 +129,7 @@ if (file_exists($filename)) {
     </style>
   </head>
   <body >
-    <script src="/view/theme/red-tabler/dist/js/demo-theme.min.js?1685973381"></script>
+    <?php /* Moved to theme_init.php <script src="/view/theme/red-tabler/dist/js/demo-theme.min.js?1685973381"></script> */ ?>
     <div class="page">
 
                 <!-- Main Site Navigation -->

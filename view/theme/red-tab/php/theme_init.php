@@ -11,6 +11,13 @@ head_add_css('/view/css/default.css');
 
 require_once('view/php/theme_init.php');
 
+head_add_css('/view/theme/red-tab/dist/css/tabler.min.css');
+head_add_css('/view/theme/red-tab/dist/css/tabler-flags.min.css');
+head_add_css('/view/theme/red-tab/dist/css/tabler-payments.min.css');
+head_add_css('/view/theme/red-tab/dist/css/tabler-vendors.min.css');
+head_add_css('/view/theme/red-tab/dist/css/demo.min.css');
+
+
 // Add your custom JS files here.
 // head_add_js('/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js'); // Tabler already uses Bootstrap, so this would conflict with it.
 head_add_js('/library/bootbox/bootbox.min.js');
@@ -18,3 +25,7 @@ head_add_js('/library/bootstrap-tagsinput/bootstrap-tagsinput.js');
 head_add_js('/library/datetimepicker/jquery.datetimepicker.js');
 head_add_js('/library/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js');
 head_add_js('/view/theme/redbasic/js/redbasic.js');
+
+head_add_js('/view/theme/red-tab/dist/js/demo-theme.min.js');
+
+
