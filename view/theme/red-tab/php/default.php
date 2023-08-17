@@ -106,6 +106,7 @@ if (file_exists($filename)) {
         /* --bs-link-color: rgb(0, 84, 166); slate blue link color */
         --bs-link-color: green; /* mostly used for toggle switches */
         --bs-warning: #f59f00;
+        
       }
       body {
       	font-feature-settings: "cv03", "cv04", "cv11";
@@ -124,6 +125,9 @@ if (file_exists($filename)) {
       }
       .dropdown-menu {
     --tblr-dropdown-min-width: 15rem;
+      }
+      .avatar {
+        --tblr-avatar-box-shadow: none;
       }
 
     </style>
@@ -425,7 +429,7 @@ if (file_exists($filename)) {
     </div>
     <!-- Libs JS -->
     <!-- Tabler Core -->
-    <script src="/view/theme/red-tabler/dist/js/tabler.min.js?1685973381" defer></script>
-    <script src="/view/theme/red-tabler/dist/js/demo.min.js?1685973381" defer></script>
+    <script src="/view/theme/red-tab/dist/js/tabler.min.js?1685973381" defer></script>
+    <script src="/view/theme/red-tab/dist/js/demo.min.js?1685973381" defer></script>
   </body>
 </html>
