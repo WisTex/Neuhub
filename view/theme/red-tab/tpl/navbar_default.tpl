@@ -253,7 +253,7 @@
             {{if $channel_thumb}}
 
 
-                <div class="card">
+                <div class="card border-0">
                     <div class="card-body p-4 text-center">
                     <span class="avatar avatar-xl mb-3 rounded" style="background-image: url({{$channel_thumb}})"></span>
 
