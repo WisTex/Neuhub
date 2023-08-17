@@ -14,7 +14,7 @@ head_add_css('/view/css/default.css');
 // This calls Redbasic's default CSS and JS files.
 require_once('view/php/theme_init.php');
 
-//These are the Tabler UI Kit's CSS files used in this theme.
+// These are the Tabler UI Kit's CSS files used in this theme.
 head_add_css('/view/theme/red-tab/dist/css/tabler.min.css');
 head_add_css('/view/theme/red-tab/dist/css/tabler-flags.min.css');
 head_add_css('/view/theme/red-tab/dist/css/tabler-payments.min.css');
@@ -31,5 +31,5 @@ head_add_js('/library/datetimepicker/jquery.datetimepicker.js');
 head_add_js('/library/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js');
 head_add_js('/view/theme/redbasic/js/redbasic.js');
 
-//These are the Tabler UI Kit's JS files used in this theme.
+// These are the Tabler UI Kit's JS files used in this theme.
 head_add_js('/view/theme/red-tab/dist/js/demo-theme.min.js');
