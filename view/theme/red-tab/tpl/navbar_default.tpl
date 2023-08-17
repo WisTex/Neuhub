@@ -127,10 +127,24 @@
                 </div>
               </div>
             </div>
+
+            {{* check for not null. *}}
+          {{if isset($userinfo.icon) }}
+
+            {{* If there is an user icon display it *}}
+            {{$redtab.icon=$userinfo.icon}}
+
+          {{else}}
+
+            {{* If there is not user icon display a default icon instead *}}
+            {{$redtab.icon="/view/theme/red-tab/img/blank-profile-picture-180x180.png"}}
+            
+          {{/if}}
+
             <!-- Top Navbar User Menu MOBILE -->
             <div class="nav-item dropdown">
               <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-                <span class="avatar avatar-sm" style="background-image: url({{$userinfo.icon}})"></span>
+                <span class="avatar avatar-sm" style="background-image: url({{$redtab.icon}})"></span>
                 <div class="d-none d-xl-block ps-2">
                   <div>{{if $nav.login && !$userinfo}}
                     Guest
@@ -676,7 +690,7 @@
             <!-- Top Navbar User Menu FULL SCREEN -->
             <div class="nav-item dropdown">
               <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-                <span class="avatar avatar-sm" style="background-image: url({{$userinfo.icon}})"></span>
+                <span class="avatar avatar-sm" style="background-image: url({{$redtab.icon}})"></span>
                 <div class="d-none d-xl-block ps-2">
                   <div>{{if $nav.login && !$userinfo}}
                     Welcome Guest
