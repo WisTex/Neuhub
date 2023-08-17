@@ -7,4 +7,5 @@ require_once('view/theme/redbasic/php/config.php');
 require_once('view/theme/redbasic/php/style.php');
 
 // ! If you change the name of the directory containing the theme, be sure to change this line to match.
+// You can add CSS (or override the CSS in the Redbasic theme) by putting it in this file.
 echo @file_get_contents('view/theme/red-tab/css/style.css');
