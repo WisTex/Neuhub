@@ -1,13 +1,15 @@
-# Redbasic Child Theme
+# Red Tab Theme
 
-### **Version 2.2.5**
+### **Version 0.3**
 
 - Website: https://neuhub.org
-- Repository: https://github.com/WisTex/Neuhub/tree/main/view/theme/redbasic-child
+- Repository: https://github.com/WisTex/Neuhub/tree/main/view/theme/red-tab
 
-This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
+This is a theme that uses the Tabler UI Kit to display Redbasic deisgn elements, with a custom navigation system.
 
-You can override various parts of the Redbasic theme simply by creating a new file with the name of the file you want to override.
+## Making Modifications
+
+You can override various parts of the Red Tab theme simply by creating a new file with the name of the file you want to override.
 
 For example, if you want to change the navigation bar at the top of the page, you would create a file called `navbar_default.tpl` and put it in the `tpl` directory. This will override the `navbar_default.tpl` located in the `/view/tpl` directory. 
 
@@ -15,7 +17,7 @@ I recommend copying the original file and modifying it, but you can start from s
 
 ## Getting Started
 
-1. Make a copy of this theme and rename the `redbasic-child` directory to the name of your new theme.
+1. Make a copy of this theme and rename the `red-tab` directory to the name of your new theme.
 2. Change the details in `php/theme.php`.
 3. Change the path to this theme's stylesheet in `php/style.php`.
 4. Test the new theme by uploading it to the `/view/theme` directory of your Hubzilla installation. Use Git, WebDisk, FTP, or cPanel File Manager to upload.
@@ -49,6 +51,8 @@ If you are just making minor changes, then overriding specific `tpl` and `css` f
 This deriviative theme does not currently support schemes. However, this theme will inherit any settings you have made in the Redbasic theme, including the Advanced Theme Settings.
 
 ## Credits
+
+This theme uses the Tabler UI Kit, which can be found at https://tabler.io
 
 I studied the themes from https://github.com/DeadSuperHero/hubzilla-themes and used their structure as a model. 
 
