@@ -132,8 +132,8 @@ Main Redbasic Contributors
 
 ### Tabler UI Kit
 
-Website: https://tabler.io
-Respository: https://github.com/tabler/tabler
+- Website: https://tabler.io
+- Respository: https://github.com/tabler/tabler
 
 - Paweł Kuna
 
