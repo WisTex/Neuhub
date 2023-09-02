@@ -2,7 +2,7 @@
 
 ### Build your own website, community, and audience without giving up control.
 
-#### **Neuhub Suite** - Version 2.4.1.1
+#### **Neuhub Suite** - Version 2.5
 
 A collection of themes, widgets, modules, and addons for Hubzilla, Streams, and compatible distributions.
 
@@ -18,6 +18,8 @@ Your contributions and feedback are welcome.
 - [X] **Neuhub Retro** 2.5 - An updated version of the Redbasic theme.
 - [ ] **Neuhub Red Dash** 0.8.1 - A theme based on Redbasic and SB Admin.
 - [X] **Redbasic Child** 2.2.5 - This is a derivative theme for Redbasic that you can use as a starting point for creating your own themes.
+- [ ] **Red Tab** 0.3 - This is a version of Redbasic using the Tabler UI Kit.
+- [ ] **Neuhub Tab** 0.0 - This is a unique theme created by Neuhub using elements from the Tabler UI Kit.
 
 
 ## Components
@@ -27,6 +29,8 @@ Your contributions and feedback are welcome.
 - [X] Neuhub Retro Theme 2.5
 - [X] Redbasic Child Theme 2.2.5
 - [ ] Neuhub Red Dash Theme 0.8.1
+- [ ] Red Tab 0.3
+- [ ] Neuhub Tab 0.0
 
 #### Modules & Addons
 
@@ -55,6 +59,7 @@ Your contributions and feedback are welcome.
 We are looking for beta testers for the following themes:
 
 - [ ] **Neuhub Red Dash** - A theme based on Redbasic and SB Admin.
+- [ ] **Red Tab** - A theme based on Redbasic and the Tabler UI Kit.
 
 ## Installation
 
@@ -124,6 +129,13 @@ Main Redbasic Contributors
 - Fabrixxm
 - Mike Macgirvin
 - Mario Vavti
+
+### Tabler UI Kit
+
+Website: https://tabler.io
+Respository: https://github.com/tabler/tabler
+
+- Paweł Kuna
 
 ### DeadSuperHero Hubzilla Themes
 
