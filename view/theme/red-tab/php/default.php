@@ -76,10 +76,10 @@ if (file_exists($filename)) {
     <meta property="og:description" content="Tabler comes with tons of well-designed components and features. Start your adventure with Tabler and make your dashboard great again. For free!">
     <!-- CSS files -->
 
-    <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/fonts/fontawesome-all.min.css?v=7.8.7" type="text/css" media="screen">
-    <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/fonts/font-awesome.min.css?v=7.8.7" type="text/css" media="screen">
-    <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/fonts/fontawesome5-overrides.min.css?v=7.8.7" type="text/css" media="screen">
-    <link rel="stylesheet" href="/view/theme/neuhub-red-dash/assets/fonts/fa5/css/all.css?v=7.8.7" type="text/css" media="screen">
+    <link rel="stylesheet" href="/view/theme/red-tab/assets/fonts/fontawesome-all.min.css?v=7.8.7" type="text/css" media="screen">
+    <link rel="stylesheet" href="/view/theme/red-tab/assets/fonts/font-awesome.min.css?v=7.8.7" type="text/css" media="screen">
+    <link rel="stylesheet" href="/view/theme/red-tab/assets/fonts/fontawesome5-overrides.min.css?v=7.8.7" type="text/css" media="screen">
+    <link rel="stylesheet" href="/view/theme/red-tab/assets/fonts/fa5/css/all.css?v=7.8.7" type="text/css" media="screen">
     <!-- <link rel="stylesheet" href="https://neuhub.org/view/theme/neuhub-red-dash/assets/assets/fonts/hubzilla/style.css?v=7.8.7" type="text/css" media="screen"> -->
     <!-- <link rel="stylesheet" href="/mockups/mockup-neuhub-tabley/assets/fonts/hubzilla/style.css?v=7.8.7" type="text/css" media="screen"> -->
 
@@ -93,7 +93,7 @@ if (file_exists($filename)) {
     
 
     <style>
-      @import url('https://rsms.me/inter/inter.css');
+      @import url('/view/theme/red-tab/assets/fonts/inter/inter.css');
       :root {
       	--tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
         /* --bs-border-color: rgba(4, 32, 69, 0.14); */
