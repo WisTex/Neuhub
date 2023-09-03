@@ -18,9 +18,9 @@
 <?php
 // Include default configuration file, if it exists.
 // ! Do not put your configuration settings in this file. It will be overwritten when you update Neuhub.
-$filename = 'view/theme/neuhub-tab/config/neuhub-config-default.php';
+$filename = 'view/theme/red-tab/config/neuhub-config-default.php';
 if (file_exists($filename)) {
-    include_once('view/theme/neuhub-tab/config/neuhub-config-default.php');
+    include_once('view/theme/red-tab/config/neuhub-config-default.php');
 } else {
     //// echo "The file $filename does not exist";
 }
@@ -29,9 +29,9 @@ if (file_exists($filename)) {
 <?php
 // Include your configuration file, if it exists.
 // ! Overrides values in default configuration file.
-$filename = 'view/theme/neuhub-tab/config/neuhub-config.php';
+$filename = 'view/theme/red-tab/config/neuhub-config.php';
 if (file_exists($filename)) {
-    include_once('view/theme/neuhub-tab/config/neuhub-config.php');
+    include_once('view/theme/red-tab/config/neuhub-config.php');
 } else {
     //// echo "The file $filename does not exist";
 }
@@ -106,6 +106,12 @@ if (file_exists($filename)) {
         /* --bs-link-color: rgb(0, 84, 166); slate blue link color */
         --bs-link-color: green; /* mostly used for toggle switches */
         --bs-warning: #f59f00;
+        --tblr-font-size-h1: 2rem;
+    --tblr-font-size-h2: 1.75rem;
+    --tblr-font-size-h3: 1.5rem;
+    --tblr-font-size-h4: 1.25rem;
+    --tblr-font-size-h5: 1rem;
+    --tblr-font-size-h6: 0.75rem;
         
       }
       body {
@@ -114,14 +120,27 @@ if (file_exists($filename)) {
       .wall-item-content-wrapper {
         background: var(--tblr-card-color);
       }
+      .section-subtitle-wrapper {
+        background: rgba(72, 110, 149, 0.14); /* had to pick a color that shows up on light and dark modes */
+      }
+      .wall-item-title {
+        background: rgba(72, 110, 149, 0.14); /* had to pick a color that shows up on light and dark modes */
+      }
+.wall-item-title.h3 {
+    font-size: 1.25rem;
+}
+.profile-cover-text.h3 {
+  font-size: 1.25rem;
+}
       .btn-group-sm>.btn, .btn-sm {
         --bs-btn-padding-y: 0.3rem;
         --bs-btn-padding-x: 0.5rem;
-        --bs-btn-font-size: 0.9rem;
+        --bs-btn-font-size: 0.8rem;
         --tblr-btn-padding-y: 0.3rem;
         --tblr-btn-padding-x: 0.5rem;
-        --tblr-btn-font-size: 0.9rem;    
+        --tblr-btn-font-size: 0.8rem;    
         --tblr-btn-icon-size: 0.9rem;
+        --tblr-btn-line-height: 1;
       }
       .dropdown-menu {
     --tblr-dropdown-min-width: 15rem;
@@ -251,10 +270,10 @@ if (file_exists($filename)) {
                   </div>
                   -->
                   <div class="card-body">
-                    <p>
-                      <a href="/"><b>Digital Authorship</b></a> is part of a decentralized social network powered by Hubzilla and Neuhub.
+                    <small>
+                      <!-- <a href="<?php echo $HomeURL; ?>"><b>Digital Authorship</b></a> -->This website is part of a decentralized social network powered by Hubzilla and Neuhub.
                       <!-- <a href="https://github.com/WisTex/Raconteur" target="_blank">Raconteur</a>. -->
-                    </p>
+                    </small>
                   </div>
                 </div>
 
@@ -293,11 +312,12 @@ if (file_exists($filename)) {
             <div class="row text-center align-items-center flex-row-reverse">
               <div class="col-lg-auto ms-lg-auto">
                 <ul class="list-inline list-inline-dots mb-0">
-                  <li class="list-inline-item"><a href="./" class="link-secondary">Home</a></li>
+                  <li class="list-inline-item"><a href="<?php echo $HomeURL; ?>" class="link-secondary">Home</a></li>
                   <li class="list-inline-item"><a href="./directory" class="link-secondary">Directory</a></li>
-                  <!--
-                  <li class="list-inline-item"><a href="./article/legal" class="link-secondary">Legal</a></li>
-                  -->
+                  
+                  <li class="list-inline-item"><a href="<?php echo $TermsURL; ?>" class="link-secondary">Terms of Service</a></li>
+                  <li class="list-inline-item"><a href="<?php echo $PrivacyURL; ?>" class="link-secondary">Privacy Policy</a></li>
+                  
                   <li class="list-inline-item"><a href="./help" class="link-secondary">Help</a></li>
                   <!-- 
                   <li class="list-inline-item"><a href="./article/about" class="link-secondary">About</a></li>
@@ -314,10 +334,10 @@ if (file_exists($filename)) {
               </div>
               <div class="col-12 col-lg-auto mt-3 mt-lg-0">
                 <ul class="list-inline list-inline-dots mb-0">
-                  <li class="list-inline-item">
-                    Copyright &copy; 1995-2023
+                  <li class="list-inline-item"><?php echo $Copyright; ?>
+                    <!-- Copyright &copy; 1995-2023
                     <a href="https://wistex.com" target="_blank" class="link-secondary">WisTex TechSero Ltd. Co.</a>
-                    All rights reserved.
+                    All rights reserved. -->
                   </li>
                   <!--
                   <li class="list-inline-item">
