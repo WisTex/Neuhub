@@ -93,7 +93,7 @@ if (file_exists($filename)) {
     
 
     <style>
-      @import url('/view/theme/red-tab/assets/fonts/inter/inter.css');
+      /* @import url('/view/theme/red-tab/assets/fonts/inter/inter.css'); */
       :root {
       	--tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
         /* --bs-border-color: rgba(4, 32, 69, 0.14); */
