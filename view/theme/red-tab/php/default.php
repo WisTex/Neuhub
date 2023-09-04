@@ -148,6 +148,9 @@ if (file_exists($filename)) {
       .avatar {
         --tblr-avatar-box-shadow: none;
       }
+      .avatar-xl {
+        --tblr-avatar-size: 80px;
+      }
 
     </style>
   </head>
