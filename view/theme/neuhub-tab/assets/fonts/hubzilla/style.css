@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'hubzilla';
+  src:  url('fonts/hubzilla.eot?psm096');
+  src:  url('fonts/hubzilla.eot?psm096#iefix') format('embedded-opentype'),
+    url('fonts/hubzilla.ttf?psm096') format('truetype'),
+    url('fonts/hubzilla.woff?psm096') format('woff'),
+    url('fonts/icomoon.svg?psm096#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hubzilla' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hz-64:before {
+  content: "\e900";
+}
+.icon-hz .path1:before {
+  content: "\e901";
+  color: rgb(67, 72, 138);
+}
+.icon-hz .path2:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-hz .path3:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-hz .path4:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-hz .path5:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-hz .path6:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-hz .path7:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-hubzilla_logo_1:before {
+  content: "\e908";
+}
+.icon-hubzilla_logo_2:before {
+  content: "\e909";
+}
+.icon-hubzilla_logo_3:before {
+  content: "\e90a";
+}
+.icon-hubzilla_logo_4:before {
+  content: "\e90b";
+}
