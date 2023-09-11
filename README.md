@@ -133,8 +133,7 @@ Main Redbasic Contributors
 ### Tabler UI Kit
 
 - Website: https://tabler.io
-- Respository: https://github.com/tabler/tabler
-
+- Respository: https://github.com/tabler/tabler 
 - Paweł Kuna
 
 ### DeadSuperHero Hubzilla Themes
