@@ -152,6 +152,11 @@ if (file_exists($filename)) {
         --tblr-avatar-size: 80px;
       }
 
+      dl, ol, ul {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
     </style>
   </head>
   <body >
@@ -387,7 +392,7 @@ if (file_exists($filename)) {
           </style>
           
                   <nav class="mobile-nav bg-dark-lt">
-                    <a href="/article/main" class="bloc-icon">
+                    <a href="/" class="bloc-icon">
 
 
 

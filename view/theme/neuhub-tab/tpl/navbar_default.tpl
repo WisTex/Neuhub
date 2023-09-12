@@ -977,6 +977,11 @@
 
 
 
+
+            <!--  Featured Apps ----------------------------------------------------------------- -->
+            
+            {{* if $featured_apps *}}
+
             <li class="nav-item dropdown no-arrow">
                 <div class="nav-item dropdown no-arrow" style="left: 0;">
                 <!-- <div class="nav-item dropdown-menu dropdown-menu-end dropdown-menu-arrow"> -->
@@ -984,14 +989,15 @@
                     
                     <a class="dropdown-toggle nav-link !text-primary" aria-expanded="false" data-bs-toggle="dropdown" href="#">
                     <span class="nav-link-icon d-md-none d-lg-inline-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-atom" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 12v.01" />
-                    <path d="M19.071 4.929c-1.562 -1.562 -6 .337 -9.9 4.243c-3.905 3.905 -5.804 8.337 -4.242 9.9c1.562 1.561 6 -.338 9.9 -4.244c3.905 -3.905 5.804 -8.337 4.242 -9.9" />
-                    <path d="M4.929 4.929c-1.562 1.562 .337 6 4.243 9.9c3.905 3.905 8.337 5.804 9.9 4.242c1.561 -1.562 -.338 -6 -4.244 -9.9c-3.905 -3.905 -8.337 -5.804 -9.9 -4.242" />
-                  </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-atom" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 12v.01" />
+                        <path d="M19.071 4.929c-1.562 -1.562 -6 .337 -9.9 4.243c-3.905 3.905 -5.804 8.337 -4.242 9.9c1.562 1.561 6 -.338 9.9 -4.244c3.905 -3.905 5.804 -8.337 4.242 -9.9" />
+                        <path d="M4.929 4.929c-1.562 1.562 .337 6 4.243 9.9c3.905 3.905 8.337 5.804 9.9 4.242c1.561 -1.562 -.338 -6 -4.244 -9.9c-3.905 -3.905 -8.337 -5.804 -9.9 -4.242" />
+                      </svg>
                     </span>
-                    <span class="nav-link-title">Hub<!-- <i class="generic-icons-nav fa fa-fw fa-caret-down"></i> --></span>
+
+                    <span class="nav-link-title">Apps<!-- <i class="generic-icons-nav fa fa-fw fa-caret-down"></i> --></span>
                         <span class="d-xs-block d-sm-block d-md-none  d-lg-none d-xl-none"></span>
                         <!-- <i class="generic-icons-nav fa fa-fw fa-caret-square-down"></i> -->
                         
@@ -1000,26 +1006,27 @@
                          <span class="icon-hz"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
                          -->
                     </a>
-                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+                    <div class="dropdown-menu shadow !dropdown-menu-end animated--grow-in">
                                         
                         <!--                                        
                         <a class="dropdown-item" href="/"><i class="generic-icons-nav fa fa-fw fa-home"></i>Home</a>
                         <div class="dropdown-divider"></div>
                         -->
-		
 
-                
-                		{{if $is_owner}}
-					<!-- featured apps -->
+                        {{if $is_owner}}    
+                          
+					              <!-- featured apps -->
                     		<div class="dropdown-header text-uppercase text-muted">
-						{{$featured_apps|replace:'featured-apps nav-link':'dropdown-item'}}
+						              {{$featured_apps|replace:'featured-apps nav-link':'dropdown-item'}}
                     			<!-- {{$featured_apps}} -->
 				
 
-				
+                          
 				
                     		</div>
 					<!-- nav apps -->
+
+                    
                     		<div id="app-bin-container" data-token="{{$form_security_token}}">
                     			{{foreach $nav_apps as $nav_app}}
                     				{{$nav_app|replace:'nav-link':'dropdown-item'}}
@@ -1028,19 +1035,33 @@
                     		<!-- <div class="dropdown-divider"></div> -->
                     		<a class="dropdown-item" href="/apps"><i class="generic-icons-nav fa fa-fw fa-plus"></i>{{$addapps}}</a>
                 		{{else}}
-					<!-- system apps
+					<!-- system apps -->
                     		<div class="dropdown-header text-uppercase text-muted">
                     			{{$sysapps|replace:'nav-link':'dropdown-item'}}
                     		</div>
                     		{{foreach $nav_apps as $nav_app}}
                     			{{$nav_app|replace:'nav-link':'dropdown-item'}}
                     		{{/foreach}}
-                            -->
+                            
                 		{{/if}}    
                 	</div>
                                     
                 </div>
             </li>            
+
+              <!--
+              <li class="nav-item">
+              {{foreach $navbar_apps as $navbar_app}}
+                {{$navbar_app}}
+            {{/foreach}}
+            </li>
+            -->
+
+                      {{* /if *}}
+
+            <!-- end featured apps ---------------------------------------------------------- -->
+
+
 
 
               <!--
