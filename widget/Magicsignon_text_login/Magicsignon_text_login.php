@@ -41,7 +41,8 @@ namespace Zotlabs\Widget;
 // Uncomment the correct line below depending on if you use Streams or Hubzilla
 
 // class Examplewidget {
-class Magicsignon_text_login implements WidgetInterface {
+// class Magicsignon_text_login implements WidgetInterface {
+class Magicsignon_text_login {
 
 	public function widget(array $arguments): string {
 	// function widget($arr): string {
