@@ -105,6 +105,8 @@ if (file_exists($filename)) {
         /* --bs-tertiary-bg: rgba(72, 110, 149, 0.14); had to pick a color that shows up on light and dark modes */
         /* --bs-link-color: rgb(0, 84, 166); slate blue link color */
         --bs-link-color: green; /* mostly used for toggle switches */
+        --tblr-link-color: green; /* mostly used for toggle switches */
+        --bs-link-hover-color: #0a58ca;
         --bs-warning: #f59f00;
         --tblr-font-size-h1: 2rem;
     --tblr-font-size-h2: 1.75rem;

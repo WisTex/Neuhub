@@ -140,7 +140,7 @@
           {{else}}
 
             {{* If there is not user icon display a default icon instead *}}
-            {{$redtab.icon="/view/theme/red-tab/img/blank-profile-picture-180x180.png"}}
+            {{$redtab.icon="/view/theme/neuhub-tab/img/blank-profile-picture-180x180.png"}}
             
           {{/if}}
 
@@ -239,9 +239,12 @@
             
             {{if $nav.login && !$userinfo}}
 
+              
+              
                 <a class="dropdown-item" href="login" title="{{$nav.loginmenu.1.3}}">
                     {{$nav.loginmenu.1.1}}
                 </a>
+                
                 <a class="dropdown-item" href="rmagic" title="{{$nav.loginmenu.1.3}}">
                     Magic Sign-On
                 </a>							
@@ -345,7 +348,7 @@
 
                                                 <li class="nav-item">
                                                 {{foreach $navbar_apps as $navbar_app}}
-                                                    {{$navbar_app}}
+                                                    {{$navbar_app|replace:'fa fa-fw fa-home':'fa5 fa-fw fa5-house-user text-muted'|replace:'fa-user-circle-o':'fa-user-circle-o text-muted'}}
                                                 {{/foreach}}
                                                 </li>
                                             -->
@@ -373,7 +376,7 @@
                                         -->
                                         <div id="app-bin-container" data-token="{{$form_security_token}}">
                                             {{foreach $nav_apps as $nav_app}}
-                                                {{$nav_app}}
+                                                {{$nav_app|replace:'fa fa-fw fa-home':'fa5 fa-fw fa5-house-user'|replace:'fa fa-fw fa-users':'fa5 fa-fw fa5-user-friends'|replace:'fa fa-fw fa-sitemap':'fa5 fa-fw fa5-address-book'}}
                                             {{/foreach}}
                                         </div>
                                         <div class="dropdown-divider"></div>
@@ -487,6 +490,7 @@
 
             {{if $localuser}}
 
+              <!--
               <li><hr></li>
 
 
@@ -587,7 +591,8 @@
                   </span>
                 </a>
               </li>
-              
+              -->
+
             {{/if}}
 
             </ul>
@@ -891,9 +896,12 @@
                   </a>
                 </li>
 
+                <!-- The login link is better hidden on private hubs. You can still get to it in the dropdown or other ways. -->
+                <!-- uncomment if you want this to appear in the top menu bar. -->
+                <!-- 
                 <li class="nav-item">
                 <a class="nav-link" href="login" title="{{$nav.loginmenu.1.3}}">
-                  <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                  <span class="nav-link-icon d-md-none d-lg-inline-block">{{* <!-- Download SVG icon from http://tabler-icons.io/i/home --> *}}
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                   <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
@@ -905,6 +913,7 @@
                   </span>
                 </a>
               </li>
+              -->
 
               <li class="nav-item">
               <a class="nav-link" href="rmagic" title="{{$nav.loginmenu.1.3}}">
@@ -915,7 +924,7 @@
                 </svg>
                 </span>
                 <span class="nav-link-title">
-                Magic Sign-On
+                Magic Sign On
                 </span>
               </a>
             </li>
@@ -942,20 +951,28 @@
             {{else}}		
                 {{* Else If Logged In *}}
 
+                
+
+                
                 <li class="nav-item">
                   <a class="nav-link" href="/" >
                     <span class="nav-link-icon d-md-none d-lg-inline-block">
+                    <!--
                       <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                      -->
+                      <i class="fa5 fa-fw fa5-home text-muted"></i>
                     </span>
                     <span class="nav-link-title">
                       Home
                     </span>
                   </a>
                 </li>
+                
+              
+                {{if $userinfo}}
+                
 
-
-                {{if $localuser}}
-
+                  <!--
                 <li class="nav-item">
                   <a class="nav-link" href="/hq" >
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
@@ -969,14 +986,40 @@
                       Headquarters (HQ)
                     </span>
                   </a>
-                </li>                
+                </li> 
+                -->               
 
                 {{/if}}
 
             {{/if}}
 
 
+            <!-- navapps -------------------------------------------------------------------- -->
 
+            {{* Shows pinned apps in top navigation bar on user's own channel. *}}    
+            {{foreach $navbar_apps as $navbar_app}}
+              <li class="nav-item">
+              {{$navbar_app|replace:'d-lg-none':'nav-link-title ms-2'|replace:'Channel':'Channel'|replace:'fa fa-fw fa-home':'fa5 fa-fw fa5-house-user text-muted'|replace:'fa-user-circle-o':'fa-user-circle-o text-muted'}}
+              </li>
+          {{/foreach}}
+          
+        {{*
+          {{foreach $channel_apps as $channel_app}}
+            <li class="nav-item">
+            {{$channel_app|replace:'d-lg-none':'nav-link-title ms-2'|replace:'Channel':'My Channel'}}
+            </li>
+        {{/foreach}}
+        *}}
+
+              <!--
+              <li class="nav-item">
+              {{foreach $navbar_apps as $navbar_app}}
+                  {{$navbar_app|replace:'nav-link':'dropdown-item'}}
+              {{/foreach}}
+              </li>
+              -->
+              
+            <!-- end navapps ---------------------------------------------------------------- -->
 
             <!--  Featured Apps ----------------------------------------------------------------- -->
             
@@ -1049,28 +1092,15 @@
                 </div>
             </li>            
 
-              <!--
-              <li class="nav-item">
-              {{foreach $navbar_apps as $navbar_app}}
-                {{$navbar_app}}
-            {{/foreach}}
-            </li>
-            -->
+             
+
+            
 
                       {{* /if *}}
 
             <!-- end featured apps ---------------------------------------------------------- -->
 
-
-
-
-              <!--
-              <li class="nav-item">
-              {{foreach $navbar_apps as $navbar_app}}
-                  {{$navbar_app}}
-              {{/foreach}}
-              </li>
-              -->
+ 
 
 
 {{*
@@ -1188,19 +1218,19 @@
 
               </ul>
             </div>
-
+<!--
             <div>
               <form action="./" method="get" autocomplete="off" novalidate>
                 <div class="input-icon">
                   <span class="input-icon-addon">
-                    <!-- Download SVG icon from http://tabler-icons.io/i/search -->
+                    {{* <!-- Download SVG icon from http://tabler-icons.io/i/search --> *}}
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
                   </span>
                   <input type="text" value="" class="form-control" placeholder="Search…" aria-label="Search in website">
                 </div>
               </form>
             </div>
-
+-->
             <div style="margin: right 10px;">&nbsp;</div> 
 
           </div>

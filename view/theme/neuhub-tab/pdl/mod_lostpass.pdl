@@ -1,0 +1,10 @@
+[region=aside]
+[widget=magicsignon_text_login][/widget]
+[/region]
+[region=content]
+[widget=vcard][/widget]
+$content
+[/region]
+[region=right_aside]
+[widget=newmember][/widget]
+[/region]
