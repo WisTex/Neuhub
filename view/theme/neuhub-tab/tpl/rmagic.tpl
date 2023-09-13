@@ -64,7 +64,7 @@
 
             <p>This website will check and see if you are logged into your home hub or instance on this device, and if you are, it will remotely authenticate you.</p>
 
-            <p>If you try to authenticate and it returns you back to this page, you are either not logged into your home hub, or you typed your channel name incorrectly.</p>
+            <p>If you try to authenticate and it returns you back to this page, you are either not logged into your home hub, or you typed your channel name incorrectly.</p>  
 
             <!--
             <p style="text-align: left;">To remotely authenticate with your existing social identity, you must be logged into your home hub or instance, and then enter your channel address on this website (channel@example.com). This website will check and see if you are logged into your home hub or instance, and if you are, it will remotely authenticate you.</p>
