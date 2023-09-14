@@ -279,12 +279,14 @@ if (file_exists($filename)) {
 
                 <p></p>
 
+                <?php /*
                 <div class="card mb-3">
                   <!--
                   <div class="card-header">
                     <h3 class="card-title">Card title <span class="card-subtitle">Subtitle</span></h3>
                   </div>
                   -->
+                  
                   <div class="card-body">
                     <small>
                       <!-- <a href="<?php echo $HomeURL; ?>"><b>Digital Authorship</b></a> -->This website is part of a decentralized social network powered by Hubzilla and Neuhub.
@@ -292,6 +294,7 @@ if (file_exists($filename)) {
                     </small>
                   </div>
                 </div>
+                */ ?>
 
                 <?php /*
                 <div class="card mb-3">

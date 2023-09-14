@@ -33,7 +33,7 @@
 namespace Zotlabs\Widget;
 // namespace Code\Widget;
 
-
+    
 
 // "class Examplewidget" is used for Hubzilla
 // "class Examplewidget implements WidgetInterface" is used for Streams, Raconteur, and Catalyst.
