@@ -1,0 +1,53 @@
+ @font-face {
+    font-family: 'Nunito';
+    /* @TODO you need to adjust the path to the font: */
+    src: url("../fonts/nunito/static/Nunito-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Slab';
+    /* @TODO you need to adjust the path to the font: */
+    src: url("../fonts/robotoslab/static/RobotoSlab-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .code-font {
+    font-family: 'FuraMono Nerd Font';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering (from devicons, et al) */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 0.9rem;
+    background: #e0e5eb;
+  }
+
+  .code-font-plain {
+    font-family: 'FuraMono Nerd Font';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering (from devicons, et al) */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 0.9rem;
+  }
+
+  .code-font-alt {
+    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+    background: #e0e5eb;
+  }
+
+  .code-font-alt-plain {
+    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+  }

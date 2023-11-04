@@ -1,0 +1,44 @@
+/**
+ * Redbasic Child Theme
+ *
+ * Add your own CSS here. You can also override the CSS in redbasic here.
+ */
+
+
+/* custom */
+
+.neuhub-placeholder {
+	/* example */
+	color:maroon;
+}
+
+footer {
+	position: relative !important;
+}
+
+#region_1 {
+    position: relative;
+    order: 1;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+}
+
+#region_2 {
+    position: relative;
+    order: 1;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+}
+
+#region_3 {
+    position: relative;
+    order: 1;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+}
