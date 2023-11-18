@@ -1,6 +1,6 @@
 [region=aside]
-[widget=notifications][/widget]
 [widget=fullprofile][/widget]
+[widget=notifications][/widget]
 [/region]
 [region=content]
 [widget=zcard][/widget]

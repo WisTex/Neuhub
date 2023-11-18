@@ -119,10 +119,15 @@ if (file_exists($filename)) {
         --bs-warning: #f59f00;
         --tblr-font-size-h1: 2rem;
     --tblr-font-size-h2: 1.75rem;
+    --tblr-line-height-h2: 1.75rem;
     --tblr-font-size-h3: 1.5rem;
+    --tblr-line-height-h3: 1.5rem;
     --tblr-font-size-h4: 1.25rem;
+    --tblr-line-height-h4: 1.25rem;
     --tblr-font-size-h5: 1rem;
+    --tblr-line-height-h5: 1rem;
     --tblr-font-size-h6: 0.75rem;
+    --tblr-line-height-h6: 0.75rem;
         
       }
       body {
@@ -166,6 +171,31 @@ if (file_exists($filename)) {
       dl, ol, ul {
         margin-top: 1rem;
         margin-bottom: 1rem;
+      }
+
+      .thread-wrapper {
+        /* background: rgba(72, 110, 149, 0.14); */
+        background: #f9f9f9;
+        /* background: var(--tblr-active-bg); */
+      }
+
+      input[type=text], textarea {
+        background-color: #FFFFFF;
+      }
+
+      .onoffswitch.checkbox > div label {
+        border: 1px solid #0c5460;
+        
+      }
+
+      .onoffswitch-switch {
+        background: #800000;
+        color: #800000;
+      }
+
+      .textcomplete-item.active {
+        color: #000000;
+        background-color: var(--bs-tertiary-bg);
       }
 
     </style>

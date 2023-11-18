@@ -12,7 +12,7 @@
 [widget=tagcloud_wall][var=limit]24[/var][/widget]
 [/region]
 [region=content]
-[widget=vcard][/widget]
+[widget=zcard][/widget]
 $content
 [/region]
 [region=right_aside]
