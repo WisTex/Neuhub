@@ -269,12 +269,16 @@
           </div>
           <div class="collapse navbar-collapse" id="sidebar-menu">
 
+
+          {{$userinfo.testplugin.sidebar_before}}
+
+
           {{if $localuser}} 
 
             {{else}}
 
             {{* If this has a Channel Thumbnail, show details about the channel *}}
-            {{if $channel_thumb}}
+            {{if $channel_thumb_disabled}}
 
 
                 <div class="card border-0">
@@ -330,6 +334,9 @@
               {{if $localuser}} 
 
               {{else}}
+
+
+                {{if $userinfo.testplugin.showlocalmenu}}
 
                                     <!-- channel apps -->
                                     <ul class="navbar-nav pt-lg-3">
@@ -398,10 +405,16 @@
                                         -->
                                         {{/if}}
 
+                    {{/if}}
+
               {{/if}}                                      
+
+              
 
             <ul class="navbar-nav pt-lg-3">
 
+
+            
 
             {{if $localuser}}
 
