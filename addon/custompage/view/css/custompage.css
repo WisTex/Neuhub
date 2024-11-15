@@ -1,0 +1,17 @@
+.header_container {
+    width:100%; 
+    height:150px; 
+    padding:15px; 
+    background-color:purple; 
+    color:white; 
+    text-align:center;
+}
+
+.footer_container {
+    width:100%; 
+    height:150px; 
+    padding:15px; 
+    background-color:purple; 
+    color:white; 
+    text-align:center;
+}
