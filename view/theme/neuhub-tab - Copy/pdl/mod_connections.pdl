@@ -1,0 +1,16 @@
+[region=aside]
+[widget=findpeople][/widget]
+[widget=menu_connections][/widget]
+[widget=menu_profile][/widget]
+
+[/region]
+[region=content]
+$content
+
+[/region]
+[region=right_aside]
+[widget=menu_stream_hq][/widget]
+[widget=notifications][/widget]
+[widget=newmember][/widget]
+
+[/region]
