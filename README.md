@@ -9,9 +9,11 @@
 
 ## This Repository
 
-This repository contains example code and experiments that you can use to build your own code.
+This repository contains example code and experiments that you can use to build your own Hubzilla Themes, Addons, and Widgets.
 
 Most of the code here would need to be modifed to be useful. 
+
+If you want code ready to deploy, visit the deployment repositories instead. That is where most of the development happens.
 
 ## Deployment Repositories
 
