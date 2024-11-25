@@ -20,6 +20,12 @@
 	[var=app]1[/var]
 [/widget]
 $content
+[widget=whats_new]
+	[var=channel_id]3[/var]
+	[var=num_posts]3[/var]
+	[var=blurb_length]250[/var]
+	[var=widget_title]The Latest News at [Your Agency Name][/var]
+[/widget]
 [widget=hq_controls]
 	[var=wrapper_class]hq_controls_fixed_bottom_center d-lg-none[/var]
 	[var=entry_class]btn-lg btn-primary shadow[/var]
