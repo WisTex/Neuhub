@@ -7,6 +7,18 @@
 * Extends Hubzilla https://hubzilla.org
 * Sponsored by WisTex TechSero Ltd. Co. https://wistex.com
 
+### Support this Project
+
+You can donate directly to this project here:
+
+* https://buymeacoffee.com/federated
+
+If you purchase Managed Hubzilla from this affiliate link, we get a commission.
+
+* https://techsero.net/aff.php?aff=3
+
+Your support helps make this project possible.
+
 ## This Repository
 
 This repository contains example code and experiments that you can use to build your own Hubzilla Themes, Addons, and Widgets.
