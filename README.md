@@ -6,7 +6,7 @@
 * Project home page: https://neuhub.org
 * Extends Hubzilla https://hubzilla.org
 * Sponsored by WisTex TechSero Ltd. Co. https://wistex.com
-* Buy Me Coffee: https://buymeacoffee.com/federated
+* Please Buy Me Coffee: https://buymeacoffee.com/federated
 
 ## This Repository
 
