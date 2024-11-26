@@ -6,18 +6,7 @@
 * Project home page: https://neuhub.org
 * Extends Hubzilla https://hubzilla.org
 * Sponsored by WisTex TechSero Ltd. Co. https://wistex.com
-
-### Support this Project
-
-You can donate directly to this project here:
-
-* https://buymeacoffee.com/federated
-
-If you purchase Managed Hubzilla from this affiliate link, we get a commission.
-
-* https://techsero.net/aff.php?aff=3
-
-Your support helps make this project possible.
+* Buy Me Coffee: https://buymeacoffee.com/federated
 
 ## This Repository
 
@@ -44,3 +33,15 @@ util/add_addon_repo https://framagit.org/federated-works/neuhub/hubzilla-addons.
 util/add_widget_repo https://framagit.org/federated-works/neuhub/hubzilla-widgets.git neuhubwidgets
 ```
 See the Hubzilla INSTALL.txt file for more details. (More thorough instructions will be added here later.)
+
+## Support this Project
+
+You can donate directly to this project here:
+
+* https://buymeacoffee.com/federated
+
+If you purchase Managed Hubzilla from this affiliate link, we get a commission.
+
+* https://techsero.net/aff.php?aff=3
+
+Your support helps make this project possible.
