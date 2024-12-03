@@ -40,7 +40,7 @@ You can donate directly to this project here:
 
 * https://buymeacoffee.com/federated
 
-If you purchase Managed Hubzilla from this affiliate link, we get a commission.
+If you purchase Managed Hubzilla or a Custom Website from this affiliate link, we get a commission.
 
 * https://techsero.net/aff.php?aff=3
 
