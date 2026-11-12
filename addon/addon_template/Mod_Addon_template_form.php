@@ -22,6 +22,18 @@ class Addon_template_form extends Controller {
     private const FORM_ID = 'addon_template_form';
 
     public function post() {
+        // Enforce the same authentication requirement used by get().
+        // Never rely on hiding a form to prevent unauthorized POST requests.
+        // App::get_observer() returns an xchan identity record for a locally
+        // or remotely authenticated visitor, or no record for anonymous access.
+        $observer = App::get_observer();
+        $observer_hash = $observer['xchan_hash'] ?? '';
+        if (!$observer_hash) {
+            notice(t('You must be authenticated to save this preference.') . EOL);
+            goaway(z_root() . '/addon_template_form');
+            return;
+        }
+
         // Native CSRF protection:
         // check_form_security_token($typename, $formname = 'form_security_token')
         // returns true when the submitted token matches the current session
@@ -42,25 +54,13 @@ class Addon_template_form extends Controller {
             return;
         }
 
-        // App::get_observer() returns the current visitor's Hubzilla identity
-        // record (an xchan array), or no identity for an anonymous visitor.
-        // xchan_hash is the network identity key; it works for both local and
-        // remotely authenticated visitors. No login-method distinction is made.
-        $observer = App::get_observer();
-        $observer_hash = $observer['xchan_hash'] ?? '';
-
-        if ($observer_hash) {
-            // set_xconfig($xchan_hash, $family, $key, $value)
-            // stores configuration associated with this network identity.
-            // 'addon_template' is our namespace, preventing key collisions.
-            // This is data stored on THIS hub, not automatically synced across hubs.
-            set_xconfig($observer_hash, 'addon_template', 'example_message', $message);
-            info(t('Your example preference was saved on this hub.') . EOL);
-        } else {
-            // Anonymous visitors can submit the form but have no identity
-            // under which to persist a preference.
-            info(t('Form accepted. Sign on to save this preference.') . EOL);
-        }
+        // set_xconfig($xchan_hash, $family, $key, $value) stores a
+        // preference for this network identity on THIS hub. A network identity
+        // generally identifies a channel, not necessarily an entire human
+        // account; multiple channels can have distinct xchan_hash values.
+        // The 'addon_template' family namespaces our keys.
+        set_xconfig($observer_hash, 'addon_template', 'example_message', $message);
+        info(t('Your example preference was saved on this hub.') . EOL);
 
         // Post/Redirect/Get: refreshing the resulting page will not repeat POST.
         goaway(z_root() . '/addon_template_form');
@@ -69,11 +69,23 @@ class Addon_template_form extends Controller {
     public function get() {
         $observer = App::get_observer();
         $observer_hash = $observer['xchan_hash'] ?? '';
+        // The page itself remains accessible anonymously, but its form does
+        // not. The POST handler independently enforces this same requirement.
+        if (!$observer_hash) {
+            return replace_macros(
+                get_markup_template('form_unavailable.tpl', 'addon/addon_template'),
+                [
+                    '$title' => t('Form and identity configuration example'),
+                    '$message' => t('Sign on with a Hubzilla identity to edit and save your preference.'),
+                    '$home_url' => z_root() . '/addon_template',
+                    '$home_label' => t('Back to addon template')
+                ]
+            );
+        }
+
         // get_xconfig($xchan_hash, $family, $key, $default = false)
         // retrieves a previously saved identity-scoped value from this hub.
-        $saved = $observer_hash
-            ? (string) get_xconfig($observer_hash, 'addon_template', 'example_message', '')
-            : '';
+        $saved = (string) get_xconfig($observer_hash, 'addon_template', 'example_message', '');
 
         // get_form_security_token($typename = '') generates a form-specific
         // CSRF token. The HTML field must be named form_security_token,
@@ -86,7 +98,7 @@ class Addon_template_form extends Controller {
             get_markup_template('form.tpl', 'addon/addon_template'),
             [
                 '$title' => t('Form and identity configuration example'),
-                '$description' => t('Submit a short preference. Authenticated visitors can save it on this hub; anonymous submissions are not stored.'),
+                '$description' => t('Edit a short preference associated with your authenticated network identity on this hub.'),
                 '$action_url' => z_root() . '/addon_template_form',
                 '$token' => htmlspecialchars($token, ENT_QUOTES, 'UTF-8'),
                 '$value' => htmlspecialchars($saved, ENT_QUOTES, 'UTF-8'),
