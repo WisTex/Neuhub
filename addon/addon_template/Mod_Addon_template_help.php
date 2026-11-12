@@ -23,9 +23,12 @@ class Addon_template_help extends Controller {
                 '$home_url' => z_root() . '/addon_template',
                 '$about_url' => z_root() . '/addon_template/about',
                 '$help_url' => z_root() . '/addon_template_help',
+                // This route is registered in addon_template_load().
+                '$form_url' => z_root() . '/addon_template_form',
                 '$home_label' => t('Home'),
                 '$about_label' => t('About'),
-                '$help_label' => t('Separate module')
+                '$help_label' => t('Separate module'),
+                '$form_label' => t('Form example')
             ]
         );
     }
