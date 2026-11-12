@@ -5,7 +5,8 @@
     <nav aria-label="Addon example navigation">
       <a href="{{$home_url}}">{{$home_label}}</a> |
       <a href="{{$about_url}}">{{$about_label}}</a> |
-      <a href="{{$help_url}}">{{$help_label}}</a>
+      <a href="{{$help_url}}">{{$help_label}}</a> |
+      <a href="{{$form_url}}">{{$form_label}}</a>
     </nav>
     <p>{{$message}}</p>
   </div>
