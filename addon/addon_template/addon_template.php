@@ -21,10 +21,13 @@ function addon_template_load() {
     // The module files contain the actual request handlers.
     Route::register('addon/addon_template/Mod_Addon_template.php', 'addon_template');
     Route::register('addon/addon_template/Mod_Addon_template_help.php', 'addon_template_help');
+    // Form example: Hubzilla routes GET and POST to the same Controller.
+    Route::register('addon/addon_template/Mod_Addon_template_form.php', 'addon_template_form');
 }
 
 function addon_template_unload() {
     // Always reverse the registrations made by _load().
     Route::unregister('addon/addon_template/Mod_Addon_template.php', 'addon_template');
     Route::unregister('addon/addon_template/Mod_Addon_template_help.php', 'addon_template_help');
+    Route::unregister('addon/addon_template/Mod_Addon_template_form.php', 'addon_template_form');
 }
