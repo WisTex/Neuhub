@@ -40,8 +40,9 @@ if needed to refresh registrations.
 - PHP syntax checks for each PHP file
 - Enable addon via Hubzilla administrator interface
 - Open the three original URLs and verify their links
-- Open `/addon_template_form`, submit anonymously and as an authenticated visitor,
-  confirm persistence after refresh, and reject an invalid CSRF token
+- Open `/addon_template_form`, verify the form is hidden for anonymous visitors, submit as an
+  authenticated visitor, confirm persistence after refresh, and verify
+  unauthenticated POST requests and invalid CSRF tokens are rejected
 - Confirm an unknown `/addon_template/...` page returns 404
 - Disable addon and confirm routes are removed; re-enable and retest
 
@@ -65,7 +66,10 @@ The form example is **implemented but not yet live-tested**. Its template is
 `check_form_security_token()` for CSRF protection, `App::get_observer()` to
 identify either a locally or remotely authenticated visitor, and
 `get_xconfig()` / `set_xconfig()` for network-identity-scoped preferences.
-Anonymous submissions are accepted but not persisted. The saved setting is
+Anonymous visitors see an explanation instead of a form. The POST handler
+also independently rejects unauthenticated submissions before checking the
+CSRF token or saving data. The explanatory template is
+`view/tpl/form_unavailable.tpl`. The saved setting is
 local to the hub and does not automatically follow the identity elsewhere.
 
 Remaining examples (additional permissions, site configuration, hooks, widgets)
