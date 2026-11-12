@@ -108,3 +108,21 @@ the relevant Hubzilla implementation rather than presenting a guess as fact.
 ## Attribution
 
 When adapting this code, preserve copyright and MIT Expat License notices.
+
+## Practical feature: dashboard greeting
+
+The `/addon_template_form` page demonstrates a complete user-facing feature:
+a signed-on visitor sees their previously saved greeting (or a friendly empty
+state), edits it in a prefilled Bootstrap form, saves with CSRF protection,
+and sees the updated greeting after redirect. Saving a blank value clears it.
+Anonymous visitors see an explanation instead of a nonfunctional form;
+unauthenticated POSTs are rejected independently.
+
+To adapt the feature, change `CONFIG_FAMILY` and `CONFIG_KEY` in
+`Mod_Addon_template_form.php`, and customize the form labels, field name,
+validation, and display template together. The same key is used for reads and
+writes. The greeting is stored by network identity in this hub's `xconfig`;
+this is not a shared preference across every channel owned by one person.
+
+**Validation:** implemented in the development branch; live behavior still
+needs testing, including create, edit, clear, anonymous access, and invalid POST.
