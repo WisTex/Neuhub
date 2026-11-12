@@ -20,6 +20,7 @@ No database migration or external service is required.
 | `/addon_template` | `Mod_Addon_template.php` | Default GET page |
 | `/addon_template/about` | `Mod_Addon_template.php` | Second page using path arguments |
 | `/addon_template_help` | `Mod_Addon_template_help.php` | Independently registered module |
+| `/addon_template_form` | `Mod_Addon_template_form.php` | GET/POST, CSRF validation, and network-identity configuration (**implemented; not yet live-tested**) |
 
 The shared HTML template is `view/tpl/example.tpl`.
 The entry point `addon_template.php` registers/unregisters both modules.
@@ -38,7 +39,9 @@ if needed to refresh registrations.
 
 - PHP syntax checks for each PHP file
 - Enable addon via Hubzilla administrator interface
-- Open all three URLs and verify their links
+- Open the three original URLs and verify their links
+- Open `/addon_template_form`, submit anonymously and as an authenticated visitor,
+  confirm persistence after refresh, and reject an invalid CSRF token
 - Confirm an unknown `/addon_template/...` page returns 404
 - Disable addon and confirm routes are removed; re-enable and retest
 
@@ -57,8 +60,16 @@ that all possible installations, configurations, or future features have
 been tested. The unknown-path 404 and addon-disable behavior have not
 yet been reported as tested.
 
-Additional examples (forms, permissions, settings, hooks, widgets) are
-planned but **not implemented or verified** in this version.
+The form example is **implemented but not yet live-tested**. Its template is
+`view/tpl/form.tpl`. It uses Hubzilla's `get_form_security_token()` and
+`check_form_security_token()` for CSRF protection, `App::get_observer()` to
+identify either a locally or remotely authenticated visitor, and
+`get_xconfig()` / `set_xconfig()` for network-identity-scoped preferences.
+Anonymous submissions are accepted but not persisted. The saved setting is
+local to the hub and does not automatically follow the identity elsewhere.
+
+Remaining examples (additional permissions, site configuration, hooks, widgets)
+are planned but **not implemented or verified**.
 
 ## Documentation and commenting standard for future examples
 
